@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-09-29T09:37:44Z",
+  "record_type": "curated_controlled_sample_index",
+  "entries": [
+    {
+      "dataset": "Anti-UAV300",
+      "acceptance_status": "ACCEPTED_FOR_CONTROLLED_INTERNAL_USE",
+      "reproduction_status": "PASS_WITH_WARNING",
+      "package_sha256": "f4c581bd626ade47b8a52fc56cd417a7186258cfbf00c64ab211a0da0b8f8f4a",
+      "package_source_path": "datasets/member2_controlled_samples/packages/Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip",
+      "reproduction_result": "data/samples/reproduction_results/Anti-UAV300.json",
+      "content_checks": {
+        "required_files_present": true,
+        "annotation_json_parseable": true,
+        "annotation_frame_counts": [
+          493,
+          493
+        ],
+        "annotation_frame_counts_match": true,
+        "frame_pairing_basis": "same controlled sequence directory and equal annotation frame counts; hardware synchronization not inferred from container metadata"
+      },
+      "license_or_internal_storage": "Dataset-level license remains RISK; controlled internal delivery only; do not publicly redistribute raw sample unless permission is confirmed.",
+      "payload_policy": "Payload remains in controlled delivery/staging; curated index contains no raw payload."
+    },
+    {
+      "dataset": "DroneRF",
+      "acceptance_status": "ACCEPTED_FOR_CONTROLLED_INTERNAL_USE",
+      "reproduction_status": "PASS_WITH_WARNING",
+      "package_sha256": "e45ce74c5bda4bcef51dbf9a7ae523bc016411048c237c95b183234c5657405e",
+      "package_source_path": "datasets/member2_controlled_samples/packages/DroneRF_parrot_bebop_on_lh_pair_segment0.zip",
+      "reproduction_result": "data/samples/reproduction_results/DroneRF.json",
+      "content_checks": {
+        "l_h_files_present": true,
+        "csv_physical_rows": {
+          "10000L_0.csv": 1,
+          "10000H_0.csv": 1
+        },
+        "csv_columns": {
+          "10000L_0.csv": 10000000,
+          "10000H_0.csv": 10000000
+        },
+        "csv_header_present": {
+          "10000L_0.csv": false,
+          "10000H_0.csv": false
+        },
+        "csv_numeric_preview": {
+          "10000L_0.csv": [
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000"
+          ],
+          "10000H_0.csv": [
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000",
+            "0.000000"
+          ]
+        },
+        "filename_association": "BUI 10000 / segment 0 / L-H pair as supplied in member-two manifest"
+      },
+      "license_or_internal_storage": "DroneRF dataset is CC BY 4.0; internal storage and sharing allowed with attribution.",
+      "payload_policy": "Payload remains in controlled delivery/staging; curated index contains no raw payload."
+    },
+    {
+      "dataset": "MMAUD",
+      "acceptance_status": "ACCEPTED_FOR_CONTROLLED_INTERNAL_USE",
+      "reproduction_status": "PASS_WITH_WARNING",
+      "package_sha256": "a1c87e498a55eb650d6a24f251a11663a3bc09b03db99029bd3bec8271c3eaad",
+      "package_source_path": "datasets/member2_controlled_samples/packages/MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip",
+      "reproduction_result": "data/samples/reproduction_results/MMAUD.json",
+      "content_checks": {
+        "modalities_present": [
+          "Image",
+          "lidar_360",
+          "livox_avia",
+          "radar_enhance_pcl"
+        ],
+        "timestamp_deltas_ms_from_camera": {
+          "lidar_360": 5.788,
+          "livox_avia": 8.224,
+          "radar_enhance_pcl": 4.836
+        },
+        "association_basis": "seq0001 plus nearest filename timestamp; no calibration or hardware synchronization claim"
+      },
+      "license_or_internal_storage": "MMAUD dataset/work is CC BY-NC-SA 4.0; internal non-commercial research storage unless broader permission is confirmed.",
+      "payload_policy": "Payload remains in controlled delivery/staging; curated index contains no raw payload."
+    }
+  ]
+}

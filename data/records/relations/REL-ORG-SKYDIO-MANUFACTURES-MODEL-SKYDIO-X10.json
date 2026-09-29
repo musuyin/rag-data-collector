@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-ORG-SKYDIO-MANUFACTURES-MODEL-SKYDIO-X10",
+  "record_type": "relation",
+  "subject_id": "ORG-SKYDIO",
+  "predicate": "manufactures",
+  "object_id": "MODEL-SKYDIO-X10",
+  "source_id": "SRC-SKYDIO-280D441BFC",
+  "evidence_quote": "Skydio X10 model record imported from member-one delivery.",
+  "evidence_locator": "member-one model table",
+  "record_status": "reviewed"
+}

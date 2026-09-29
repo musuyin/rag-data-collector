@@ -1,0 +1,26 @@
+{
+  "record_id": "CONFLICT-DATASET-MMAUD-READINESS-001",
+  "record_type": "conflict",
+  "entity_id": "DATASET-MMAUD",
+  "field": "validation.readiness",
+  "conflicting_values": [
+    {
+      "value": "CROSS_MODAL_READY",
+      "source": "member2 dataset_summary.csv"
+    },
+    {
+      "value": "NOT_READY",
+      "source": "MMAUD_sample_validation.json (earlier limited sample check)"
+    },
+    {
+      "value": "READY_FOR_FINAL_DATASET_EVALUATION=YES",
+      "source": "MMAUD_cross_modal_validation.json (UG2+ derived validation subset)"
+    }
+  ],
+  "source_ids": [
+    "SRC-MMAUD-1896B2B368",
+    "SRC-MMAUD-83702A3E25"
+  ],
+  "status": "accepted_difference",
+  "resolution": "Scope differs: the limited raw-sample check was blocked, while the later UG2+ derived subset supports partial cross-modal assessment. Keep subset/scope with every readiness claim; do not represent full MMAUD as independently reproduced."
+}

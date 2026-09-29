@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-SKYDIO-X10-HAS_FIRMWARE-FIRMWARE-官方支持文章可查X10固件版本-本表暂不把某一支持文章中的最低版本当作-最新固件",
+  "record_type": "relation",
+  "subject_id": "MODEL-SKYDIO-X10",
+  "predicate": "has_firmware",
+  "object_id": "FIRMWARE-官方支持文章可查X10固件版本-本表暂不把某一支持文章中的最低版本当作-最新固件",
+  "source_id": "SRC-SKYDIO-280D441BFC",
+  "evidence_quote": "官方支持文章可查X10固件版本；本表暂不把某一支持文章中的最低版本当作“最新固件”",
+  "evidence_locator": "member-one model table > 固件信息",
+  "record_status": "reviewed"
+}

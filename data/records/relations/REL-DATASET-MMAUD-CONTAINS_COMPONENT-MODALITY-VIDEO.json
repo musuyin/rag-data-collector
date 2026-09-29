@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-DATASET-MMAUD-CONTAINS_COMPONENT-MODALITY-VIDEO",
+  "record_type": "relation",
+  "subject_id": "DATASET-MMAUD",
+  "predicate": "contains_component",
+  "object_id": "MODALITY-VIDEO",
+  "source_id": "SRC-MMAUD-83702A3E25",
+  "evidence_quote": "video",
+  "evidence_locator": "member-two dataset card > modalities",
+  "record_status": "reviewed"
+}

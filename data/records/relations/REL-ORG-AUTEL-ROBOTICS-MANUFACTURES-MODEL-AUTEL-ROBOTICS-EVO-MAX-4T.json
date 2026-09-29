@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-ORG-AUTEL-ROBOTICS-MANUFACTURES-MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "record_type": "relation",
+  "subject_id": "ORG-AUTEL-ROBOTICS",
+  "predicate": "manufactures",
+  "object_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "source_id": "SRC-AUTEL-ROBOTICS-AF56163E6D",
+  "evidence_quote": "Autel Robotics EVO Max 4T model record imported from member-one delivery.",
+  "evidence_locator": "member-one model table",
+  "record_status": "reviewed"
+}

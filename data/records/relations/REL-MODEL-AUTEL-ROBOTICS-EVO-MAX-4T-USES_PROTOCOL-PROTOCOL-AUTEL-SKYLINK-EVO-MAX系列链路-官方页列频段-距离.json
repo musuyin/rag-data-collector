@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-AUTEL-ROBOTICS-EVO-MAX-4T-USES_PROTOCOL-PROTOCOL-AUTEL-SKYLINK-EVO-MAX系列链路-官方页列频段-距离",
+  "record_type": "relation",
+  "subject_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "predicate": "uses_protocol",
+  "object_id": "PROTOCOL-AUTEL-SKYLINK-EVO-MAX系列链路-官方页列频段-距离",
+  "source_id": "SRC-AUTEL-ROBOTICS-AF56163E6D",
+  "evidence_quote": "Autel SkyLink（EVO Max系列链路；官方页列频段/距离）",
+  "evidence_locator": "member-one model table > 图传/通信协议",
+  "record_status": "reviewed"
+}

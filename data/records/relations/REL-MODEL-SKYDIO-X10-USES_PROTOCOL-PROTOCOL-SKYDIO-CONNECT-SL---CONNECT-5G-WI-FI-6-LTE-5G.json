@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-SKYDIO-X10-USES_PROTOCOL-PROTOCOL-SKYDIO-CONNECT-SL---CONNECT-5G-WI-FI-6-LTE-5G",
+  "record_type": "relation",
+  "subject_id": "MODEL-SKYDIO-X10",
+  "predicate": "uses_protocol",
+  "object_id": "PROTOCOL-SKYDIO-CONNECT-SL---CONNECT-5G-WI-FI-6-LTE-5G",
+  "source_id": "SRC-SKYDIO-280D441BFC",
+  "evidence_quote": "Skydio Connect SL / Connect 5G；Wi‑Fi 6；LTE/5G",
+  "evidence_locator": "member-one model table > 图传/通信协议",
+  "record_status": "reviewed"
+}

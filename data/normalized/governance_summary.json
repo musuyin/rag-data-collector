@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T07:55:13Z",
+  "generated_at": "2026-09-29T09:42:50Z",
   "inputs": [
-    "datasets/无人机型号与结构化资料调研.xlsx",
+    "datasets/member1_model_research/无人机型号与结构化资料调研.xlsx",
     "datasets/member2_multimodal_datasets"
   ],
   "models_imported": 4,

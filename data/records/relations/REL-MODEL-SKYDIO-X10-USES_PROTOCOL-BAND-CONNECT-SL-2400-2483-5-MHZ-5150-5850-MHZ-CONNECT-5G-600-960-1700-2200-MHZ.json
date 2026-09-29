@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-SKYDIO-X10-USES_PROTOCOL-BAND-CONNECT-SL-2400-2483-5-MHZ-5150-5850-MHZ-CONNECT-5G-600-960-1700-2200-MHZ",
+  "record_type": "relation",
+  "subject_id": "MODEL-SKYDIO-X10",
+  "predicate": "uses_protocol",
+  "object_id": "BAND-CONNECT-SL-2400-2483-5-MHZ-5150-5850-MHZ-CONNECT-5G-600-960-1700-2200-MHZ",
+  "source_id": "SRC-SKYDIO-280D441BFC",
+  "evidence_quote": "Connect SL：2400-2483.5 MHz、5150-5850 MHz；Connect 5G：600-960、1700-2200 MHz",
+  "evidence_locator": "member-one model table > 通信频段",
+  "record_status": "reviewed"
+}

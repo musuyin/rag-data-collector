@@ -1,0 +1,14 @@
+{
+  "target_id": "DOWNLOAD-DRONERF-RF-DATA-10000-L",
+  "url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/58b15d1f-ed79-40bf-bfca-18580e5dc18e/file_downloaded",
+  "started_at": "2026-09-29T09:09:01Z",
+  "status": "accepted",
+  "http_status": 200,
+  "content_type": "application/x-rar-compressed",
+  "content_length": "217760401",
+  "received_bytes": 217760401,
+  "finished_at": "2026-09-29T09:11:45Z",
+  "sha256": "3fd15c79fa4a605fedb118748661861837e9ca186328d444d90731069f6d49fd",
+  "raw_path": "data/raw/downloaded/SRC-DRONERF-1C11757D5B/3fd15c79fa4a605f/RF_Data_10000_L.rar",
+  "license_status": "CC-BY-4.0"
+}

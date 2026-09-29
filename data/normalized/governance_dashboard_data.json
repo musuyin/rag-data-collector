@@ -1,0 +1,391 @@
+{
+  "generated_at": "2026-09-29T09:42:50Z",
+  "models_imported": 4,
+  "datasets_imported": 3,
+  "evidence_count": 36,
+  "source_count": 25,
+  "relation_count": 29,
+  "conflict_count": 2,
+  "delivery_file_count": 47,
+  "delivery_total_bytes": 32187514,
+  "model_progress": [
+    {
+      "厂商": "DJI",
+      "型号": "Mavic 3 Enterprise",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "未开始",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "未开始",
+      "SDK": "已完成",
+      "固件": "已完成",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.7",
+      "待补内容": "待补：官方说明书PDF、本机FCC ID/认证记录、FAA/Remote ID监管原始记录",
+      "更新时间": "2026-09-29"
+    },
+    {
+      "厂商": "DJI",
+      "型号": "Matrice 350 RTK",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "未开始",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "未开始",
+      "SDK": "已完成",
+      "固件": "已完成",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.7",
+      "待补内容": "待补：官方说明书PDF、FCC ID/认证记录、FAA/Remote ID监管原始记录",
+      "更新时间": "2026-09-29"
+    },
+    {
+      "厂商": "Autel Robotics",
+      "型号": "EVO Max 4T",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "已完成",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "未开始",
+      "SDK": "已完成",
+      "固件": "已完成",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.8",
+      "待补内容": "待补：FCC ID/认证原始记录、FAA/Remote ID监管资料；可继续补相机完整规格",
+      "更新时间": "2026-09-29"
+    },
+    {
+      "厂商": "Skydio",
+      "型号": "X10",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "未开始",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "进行中",
+      "SDK": "已完成",
+      "固件": "进行中",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.6",
+      "待补内容": "待补：说明书/用户手册、具体FCC ID文件、FAA Remote ID监管原始页面、当前固件发布记录",
+      "更新时间": "2026-09-29"
+    }
+  ],
+  "datasets": [
+    {
+      "record_id": "DATASET-ANTI-UAV300",
+      "record_type": "dataset",
+      "dataset_name": "Anti-UAV300",
+      "modalities": [
+        "image",
+        "video",
+        "infrared"
+      ],
+      "sample_count": 318,
+      "formats": [
+        "RGB",
+        "IR",
+        "Annotation",
+        "Container",
+        "Conflicts"
+      ],
+      "label_schema": "{\"task\": \"UAV tracking / anti-UAV tracking\", \"detection\": \"PARTIAL\", \"tracking\": \"YES\", \"classification\": \"NO\", \"bounding_box\": \"YES\", \"target_presence\": \"YES\", \"visibility\": \"UNKNOWN\", \"occlusion\": \"YES as a difficulty attribute; exact per-frame occlusion label UNKNOWN\", \"frame_id\": \"UNKNOWN\", \"sequence_id\": \"UNKNOWN\", \"timestamp\": \"UNKNOWN\", \"drone_class\": \"UNKNOWN\", \"drone_model\": \"UNKNOWN\", \"camera_modality\": \"YES\", \"ir_modality\": \"YES\", \"rgb_modality\": \"YES\", \"lost_target_absent_target\": \"YES\", \"frame_level_annotation\": \"YES\", \"sequence_level_annotation\": \"YES\", \"object_level_annotation\": \"YES\", \"annotation_fields\": [\"exist\", \"gt_rect / get_rect\"], \"evidence\": [{\"source_url\": \"https://arxiv.org/html/2101.08466\", \"source_type\": \"Level 2 original paper text\", \"evidence\": \"The paper explains that one bounding box is annotated for every visible drone, absent targets are recorded, and JSON labels contain an existence flag plus rectangle annotations.\", \"accessed_date\": \"2026-09-23\"}, {\"source_url\": \"https://github.com/Anti-UAV/baseline/blob/master/test.py\", \"source_type\": \"official/legacy baseline repository code\", \"evidence\": \"The baseline evaluation code references gt_rect and exist fields in the ground-truth JSON.\", \"accessed_date\": \"2026-09-23\"}]}",
+      "collection_environment": "{\"indoor_outdoor\": \"Outdoor\", \"day_night\": \"Day and night\", \"urban_rural\": \"UNKNOWN\", \"sky_background\": \"YES\", \"building_background\": \"YES\", \"mountain_background\": \"UNKNOWN\", \"cloud\": \"YES\", \"occlusion\": \"YES\", \"distance\": \"UNKNOWN\", \"target_size\": \"Small target; average or exact source-specific pixel size not confirmed in this audit.\", \"drone_altitude\": \"UNKNOWN\", \"weather\": \"UNKNOWN\", \"camera_motion\": \"UNKNOWN\", \"thermal_conditions\": \"Thermal crossover and low illumination listed as difficulty attributes.\", \"difficulty_attributes\": [\"fast motion\", \"out-of-view\", \"occlusion\", \"scale variation\", \"background clutter\", \"illumination variation\", \"low resolution\", \"low illumination\", \"thermal crossover\"]}",
+      "license_status": "restricted",
+      "source_id": "SRC-ANTI-UAV300-A78901B85F",
+      "download_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+      "sample_validation_status": "passed",
+      "record_status": "reviewed",
+      "import_metadata": {
+        "source_card": "datasets/member2_multimodal_datasets/dataset_cards/Anti-UAV300.json",
+        "license_detail": {
+          "license_name": "UNKNOWN",
+          "repository_license": "MIT for repository code, not confirmed as dataset license",
+          "research_use": "UNKNOWN",
+          "commercial_use": "UNKNOWN",
+          "redistribution": "UNKNOWN",
+          "modification": "UNKNOWN",
+          "citation_required": "YES for academic use/citation; license obligation UNKNOWN",
+          "registration_required": "UNKNOWN",
+          "download_terms": "UNKNOWN",
+          "license_status": "RISK",
+          "notes": [
+            "The repository contains an MIT license, but this source audit did not find explicit dataset license terms for Anti-UAV300.",
+            "Do not treat the repository code license as dataset redistribution or commercial-use permission."
+          ]
+        },
+        "data_scale": {
+          "total_size": "Anti-UAV-RGBT.zip downloaded and validated: 6,037,566,331 bytes compressed; 6,720,200,225 bytes extracted estimate/file-inspection size.",
+          "package_size_bytes": 6037566331,
+          "package_size_gb_decimal": 6.04,
+          "package_size_gib": 5.62,
+          "sequence_count": "318 RGB-T video pairs; all 318 passed lightweight pairing scan.",
+          "video_count": "636 MP4 videos in archive: 318 visible.mp4 and 318 infrared.mp4.",
+          "image_count": "UNKNOWN",
+          "frame_count": "Metadata-derived local archive count: 296901 RGB frames and 296901 IR frames (593802 modality frames total); official sources report more than 580k frames/annotations.",
+          "annotation_count": "Metadata-derived local archive count: 296901 visible annotation records and 296901 infrared annotation records; sampled JSON parsing passed.",
+          "duration": "UNKNOWN",
+          "train_count": "160 RGB-T video pairs",
+          "validation_count": "67 RGB-T video pairs, derived from paper wording that the rest after 160 train and 91 test are validation.",
+          "test_count": "91 RGB-T video pairs",
+          "drone_type_count": "UNKNOWN",
+          "drone_model_count": "UNKNOWN",
+          "evidence": [
+            {
+              "source_url": "https://arxiv.org/html/2101.08466",
+              "source_type": "Level 2 original paper text",
+              "evidence": "The paper reports 318 RGB-T video pairs, 160 training pairs, 91 testing pairs, and a total of 585.9k boxes/frames in its dataset comparison table.",
+              "accessed_date": "2026-09-23"
+            },
+            {
+              "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+              "source_type": "official Google Drive metadata",
+              "evidence": "Metadata-only read returned filename Anti-UAV-RGBT.zip, MIME application/zip, size 6,037,566,331 bytes, modified 2021-05-21T10:41:48.606Z.",
+              "accessed_date": "2026-09-23"
+            }
+          ]
+        },
+        "multimodal_association": {
+          "association_strength": "STRONG",
+          "rgb_ir_same_dataset": "YES",
+          "same_sequence": "YES; validated by archive structure across 318 sequences",
+          "frame_level_correspondence": "YES; sequence_id + frame_index validated as stable pairing key",
+          "timestamp_correspondence": "CONTAINER_TIMESTAMP_ONLY",
+          "hard_synchronization": "NOT_CONFIRMED",
+          "synchronization_status": "FRAME_PAIRED_ONLY",
+          "frame_pairing_coverage": "318 / 318",
+          "rgb_ir_index_feasible": "YES",
+          "target_presence_agreement": {
+            "status": "RECORDED",
+            "agreement_rate": 0.9862705379248256,
+            "both_present": 4368,
+            "both_absent": 14,
+            "visible_only": 0,
+            "infrared_only": 61,
+            "other": 0,
+            "total_compared": 4443
+          },
+          "reason": "Real files prove stable sequence-level and frame-index pairing across all 318 sequences. This is strong frame-level cross-modal association, not hardware-clock synchronization."
+        },
+        "unmapped_modalities": [
+          "Text Metadata"
+        ],
+        "imported_at": "2026-09-29T09:42:50Z"
+      }
+    },
+    {
+      "record_id": "DATASET-DRONERF",
+      "record_type": "dataset",
+      "dataset_name": "DroneRF",
+      "modalities": [
+        "rf"
+      ],
+      "sample_count": 454,
+      "formats": [
+        "raw_data",
+        "processed_by_official_code",
+        "code",
+        "containers",
+        "file_pattern",
+        "one_file_represents"
+      ],
+      "label_schema": "{\"label_source\": \"FILENAME / BUI plus official labeling scripts\", \"drone_no_drone\": \"YES\", \"drone_model\": \"YES\", \"operating_mode\": \"YES_SOURCE_LEVEL\", \"frequency_band\": \"PARTIAL_SOURCE_LEVEL; L/H segment pairing confirmed, exact physical semantics and per-file frequency range UNKNOWN\", \"channel\": \"PARTIAL; L/H denotes a two-part segment pair, exact physical path semantics UNKNOWN\", \"timestamp\": \"NO_CONFIRMED\", \"recording_id\": \"YES via segment number in filename\", \"session_id\": \"UNKNOWN\", \"environment\": \"WEAK via dataset-level lab/source location, not per-file metadata\", \"standalone_annotation_file\": \"NO_CONFIRMED\", \"label_levels\": {\"level_1\": \"drone vs no drone\", \"level_2\": \"Bebop / AR / Phantom / no drone\", \"level_3\": \"BUI/model/mode class\"}}",
+      "collection_environment": "{\"environment\": \"Laboratory setting\", \"data_source_location\": \"Department of Computer Science and Engineering, College of Engineering, Qatar University, Doha, Qatar\", \"indoor_outdoor\": \"Laboratory setting; exact indoor/outdoor field NOT separately labeled\", \"line_of_sight\": \"UNKNOWN\", \"distance\": \"UNKNOWN\", \"interference\": \"UNKNOWN\", \"notes\": \"RF receivers intercepted drone-controller communications; mobile apps/flight controllers were used to change modes.\"}",
+      "license_status": "open",
+      "source_id": "SRC-DRONERF-1C11757D5B",
+      "download_url": "https://data.mendeley.com/datasets/f4c2b4n755/1",
+      "sample_validation_status": "passed",
+      "record_status": "reviewed",
+      "import_metadata": {
+        "source_card": "datasets/member2_multimodal_datasets/dataset_cards/DroneRF.json",
+        "license_detail": {
+          "license_name": "CC BY 4.0",
+          "research_use": "YES",
+          "commercial_use": "YES under CC BY 4.0 terms unless additional platform terms apply",
+          "redistribution": "YES under CC BY 4.0 attribution terms",
+          "modification": "YES under CC BY 4.0 attribution terms",
+          "citation_required": "YES / attribution required",
+          "registration_required": "UNKNOWN",
+          "download_terms": "Mendeley Data Terms of Use may apply; no separate dataset restriction found in source audit",
+          "license_status": "PASS",
+          "code_license": "Apache-2.0 for official code repository; separate from dataset CC BY 4.0 license"
+        },
+        "data_scale": {
+          "total_size": "over 40GB according to the Data in Brief article; exact current Mendeley package byte size UNKNOWN",
+          "number_of_records": "454 record files",
+          "number_of_files": "454 CSV record files by article statement; Mendeley UI/API file listing NOT_CONFIRMED",
+          "number_of_segments": "227 recorded segments",
+          "number_of_samples": "4,540 x 10^6 raw samples by published table totals",
+          "duration": "10.25 seconds of RF background activities and approximately 5.25 seconds of RF drone communications for each flight mode; total summed duration UNKNOWN",
+          "number_of_drone_types": "3 plus no-drone/background condition",
+          "number_of_operating_modes": "5 conceptual states: off/background, on and connected, hovering, flying, video recording; 10 BUI classes in official code/table",
+          "train_validation_test_split": "No fixed official train/validation/test split confirmed; related work/code uses 10-fold cross-validation.",
+          "raw_or_processed_scale": "Raw RF CSV scale; official code can generate smaller processed/FFT MAT and RF_Data.csv derivatives, but those are not the raw Mendeley dataset."
+        },
+        "multimodal_association": {
+          "association_strength": "WEAK",
+          "primary_modality": "RF",
+          "secondary_modality": "TEXT_METADATA",
+          "rf_model_association": "STRONG",
+          "rf_mode_association": "STRONG",
+          "rf_recording_session_association": "MEDIUM",
+          "reason": "DroneRF is RF + text metadata/labels, not a synchronized RGB/audio/radar/LiDAR multimodal dataset. Its project value is knowledge-level association between drone entities, operating modes, and RF samples.",
+          "knowledge_level_association": "STRONG for RF file/segment to drone model and operating mode through filename/BUI and official labeling scripts; not sensor-level synchronization"
+        },
+        "unmapped_modalities": [
+          "Text Metadata"
+        ],
+        "imported_at": "2026-09-29T09:42:50Z"
+      }
+    },
+    {
+      "record_id": "DATASET-MMAUD",
+      "record_type": "dataset",
+      "dataset_name": "MMAUD",
+      "modalities": [
+        "image",
+        "video",
+        "audio",
+        "radar",
+        "trajectory"
+      ],
+      "sample_count": 50,
+      "formats": [
+        "Image",
+        "Video",
+        "Audio",
+        "RF",
+        "Radar",
+        "LiDAR",
+        "Trajectory",
+        "Container",
+        "Annotation",
+        "evidence"
+      ],
+      "label_schema": "{\"fields\": {\"drone_class\": \"YES\", \"drone_model\": \"YES\", \"drone_manufacturer\": \"YES\", \"drone_or_no_drone\": \"YES\", \"bounding_box\": \"YES\", \"segmentation_mask\": \"UNKNOWN\", \"track_id\": \"UNKNOWN\", \"flight_mode\": \"UNKNOWN\", \"distance\": \"UNKNOWN\", \"altitude\": \"YES\", \"position_xyz\": \"YES\", \"GPS\": \"NO\", \"timestamp\": \"YES\", \"sequence_id\": \"YES\", \"sensor_id\": \"YES\", \"SNR\": \"UNKNOWN\", \"frequency\": \"UNKNOWN\", \"bandwidth\": \"UNKNOWN\", \"environment_label\": \"YES\"}, \"label_levels\": {\"Dataset-level\": \"YES\", \"Sequence-level\": \"YES\", \"Frame-level\": \"YES\", \"Object-level\": \"YES\", \"Signal-segment-level\": \"UNKNOWN\"}, \"evidence\": [{\"source_url\": \"https://arxiv.org/html/2402.03706\", \"source_type\": \"Level 2 original paper\", \"evidence\": \"The paper lists drone groups, 2D object detection benchmarks, 3D position estimation, timestamps, ROS topics, and Leica ground truth alignment.\", \"accessed_date\": \"2026-09-20\"}, {\"source_url\": \"https://cvpr2024ug2challenge.github.io/dataset24_t5.html\", \"source_type\": \"official UG2 challenge page\", \"evidence\": \"The challenge page uses MMAUD data for UAV tracking and pose estimation and lists training/validation sequence counts and UAV types.\", \"accessed_date\": \"2026-09-20\"}]}",
+      "collection_environment": "{\"Indoor / Outdoor\": \"Outdoor\", \"Day / Night\": \"No night data included; exact day/evening breakdown UNKNOWN\", \"Urban / Rural\": \"Urban/campus context; exact categories UNKNOWN\", \"Ground / Rooftop / Airport / Lab / Parking Lot\": \"Rooftop for V1; carpark for V2/V3; UG2 variant sampled in a different scene with same equipment\", \"weather\": \"No rainy data included; other weather UNKNOWN\", \"distance_range\": \"V1 mostly below 30 m; V2/V3 up to 100 m; sensor detection ranges differ by modality\", \"altitude_range\": \"V1 mostly below 30 m; V2/V3 up to 100 m\", \"drone_speed\": \"UNKNOWN\", \"line_of_sight\": \"UNKNOWN\", \"background_complexity\": \"V1 rooftop simple; V2 carpark hard; V3 carpark moderate\", \"interference_environment\": \"ambient heavy machinery, powerful air-conditioning systems, and wind noise are mentioned as audio background factors\", \"evidence\": [{\"source_url\": \"https://ntu-aris.github.io/MMAUD/\", \"source_type\": \"Level 1 official dataset page\", \"evidence\": \"The official download table marks V1 as rooftop simple and V2/V3 as carpark hard/moderate; the page states V1 mostly below 30 m and V2/V3 up to 100 m.\", \"accessed_date\": \"2026-09-20\"}, {\"source_url\": \"https://arxiv.org/html/2402.03706\", \"source_type\": \"Level 2 original paper\", \"evidence\": \"The paper states outdoor testing, ambient machinery/air-conditioning/wind audio noise, and no night or rainy-condition data.\", \"accessed_date\": \"2026-09-20\"}]}",
+      "license_status": "restricted",
+      "source_id": "SRC-MMAUD-83702A3E25",
+      "download_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+      "sample_validation_status": "passed",
+      "record_status": "reviewed",
+      "import_metadata": {
+        "source_card": "datasets/member2_multimodal_datasets/dataset_cards/MMAUD.json",
+        "license_detail": {
+          "license_name": "CC BY-NC-SA 4.0 for dataset/work; repository LICENSE file is MIT for site/code",
+          "research_use": "YES",
+          "commercial_use": "NO",
+          "redistribution": "YES",
+          "modification": "YES",
+          "citation_required": "YES",
+          "registration_required": "UNKNOWN",
+          "license_source": [
+            {
+              "source_url": "https://ntu-aris.github.io/MMAUD/#licence",
+              "source_type": "Level 1 official dataset page",
+              "evidence": "The official Licence section states that the work is licensed under CC BY-NC-SA 4.0, is intended for non-commercial academic use, and requests contact for commercial purposes.",
+              "accessed_date": "2026-09-20"
+            },
+            {
+              "source_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+              "source_type": "license deed",
+              "evidence": "The deed lists Share and Adapt freedoms under Attribution, NonCommercial, and ShareAlike terms.",
+              "accessed_date": "2026-09-20"
+            },
+            {
+              "source_url": "https://raw.githubusercontent.com/ntu-aris/MMAUD/gh-pages/LICENSE",
+              "source_type": "official GitHub repository LICENSE file",
+              "evidence": "The repository LICENSE file is MIT. This is recorded separately from the dataset/work license because the official page License section states CC BY-NC-SA 4.0.",
+              "accessed_date": "2026-09-20"
+            }
+          ]
+        },
+        "data_scale": {
+          "total_size": "V1 visible rows total 72.5 GB; full V1/V2/V3 total UNKNOWN",
+          "number_of_files": "UNKNOWN",
+          "image_count": "UNKNOWN",
+          "video_count": "UNKNOWN",
+          "audio_count": "UNKNOWN",
+          "sequence_count": "50",
+          "duration": "paper: over 1700 seconds; V1 visible rows total 1525.5 seconds; V2/V3 durations UNKNOWN",
+          "number_of_drone_models": "5 named UAV models plus ambient-noise sequences in the paper; UG2 challenge variant also mentions M30",
+          "train_size": "60% of 50 sequences in paper split, approximately 30 sequences",
+          "validation_size": "20% of 50 sequences in paper split, approximately 10 sequences",
+          "test_size": "20% of 50 sequences in paper split, approximately 10 sequences",
+          "evidence": [
+            {
+              "source_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+              "source_type": "Level 1 official dataset page",
+              "evidence": "The V1 download table lists Mavic2 14.1 GB / 198 s, Mavic3 11.1 GB / 321.1 s, Phantom4 13.2 GB / 181.4 s, Avata 19.7 GB / 396.3 s, and M300 14.4 GB / 428.7 s. V2/V3 rows show unknown size/duration.",
+              "accessed_date": "2026-09-20"
+            },
+            {
+              "source_url": "https://arxiv.org/html/2402.03706",
+              "source_type": "Level 2 original paper",
+              "evidence": "The paper states that over 1700 seconds of multimodal rosbag data were divided into 50 sequences with a 60/20/20 train/test/validation allocation.",
+              "accessed_date": "2026-09-20"
+            }
+          ]
+        },
+        "multimodal_association": {
+          "common_sequence_id": "YES",
+          "common_drone_id": "YES",
+          "common_timestamp": "YES",
+          "frame_timestamp": "YES",
+          "sensor_timestamp": "YES",
+          "synchronization_method": "PARTIAL",
+          "calibration_file": "YES",
+          "extrinsic_calibration": "YES",
+          "intrinsic_calibration": "YES",
+          "ground_truth_alignment": "YES",
+          "association_strength": "STRONG",
+          "notes": [
+            "STRONG is assigned at source level because the official sources provide ROS timestamps, sequence organization, calibration assets, and Leica/image timestamp alignment.",
+            "The paper also reports sensor synchronization limitations and ground-truth gaps, so sample-level synchronization remains NOT_TESTED until data is inspected."
+          ],
+          "evidence": [
+            {
+              "source_url": "https://arxiv.org/html/2402.03706",
+              "source_type": "Level 2 original paper",
+              "evidence": "The paper states ROS messages carry header.stamp timestamps, Leica timestamps are used to align images with ground truth, and sensor calibration methods are provided. It also states synchronization remains challenging.",
+              "accessed_date": "2026-09-20"
+            },
+            {
+              "source_url": "https://ntu-aris.github.io/MMAUD/",
+              "source_type": "Level 1 official dataset page",
+              "evidence": "The official page provides calibration data links and ROSBag/folder data downloads.",
+              "accessed_date": "2026-09-20"
+            }
+          ]
+        },
+        "unmapped_modalities": [
+          "LiDAR",
+          "Text Metadata"
+        ],
+        "imported_at": "2026-09-29T09:42:50Z"
+      }
+    }
+  ],
+  "known_gaps": [
+    "待补：官方说明书PDF、本机FCC ID/认证记录、FAA/Remote ID监管原始记录",
+    "待补：官方说明书PDF、FCC ID/认证记录、FAA/Remote ID监管原始记录",
+    "待补：FCC ID/认证原始记录、FAA/Remote ID监管资料；可继续补相机完整规格",
+    "待补：说明书/用户手册、具体FCC ID文件、FAA Remote ID监管原始页面、当前固件发布记录"
+  ],
+  "license_counts": {
+    "restricted": 2,
+    "open": 1
+  },
+  "reproducibility_status": {
+    "Anti-UAV300": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
+    "DroneRF": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
+    "MMAUD": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED"
+  }
+}

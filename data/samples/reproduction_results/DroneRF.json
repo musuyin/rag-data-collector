@@ -1,0 +1,119 @@
+{
+  "record_type": "controlled_sample_reproduction",
+  "dataset": "DroneRF",
+  "checked_at": "2026-09-29T09:37:44Z",
+  "status": "PASS_WITH_WARNING",
+  "scope": "independent local validation of supplied controlled sample package",
+  "package": {
+    "source_path": "datasets/member2_controlled_samples/packages/DroneRF_parrot_bebop_on_lh_pair_segment0.zip",
+    "actual_size_bytes": 16989820,
+    "actual_sha256": "e45ce74c5bda4bcef51dbf9a7ae523bc016411048c237c95b183234c5657405e",
+    "manifest_expected_size_bytes": 16989820,
+    "manifest_expected_sha256": "e45ce74c5bda4bcef51dbf9a7ae523bc016411048c237c95b183234c5657405e",
+    "size_matches_manifest": true,
+    "sha256_matches_manifest": true,
+    "sha256_matches_SHA256_txt": true,
+    "zip_integrity": true,
+    "archive_member_count": 4,
+    "manifest_consistency": "CONFLICT",
+    "delivery_summary_value": {
+      "size": 16990837,
+      "sha256": "5f067c370f2eb907eeb057fbeeebb6a45f97e4edbc8f24c0022eb7feffc0cea7"
+    }
+  },
+  "content_checks": {
+    "l_h_files_present": true,
+    "csv_physical_rows": {
+      "10000L_0.csv": 1,
+      "10000H_0.csv": 1
+    },
+    "csv_columns": {
+      "10000L_0.csv": 10000000,
+      "10000H_0.csv": 10000000
+    },
+    "csv_header_present": {
+      "10000L_0.csv": false,
+      "10000H_0.csv": false
+    },
+    "csv_numeric_preview": {
+      "10000L_0.csv": [
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ],
+      "10000H_0.csv": [
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ]
+    },
+    "filename_association": "BUI 10000 / segment 0 / L-H pair as supplied in member-two manifest"
+  },
+  "inspected_files": [
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/DroneRF/data/RF Data_10000_H/10000H_0.csv",
+      "size_bytes": 94303625,
+      "sha256": "c37b1deb0cf192241a2eda01cb3e7e399b7a48d841666fe9f291979932ecbc45",
+      "suffix": ".csv",
+      "format": "csv",
+      "physical_rows": 1,
+      "columns": 10000000,
+      "header_present": false,
+      "first_values": [
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ]
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/DroneRF/data/RF Data_10000_L/10000L_0.csv",
+      "size_bytes": 96868077,
+      "sha256": "b25c53fd0d251f93b3f35051a687172a56e637f76ccc5b2cd344aeda462f1ead",
+      "suffix": ".csv",
+      "format": "csv",
+      "physical_rows": 1,
+      "columns": 10000000,
+      "header_present": false,
+      "first_values": [
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000",
+        "0.000000"
+      ]
+    }
+  ],
+  "errors": [],
+  "upstream_manifest": {
+    "dataset": "DroneRF",
+    "sample_name": "DroneRF Parrot Bebop ON/Connected L-H CSV pair",
+    "package_filename": "DroneRF_parrot_bebop_on_lh_pair_segment0.zip",
+    "package_path": "deliverables\\member2_controlled_samples\\packages\\DroneRF_parrot_bebop_on_lh_pair_segment0.zip",
+    "expected_size_bytes": 16989820,
+    "sha256": "e45ce74c5bda4bcef51dbf9a7ae523bc016411048c237c95b183234c5657405e",
+    "original_download_url_or_delivery_source": "[\"https://data.mendeley.com/datasets/f4c2b4n755/1\", \"RF Data_10000_L.rar official file id 58b15d1f-ed79-40bf-bfca-18580e5dc18e\", \"RF Data_10000_H.rar official file id 8ee8e8a0-dc69-4925-af4b-bea9b03f60c8\"]",
+    "version_or_subset": "Mendeley Data v1; extracted CSV pair from official RAR files",
+    "expected_format": "ZIP containing two raw RF CSV files: 10000L_0.csv and 10000H_0.csv",
+    "label_location": "Encoded in filenames and this manifest: BUI 10000 = Parrot Bebop, ON / Connected; segment_id 0; L/H relation from filename.",
+    "expected_validation_conclusion": "The L/H raw RF CSV files can be paired and associated with Parrot Bebop ON/Connected mode by BUI and filename.",
+    "license_or_internal_storage": "DroneRF dataset is CC BY 4.0; internal storage and sharing allowed with attribution."
+  }
+}

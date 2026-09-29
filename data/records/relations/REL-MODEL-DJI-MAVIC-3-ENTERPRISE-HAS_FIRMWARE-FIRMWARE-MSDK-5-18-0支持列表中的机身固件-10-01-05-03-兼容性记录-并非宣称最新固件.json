@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-DJI-MAVIC-3-ENTERPRISE-HAS_FIRMWARE-FIRMWARE-MSDK-5-18-0支持列表中的机身固件-10-01-05-03-兼容性记录-并非宣称最新固件",
+  "record_type": "relation",
+  "subject_id": "MODEL-DJI-MAVIC-3-ENTERPRISE",
+  "predicate": "has_firmware",
+  "object_id": "FIRMWARE-MSDK-5-18-0支持列表中的机身固件-10-01-05-03-兼容性记录-并非宣称最新固件",
+  "source_id": "SRC-DJI-87A19CA5EE",
+  "evidence_quote": "MSDK 5.18.0支持列表中的机身固件：10.01.05.03（兼容性记录，并非宣称最新固件）",
+  "evidence_locator": "member-one model table > 固件信息",
+  "record_status": "reviewed"
+}

@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-DJI-MATRICE-350-RTK-HAS_FIRMWARE-FIRMWARE-MSDK-5-18-0支持列表中的机身固件-14-01-00-17-PSDK-3-16发布记录列出14-01-00-06兼容组合",
+  "record_type": "relation",
+  "subject_id": "MODEL-DJI-MATRICE-350-RTK",
+  "predicate": "has_firmware",
+  "object_id": "FIRMWARE-MSDK-5-18-0支持列表中的机身固件-14-01-00-17-PSDK-3-16发布记录列出14-01-00-06兼容组合",
+  "source_id": "SRC-DJI-795BD17B94",
+  "evidence_quote": "MSDK 5.18.0支持列表中的机身固件：14.01.00.17；PSDK 3.16发布记录列出14.01.00.06兼容组合",
+  "evidence_locator": "member-one model table > 固件信息",
+  "record_status": "reviewed"
+}

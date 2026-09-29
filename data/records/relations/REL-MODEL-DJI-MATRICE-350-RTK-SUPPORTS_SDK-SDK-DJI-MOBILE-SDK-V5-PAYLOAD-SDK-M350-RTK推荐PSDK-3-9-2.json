@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-DJI-MATRICE-350-RTK-SUPPORTS_SDK-SDK-DJI-MOBILE-SDK-V5-PAYLOAD-SDK-M350-RTK推荐PSDK-3-9-2",
+  "record_type": "relation",
+  "subject_id": "MODEL-DJI-MATRICE-350-RTK",
+  "predicate": "supports_sdk",
+  "object_id": "SDK-DJI-MOBILE-SDK-V5-PAYLOAD-SDK-M350-RTK推荐PSDK-3-9-2",
+  "source_id": "SRC-DJI-795BD17B94",
+  "evidence_quote": "DJI Mobile SDK V5；Payload SDK（M350 RTK推荐PSDK 3.9.2）",
+  "evidence_locator": "member-one model table > SDK/开发接口",
+  "record_status": "reviewed"
+}

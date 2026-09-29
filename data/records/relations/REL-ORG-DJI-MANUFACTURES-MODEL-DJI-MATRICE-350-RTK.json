@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-ORG-DJI-MANUFACTURES-MODEL-DJI-MATRICE-350-RTK",
+  "record_type": "relation",
+  "subject_id": "ORG-DJI",
+  "predicate": "manufactures",
+  "object_id": "MODEL-DJI-MATRICE-350-RTK",
+  "source_id": "SRC-DJI-795BD17B94",
+  "evidence_quote": "DJI Matrice 350 RTK model record imported from member-one delivery.",
+  "evidence_locator": "member-one model table",
+  "record_status": "reviewed"
+}

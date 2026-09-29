@@ -121,10 +121,10 @@
     }
   ],
   "import_metadata": {
-    "source_file": "datasets/无人机型号与结构化资料调研.xlsx",
+    "source_file": "datasets/member1_model_research/无人机型号与结构化资料调研.xlsx",
     "source_status": "已核验（基础/规格/SDK）",
     "verification_note": "机体参数、热成像、开发接口/固件均有Autel官方页面或手册证据；FCC/FAA待补",
     "regulatory_note": "官方规格页含FCC区域参数；FCC ID/FAA具体记录待查",
-    "imported_at": "2026-09-29T07:55:13Z"
+    "imported_at": "2026-09-29T09:42:50Z"
   }
 }

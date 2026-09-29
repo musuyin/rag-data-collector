@@ -1,0 +1,93 @@
+{
+  "record_type": "controlled_sample_reproduction",
+  "dataset": "MMAUD",
+  "checked_at": "2026-09-29T09:37:44Z",
+  "status": "PASS_WITH_WARNING",
+  "scope": "independent local validation of supplied controlled sample package",
+  "package": {
+    "source_path": "datasets/member2_controlled_samples/packages/MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip",
+    "actual_size_bytes": 2275943,
+    "actual_sha256": "a1c87e498a55eb650d6a24f251a11663a3bc09b03db99029bd3bec8271c3eaad",
+    "manifest_expected_size_bytes": 2275943,
+    "manifest_expected_sha256": "a1c87e498a55eb650d6a24f251a11663a3bc09b03db99029bd3bec8271c3eaad",
+    "size_matches_manifest": true,
+    "sha256_matches_manifest": true,
+    "sha256_matches_SHA256_txt": true,
+    "zip_integrity": true,
+    "archive_member_count": 6,
+    "manifest_consistency": "CONFLICT",
+    "delivery_summary_value": {
+      "size": 2277204,
+      "sha256": "14f96e13ceeb554a8a13d44e14b0b7fecb06d7769dfebb5d54b5d20d2d562bd1"
+    }
+  },
+  "content_checks": {
+    "modalities_present": [
+      "Image",
+      "lidar_360",
+      "livox_avia",
+      "radar_enhance_pcl"
+    ],
+    "timestamp_deltas_ms_from_camera": {
+      "lidar_360": 5.788,
+      "livox_avia": 8.224,
+      "radar_enhance_pcl": 4.836
+    },
+    "association_basis": "seq0001 plus nearest filename timestamp; no calibration or hardware synchronization claim"
+  },
+  "inspected_files": [
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/MMAUD/data/val/seq0001/livox_avia/1706255621.614239.npy",
+      "size_bytes": 576128,
+      "sha256": "a8e0fbd5f2ef852facc0dc069907610767021999b294a4a7b87c396a3ec1dd55",
+      "suffix": ".npy",
+      "format": "npy",
+      "version": "1.0",
+      "header": "{'descr': '<f8', 'fortran_order': False, 'shape': (24000, 3), }"
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/MMAUD/data/val/seq0001/lidar_360/1706255621.600227.npy",
+      "size_bytes": 481664,
+      "sha256": "c1285bcc04dde77566c47dcf441f6839d4aaaabab900535e8aba7d8db70c99e7",
+      "suffix": ".npy",
+      "format": "npy",
+      "version": "1.0",
+      "header": "{'descr': '<f8', 'fortran_order': False, 'shape': (20064, 3), }"
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/MMAUD/data/val/seq0001/Image/1706255621.606015.png",
+      "size_bytes": 2338697,
+      "sha256": "b83d281ca637c2809418f0b5df2652e219aea63c42b7b89656114eadce31a109",
+      "suffix": ".png",
+      "format": "png",
+      "width": 2560,
+      "height": 960,
+      "bit_depth": 8,
+      "color_type": 2
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/MMAUD/data/val/seq0001/radar_enhance_pcl/1706255621.610851.npy",
+      "size_bytes": 248,
+      "sha256": "0f53cc1fc81dacd6487aac6b347e71007cbe8ceb24eb8434f41eeabd116bc5b6",
+      "suffix": ".npy",
+      "format": "npy",
+      "version": "1.0",
+      "header": "{'descr': '<f8', 'fortran_order': False, 'shape': (5, 3), }"
+    }
+  ],
+  "errors": [],
+  "upstream_manifest": {
+    "dataset": "MMAUD",
+    "sample_name": "MMAUD UG2+ val seq0001 Camera-LiDAR-Radar sample",
+    "package_filename": "MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip",
+    "package_path": "deliverables\\member2_controlled_samples\\packages\\MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip",
+    "expected_size_bytes": 2275943,
+    "sha256": "a1c87e498a55eb650d6a24f251a11663a3bc09b03db99029bd3bec8271c3eaad",
+    "original_download_url_or_delivery_source": "https://drive.google.com/file/d/1T7MLHfKsFYm8fjnJcn39ZrzFjHv-z-fh/view?usp=drivesdk",
+    "version_or_subset": "UG2+ / V2-V3 validation derived subset; DERIVED_SUBSET",
+    "expected_format": "ZIP containing Camera PNG, lidar_360 NPY, livox_avia NPY, radar_enhance_pcl NPY",
+    "label_location": "No object annotation included in this small sample; sequence ID and timestamps are encoded in paths and filenames.",
+    "expected_validation_conclusion": "Camera, LiDAR, Livox, and Radar sample files can be associated by seq0001 plus nearest filename timestamp.",
+    "license_or_internal_storage": "MMAUD dataset/work is CC BY-NC-SA 4.0; internal non-commercial research storage unless broader permission is confirmed."
+  }
+}

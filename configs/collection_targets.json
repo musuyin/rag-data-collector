@@ -1,0 +1,95 @@
+[
+  {
+    "target_id": "COLLECT-DJI-MAVIC3E-SPECS",
+    "source_id": "SRC-DJI-87A19CA5EE",
+    "adapter": "http",
+    "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+    "artifact_kind": "manufacturer_product_specification",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "公开产品页；启用前人工确认站点条款、目标字段和更新频率。"
+  },
+  {
+    "target_id": "COLLECT-DJI-M350-SPECS",
+    "source_id": "SRC-DJI-795BD17B94",
+    "adapter": "http",
+    "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+    "artifact_kind": "manufacturer_product_specification",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "公开产品页；启用前人工确认站点条款、目标字段和更新频率。"
+  },
+  {
+    "target_id": "COLLECT-AUTEL-EVOMAX4T-MANUAL",
+    "source_id": "SRC-AUTEL-ROBOTICS-494F28E658",
+    "adapter": "http",
+    "url": "https://www.autelrobotics.com/wp-content/uploads/2025/03/EN_EVO-Max-Series-Multi-rotor-Drone-User-Manual_V1.2.5.pdf",
+    "artifact_kind": "manufacturer_manual",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "PDF 可能受站点使用条款约束；仅在获得项目许可后下载到 raw 层。"
+  },
+  {
+    "target_id": "COLLECT-DRONERF-GITHUB",
+    "source_id": "SRC-DRONERF-F425A0E366",
+    "adapter": "github_repo",
+    "repository": "Al-Sad/DroneRF",
+    "artifact_kind": "open_source_repository_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "默认只采集仓库元数据和 release 列表；仓库内容下载需显式 allow_download。"
+  },
+  {
+    "target_id": "COLLECT-MMAUD-GITHUB",
+    "source_id": "SRC-MMAUD-BA8AABFC21",
+    "adapter": "github_repo",
+    "repository": "ntu-aris/MMAUD",
+    "artifact_kind": "open_source_repository_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "默认只采集仓库元数据和 release 列表。"
+  },
+  {
+    "target_id": "COLLECT-DRONERF-MENDELEY",
+    "source_id": "SRC-DRONERF-1C11757D5B",
+    "adapter": "mendeley_dataset",
+    "dataset_id": "f4c2b4n755",
+    "version": 1,
+    "artifact_kind": "dataset_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "先采集数据集元数据和文件清单；大文件下载须逐文件批准并审查 CC BY 4.0 适用范围。"
+  },
+  {
+    "target_id": "COLLECT-ZENODO-EXAMPLE",
+    "source_id": "SRC-TO-BE-REGISTERED",
+    "adapter": "zenodo_record",
+    "record_id": "",
+    "artifact_kind": "dataset_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "填入正式 Zenodo record_id 且先在 sources.json 登记来源后启用。"
+  },
+  {
+    "target_id": "COLLECT-FCC-MANUAL-QUERY-TEMPLATE",
+    "source_id": "SRC-TO-BE-REGISTERED",
+    "adapter": "regulatory_snapshot",
+    "url": "",
+    "regulator": "FCC",
+    "artifact_kind": "regulatory_query_result",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "仅接受人工确认的官方公开结果 URL；不自动填写表单、不绕过验证码或访问控制。"
+  },
+  {
+    "target_id": "COLLECT-FAA-MANUAL-QUERY-TEMPLATE",
+    "source_id": "SRC-TO-BE-REGISTERED",
+    "adapter": "regulatory_snapshot",
+    "url": "",
+    "regulator": "FAA",
+    "artifact_kind": "regulatory_query_result",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "仅接受人工确认的官方公开结果 URL；不自动填写表单、不绕过验证码或访问控制。"
+  }
+]

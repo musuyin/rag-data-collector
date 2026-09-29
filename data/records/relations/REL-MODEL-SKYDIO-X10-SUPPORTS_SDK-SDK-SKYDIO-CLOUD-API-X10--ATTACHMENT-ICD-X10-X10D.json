@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-SKYDIO-X10-SUPPORTS_SDK-SDK-SKYDIO-CLOUD-API-X10--ATTACHMENT-ICD-X10-X10D",
+  "record_type": "relation",
+  "subject_id": "MODEL-SKYDIO-X10",
+  "predicate": "supports_sdk",
+  "object_id": "SDK-SKYDIO-CLOUD-API-X10--ATTACHMENT-ICD-X10-X10D",
+  "source_id": "SRC-SKYDIO-280D441BFC",
+  "evidence_quote": "Skydio Cloud API（X10）；Attachment ICD（X10/X10D）",
+  "evidence_locator": "member-one model table > SDK/开发接口",
+  "record_status": "reviewed"
+}

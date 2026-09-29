@@ -1,0 +1,22 @@
+{
+  "record_id": "CONFLICT-DATASET-MMAUD-FULL-NAME-001",
+  "record_type": "conflict",
+  "entity_id": "DATASET-MMAUD",
+  "field": "basic_info.full_name",
+  "conflicting_values": [
+    {
+      "value": "MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Detection, Classification, Tracking and Trajectory Estimation of Compact Commercially Available Drones Threats",
+      "source_url": "https://ntu-aris.github.io/MMAUD/"
+    },
+    {
+      "value": "MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Modern Miniature Drone Threats",
+      "source_url": "https://arxiv.org/abs/2402.03706"
+    }
+  ],
+  "source_ids": [
+    "SRC-MMAUD-1896B2B368",
+    "SRC-MMAUD-83702A3E25"
+  ],
+  "status": "open",
+  "resolution": "Retain both official/paper titles; select display name by use context."
+}

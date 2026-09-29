@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-DATASET-DRONERF-CONTAINS_COMPONENT-MODALITY-RF",
+  "record_type": "relation",
+  "subject_id": "DATASET-DRONERF",
+  "predicate": "contains_component",
+  "object_id": "MODALITY-RF",
+  "source_id": "SRC-DRONERF-1C11757D5B",
+  "evidence_quote": "rf",
+  "evidence_locator": "member-two dataset card > modalities",
+  "record_status": "reviewed"
+}

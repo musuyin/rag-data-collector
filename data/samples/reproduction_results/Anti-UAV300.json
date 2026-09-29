@@ -1,0 +1,85 @@
+{
+  "record_type": "controlled_sample_reproduction",
+  "dataset": "Anti-UAV300",
+  "checked_at": "2026-09-29T09:37:41Z",
+  "status": "PASS_WITH_WARNING",
+  "scope": "independent local validation of supplied controlled sample package",
+  "package": {
+    "source_path": "datasets/member2_controlled_samples/packages/Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip",
+    "actual_size_bytes": 12200150,
+    "actual_sha256": "f4c581bd626ade47b8a52fc56cd417a7186258cfbf00c64ab211a0da0b8f8f4a",
+    "manifest_expected_size_bytes": 12200150,
+    "manifest_expected_sha256": "f4c581bd626ade47b8a52fc56cd417a7186258cfbf00c64ab211a0da0b8f8f4a",
+    "size_matches_manifest": true,
+    "sha256_matches_manifest": true,
+    "sha256_matches_SHA256_txt": true,
+    "zip_integrity": true,
+    "archive_member_count": 6,
+    "manifest_consistency": "CONFLICT",
+    "delivery_summary_value": {
+      "size": 12201197,
+      "sha256": "2f6cd5ecad75ec396aa93e34e471e72fe0d878cbb3602e6c47724262d8544c78"
+    }
+  },
+  "content_checks": {
+    "required_files_present": true,
+    "annotation_json_parseable": true,
+    "annotation_frame_counts": [
+      493,
+      493
+    ],
+    "annotation_frame_counts_match": true,
+    "frame_pairing_basis": "same controlled sequence directory and equal annotation frame counts; hardware synchronization not inferred from container metadata"
+  },
+  "inspected_files": [
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/Anti-UAV300/data/val/20190926_200510_1_8/visible.json",
+      "size_bytes": 20900,
+      "sha256": "4231f6655ccd4ffb8fea30a67e4983593b1bb437b9db96868a54e146fb676909",
+      "suffix": ".json",
+      "json_type": "dict"
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/Anti-UAV300/data/val/20190926_200510_1_8/infrared.json",
+      "size_bytes": 20805,
+      "sha256": "9fef6ed1f3713bd6ef75356a2c562927122c238d967ee4fe61c0c1ab374f2ced",
+      "suffix": ".json",
+      "json_type": "dict"
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/Anti-UAV300/data/val/20190926_200510_1_8/infrared.mp4",
+      "size_bytes": 1618313,
+      "sha256": "6074a6011fd8d3c1e548e2a25283d57827fb6ada925693d9bd39a3e5951c13aa",
+      "suffix": ".mp4",
+      "format": "mp4",
+      "bytes": 1618313,
+      "ftyp_present": true,
+      "deep_decode": "NOT_PERFORMED_NO_OPTIONAL_MEDIA_TOOL"
+    },
+    {
+      "path": "/Users/I604726/Documents/workspace/learning/data-collector/data/staging/controlled_samples/Anti-UAV300/data/val/20190926_200510_1_8/visible.mp4",
+      "size_bytes": 11910532,
+      "sha256": "082e79a2dff03cd0d8a7a5d16309460f888d8e7ef79ef025b527f8a721471175",
+      "suffix": ".mp4",
+      "format": "mp4",
+      "bytes": 11910532,
+      "ftyp_present": true,
+      "deep_decode": "NOT_PERFORMED_NO_OPTIONAL_MEDIA_TOOL"
+    }
+  ],
+  "errors": [],
+  "upstream_manifest": {
+    "dataset": "Anti-UAV300",
+    "sample_name": "Anti-UAV300 RGB-IR paired sequence sample",
+    "package_filename": "Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip",
+    "package_path": "deliverables\\member2_controlled_samples\\packages\\Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip",
+    "expected_size_bytes": 12200150,
+    "sha256": "f4c581bd626ade47b8a52fc56cd417a7186258cfbf00c64ab211a0da0b8f8f4a",
+    "original_download_url_or_delivery_source": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+    "version_or_subset": "Anti-UAV300 official Anti-UAV-RGBT.zip; selected validation sequence",
+    "expected_format": "ZIP containing visible.mp4, infrared.mp4, visible.json, infrared.json",
+    "label_location": "data/val/20190926_200510_1_8/visible.json and data/val/20190926_200510_1_8/infrared.json",
+    "expected_validation_conclusion": "RGB/visible and Thermal IR files are readable; annotation JSON parses; this sequence supports frame-level RGB-IR pairing.",
+    "license_or_internal_storage": "Dataset-level license remains RISK; controlled internal delivery only; do not publicly redistribute raw sample unless permission is confirmed."
+  }
+}

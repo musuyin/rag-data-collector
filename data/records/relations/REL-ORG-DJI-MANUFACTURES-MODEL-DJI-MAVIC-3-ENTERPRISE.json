@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-ORG-DJI-MANUFACTURES-MODEL-DJI-MAVIC-3-ENTERPRISE",
+  "record_type": "relation",
+  "subject_id": "ORG-DJI",
+  "predicate": "manufactures",
+  "object_id": "MODEL-DJI-MAVIC-3-ENTERPRISE",
+  "source_id": "SRC-DJI-87A19CA5EE",
+  "evidence_quote": "DJI Mavic 3 Enterprise model record imported from member-one delivery.",
+  "evidence_locator": "member-one model table",
+  "record_status": "reviewed"
+}

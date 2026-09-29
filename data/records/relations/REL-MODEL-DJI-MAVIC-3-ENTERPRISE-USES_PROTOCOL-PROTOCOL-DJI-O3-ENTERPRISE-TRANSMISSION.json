@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-DJI-MAVIC-3-ENTERPRISE-USES_PROTOCOL-PROTOCOL-DJI-O3-ENTERPRISE-TRANSMISSION",
+  "record_type": "relation",
+  "subject_id": "MODEL-DJI-MAVIC-3-ENTERPRISE",
+  "predicate": "uses_protocol",
+  "object_id": "PROTOCOL-DJI-O3-ENTERPRISE-TRANSMISSION",
+  "source_id": "SRC-DJI-87A19CA5EE",
+  "evidence_quote": "DJI O3 Enterprise Transmission",
+  "evidence_locator": "member-one model table > 图传/通信协议",
+  "record_status": "reviewed"
+}

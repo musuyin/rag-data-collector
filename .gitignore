@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .venv/
+# uv's resolution lock is intentionally committed; only its local cache is ignored.
+.uv-cache/
 
 # Operating system / editors
 .DS_Store
@@ -24,8 +26,12 @@ data/staging/**
 !data/staging/.gitkeep
 data/curated/**
 !data/curated/.gitkeep
+!data/curated/controlled_samples/
+!data/curated/controlled_samples/index.json
 data/samples/**
 !data/samples/.gitkeep
+!data/samples/reproduction_results/
+!data/samples/reproduction_results/*.json
 
 # Large local dataset packages and extraction products
 *.zip

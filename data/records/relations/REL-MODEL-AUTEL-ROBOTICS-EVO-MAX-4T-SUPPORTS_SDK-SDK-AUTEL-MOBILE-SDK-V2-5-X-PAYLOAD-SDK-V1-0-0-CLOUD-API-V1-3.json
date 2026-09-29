@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-AUTEL-ROBOTICS-EVO-MAX-4T-SUPPORTS_SDK-SDK-AUTEL-MOBILE-SDK-V2-5-X-PAYLOAD-SDK-V1-0-0-CLOUD-API-V1-3",
+  "record_type": "relation",
+  "subject_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "predicate": "supports_sdk",
+  "object_id": "SDK-AUTEL-MOBILE-SDK-V2-5-X-PAYLOAD-SDK-V1-0-0-CLOUD-API-V1-3",
+  "source_id": "SRC-AUTEL-ROBOTICS-AF56163E6D",
+  "evidence_quote": "Autel Mobile SDK V2.5.x；Payload SDK V1.0.0；Cloud API V1.3",
+  "evidence_locator": "member-one model table > SDK/开发接口",
+  "record_status": "reviewed"
+}

@@ -1,0 +1,50 @@
+{
+  "delivery_root": "deliverables\\member2_controlled_samples",
+  "delivery_zip": "deliverables\\member2_controlled_samples.zip",
+  "delivery_zip_size_bytes": 31480304,
+  "delivery_zip_sha256": "3e3f6cc6850c1f3f662cedf0f1f0130252636dd33da2c5fec623c8caf3617efd",
+  "packages": [
+    {
+      "dataset": "Anti-UAV300",
+      "sample_name": "Anti-UAV300 RGB-IR paired sequence sample",
+      "package_filename": "Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip",
+      "package_path": "deliverables\\member2_controlled_samples\\packages\\Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip",
+      "expected_size_bytes": 12201197,
+      "sha256": "2f6cd5ecad75ec396aa93e34e471e72fe0d878cbb3602e6c47724262d8544c78",
+      "original_download_url_or_delivery_source": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+      "version_or_subset": "Anti-UAV300 official Anti-UAV-RGBT.zip; selected validation sequence",
+      "expected_format": "ZIP containing visible.mp4, infrared.mp4, visible.json, infrared.json",
+      "label_location": "data/val/20190926_200510_1_8/visible.json and data/val/20190926_200510_1_8/infrared.json",
+      "expected_validation_conclusion": "RGB/visible and Thermal IR files are readable; annotation JSON parses; this sequence supports frame-level RGB-IR pairing.",
+      "license_or_internal_storage": "Dataset-level license remains RISK; controlled internal delivery only; do not publicly redistribute raw sample unless permission is confirmed."
+    },
+    {
+      "dataset": "DroneRF",
+      "sample_name": "DroneRF Parrot Bebop ON/Connected L-H CSV pair",
+      "package_filename": "DroneRF_parrot_bebop_on_lh_pair_segment0.zip",
+      "package_path": "deliverables\\member2_controlled_samples\\packages\\DroneRF_parrot_bebop_on_lh_pair_segment0.zip",
+      "expected_size_bytes": 16990837,
+      "sha256": "5f067c370f2eb907eeb057fbeeebb6a45f97e4edbc8f24c0022eb7feffc0cea7",
+      "original_download_url_or_delivery_source": "[\"https://data.mendeley.com/datasets/f4c2b4n755/1\", \"RF Data_10000_L.rar official file id 58b15d1f-ed79-40bf-bfca-18580e5dc18e\", \"RF Data_10000_H.rar official file id 8ee8e8a0-dc69-4925-af4b-bea9b03f60c8\"]",
+      "version_or_subset": "Mendeley Data v1; extracted CSV pair from official RAR files",
+      "expected_format": "ZIP containing two raw RF CSV files: 10000L_0.csv and 10000H_0.csv",
+      "label_location": "Encoded in filenames and this manifest: BUI 10000 = Parrot Bebop, ON / Connected; segment_id 0; L/H relation from filename.",
+      "expected_validation_conclusion": "The L/H raw RF CSV files can be paired and associated with Parrot Bebop ON/Connected mode by BUI and filename.",
+      "license_or_internal_storage": "DroneRF dataset is CC BY 4.0; internal storage and sharing allowed with attribution."
+    },
+    {
+      "dataset": "MMAUD",
+      "sample_name": "MMAUD UG2+ val seq0001 Camera-LiDAR-Radar sample",
+      "package_filename": "MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip",
+      "package_path": "deliverables\\member2_controlled_samples\\packages\\MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip",
+      "expected_size_bytes": 2277204,
+      "sha256": "14f96e13ceeb554a8a13d44e14b0b7fecb06d7769dfebb5d54b5d20d2d562bd1",
+      "original_download_url_or_delivery_source": "https://drive.google.com/file/d/1T7MLHfKsFYm8fjnJcn39ZrzFjHv-z-fh/view?usp=drivesdk",
+      "version_or_subset": "UG2+ / V2-V3 validation derived subset; DERIVED_SUBSET",
+      "expected_format": "ZIP containing Camera PNG, lidar_360 NPY, livox_avia NPY, radar_enhance_pcl NPY",
+      "label_location": "No object annotation included in this small sample; sequence ID and timestamps are encoded in paths and filenames.",
+      "expected_validation_conclusion": "Camera, LiDAR, Livox, and Radar sample files can be associated by seq0001 plus nearest filename timestamp.",
+      "license_or_internal_storage": "MMAUD dataset/work is CC BY-NC-SA 4.0; internal non-commercial research storage unless broader permission is confirmed."
+    }
+  ]
+}

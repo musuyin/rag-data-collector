@@ -1,0 +1,22 @@
+{
+  "collected_at": "2026-09-29T09:03:11Z",
+  "target": {
+    "target_id": "COLLECT-MMAUD-GITHUB",
+    "source_id": "SRC-MMAUD-BA8AABFC21",
+    "adapter": "github_repo",
+    "repository": "ntu-aris/MMAUD",
+    "artifact_kind": "open_source_repository_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "默认只采集仓库元数据和 release 列表。"
+  },
+  "metadata": {
+    "repository": "ntu-aris/MMAUD",
+    "api_url": "https://api.github.com/repos/ntu-aris/MMAUD",
+    "default_branch": "gh-pages",
+    "pushed_at": "2026-07-29T21:42:35Z",
+    "updated_at": "2026-09-28T09:00:47Z",
+    "license": "MIT",
+    "releases": []
+  }
+}

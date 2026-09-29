@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-DJI-MATRICE-350-RTK-USES_PROTOCOL-BAND-2-4000-2-4835-GHZ-5-150-5-250-GHZ-5-725-5-850-GHZ-地区限制",
+  "record_type": "relation",
+  "subject_id": "MODEL-DJI-MATRICE-350-RTK",
+  "predicate": "uses_protocol",
+  "object_id": "BAND-2-4000-2-4835-GHZ-5-150-5-250-GHZ-5-725-5-850-GHZ-地区限制",
+  "source_id": "SRC-DJI-795BD17B94",
+  "evidence_quote": "2.4000-2.4835 GHz；5.150-5.250 GHz；5.725-5.850 GHz（地区限制）",
+  "evidence_locator": "member-one model table > 通信频段",
+  "record_status": "reviewed"
+}

@@ -1,0 +1,22 @@
+{
+  "collected_at": "2026-09-29T07:59:44Z",
+  "target": {
+    "target_id": "COLLECT-DRONERF-GITHUB",
+    "source_id": "SRC-DRONERF-F425A0E366",
+    "adapter": "github_repo",
+    "repository": "Al-Sad/DroneRF",
+    "artifact_kind": "open_source_repository_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "默认只采集仓库元数据和 release 列表；仓库内容下载需显式 allow_download。"
+  },
+  "metadata": {
+    "repository": "Al-Sad/DroneRF",
+    "api_url": "https://api.github.com/repos/Al-Sad/DroneRF",
+    "default_branch": "master",
+    "pushed_at": "2021-01-28T08:57:31Z",
+    "updated_at": "2026-09-22T08:16:22Z",
+    "license": "Apache-2.0",
+    "releases": []
+  }
+}

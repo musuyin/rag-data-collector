@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-DJI-MAVIC-3-ENTERPRISE-USES_PROTOCOL-BAND-2-400-2-4835-GHZ-5-725-5-850-GHZ",
+  "record_type": "relation",
+  "subject_id": "MODEL-DJI-MAVIC-3-ENTERPRISE",
+  "predicate": "uses_protocol",
+  "object_id": "BAND-2-400-2-4835-GHZ-5-725-5-850-GHZ",
+  "source_id": "SRC-DJI-87A19CA5EE",
+  "evidence_quote": "2.400-2.4835 GHz；5.725-5.850 GHz",
+  "evidence_locator": "member-one model table > 通信频段",
+  "record_status": "reviewed"
+}

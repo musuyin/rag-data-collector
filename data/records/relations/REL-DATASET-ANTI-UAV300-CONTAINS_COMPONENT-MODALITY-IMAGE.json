@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-DATASET-ANTI-UAV300-CONTAINS_COMPONENT-MODALITY-IMAGE",
+  "record_type": "relation",
+  "subject_id": "DATASET-ANTI-UAV300",
+  "predicate": "contains_component",
+  "object_id": "MODALITY-IMAGE",
+  "source_id": "SRC-ANTI-UAV300-A78901B85F",
+  "evidence_quote": "image",
+  "evidence_locator": "member-two dataset card > modalities",
+  "record_status": "reviewed"
+}

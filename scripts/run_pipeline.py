@@ -179,10 +179,14 @@ def main() -> int:
     parser.add_argument("--clean", action="store_true", help="Remove previous generated manifest/report outputs before running.")
     args = parser.parse_args()
     if args.clean:
-        for directory in (DATA / "manifests", DATA / "reports"):
-            for child in directory.glob("*"):
-                if child.is_file(): child.unlink()
-                elif child.is_dir(): shutil.rmtree(child)
+        # Only remove artifacts owned by this pipeline. Governance dashboards and
+        # collection reports share data/reports/ and must survive a quality rerun.
+        for directory, names in ((DATA / "manifests", {"file_manifest.jsonl", "file_manifest.csv", "duplicates.json"}), (DATA / "reports", {"quality_report.json", "quality_report.md", "pipeline_summary.json"})):
+            for name in names:
+                child = directory / name
+                if child.exists():
+                    if child.is_file(): child.unlink()
+                    elif child.is_dir(): shutil.rmtree(child)
     external_roots = [(ROOT / value).resolve() if not Path(value).is_absolute() else Path(value).resolve() for value in args.input_root]
     try:
         for path in external_roots:
@@ -190,7 +194,7 @@ def main() -> int:
     except ValueError as exc:
         parser.error(f"--input-root must be inside project root: {exc}")
     raw_roots = [DATA / "raw", *external_roots] + ([ROOT / "fixtures" / "raw"] if args.include_fixtures else [])
-    record_roots = [DATA / "records"] + ([ROOT / "fixtures" / "records"] if args.include_fixtures else [])
+    record_roots = [DATA / "records" / "imported", DATA / "records" / "relations", DATA / "records" / "conflicts"] + ([ROOT / "fixtures" / "records"] if args.include_fixtures else [])
     manifest = file_manifest(raw_roots)
     duplicate_groups = duplicates(manifest)
     sources = load_json(CONFIG)

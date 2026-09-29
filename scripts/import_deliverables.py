@@ -115,7 +115,11 @@ def main() -> int:
     evidence_rows: list[dict[str, str]] = []
     model_records: list[dict] = []
     progress_rows: list[dict[str, str]] = []
-    xlsx = DATASETS / "无人机型号与结构化资料调研.xlsx"
+    member1_dir = DATASETS / "member1_model_research"
+    candidates = sorted(member1_dir.glob("*.xlsx")) + sorted(DATASETS.glob("*.xlsx"))
+    if not candidates:
+        raise FileNotFoundError("No member-one .xlsx delivery found under datasets/member1_model_research/ or datasets/.")
+    xlsx = candidates[0]
     sheets = xlsx_sheets(xlsx)
     model_rows, _, evidence_sheet, progress_sheet, _ = (keyed_rows(sheets[index]) for index in range(5))
     for row in evidence_sheet:

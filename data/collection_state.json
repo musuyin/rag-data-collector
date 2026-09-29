@@ -1,0 +1,32 @@
+{
+  "COLLECT-DRONERF-GITHUB": {
+    "target_id": "COLLECT-DRONERF-GITHUB",
+    "source_id": "SRC-DRONERF-F425A0E366",
+    "adapter": "github_repo",
+    "checked_at": "2026-09-29T09:03:09Z",
+    "etag": "W/\"8a9afa92ddb608321ed8e71196371e97a96c19f0a0afd4b6c31047ceed4e94d2\"",
+    "last_modified": "Tue, 22 Sep 2026 08:16:22 GMT",
+    "metadata_sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "artifacts": []
+  },
+  "COLLECT-DRONERF-MENDELEY": {
+    "target_id": "COLLECT-DRONERF-MENDELEY",
+    "source_id": "SRC-DRONERF-1C11757D5B",
+    "adapter": "mendeley_dataset",
+    "checked_at": "2026-09-29T09:03:13Z",
+    "etag": null,
+    "last_modified": null,
+    "metadata_sha256": "197a365405e2f927f52bd5dc2baa5058dcd600de39cab01ac51aea3678ac2e21",
+    "artifacts": []
+  },
+  "COLLECT-MMAUD-GITHUB": {
+    "target_id": "COLLECT-MMAUD-GITHUB",
+    "source_id": "SRC-MMAUD-BA8AABFC21",
+    "adapter": "github_repo",
+    "checked_at": "2026-09-29T09:03:11Z",
+    "etag": "W/\"074f1b62e94763d84c81ca6695199c05b9580589b7653b5e13795c2dd56143e2\"",
+    "last_modified": "Mon, 28 Sep 2026 09:00:47 GMT",
+    "metadata_sha256": "cd1759bf0cbd83b76e373df8797236a968db116fd7a0cf257dd93cfc75e43fe7",
+    "artifacts": []
+  }
+}

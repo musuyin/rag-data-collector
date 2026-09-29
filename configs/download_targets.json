@@ -1,0 +1,38 @@
+[
+  {
+    "target_id": "DOWNLOAD-DRONERF-RF-DATA-10000-L",
+    "source_id": "SRC-DRONERF-1C11757D5B",
+    "url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/58b15d1f-ed79-40bf-bfca-18580e5dc18e/file_downloaded",
+    "filename": "RF Data_10000_L.rar",
+    "expected_sha256": "3fd15c79fa4a605fedb118748661861837e9ca186328d444d90731069f6d49fd",
+    "max_bytes": 220000000,
+    "license_status": "CC-BY-4.0",
+    "approved": true,
+    "allow_download": true,
+    "notes": "Public Mendeley Data v1 file; exact remote SHA-256 and size (217,760,401 bytes) confirmed from official public API on 2026-09-29."
+  },
+  {
+    "target_id": "DOWNLOAD-DRONERF-RF-DATA-10000-H",
+    "source_id": "SRC-DRONERF-1C11757D5B",
+    "url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/8ee8e8a0-dc69-4925-af4b-bea9b03f60c8/file_downloaded",
+    "filename": "RF Data_10000_H.rar",
+    "expected_sha256": "4d8e329f48d1c3b54847d976ff45f3babc5ca6a2a23178b06160387a4eeb2f12",
+    "max_bytes": 180000000,
+    "license_status": "CC-BY-4.0",
+    "approved": true,
+    "allow_download": true,
+    "notes": "Public Mendeley Data v1 file; exact remote SHA-256 and size (173,545,467 bytes) confirmed from official public API on 2026-09-29."
+  },
+  {
+    "target_id": "EXAMPLE-APPROVED-ARTIFACT",
+    "source_id": "SRC-TO-BE-REGISTERED",
+    "url": "https://example.invalid/reviewed-artifact.zip",
+    "filename": "reviewed-artifact.zip",
+    "expected_sha256": null,
+    "max_bytes": 0,
+    "license_status": "unknown",
+    "approved": false,
+    "allow_download": false,
+    "notes": "Template only. Replace every placeholder after URL, licence, size limit and SHA-256 are reviewed."
+  }
+]

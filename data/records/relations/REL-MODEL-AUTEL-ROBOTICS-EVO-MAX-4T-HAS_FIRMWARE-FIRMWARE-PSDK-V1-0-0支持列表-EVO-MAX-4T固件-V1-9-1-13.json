@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-AUTEL-ROBOTICS-EVO-MAX-4T-HAS_FIRMWARE-FIRMWARE-PSDK-V1-0-0支持列表-EVO-MAX-4T固件-V1-9-1-13",
+  "record_type": "relation",
+  "subject_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "predicate": "has_firmware",
+  "object_id": "FIRMWARE-PSDK-V1-0-0支持列表-EVO-MAX-4T固件-V1-9-1-13",
+  "source_id": "SRC-AUTEL-ROBOTICS-AF56163E6D",
+  "evidence_quote": "PSDK V1.0.0支持列表：EVO Max 4T固件 V1.9.1.13",
+  "evidence_locator": "member-one model table > 固件信息",
+  "record_status": "reviewed"
+}

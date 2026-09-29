@@ -130,10 +130,10 @@
     }
   ],
   "import_metadata": {
-    "source_file": "datasets/无人机型号与结构化资料调研.xlsx",
+    "source_file": "datasets/member1_model_research/无人机型号与结构化资料调研.xlsx",
     "source_status": "已核验（基础/规格/SDK）",
     "verification_note": "关键飞行参数、相机、链路、SDK已由DJI官方规格页/开发者文档核验；监管证书尚未补齐",
     "regulatory_note": "FCC区域射频参数已在官方规格页核验；FCC ID/FAA具体记录待查",
-    "imported_at": "2026-09-29T07:55:13Z"
+    "imported_at": "2026-09-29T09:42:50Z"
   }
 }

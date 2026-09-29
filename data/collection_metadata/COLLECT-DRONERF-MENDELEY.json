@@ -1,0 +1,175 @@
+{
+  "collected_at": "2026-09-29T08:00:21Z",
+  "target": {
+    "target_id": "COLLECT-DRONERF-MENDELEY",
+    "source_id": "SRC-DRONERF-1C11757D5B",
+    "adapter": "mendeley_dataset",
+    "dataset_id": "f4c2b4n755",
+    "version": 1,
+    "artifact_kind": "dataset_metadata",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "先采集数据集元数据和文件清单；大文件下载须逐文件批准并审查 CC BY 4.0 适用范围。"
+  },
+  "metadata": {
+    "dataset_id": "f4c2b4n755",
+    "version_requested": 1,
+    "version_returned": 1,
+    "api_url": "https://data.mendeley.com/public-api/datasets/f4c2b4n755",
+    "title": "DroneRF dataset: A dataset of drones for RF-based detection, classification, and identification",
+    "doi": {
+      "id": "10.17632/f4c2b4n755.1",
+      "status": "allocated",
+      "prefix": "10.17632"
+    },
+    "license": {
+      "id": "01d9c749-3c4d-4431-9df3-620b2dcfe144",
+      "description": "You can share, copy and modify this dataset so long as you give appropriate credit, provide a link to the CC BY license, and indicate if changes were made, but you may not do so in a way that suggests the rights holder has endorsed you or your use of the dataset. Note that further permission may be required for any content within the dataset that is identified as belonging to a third party.",
+      "url": "http://creativecommons.org/licenses/by/4.0",
+      "category": "Creative",
+      "short_name": "CC BY 4.0",
+      "full_name": "Creative Commons Attribution 4.0 International"
+    },
+    "modified_on": "2019-03-02T13:54:00.487Z",
+    "files": [
+      {
+        "name": "FR Data_00000_H2.rar",
+        "size": 161000614,
+        "sha256": "976c9a818d6c58683b6e692554edd571529f06f1d12eababea9a206ceabbac74",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/0ec34e09-69b1-4916-aa0e-4b70100bf3ef/file_downloaded"
+      },
+      {
+        "name": "RF Data_00000_H1.rar",
+        "size": 169960286,
+        "sha256": "4fc4521d7f9b34d738dec1de78571ff4d3a99141920804cd90cf715c5587ece9",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/2ee1bbc4-418d-4cdf-b146-8e8f00e860b1/file_downloaded"
+      },
+      {
+        "name": "RF Data_00000_L1.rar",
+        "size": 169855497,
+        "sha256": "ba8ceebdcaef69ce0af77586f5d01440b8a47a977eaf0bf21ed34ad0666665cb",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/991726e5-a214-4828-9a34-a0e7c978db89/file_downloaded"
+      },
+      {
+        "name": "RF Data_00000_L2.rar",
+        "size": 162435106,
+        "sha256": "c18ec4c0baa9628252abadc9919a4716102658e766cc1087e5dbc7f1d1e1c209",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/227d6364-ef94-4348-906e-e2595df750b1/file_downloaded"
+      },
+      {
+        "name": "RF Data_10000_H.rar",
+        "size": 173545467,
+        "sha256": "4d8e329f48d1c3b54847d976ff45f3babc5ca6a2a23178b06160387a4eeb2f12",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/8ee8e8a0-dc69-4925-af4b-bea9b03f60c8/file_downloaded"
+      },
+      {
+        "name": "RF Data_10000_L.rar",
+        "size": 217760401,
+        "sha256": "3fd15c79fa4a605fedb118748661861837e9ca186328d444d90731069f6d49fd",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/58b15d1f-ed79-40bf-bfca-18580e5dc18e/file_downloaded"
+      },
+      {
+        "name": "RF Data_10001_H.rar",
+        "size": 170680719,
+        "sha256": "329678b9714f9ce7237eca739499d2534b049fef3131c4b2d8f09f85565c45e6",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/0af3d151-c80d-47f2-be13-dcb25592eaaf/file_downloaded"
+      },
+      {
+        "name": "RF Data_10001_L.rar",
+        "size": 201722399,
+        "sha256": "ecee95068d20e40f41494a3ca69afd322ff7ba5245f7ee89683263048f10596c",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/aa25f55a-e853-4e0d-99e5-2f15858e382d/file_downloaded"
+      },
+      {
+        "name": "RF Data_10010_H.rar",
+        "size": 170117500,
+        "sha256": "5bfed75fd1f32ced3a07a37097eca0984162b135a8e13867bc2bdbb0ef4096bb",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/b1bdf095-5f05-41e2-a451-49fb84ec797f/file_downloaded"
+      },
+      {
+        "name": "RF Data_10010_L.rar",
+        "size": 200103837,
+        "sha256": "7019dbf9391b29d9498045c20fb61ec285afc89439343645cf1ab792ebd3a442",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/066cbc22-0d2c-40c3-8410-1d991e07352e/file_downloaded"
+      },
+      {
+        "name": "RF Data_10011_H.rar",
+        "size": 170194332,
+        "sha256": "dede345feaa1a671d38d12944776f9f40ca5edb960d06d0d59cc81c4e78327c3",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/93a6df7a-247e-41b9-b43e-d56b62dcae63/file_downloaded"
+      },
+      {
+        "name": "RF Data_10011_L.rar",
+        "size": 199957156,
+        "sha256": "b486d75ec395f3af5be9cfa177669745f45e0f0518e48d0a22418c5c08814c46",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/761d7e3e-b6a5-46f8-94ec-cdcd7559ddc3/file_downloaded"
+      },
+      {
+        "name": "RF Data_10100_H.rar",
+        "size": 168546751,
+        "sha256": "c18a191fe6a2f7015d2b7f78b866680ded5ba7833594f3994ab22ae0e9e9bfba",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/226b0c56-4c71-474f-bbfe-2d7eccde3f5a/file_downloaded"
+      },
+      {
+        "name": "RF Data_10100_L.rar",
+        "size": 200986876,
+        "sha256": "7c3bf728e22d8c69faa005c43cb6ad517e7a2a01be6eedcb02a1b1468ec7b4b8",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/189336e2-62ce-4801-941c-2624e979ee12/file_downloaded"
+      },
+      {
+        "name": "RF Data_10101_H.rar",
+        "size": 168452720,
+        "sha256": "c6eaf03dccc96de6cab0cacadba7bfed8b43a655c6299a03b46dbf4ba7add231",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/6fc32ddb-189f-41ab-9b3c-705e01fa3295/file_downloaded"
+      },
+      {
+        "name": "RF Data_10101_L.rar",
+        "size": 184172974,
+        "sha256": "21841b25db312a0dfbd46b72b6a222c18ae41184304e30c82d803c246ce512a6",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/20a16295-18bd-4e81-89f7-56cbad10d16b/file_downloaded"
+      },
+      {
+        "name": "RF Data_10110_H.rar",
+        "size": 168132264,
+        "sha256": "4efe9ad33617a254440d993a03ed4f57a46587f755a408dc13429fd130cd2088",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/2a09c62a-4ee4-4e52-b782-2c75b5d7c0e7/file_downloaded"
+      },
+      {
+        "name": "RF Data_10110_L.rar",
+        "size": 186281542,
+        "sha256": "ef8b5d41974aa7e43d0737d9d98822d744c85a56c3334770e6e0f79d5495fa09",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/7d576b10-fdad-44e7-a064-f641cb37c6b9/file_downloaded"
+      },
+      {
+        "name": "RF Data_10111_H.rar",
+        "size": 144712529,
+        "sha256": "b50b8e922be2bf0086b32f7e2481e1a09307f6ba30438b687ae8c3c83edd37da",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/12228a67-9325-4a59-93fc-bb5d2c30b831/file_downloaded"
+      },
+      {
+        "name": "RF Data_10111_L.rar",
+        "size": 198101456,
+        "sha256": "2a5b620cfd63c9d015776d093c183722c2d38943fec13397df45b1371d8ba604",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/c4104b06-b1cf-43c2-8f2b-06c362453425/file_downloaded"
+      },
+      {
+        "name": "RF Data_11000_H.rar",
+        "size": 199033958,
+        "sha256": "89d55d34b964c19adb9f4f7464c4618c38abfade7338c759b75e86cdbf27b6c8",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/fb553ab8-2bbe-484c-b978-d43bc849869c/file_downloaded"
+      },
+      {
+        "name": "RF Data_11000_L1.rar",
+        "size": 114744645,
+        "sha256": "77ca5ba635fc87c0da047d7c691c38f845cecdd17b0b0274822fdb6e4aea0588",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/03362ccf-884d-412e-9074-bfc6137216b4/file_downloaded"
+      },
+      {
+        "name": "RF Data_11000_L2.rar",
+        "size": 126963417,
+        "sha256": "cf9f51b7b4c412db8858e2780cb7d5c1389762538dc76390dce17da2deb3b9fa",
+        "download_url": "https://data.mendeley.com/public-files/datasets/f4c2b4n755/files/b8795a8e-d1cc-46a1-8854-5d8282c2745e/file_downloaded"
+      }
+    ]
+  }
+}

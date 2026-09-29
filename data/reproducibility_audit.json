@@ -1,0 +1,189 @@
+[
+  {
+    "dataset": "Anti-UAV300",
+    "audit_scope": "local member-two validation records only",
+    "status": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
+    "parsed_json_records": [
+      "datasets/member2_multimodal_datasets/validation_records/Anti-UAV300/Anti-UAV300_cross_modal_validation.json",
+      "datasets/member2_multimodal_datasets/validation_records/Anti-UAV300/Anti-UAV300_download_validation.json",
+      "datasets/member2_multimodal_datasets/validation_records/Anti-UAV300/Anti-UAV300_file_inspection.json",
+      "datasets/member2_multimodal_datasets/validation_records/Anti-UAV300/download_manifest.json"
+    ],
+    "declared_hashes": [
+      {
+        "file": "Anti-UAV300_download_validation.json",
+        "sha256": "ed7d80bbd8ca8e01ea784c64eb0782eae8b3a1572177535c0fada9beb53fdca8"
+      },
+      {
+        "file": "download_manifest.json",
+        "sha256": "ed7d80bbd8ca8e01ea784c64eb0782eae8b3a1572177535c0fada9beb53fdca8"
+      }
+    ],
+    "declared_validation_status": [
+      {
+        "file": "Anti-UAV300_download_validation.json",
+        "key": "expected_size",
+        "value": 6037566331
+      },
+      {
+        "file": "Anti-UAV300_download_validation.json",
+        "key": "actual_size",
+        "value": 6037566331
+      },
+      {
+        "file": "Anti-UAV300_download_validation.json",
+        "key": "download_status",
+        "value": "PASS"
+      },
+      {
+        "file": "Anti-UAV300_download_validation.json",
+        "key": "zip_integrity",
+        "value": "PASS"
+      },
+      {
+        "file": "download_manifest.json",
+        "key": "expected_size",
+        "value": 6037566331
+      },
+      {
+        "file": "download_manifest.json",
+        "key": "actual_size",
+        "value": 6037566331
+      },
+      {
+        "file": "download_manifest.json",
+        "key": "download_status",
+        "value": "PASS"
+      },
+      {
+        "file": "download_manifest.json",
+        "key": "zip_integrity",
+        "value": "PASS"
+      }
+    ],
+    "caveats": [
+      {
+        "file": "Anti-UAV300_cross_modal_validation.json",
+        "key": "limitations",
+        "value": [
+          "This step validates sequence/frame-index pairing, not hardware-level synchronization.",
+          "MP4 container PTS is not treated as sensor timestamp.",
+          "RGB and IR bounding boxes are not numerically compared because sensor resolution/FOV/position can differ.",
+          "No image registration, feature matching, embeddings, or model training were performed."
+        ]
+      }
+    ],
+    "independent_download_or_file_read_performed_by_person4": false,
+    "conclusion": "Supplied records are parseable and retain declared validation evidence. Local raw sample payloads are absent, so their hash, format, size, and conclusion cannot be independently reproduced in this run."
+  },
+  {
+    "dataset": "DroneRF",
+    "audit_scope": "local member-two validation records only",
+    "status": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
+    "parsed_json_records": [
+      "datasets/member2_multimodal_datasets/validation_records/DroneRF/DroneRF_download_validation.json",
+      "datasets/member2_multimodal_datasets/validation_records/DroneRF/DroneRF_file_inspection.json",
+      "datasets/member2_multimodal_datasets/validation_records/DroneRF/download_manifest.json"
+    ],
+    "declared_hashes": [],
+    "declared_validation_status": [
+      {
+        "file": "DroneRF_download_validation.json",
+        "key": "download_status",
+        "value": "PASS"
+      },
+      {
+        "file": "DroneRF_download_validation.json",
+        "key": "rar_integrity",
+        "value": "PASS"
+      },
+      {
+        "file": "download_manifest.json",
+        "key": "download_status",
+        "value": "PASS"
+      }
+    ],
+    "caveats": [],
+    "independent_download_or_file_read_performed_by_person4": false,
+    "conclusion": "Supplied records are parseable and retain declared validation evidence. Local raw sample payloads are absent, so their hash, format, size, and conclusion cannot be independently reproduced in this run."
+  },
+  {
+    "dataset": "MMAUD",
+    "audit_scope": "local member-two validation records only",
+    "status": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
+    "parsed_json_records": [
+      "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_cross_modal_validation.json",
+      "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_file_inspection.json",
+      "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_sample_validation.json",
+      "datasets/member2_multimodal_datasets/validation_records/MMAUD/download_manifest.json"
+    ],
+    "declared_hashes": [],
+    "declared_validation_status": [
+      {
+        "file": "MMAUD_cross_modal_validation.json",
+        "key": "final_result",
+        "value": {
+          "SEQUENCE_LEVEL_ASSOCIATION": "PASS",
+          "TIMESTAMP_ASSOCIATION": "PASS",
+          "CAMERA_LIDAR360_MEDIAN_DELTA_MS": 20.182013511657715,
+          "CAMERA_LIVOX_MEDIAN_DELTA_MS": 18.994927406311035,
+          "CAMERA_RADAR_MEDIAN_DELTA_MS": 17.367124557495117,
+          "CALIBRATION_STATUS": "PARTIAL",
+          "SYNCHRONIZATION_STATUS": "LIKELY_SYNCHRONIZED",
+          "ASSOCIATION_STRENGTH": "MEDIUM",
+          "CROSS_MODAL_INDEX_FEASIBLE": "YES",
+          "CROSS_MODAL_VALIDATION": "PARTIAL",
+          "READY_FOR_FINAL_DATASET_EVALUATION": "YES"
+        }
+      },
+      {
+        "file": "MMAUD_sample_validation.json",
+        "key": "final_result",
+        "value": {
+          "source_validation": "PASS",
+          "technical_validation": "PARTIAL",
+          "cross_modal_validation": "NOT_TESTED",
+          "final_dataset_status": "UNVERIFIED",
+          "project_readiness": "NOT_READY"
+        }
+      }
+    ],
+    "caveats": [
+      {
+        "file": "MMAUD_cross_modal_validation.json",
+        "key": "problems",
+        "value": [
+          {
+            "type": "missing_calibration",
+            "detail": "No local calibration matrices/transforms were found in val.zip extraction or current samples."
+          },
+          {
+            "type": "missing_reference_csv",
+            "detail": "No local UG2+ reference/pose/ground-truth CSV was available for matching."
+          }
+        ]
+      },
+      {
+        "file": "MMAUD_sample_validation.json",
+        "key": "problems",
+        "value": {
+          "corrupted_files": [],
+          "missing_annotation_reference": "NOT_TESTED",
+          "unreadable_files": [],
+          "unexpected_extensions": [],
+          "empty_files": [],
+          "duplicate_names": "NOT_TESTED",
+          "timestamp_problem": "NOT_TESTED",
+          "format_mismatch": [],
+          "download_blockers": [
+            "Smallest discovered raw data package exceeds 2 GB.",
+            "Local shell cannot reach Google Drive download hosts.",
+            "Connector file references could not be materialized with curl."
+          ]
+        }
+      }
+    ],
+    "independent_download_or_file_read_performed_by_person4": false,
+    "conclusion": "Supplied records are parseable and retain declared validation evidence. Local raw sample payloads are absent, so their hash, format, size, and conclusion cannot be independently reproduced in this run."
+  }
+]

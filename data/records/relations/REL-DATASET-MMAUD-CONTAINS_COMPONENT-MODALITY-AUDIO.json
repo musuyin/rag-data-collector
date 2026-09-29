@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-DATASET-MMAUD-CONTAINS_COMPONENT-MODALITY-AUDIO",
+  "record_type": "relation",
+  "subject_id": "DATASET-MMAUD",
+  "predicate": "contains_component",
+  "object_id": "MODALITY-AUDIO",
+  "source_id": "SRC-MMAUD-83702A3E25",
+  "evidence_quote": "audio",
+  "evidence_locator": "member-two dataset card > modalities",
+  "record_status": "reviewed"
+}

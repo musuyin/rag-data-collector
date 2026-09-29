@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-MODEL-AUTEL-ROBOTICS-EVO-MAX-4T-USES_PROTOCOL-BAND-900-MHZ-部分地区--2-4-GHZ-5-2-GHZ-5-8-GHZ",
+  "record_type": "relation",
+  "subject_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "predicate": "uses_protocol",
+  "object_id": "BAND-900-MHZ-部分地区--2-4-GHZ-5-2-GHZ-5-8-GHZ",
+  "source_id": "SRC-AUTEL-ROBOTICS-AF56163E6D",
+  "evidence_quote": "900 MHz（部分地区）；2.4 GHz；5.2 GHz；5.8 GHz",
+  "evidence_locator": "member-one model table > 通信频段",
+  "record_status": "reviewed"
+}
