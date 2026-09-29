@@ -1,0 +1,816 @@
+{
+  "dataset": "MMAUD",
+  "subset": "UG2+ val",
+  "original_or_derived": "DERIVED_SUBSET",
+  "inspection_time": "2026-09-23T10:41:40+08:00",
+  "raw_zip": {
+    "filename": "val.zip",
+    "path": "samples/MMAUD/raw/val.zip",
+    "actual_size": 5325448505,
+    "sha256": "D2B4424284F3673FA9296B49582D87076DB058765DB26EEB73C1A2C48CC17C9B",
+    "manifest_download_status": "PASS",
+    "manifest_zip_integrity_status": "PASS"
+  },
+  "archive": {
+    "extraction": "PASS",
+    "extraction_root": "samples/MMAUD/extracted/val",
+    "data_root": "samples/MMAUD/extracted/val/val",
+    "extracted_size": 6419220734,
+    "file_count": 5244,
+    "directory_count": 81,
+    "extension_distribution": {
+      ".npy": 2818,
+      ".png": 2426
+    },
+    "first_4_level_directory_tree": [
+      ".",
+      "val/",
+      "val/seq0001/",
+      "val/seq0001/Image/",
+      "val/seq0001/lidar_360/",
+      "val/seq0001/livox_avia/",
+      "val/seq0001/radar_enhance_pcl/",
+      "val/seq0002/",
+      "val/seq0002/Image/",
+      "val/seq0002/lidar_360/",
+      "val/seq0002/livox_avia/",
+      "val/seq0002/radar_enhance_pcl/",
+      "val/seq0003/",
+      "val/seq0003/Image/",
+      "val/seq0003/lidar_360/",
+      "val/seq0003/livox_avia/",
+      "val/seq0003/radar_enhance_pcl/",
+      "val/seq0004/",
+      "val/seq0004/Image/",
+      "val/seq0004/lidar_360/",
+      "val/seq0004/livox_avia/",
+      "val/seq0004/radar_enhance_pcl/",
+      "val/seq0005/",
+      "val/seq0005/Image/",
+      "val/seq0005/lidar_360/",
+      "val/seq0005/livox_avia/",
+      "val/seq0005/radar_enhance_pcl/",
+      "val/seq0006/",
+      "val/seq0006/Image/",
+      "val/seq0006/lidar_360/",
+      "val/seq0006/livox_avia/",
+      "val/seq0006/radar_enhance_pcl/",
+      "val/seq0007/",
+      "val/seq0007/Image/",
+      "val/seq0007/lidar_360/",
+      "val/seq0007/livox_avia/",
+      "val/seq0007/radar_enhance_pcl/",
+      "val/seq0008/",
+      "val/seq0008/Image/",
+      "val/seq0008/lidar_360/",
+      "val/seq0008/livox_avia/",
+      "val/seq0008/radar_enhance_pcl/",
+      "val/seq0009/",
+      "val/seq0009/Image/",
+      "val/seq0009/lidar_360/",
+      "val/seq0009/livox_avia/",
+      "val/seq0009/radar_enhance_pcl/",
+      "val/seq0010/",
+      "val/seq0010/Image/",
+      "val/seq0010/lidar_360/",
+      "val/seq0010/livox_avia/",
+      "val/seq0010/radar_enhance_pcl/",
+      "val/seq0011/",
+      "val/seq0011/Image/",
+      "val/seq0011/lidar_360/",
+      "val/seq0011/livox_avia/",
+      "val/seq0011/radar_enhance_pcl/",
+      "val/seq0012/",
+      "val/seq0012/Image/",
+      "val/seq0012/lidar_360/",
+      "val/seq0012/livox_avia/",
+      "val/seq0012/radar_enhance_pcl/",
+      "val/seq0013/",
+      "val/seq0013/Image/",
+      "val/seq0013/lidar_360/",
+      "val/seq0013/livox_avia/",
+      "val/seq0013/radar_enhance_pcl/",
+      "val/seq0014/",
+      "val/seq0014/Image/",
+      "val/seq0014/lidar_360/",
+      "val/seq0014/livox_avia/",
+      "val/seq0014/radar_enhance_pcl/",
+      "val/seq0015/",
+      "val/seq0015/Image/",
+      "val/seq0015/lidar_360/",
+      "val/seq0015/livox_avia/",
+      "val/seq0015/radar_enhance_pcl/",
+      "val/seq0016/",
+      "val/seq0016/Image/",
+      "val/seq0016/lidar_360/",
+      "val/seq0016/livox_avia/",
+      "val/seq0016/radar_enhance_pcl/"
+    ],
+    "duplicate_zip_paths_count": 0,
+    "duplicate_zip_paths_sample": []
+  },
+  "sequences": {
+    "sequence_count": 16,
+    "sequence_names": [
+      "seq0001",
+      "seq0002",
+      "seq0003",
+      "seq0004",
+      "seq0005",
+      "seq0006",
+      "seq0007",
+      "seq0008",
+      "seq0009",
+      "seq0010",
+      "seq0011",
+      "seq0012",
+      "seq0013",
+      "seq0014",
+      "seq0015",
+      "seq0016"
+    ],
+    "per_sequence_counts": [
+      {
+        "sequence": "seq0001",
+        "image_count": 147,
+        "lidar_360_count": 50,
+        "livox_avia_count": 50,
+        "radar_count": 74,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0002",
+        "image_count": 151,
+        "lidar_360_count": 51,
+        "livox_avia_count": 51,
+        "radar_count": 76,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0003",
+        "image_count": 153,
+        "lidar_360_count": 51,
+        "livox_avia_count": 51,
+        "radar_count": 76,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0004",
+        "image_count": 157,
+        "lidar_360_count": 52,
+        "livox_avia_count": 52,
+        "radar_count": 78,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0005",
+        "image_count": 150,
+        "lidar_360_count": 51,
+        "livox_avia_count": 50,
+        "radar_count": 76,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0006",
+        "image_count": 150,
+        "lidar_360_count": 50,
+        "livox_avia_count": 50,
+        "radar_count": 75,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0007",
+        "image_count": 150,
+        "lidar_360_count": 50,
+        "livox_avia_count": 50,
+        "radar_count": 75,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0008",
+        "image_count": 148,
+        "lidar_360_count": 50,
+        "livox_avia_count": 50,
+        "radar_count": 75,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0009",
+        "image_count": 151,
+        "lidar_360_count": 49,
+        "livox_avia_count": 50,
+        "radar_count": 75,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0010",
+        "image_count": 149,
+        "lidar_360_count": 50,
+        "livox_avia_count": 50,
+        "radar_count": 74,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0011",
+        "image_count": 152,
+        "lidar_360_count": 51,
+        "livox_avia_count": 51,
+        "radar_count": 75,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0012",
+        "image_count": 153,
+        "lidar_360_count": 51,
+        "livox_avia_count": 51,
+        "radar_count": 77,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0013",
+        "image_count": 150,
+        "lidar_360_count": 50,
+        "livox_avia_count": 50,
+        "radar_count": 75,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0014",
+        "image_count": 153,
+        "lidar_360_count": 51,
+        "livox_avia_count": 51,
+        "radar_count": 77,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0015",
+        "image_count": 157,
+        "lidar_360_count": 52,
+        "livox_avia_count": 52,
+        "radar_count": 79,
+        "other_file_count": 0
+      },
+      {
+        "sequence": "seq0016",
+        "image_count": 155,
+        "lidar_360_count": 35,
+        "livox_avia_count": 51,
+        "radar_count": 77,
+        "other_file_count": 0
+      }
+    ]
+  },
+  "camera": {
+    "files_found": 2426,
+    "sample_count": 9,
+    "readable_samples": 9,
+    "samples": [
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0004/Image/1706257437.055310.png",
+        "sequence": "seq0004",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0004/Image/1706257438.587764.png",
+        "sequence": "seq0004",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0004/Image/1706257441.055398.png",
+        "sequence": "seq0004",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0005/Image/1706257442.387295.png",
+        "sequence": "seq0005",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0005/Image/1706257443.887996.png",
+        "sequence": "seq0005",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0005/Image/1706257446.523335.png",
+        "sequence": "seq0005",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0012/Image/1706258284.548144.png",
+        "sequence": "seq0012",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0012/Image/1706258285.615988.png",
+        "sequence": "seq0012",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "sample_file": "samples/MMAUD/extracted/val/val/seq0012/Image/1706258286.047883.png",
+        "sequence": "seq0012",
+        "format": "PNG",
+        "width": 2560,
+        "height": 960,
+        "channels": 3,
+        "mode": "RGB",
+        "dtype_or_bit_depth": "uint8",
+        "read_status": "PASS",
+        "error": null
+      }
+    ],
+    "result": "PASS"
+  },
+  "npy_classification": {
+    "lidar_360": 794,
+    "livox_avia": 810,
+    "radar_enhance_pcl": 1214
+  },
+  "lidar_360": {
+    "files_found": 794,
+    "readable_samples": 5,
+    "samples": [
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0002/lidar_360/1706255054.700092.npy",
+        "modality": "lidar_360",
+        "sequence": "seq0002",
+        "dtype": "float64",
+        "shape": [
+          19968,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 479360,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -63.85300064086914,
+        "max": 77.5260009765625,
+        "summary_scope": "full_array",
+        "point_count": 19968,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0008/lidar_360/1706257659.900321.npy",
+        "modality": "lidar_360",
+        "sequence": "seq0008",
+        "dtype": "float64",
+        "shape": [
+          19968,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 479360,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -63.86000061035156,
+        "max": 77.56500244140625,
+        "summary_scope": "full_array",
+        "point_count": 19968,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0011/lidar_360/1706258278.800170.npy",
+        "modality": "lidar_360",
+        "sequence": "seq0011",
+        "dtype": "float64",
+        "shape": [
+          20064,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 481664,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -63.7869987487793,
+        "max": 77.48799896240234,
+        "summary_scope": "full_array",
+        "point_count": 20064,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0014/lidar_360/1706258742.700058.npy",
+        "modality": "lidar_360",
+        "sequence": "seq0014",
+        "dtype": "float64",
+        "shape": [
+          19968,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 479360,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -63.757999420166016,
+        "max": 49.7239990234375,
+        "summary_scope": "full_array",
+        "point_count": 19968,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0016/lidar_360/1706256062.300752.npy",
+        "modality": "lidar_360",
+        "sequence": "seq0016",
+        "dtype": "float64",
+        "shape": [
+          40032,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 960896,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -63.81999969482422,
+        "max": 77.6510009765625,
+        "summary_scope": "sampled_100000_of_120096",
+        "point_count": 40032,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      }
+    ],
+    "result": "PASS"
+  },
+  "livox_avia": {
+    "files_found": 810,
+    "readable_samples": 5,
+    "samples": [
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0001/livox_avia/1706255625.614195.npy",
+        "modality": "livox_avia",
+        "sequence": "seq0001",
+        "dtype": "float64",
+        "shape": [
+          24000,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 576128,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -1.0420000553131104,
+        "max": 20.591999053955078,
+        "summary_scope": "full_array",
+        "point_count": 24000,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0004/livox_avia/1706257440.201849.npy",
+        "modality": "livox_avia",
+        "sequence": "seq0004",
+        "dtype": "float64",
+        "shape": [
+          24000,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 576128,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": 0.0,
+        "max": 0.0,
+        "summary_scope": "full_array",
+        "point_count": 24000,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0009/livox_avia/1706258172.697281.npy",
+        "modality": "livox_avia",
+        "sequence": "seq0009",
+        "dtype": "float64",
+        "shape": [
+          24000,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 576128,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": 0.0,
+        "max": 0.0,
+        "summary_scope": "full_array",
+        "point_count": 24000,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0011/livox_avia/1706258281.397157.npy",
+        "modality": "livox_avia",
+        "sequence": "seq0011",
+        "dtype": "float64",
+        "shape": [
+          24000,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 576128,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -159.19500732421875,
+        "max": 370.0459899902344,
+        "summary_scope": "full_array",
+        "point_count": 24000,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0012/livox_avia/1706258284.897119.npy",
+        "modality": "livox_avia",
+        "sequence": "seq0012",
+        "dtype": "float64",
+        "shape": [
+          24000,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 576128,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -245.32400512695312,
+        "max": 387.18798828125,
+        "summary_scope": "full_array",
+        "point_count": 24000,
+        "feature_dimension": 3,
+        "feature_semantics": "OBSERVED_ARRAY_SHAPE_ONLY",
+        "read_status": "PASS",
+        "error": null
+      }
+    ],
+    "result": "PASS"
+  },
+  "radar": {
+    "files_found": 1214,
+    "readable_samples": 5,
+    "samples": [
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0003/radar_enhance_pcl/1706257436.030265.npy",
+        "modality": "radar_enhance_pcl",
+        "sequence": "seq0003",
+        "dtype": "float64",
+        "shape": [
+          0
+        ],
+        "ndim": 1,
+        "file_size": 128,
+        "contains_nan": null,
+        "contains_inf": null,
+        "min": null,
+        "max": null,
+        "summary_scope": "empty_array",
+        "point_count": 0,
+        "feature_dimension": null,
+        "feature_semantics": "FEATURE_SEMANTICS_UNKNOWN",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0005/radar_enhance_pcl/1706257444.963759.npy",
+        "modality": "radar_enhance_pcl",
+        "sequence": "seq0005",
+        "dtype": "float64",
+        "shape": [
+          0
+        ],
+        "ndim": 1,
+        "file_size": 128,
+        "contains_nan": null,
+        "contains_inf": null,
+        "min": null,
+        "max": null,
+        "summary_scope": "empty_array",
+        "point_count": 0,
+        "feature_dimension": null,
+        "feature_semantics": "FEATURE_SEMANTICS_UNKNOWN",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0010/radar_enhance_pcl/1706258274.972275.npy",
+        "modality": "radar_enhance_pcl",
+        "sequence": "seq0010",
+        "dtype": "float64",
+        "shape": [
+          8,
+          3
+        ],
+        "ndim": 2,
+        "file_size": 320,
+        "contains_nan": false,
+        "contains_inf": false,
+        "min": -5.456375598907471,
+        "max": 59.98753356933594,
+        "summary_scope": "full_array",
+        "point_count": 8,
+        "feature_dimension": 3,
+        "feature_semantics": "FEATURE_SEMANTICS_UNKNOWN",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0012/radar_enhance_pcl/1706258286.839188.npy",
+        "modality": "radar_enhance_pcl",
+        "sequence": "seq0012",
+        "dtype": "float64",
+        "shape": [
+          0
+        ],
+        "ndim": 1,
+        "file_size": 128,
+        "contains_nan": null,
+        "contains_inf": null,
+        "min": null,
+        "max": null,
+        "summary_scope": "empty_array",
+        "point_count": 0,
+        "feature_dimension": null,
+        "feature_semantics": "FEATURE_SEMANTICS_UNKNOWN",
+        "read_status": "PASS",
+        "error": null
+      },
+      {
+        "file_path": "samples/MMAUD/extracted/val/val/seq0014/radar_enhance_pcl/1706258743.444599.npy",
+        "modality": "radar_enhance_pcl",
+        "sequence": "seq0014",
+        "dtype": "float64",
+        "shape": [
+          0
+        ],
+        "ndim": 1,
+        "file_size": 128,
+        "contains_nan": null,
+        "contains_inf": null,
+        "min": null,
+        "max": null,
+        "summary_scope": "empty_array",
+        "point_count": 0,
+        "feature_dimension": null,
+        "feature_semantics": "FEATURE_SEMANTICS_UNKNOWN",
+        "read_status": "PASS",
+        "error": null
+      }
+    ],
+    "result": "PASS",
+    "feature_semantics": "FEATURE_SEMANTICS_UNKNOWN"
+  },
+  "timestamp": {
+    "overall_timestamp_parse_status": "PASS",
+    "per_modality": {
+      "Image": {
+        "timestamp_parse_status": "PASS",
+        "timestamp_type": "numeric_stem",
+        "parsed_count": 2426,
+        "total_count": 2426,
+        "example_timestamps": [
+          "1706255621.570108",
+          "1706255621.606015",
+          "1706255621.638451",
+          "1706255621.670069",
+          "1706255621.706102"
+        ]
+      },
+      "lidar_360": {
+        "timestamp_parse_status": "PASS",
+        "timestamp_type": "numeric_stem",
+        "parsed_count": 794,
+        "total_count": 794,
+        "example_timestamps": [
+          "1706255621.600227",
+          "1706255621.700287",
+          "1706255621.800237",
+          "1706255621.900150",
+          "1706255622.000297"
+        ]
+      },
+      "livox_avia": {
+        "timestamp_parse_status": "PASS",
+        "timestamp_type": "numeric_stem",
+        "parsed_count": 810,
+        "total_count": 810,
+        "example_timestamps": [
+          "1706255621.614239",
+          "1706255621.714191",
+          "1706255621.814266",
+          "1706255621.914209",
+          "1706255622.013213"
+        ]
+      },
+      "radar_enhance_pcl": {
+        "timestamp_parse_status": "PASS",
+        "timestamp_type": "numeric_stem",
+        "parsed_count": 1214,
+        "total_count": 1214,
+        "example_timestamps": [
+          "1706255621.610851",
+          "1706255621.677709",
+          "1706255621.744115",
+          "1706255621.811038",
+          "1706255621.877650"
+        ]
+      }
+    },
+    "note": "Timestamp-like filename extraction only; no synchronization or matching was evaluated."
+  },
+  "anomalies": {
+    "empty_files_count": 0,
+    "empty_files_sample": [],
+    "unreadable_files_count": 0,
+    "unreadable_files_sample": [],
+    "unexpected_extensions": [],
+    "small_files_lt_16_bytes_count": 0,
+    "small_files_lt_16_bytes_sample": [],
+    "duplicate_zip_paths_count": 0
+  },
+  "source_consistency": {
+    "Camera": "CONFIRMED_BY_SAMPLE",
+    "LiDAR": "CONFIRMED_BY_SAMPLE",
+    "Radar": "CONFIRMED_BY_SAMPLE",
+    "PNG": "CONFIRMED_BY_SAMPLE",
+    "NPY": "CONFIRMED_BY_SAMPLE",
+    "Sequence Structure": "CONFIRMED_BY_SAMPLE",
+    "Timestamp Filenames": "CONFIRMED_BY_SAMPLE"
+  },
+  "technical_result": {
+    "FILE_STRUCTURE": "PASS",
+    "FILE_READABILITY": "PASS",
+    "TECHNICAL_VALIDATION": "PASS",
+    "READY_FOR_CROSS_MODAL_VALIDATION": "YES",
+    "note": "This is file-level validation only; cross-modal synchronization has not been tested."
+  }
+}

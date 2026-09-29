@@ -1,0 +1,122 @@
+{
+  "record_id": "MODEL-SKYDIO-X10",
+  "record_type": "model",
+  "manufacturer": "Skydio",
+  "model": "X10",
+  "product_category": "四旋翼",
+  "source_id": "SRC-SKYDIO-280D441BFC",
+  "license_status": "unknown",
+  "record_status": "reviewed",
+  "performance": {
+    "dimensions": "展开含桨 79.0×65.0×14.5 cm；折叠无电池 35.05×16.51×11.94 cm",
+    "empty_weight": "Connect SL约2.11 kg（含电池）",
+    "max_takeoff_weight": "2.49 kg",
+    "payload": "",
+    "max_flight_time": "40 min",
+    "max_hover_time": "35 min",
+    "max_speed": "20 m/s",
+    "max_altitude": "4572 m（密度高度）",
+    "wind_resistance": "12.8 m/s",
+    "operating_temperature": "-20~45 °C"
+  },
+  "core_components": [
+    "传感器包可含1-inch 50.3MP广角、0.5-inch 48MP长焦、1/1.7-inch 64MP窄角",
+    "FLIR Boson+ 非制冷VOx；640×512；<30mK NEDT",
+    "视觉避障：上下各3摄像头（共6）",
+    "NVIDIA Jetson Orin SoC + Qualcomm Snapdragon 865 SoC",
+    "Rev1 8419 mAh/18.55 V/156.17 Wh；Rev2 8800 mAh/17.5 V/154 Wh"
+  ],
+  "communication_bands": [
+    "Connect SL：2400-2483.5 MHz、5150-5850 MHz；Connect 5G：600-960、1700-2200 MHz"
+  ],
+  "communication_protocols": [
+    "Skydio Connect SL / Connect 5G；Wi‑Fi 6；LTE/5G"
+  ],
+  "firmware": [
+    "官方支持文章可查X10固件版本；本表暂不把某一支持文章中的最低版本当作“最新固件”"
+  ],
+  "sdk": [
+    "Skydio Cloud API（X10）；Attachment ICD（X10/X10D）"
+  ],
+  "evidence": [
+    {
+      "field": "重量",
+      "quote": "Connect SL: 4.65 lbs / 2.11 kg",
+      "locator": "Aircraft > Weight",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E029",
+      "value": "2.11",
+      "unit": "kg"
+    },
+    {
+      "field": "最大起飞重量",
+      "quote": "5.49 lbs / 2.49 kg",
+      "locator": "Aircraft > Max takeoff weight",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E030",
+      "value": "2.49",
+      "unit": "kg"
+    },
+    {
+      "field": "最大飞行时间",
+      "quote": "40 minutes",
+      "locator": "Aircraft > Max flight time",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E031",
+      "value": "40",
+      "unit": "min"
+    },
+    {
+      "field": "核心处理器",
+      "quote": "NVIDIA Jetson Orin SoC; Qualcomm Snapdragon 865 SoC",
+      "locator": "Aircraft > Processors",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E032",
+      "value": "NVIDIA Jetson Orin + Qualcomm Snapdragon 865",
+      "unit": "-"
+    },
+    {
+      "field": "热成像",
+      "quote": "Flir Boson+ uncooled VOx microbolometer; 640×512",
+      "locator": "Thermal camera",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E033",
+      "value": "FLIR Boson+; 640×512",
+      "unit": "-"
+    },
+    {
+      "field": "工作频段",
+      "quote": "Connect SL 2.4/5GHz; Connect 5G cellular bands",
+      "locator": "Aircraft > Operation frequency",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E034",
+      "value": "2400-2483.5MHz; 5150-5850MHz; optional 5G bands",
+      "unit": "-"
+    },
+    {
+      "field": "开发接口",
+      "quote": "Cloud API supports X10; Attachment ICD supports X10/X10D",
+      "locator": "Cloud API / Attachment ICD",
+      "url": "https://www.skydio.com/developer-tools",
+      "evidence_id": "E035",
+      "value": "Cloud API; Attachment ICD",
+      "unit": "-"
+    },
+    {
+      "field": "Remote ID",
+      "quote": "FAA & EASA remote ID compliant",
+      "locator": "Aircraft > GNSS",
+      "url": "https://www.skydio.com/x10/technical-specs",
+      "evidence_id": "E036",
+      "value": "FAA & EASA Remote ID compliant",
+      "unit": "-"
+    }
+  ],
+  "import_metadata": {
+    "source_file": "datasets/无人机型号与结构化资料调研.xlsx",
+    "source_status": "已核验（基础/规格/开发接口）",
+    "verification_note": "机体、传感器、处理器、频段、开发接口均由Skydio官方页面核验；监管证据可继续深化",
+    "regulatory_note": "官方规格页称GNSS具FAA & EASA Remote ID合规；具体FCC ID/FAA Declaration文件待补",
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}

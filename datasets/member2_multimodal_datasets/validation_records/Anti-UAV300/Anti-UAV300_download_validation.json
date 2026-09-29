@@ -1,0 +1,65 @@
+{
+  "dataset": "Anti-UAV300",
+  "stage": "DOWNLOAD_HASH_ARCHIVE_INTEGRITY_DIRECTORY_INSPECTION_SEQUENCE_DISCOVERY_SAMPLE_SELECTION",
+  "validation_time": "2026-09-29T13:39:05.7684017+08:00",
+  "file": "Anti-UAV-RGBT.zip",
+  "source": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+  "expected_size": 6037566331,
+  "actual_size": 6037566331,
+  "sha256": "ed7d80bbd8ca8e01ea784c64eb0782eae8b3a1572177535c0fada9beb53fdca8",
+  "download_status": "PASS",
+  "remote_metadata_status": "PASS",
+  "zip_open": "PASS",
+  "zip_integrity": "PASS",
+  "archive_total_entries": 1598,
+  "archive_file_count": 1276,
+  "archive_directory_count": 322,
+  "estimated_extracted_size": 6720200225,
+  "sequence_count": 318,
+  "sequence_count_by_split": {
+    "test": 91,
+    "train": 160,
+    "val": 67
+  },
+  "rgb_structure_found": true,
+  "ir_structure_found": true,
+  "annotation_structure_found": true,
+  "detected_directory_names": [
+    "label_new/",
+    "test/",
+    "train/",
+    "val/",
+    "test/<sequence>/infrared.json",
+    "test/<sequence>/infrared.mp4",
+    "test/<sequence>/visible.json",
+    "test/<sequence>/visible.mp4",
+    "train/<sequence>/infrared.json",
+    "train/<sequence>/infrared.mp4",
+    "train/<sequence>/visible.json",
+    "train/<sequence>/visible.mp4",
+    "val/<sequence>/infrared.json",
+    "val/<sequence>/infrared.mp4",
+    "val/<sequence>/visible.json",
+    "val/<sequence>/visible.mp4"
+  ],
+  "detected_extensions": {
+    ".json": 639,
+    ".mp4": 636,
+    ".py": 1
+  },
+  "selected_validation_sequences": [
+    "test/20190925_111757_1_1/",
+    "test/20190926_111509_1_7/",
+    "train/20190925_205804_1_7/",
+    "train/20190926_193515_1_6/",
+    "val/20190926_200510_1_8/"
+  ],
+  "ready_for_rgb_ir_file_inspection": "YES",
+  "license_status": "RISK",
+  "scope_notes": [
+    "This step did not read all RGB frames, IR frames, or annotation contents.",
+    "This step did not perform RGB-IR frame matching.",
+    "This step did not train or run a tracking model.",
+    "Raw Anti-UAV300 data is for internal research/validation only and must not be redistributed without explicit permission."
+  ]
+}

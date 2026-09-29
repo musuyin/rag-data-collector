@@ -1,0 +1,101 @@
+{
+  "record_id": "DATASET-ANTI-UAV300",
+  "record_type": "dataset",
+  "dataset_name": "Anti-UAV300",
+  "modalities": [
+    "image",
+    "video",
+    "infrared"
+  ],
+  "sample_count": 318,
+  "formats": [
+    "RGB",
+    "IR",
+    "Annotation",
+    "Container",
+    "Conflicts"
+  ],
+  "label_schema": "{\"task\": \"UAV tracking / anti-UAV tracking\", \"detection\": \"PARTIAL\", \"tracking\": \"YES\", \"classification\": \"NO\", \"bounding_box\": \"YES\", \"target_presence\": \"YES\", \"visibility\": \"UNKNOWN\", \"occlusion\": \"YES as a difficulty attribute; exact per-frame occlusion label UNKNOWN\", \"frame_id\": \"UNKNOWN\", \"sequence_id\": \"UNKNOWN\", \"timestamp\": \"UNKNOWN\", \"drone_class\": \"UNKNOWN\", \"drone_model\": \"UNKNOWN\", \"camera_modality\": \"YES\", \"ir_modality\": \"YES\", \"rgb_modality\": \"YES\", \"lost_target_absent_target\": \"YES\", \"frame_level_annotation\": \"YES\", \"sequence_level_annotation\": \"YES\", \"object_level_annotation\": \"YES\", \"annotation_fields\": [\"exist\", \"gt_rect / get_rect\"], \"evidence\": [{\"source_url\": \"https://arxiv.org/html/2101.08466\", \"source_type\": \"Level 2 original paper text\", \"evidence\": \"The paper explains that one bounding box is annotated for every visible drone, absent targets are recorded, and JSON labels contain an existence flag plus rectangle annotations.\", \"accessed_date\": \"2026-09-23\"}, {\"source_url\": \"https://github.com/Anti-UAV/baseline/blob/master/test.py\", \"source_type\": \"official/legacy baseline repository code\", \"evidence\": \"The baseline evaluation code references gt_rect and exist fields in the ground-truth JSON.\", \"accessed_date\": \"2026-09-23\"}]}",
+  "collection_environment": "{\"indoor_outdoor\": \"Outdoor\", \"day_night\": \"Day and night\", \"urban_rural\": \"UNKNOWN\", \"sky_background\": \"YES\", \"building_background\": \"YES\", \"mountain_background\": \"UNKNOWN\", \"cloud\": \"YES\", \"occlusion\": \"YES\", \"distance\": \"UNKNOWN\", \"target_size\": \"Small target; average or exact source-specific pixel size not confirmed in this audit.\", \"drone_altitude\": \"UNKNOWN\", \"weather\": \"UNKNOWN\", \"camera_motion\": \"UNKNOWN\", \"thermal_conditions\": \"Thermal crossover and low illumination listed as difficulty attributes.\", \"difficulty_attributes\": [\"fast motion\", \"out-of-view\", \"occlusion\", \"scale variation\", \"background clutter\", \"illumination variation\", \"low resolution\", \"low illumination\", \"thermal crossover\"]}",
+  "license_status": "restricted",
+  "source_id": "SRC-ANTI-UAV300-A78901B85F",
+  "download_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+  "sample_validation_status": "passed",
+  "record_status": "reviewed",
+  "import_metadata": {
+    "source_card": "datasets/member2_multimodal_datasets/dataset_cards/Anti-UAV300.json",
+    "license_detail": {
+      "license_name": "UNKNOWN",
+      "repository_license": "MIT for repository code, not confirmed as dataset license",
+      "research_use": "UNKNOWN",
+      "commercial_use": "UNKNOWN",
+      "redistribution": "UNKNOWN",
+      "modification": "UNKNOWN",
+      "citation_required": "YES for academic use/citation; license obligation UNKNOWN",
+      "registration_required": "UNKNOWN",
+      "download_terms": "UNKNOWN",
+      "license_status": "RISK",
+      "notes": [
+        "The repository contains an MIT license, but this source audit did not find explicit dataset license terms for Anti-UAV300.",
+        "Do not treat the repository code license as dataset redistribution or commercial-use permission."
+      ]
+    },
+    "data_scale": {
+      "total_size": "Anti-UAV-RGBT.zip downloaded and validated: 6,037,566,331 bytes compressed; 6,720,200,225 bytes extracted estimate/file-inspection size.",
+      "package_size_bytes": 6037566331,
+      "package_size_gb_decimal": 6.04,
+      "package_size_gib": 5.62,
+      "sequence_count": "318 RGB-T video pairs; all 318 passed lightweight pairing scan.",
+      "video_count": "636 MP4 videos in archive: 318 visible.mp4 and 318 infrared.mp4.",
+      "image_count": "UNKNOWN",
+      "frame_count": "Metadata-derived local archive count: 296901 RGB frames and 296901 IR frames (593802 modality frames total); official sources report more than 580k frames/annotations.",
+      "annotation_count": "Metadata-derived local archive count: 296901 visible annotation records and 296901 infrared annotation records; sampled JSON parsing passed.",
+      "duration": "UNKNOWN",
+      "train_count": "160 RGB-T video pairs",
+      "validation_count": "67 RGB-T video pairs, derived from paper wording that the rest after 160 train and 91 test are validation.",
+      "test_count": "91 RGB-T video pairs",
+      "drone_type_count": "UNKNOWN",
+      "drone_model_count": "UNKNOWN",
+      "evidence": [
+        {
+          "source_url": "https://arxiv.org/html/2101.08466",
+          "source_type": "Level 2 original paper text",
+          "evidence": "The paper reports 318 RGB-T video pairs, 160 training pairs, 91 testing pairs, and a total of 585.9k boxes/frames in its dataset comparison table.",
+          "accessed_date": "2026-09-23"
+        },
+        {
+          "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+          "source_type": "official Google Drive metadata",
+          "evidence": "Metadata-only read returned filename Anti-UAV-RGBT.zip, MIME application/zip, size 6,037,566,331 bytes, modified 2021-05-21T10:41:48.606Z.",
+          "accessed_date": "2026-09-23"
+        }
+      ]
+    },
+    "multimodal_association": {
+      "association_strength": "STRONG",
+      "rgb_ir_same_dataset": "YES",
+      "same_sequence": "YES; validated by archive structure across 318 sequences",
+      "frame_level_correspondence": "YES; sequence_id + frame_index validated as stable pairing key",
+      "timestamp_correspondence": "CONTAINER_TIMESTAMP_ONLY",
+      "hard_synchronization": "NOT_CONFIRMED",
+      "synchronization_status": "FRAME_PAIRED_ONLY",
+      "frame_pairing_coverage": "318 / 318",
+      "rgb_ir_index_feasible": "YES",
+      "target_presence_agreement": {
+        "status": "RECORDED",
+        "agreement_rate": 0.9862705379248256,
+        "both_present": 4368,
+        "both_absent": 14,
+        "visible_only": 0,
+        "infrared_only": 61,
+        "other": 0,
+        "total_compared": 4443
+      },
+      "reason": "Real files prove stable sequence-level and frame-index pairing across all 318 sequences. This is strong frame-level cross-modal association, not hardware-clock synchronization."
+    },
+    "unmapped_modalities": [
+      "Text Metadata"
+    ],
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}

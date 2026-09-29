@@ -1,0 +1,20 @@
+{
+  "record_id": "DATASET-<NAME>",
+  "record_type": "dataset",
+  "dataset_name": "",
+  "modalities": ["image"],
+  "sample_count": null,
+  "formats": [""],
+  "label_schema": "",
+  "collection_environment": "",
+  "key_parameters": {
+    "sampling_rate_hz": null,
+    "frame_rate_fps": null,
+    "resolution": ""
+  },
+  "license_status": "unknown",
+  "source_id": "SRC-",
+  "download_url": "https://",
+  "sample_validation_status": "pending",
+  "record_status": "draft"
+}

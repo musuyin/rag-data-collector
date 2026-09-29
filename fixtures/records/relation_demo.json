@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-ORG-DEMO-AVIATION-MANUFACTURES-MODEL-DEMO-AV-01",
+  "record_type": "relation",
+  "subject_id": "ORG-DEMO-AVIATION",
+  "predicate": "manufactures",
+  "object_id": "MODEL-DEMO-AV-01",
+  "source_id": "SRC-DEMO-MANUFACTURER",
+  "evidence_quote": "Demo Aviation produces the AV-01.",
+  "evidence_locator": "Demo product page, paragraph 1",
+  "record_status": "reviewed"
+}

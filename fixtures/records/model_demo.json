@@ -1,0 +1,17 @@
+{
+  "record_id": "MODEL-DEMO-AV-01",
+  "record_type": "model",
+  "manufacturer": "Demo Aviation",
+  "model": "AV-01",
+  "product_category": "multirotor",
+  "performance": {"max_flight_time_min": 30, "max_speed_mps": 15},
+  "core_components": ["demo flight controller"],
+  "communication_bands": ["2.4 GHz"],
+  "communication_protocols": ["demo-link"],
+  "firmware": ["v1.0-demo"],
+  "sdk": [],
+  "source_id": "SRC-DEMO-MANUFACTURER",
+  "license_status": "unknown",
+  "evidence": [{"field": "performance.max_flight_time_min", "quote": "Maximum flight time: 30 minutes.", "locator": "Demo manual, page 1", "url": "https://example.invalid/demo-aviation/manual"}],
+  "record_status": "draft"
+}

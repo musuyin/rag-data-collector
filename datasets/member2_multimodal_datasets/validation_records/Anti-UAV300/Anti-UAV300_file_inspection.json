@@ -1,0 +1,1780 @@
+{
+  "dataset": "Anti-UAV300",
+  "stage": "RGB_IR_ANNOTATION_TECHNICAL_VALIDATION",
+  "source_archive": "samples\\Anti-UAV300\\raw\\Anti-UAV-RGBT.zip",
+  "extracted_path": "samples\\Anti-UAV300\\extracted",
+  "extraction_started_this_run": false,
+  "extracted_file_count": 1276,
+  "extracted_size_bytes": 6720200225,
+  "selected_sequences": [
+    "test/20190925_111757_1_1",
+    "test/20190926_111509_1_7",
+    "train/20190925_205804_1_7",
+    "train/20190926_193515_1_6",
+    "val/20190926_200510_1_8"
+  ],
+  "statuses": {
+    "EXTRACTION_STATUS": "PASS",
+    "VALIDATED_SEQUENCE_COUNT": 5,
+    "RGB_READABILITY": "PASS",
+    "IR_READABILITY": "PASS",
+    "ANNOTATION_PARSE": "PASS",
+    "BBOX_FORMAT": "[x, y, w, h]",
+    "BBOX_FORMAT_BASIS": "gt_rect field with sampled values passing image-dimension legality checks",
+    "TARGET_PRESENCE_FIELD": "exist",
+    "RGB_ANNOTATION_MATCH": "PASS",
+    "IR_ANNOTATION_MATCH": "PASS",
+    "RGB_FRAME_COUNT_STATUS": "CONSISTENT_WITH_VISIBLE_ANNOTATION",
+    "IR_FRAME_COUNT_STATUS": "CONSISTENT_WITH_INFRARED_ANNOTATION",
+    "FRAME_FILENAME_CORRESPONDENCE": "NOT_APPLICABLE_VIDEO_CONTAINER",
+    "FRAME_INDEX_CORRESPONDENCE": "YES",
+    "FRAME_PAIRING_FEASIBLE": "YES",
+    "COMPLETE_SEQUENCE_COVERAGE": "YES",
+    "TECHNICAL_VALIDATION": "PASS",
+    "READY_FOR_RGB_IR_CROSS_MODAL_VALIDATION": "YES"
+  },
+  "association_rule": "sequence_id + video frame index; annotation list index maps to video frame index",
+  "synchronization_claim": "NOT_TESTED; this step validates preliminary frame-index pairing feasibility only",
+  "full_dataset_lightweight_scan": {
+    "total_sequences": 318,
+    "rgb_present_sequences": 318,
+    "ir_present_sequences": 318,
+    "annotation_present_sequences": 318,
+    "complete_rgb_ir_annotation_sequences": 318,
+    "json_parse_failures": [],
+    "missing": []
+  },
+  "full_dataset_split_counts": {
+    "test": 91,
+    "train": 160,
+    "val": 67
+  },
+  "sequence_results": [
+    {
+      "split": "test",
+      "sequence_id": "20190925_111757_1_1",
+      "sequence_path": "samples\\Anti-UAV300\\extracted\\test\\20190925_111757_1_1",
+      "RGB_path": "samples\\Anti-UAV300\\extracted\\test\\20190925_111757_1_1\\visible.mp4",
+      "IR_path": "samples\\Anti-UAV300\\extracted\\test\\20190925_111757_1_1\\infrared.mp4",
+      "annotation_paths": [
+        "samples\\Anti-UAV300\\extracted\\test\\20190925_111757_1_1\\visible.json",
+        "samples\\Anti-UAV300\\extracted\\test\\20190925_111757_1_1\\infrared.json"
+      ],
+      "other_files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "RGB_format": "VIDEO",
+      "IR_format": "VIDEO",
+      "RGB_extension": ".mp4",
+      "IR_extension": ".mp4",
+      "RGB_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 1920,
+        "height": 1080,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 50.0,
+        "frame_count": 1000
+      },
+      "IR_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 640,
+        "height": 512,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 50.0,
+        "frame_count": 1000
+      },
+      "RGB_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 500,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 999,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        }
+      ],
+      "IR_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 500,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 999,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        }
+      ],
+      "visible_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 1000,
+        "exist_count": 1000,
+        "annotation_count": 1000,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 1000,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              907,
+              485,
+              151,
+              85
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              905,
+              485,
+              152,
+              84
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              902,
+              486,
+              153,
+              83
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              900,
+              486,
+              154,
+              82
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              898,
+              487,
+              155,
+              81
+            ]
+          }
+        ]
+      },
+      "infrared_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 1000,
+        "exist_count": 1000,
+        "annotation_count": 1000,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 1000,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              312,
+              270,
+              52,
+              39
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              311,
+              270,
+              52,
+              39
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              311,
+              269,
+              52,
+              40
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              310,
+              269,
+              52,
+              40
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              310,
+              269,
+              53,
+              40
+            ]
+          }
+        ]
+      },
+      "RGB_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          53,
+          105,
+          158,
+          210,
+          263,
+          315,
+          368,
+          421,
+          473,
+          526,
+          578,
+          631,
+          684,
+          736,
+          789,
+          841,
+          894,
+          946,
+          999
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "IR_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          53,
+          105,
+          158,
+          210,
+          263,
+          315,
+          368,
+          421,
+          473,
+          526,
+          578,
+          631,
+          684,
+          736,
+          789,
+          841,
+          894,
+          946,
+          999
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "RGB_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "IR_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "RGB_frame_count": 1000,
+      "IR_frame_count": 1000,
+      "visible_annotation_record_count": 1000,
+      "infrared_annotation_record_count": 1000,
+      "RGB_count_equals_IR_count": true,
+      "RGB_count_equals_visible_annotation_count": true,
+      "IR_count_equals_infrared_annotation_count": true,
+      "visible_annotation_count_equals_infrared_annotation_count": true,
+      "rgb_only_frames": 0,
+      "ir_only_frames": 0,
+      "common_frame_count": 1000,
+      "pair_coverage": 1.0
+    },
+    {
+      "split": "test",
+      "sequence_id": "20190926_111509_1_7",
+      "sequence_path": "samples\\Anti-UAV300\\extracted\\test\\20190926_111509_1_7",
+      "RGB_path": "samples\\Anti-UAV300\\extracted\\test\\20190926_111509_1_7\\visible.mp4",
+      "IR_path": "samples\\Anti-UAV300\\extracted\\test\\20190926_111509_1_7\\infrared.mp4",
+      "annotation_paths": [
+        "samples\\Anti-UAV300\\extracted\\test\\20190926_111509_1_7\\visible.json",
+        "samples\\Anti-UAV300\\extracted\\test\\20190926_111509_1_7\\infrared.json"
+      ],
+      "other_files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "RGB_format": "VIDEO",
+      "IR_format": "VIDEO",
+      "RGB_extension": ".mp4",
+      "IR_extension": ".mp4",
+      "RGB_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 1920,
+        "height": 1080,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 50.0,
+        "frame_count": 1000
+      },
+      "IR_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 640,
+        "height": 512,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 50.0,
+        "frame_count": 1000
+      },
+      "RGB_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 500,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 999,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        }
+      ],
+      "IR_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 500,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 999,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        }
+      ],
+      "visible_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 1000,
+        "exist_count": 1000,
+        "annotation_count": 1000,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 1000,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              1010,
+              409,
+              157,
+              122
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              1011,
+              408,
+              157,
+              123
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              1005,
+              399,
+              163,
+              122
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              999,
+              391,
+              169,
+              121
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              993,
+              382,
+              175,
+              120
+            ]
+          }
+        ]
+      },
+      "infrared_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 1000,
+        "exist_count": 1000,
+        "annotation_count": 1000,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 1000,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              338,
+              225,
+              66,
+              50
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              338,
+              221,
+              67,
+              51
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              338,
+              218,
+              69,
+              52
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              337,
+              218,
+              69,
+              51
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              337,
+              218,
+              69,
+              51
+            ]
+          }
+        ]
+      },
+      "RGB_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          53,
+          105,
+          158,
+          210,
+          263,
+          315,
+          368,
+          421,
+          473,
+          526,
+          578,
+          631,
+          684,
+          736,
+          789,
+          841,
+          894,
+          946,
+          999
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "IR_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          53,
+          105,
+          158,
+          210,
+          263,
+          315,
+          368,
+          421,
+          473,
+          526,
+          578,
+          631,
+          684,
+          736,
+          789,
+          841,
+          894,
+          946,
+          999
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "RGB_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "IR_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "RGB_frame_count": 1000,
+      "IR_frame_count": 1000,
+      "visible_annotation_record_count": 1000,
+      "infrared_annotation_record_count": 1000,
+      "RGB_count_equals_IR_count": true,
+      "RGB_count_equals_visible_annotation_count": true,
+      "IR_count_equals_infrared_annotation_count": true,
+      "visible_annotation_count_equals_infrared_annotation_count": true,
+      "rgb_only_frames": 0,
+      "ir_only_frames": 0,
+      "common_frame_count": 1000,
+      "pair_coverage": 1.0
+    },
+    {
+      "split": "train",
+      "sequence_id": "20190925_205804_1_7",
+      "sequence_path": "samples\\Anti-UAV300\\extracted\\train\\20190925_205804_1_7",
+      "RGB_path": "samples\\Anti-UAV300\\extracted\\train\\20190925_205804_1_7\\visible.mp4",
+      "IR_path": "samples\\Anti-UAV300\\extracted\\train\\20190925_205804_1_7\\infrared.mp4",
+      "annotation_paths": [
+        "samples\\Anti-UAV300\\extracted\\train\\20190925_205804_1_7\\visible.json",
+        "samples\\Anti-UAV300\\extracted\\train\\20190925_205804_1_7\\infrared.json"
+      ],
+      "other_files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "RGB_format": "VIDEO",
+      "IR_format": "VIDEO",
+      "RGB_extension": ".mp4",
+      "IR_extension": ".mp4",
+      "RGB_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 1920,
+        "height": 1080,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 47.5,
+        "frame_count": 950
+      },
+      "IR_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 640,
+        "height": 512,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 47.5,
+        "frame_count": 950
+      },
+      "RGB_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 475,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 949,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        }
+      ],
+      "IR_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 475,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 949,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        }
+      ],
+      "visible_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 950,
+        "exist_count": 950,
+        "annotation_count": 950,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 950,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              912,
+              557,
+              161,
+              68
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              916,
+              556,
+              160,
+              67
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              924,
+              555,
+              158,
+              66
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              929,
+              555,
+              157,
+              66
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              931,
+              555,
+              157,
+              66
+            ]
+          }
+        ]
+      },
+      "infrared_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 950,
+        "exist_count": 950,
+        "annotation_count": 950,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 950,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              317,
+              294,
+              59,
+              43
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              318,
+              294,
+              59,
+              43
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              320,
+              294,
+              59,
+              43
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              321,
+              293,
+              59,
+              43
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              322,
+              293,
+              59,
+              44
+            ]
+          }
+        ]
+      },
+      "RGB_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          50,
+          100,
+          150,
+          200,
+          250,
+          300,
+          350,
+          400,
+          450,
+          499,
+          549,
+          599,
+          649,
+          699,
+          749,
+          799,
+          849,
+          899,
+          949
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "IR_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          50,
+          100,
+          150,
+          200,
+          250,
+          300,
+          350,
+          400,
+          450,
+          499,
+          549,
+          599,
+          649,
+          699,
+          749,
+          799,
+          849,
+          899,
+          949
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "RGB_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "IR_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "RGB_frame_count": 950,
+      "IR_frame_count": 950,
+      "visible_annotation_record_count": 950,
+      "infrared_annotation_record_count": 950,
+      "RGB_count_equals_IR_count": true,
+      "RGB_count_equals_visible_annotation_count": true,
+      "IR_count_equals_infrared_annotation_count": true,
+      "visible_annotation_count_equals_infrared_annotation_count": true,
+      "rgb_only_frames": 0,
+      "ir_only_frames": 0,
+      "common_frame_count": 950,
+      "pair_coverage": 1.0
+    },
+    {
+      "split": "train",
+      "sequence_id": "20190926_193515_1_6",
+      "sequence_path": "samples\\Anti-UAV300\\extracted\\train\\20190926_193515_1_6",
+      "RGB_path": "samples\\Anti-UAV300\\extracted\\train\\20190926_193515_1_6\\visible.mp4",
+      "IR_path": "samples\\Anti-UAV300\\extracted\\train\\20190926_193515_1_6\\infrared.mp4",
+      "annotation_paths": [
+        "samples\\Anti-UAV300\\extracted\\train\\20190926_193515_1_6\\visible.json",
+        "samples\\Anti-UAV300\\extracted\\train\\20190926_193515_1_6\\infrared.json"
+      ],
+      "other_files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "RGB_format": "VIDEO",
+      "IR_format": "VIDEO",
+      "RGB_extension": ".mp4",
+      "IR_extension": ".mp4",
+      "RGB_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 1920,
+        "height": 1080,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 50.0,
+        "frame_count": 1000
+      },
+      "IR_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 640,
+        "height": 512,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 50.0,
+        "frame_count": 1000
+      },
+      "RGB_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 500,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 999,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        }
+      ],
+      "IR_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 500,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 999,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        }
+      ],
+      "visible_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 1000,
+        "exist_count": 1000,
+        "annotation_count": 1000,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 944,
+        "target_absent_count": 56,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 0,
+            "gt_rect": []
+          },
+          {
+            "index": 1,
+            "exist": 0,
+            "gt_rect": []
+          },
+          {
+            "index": 2,
+            "exist": 0,
+            "gt_rect": []
+          },
+          {
+            "index": 3,
+            "exist": 0,
+            "gt_rect": []
+          },
+          {
+            "index": 4,
+            "exist": 0,
+            "gt_rect": []
+          }
+        ]
+      },
+      "infrared_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 1000,
+        "exist_count": 1000,
+        "annotation_count": 1000,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 1000,
+        "target_absent_count": 0,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              424,
+              62,
+              82,
+              29
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              420,
+              63,
+              83,
+              30
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              413,
+              63,
+              83,
+              30
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              406,
+              64,
+              83,
+              30
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              399,
+              64,
+              84,
+              30
+            ]
+          }
+        ]
+      },
+      "RGB_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          53,
+          105,
+          158,
+          210,
+          263,
+          315,
+          368,
+          421,
+          473,
+          526,
+          578,
+          631,
+          684,
+          736,
+          789,
+          841,
+          894,
+          946,
+          999
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "IR_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          53,
+          105,
+          158,
+          210,
+          263,
+          315,
+          368,
+          421,
+          473,
+          526,
+          578,
+          631,
+          684,
+          736,
+          789,
+          841,
+          894,
+          946,
+          999
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "RGB_bbox_check": {
+        "checked_present_bboxes": 18,
+        "valid_bboxes": 18,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 1
+      },
+      "IR_bbox_check": {
+        "checked_present_bboxes": 20,
+        "valid_bboxes": 20,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 0
+      },
+      "RGB_frame_count": 1000,
+      "IR_frame_count": 1000,
+      "visible_annotation_record_count": 1000,
+      "infrared_annotation_record_count": 1000,
+      "RGB_count_equals_IR_count": true,
+      "RGB_count_equals_visible_annotation_count": true,
+      "IR_count_equals_infrared_annotation_count": true,
+      "visible_annotation_count_equals_infrared_annotation_count": true,
+      "rgb_only_frames": 0,
+      "ir_only_frames": 0,
+      "common_frame_count": 1000,
+      "pair_coverage": 1.0
+    },
+    {
+      "split": "val",
+      "sequence_id": "20190926_200510_1_8",
+      "sequence_path": "samples\\Anti-UAV300\\extracted\\val\\20190926_200510_1_8",
+      "RGB_path": "samples\\Anti-UAV300\\extracted\\val\\20190926_200510_1_8\\visible.mp4",
+      "IR_path": "samples\\Anti-UAV300\\extracted\\val\\20190926_200510_1_8\\infrared.mp4",
+      "annotation_paths": [
+        "samples\\Anti-UAV300\\extracted\\val\\20190926_200510_1_8\\visible.json",
+        "samples\\Anti-UAV300\\extracted\\val\\20190926_200510_1_8\\infrared.json"
+      ],
+      "other_files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "RGB_format": "VIDEO",
+      "IR_format": "VIDEO",
+      "RGB_extension": ".mp4",
+      "IR_extension": ".mp4",
+      "RGB_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 1920,
+        "height": 1080,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 24.65,
+        "frame_count": 493
+      },
+      "IR_video": {
+        "probe_status": "PASS",
+        "codec": "mpeg4",
+        "width": 640,
+        "height": 512,
+        "channels": 3,
+        "dtype": "uint8",
+        "bit_depth": 8,
+        "pix_fmt": "yuv420p",
+        "fps": 20.0,
+        "avg_frame_rate": "20/1",
+        "duration_sec": 24.65,
+        "frame_count": 493
+      },
+      "RGB_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 246,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        },
+        {
+          "frame_index": 492,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 1920,
+          "height": 1080,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 6220800,
+          "expected_bytes": 6220800,
+          "error": ""
+        }
+      ],
+      "IR_sampled_frames": [
+        {
+          "frame_index": 0,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 246,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        },
+        {
+          "frame_index": 492,
+          "readable": true,
+          "format": "decoded_raw_rgb24_from_mp4",
+          "width": 640,
+          "height": 512,
+          "channels": 3,
+          "dtype": "uint8",
+          "bit_depth": 8,
+          "decoded_bytes": 983040,
+          "expected_bytes": 983040,
+          "error": ""
+        }
+      ],
+      "visible_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 493,
+        "exist_count": 493,
+        "annotation_count": 493,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 474,
+        "target_absent_count": 19,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              919,
+              472,
+              91,
+              82
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              936,
+              473,
+              92,
+              81
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              958,
+              471,
+              82,
+              81
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              968,
+              469,
+              89,
+              79
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              983,
+              469,
+              83,
+              85
+            ]
+          }
+        ]
+      },
+      "infrared_annotation": {
+        "parse_status": "PASS",
+        "top_level_type": "dict",
+        "top_level_keys": [
+          "exist",
+          "gt_rect"
+        ],
+        "record_count": 493,
+        "exist_count": 493,
+        "annotation_count": 493,
+        "target_presence_field": "exist",
+        "bbox_field": "gt_rect",
+        "target_present_count": 479,
+        "target_absent_count": 14,
+        "target_presence_other_values": {},
+        "structure_samples": [
+          {
+            "index": 0,
+            "exist": 1,
+            "gt_rect": [
+              327,
+              277,
+              54,
+              29
+            ]
+          },
+          {
+            "index": 1,
+            "exist": 1,
+            "gt_rect": [
+              334,
+              277,
+              56,
+              28
+            ]
+          },
+          {
+            "index": 2,
+            "exist": 1,
+            "gt_rect": [
+              335,
+              275,
+              59,
+              30
+            ]
+          },
+          {
+            "index": 3,
+            "exist": 1,
+            "gt_rect": [
+              336,
+              274,
+              63,
+              33
+            ]
+          },
+          {
+            "index": 4,
+            "exist": 1,
+            "gt_rect": [
+              331,
+              274,
+              62,
+              32
+            ]
+          }
+        ]
+      },
+      "RGB_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          26,
+          52,
+          78,
+          104,
+          129,
+          155,
+          181,
+          207,
+          233,
+          259,
+          285,
+          311,
+          337,
+          363,
+          388,
+          414,
+          440,
+          466,
+          492
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "IR_annotation_match": {
+        "sampled_annotation_indices": [
+          0,
+          26,
+          52,
+          78,
+          104,
+          129,
+          155,
+          181,
+          207,
+          233,
+          259,
+          285,
+          311,
+          337,
+          363,
+          388,
+          414,
+          440,
+          466,
+          492
+        ],
+        "valid_references": 20,
+        "missing_references": [],
+        "match_rate": 1.0,
+        "count_equals_frame_count": true
+      },
+      "RGB_bbox_check": {
+        "checked_present_bboxes": 19,
+        "valid_bboxes": 19,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 1
+      },
+      "IR_bbox_check": {
+        "checked_present_bboxes": 19,
+        "valid_bboxes": 19,
+        "invalid_bboxes": [],
+        "empty_absent_bboxes": 1
+      },
+      "RGB_frame_count": 493,
+      "IR_frame_count": 493,
+      "visible_annotation_record_count": 493,
+      "infrared_annotation_record_count": 493,
+      "RGB_count_equals_IR_count": true,
+      "RGB_count_equals_visible_annotation_count": true,
+      "IR_count_equals_infrared_annotation_count": true,
+      "visible_annotation_count_equals_infrared_annotation_count": true,
+      "rgb_only_frames": 0,
+      "ir_only_frames": 0,
+      "common_frame_count": 493,
+      "pair_coverage": 1.0
+    }
+  ],
+  "anomalies": {
+    "unreadable_rgb": [],
+    "unreadable_ir": [],
+    "annotation_parse_failure": [],
+    "missing_annotation": [],
+    "missing_rgb": [],
+    "missing_ir": [],
+    "frame_count_mismatch": [],
+    "missing_frame_pair": [],
+    "bbox_problem": [],
+    "unexpected_extension": []
+  },
+  "tools": {
+    "ffprobe": "C:\\miniconda\\pkgs\\ffmpeg-4.2.2-he774522_0\\Library\\bin\\ffprobe.exe",
+    "ffmpeg": "C:\\miniconda\\pkgs\\ffmpeg-4.2.2-he774522_0\\Library\\bin\\ffmpeg.exe"
+  }
+}

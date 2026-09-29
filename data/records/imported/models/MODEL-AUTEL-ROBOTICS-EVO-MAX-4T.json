@@ -1,0 +1,130 @@
+{
+  "record_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+  "record_type": "model",
+  "manufacturer": "Autel Robotics",
+  "model": "EVO Max 4T",
+  "product_category": "四旋翼",
+  "source_id": "SRC-AUTEL-ROBOTICS-AF56163E6D",
+  "license_status": "unknown",
+  "record_status": "reviewed",
+  "performance": {
+    "dimensions": "展开 562×649×150 mm（1136桨）/563×650×150 mm（1158桨）",
+    "empty_weight": "1645 g（ABX40电池+Fusion 4T+桨，官方手册）",
+    "max_takeoff_weight": "1999 g（非EU）；1890 g（EU C2）",
+    "payload": "约354 g（按1645g标准配置与1999g MTOW差值）",
+    "max_flight_time": "42 min（无风，约8 m/s水平飞行）",
+    "max_hover_time": "38 min（无风）",
+    "max_speed": "Ludicrous前向23 m/s；后向18 m/s；侧向20 m/s",
+    "max_altitude": "4000 m（ABX40）；3000 m（ABX41）",
+    "wind_resistance": "起降10.7 m/s；巡航12 m/s",
+    "operating_temperature": "-20~50 °C（无载荷）；-20~40 °C（满载）"
+  },
+  "core_components": [
+    "Fusion 4T：广角相机+变焦相机+激光测距；手册记载广角50MP、变焦48MP/10x连续光学变焦",
+    "非制冷VOx；640×512；测温-20~150 °C / 0~550 °C",
+    "激光测距5-1200 m；另有毫米波雷达感知系统",
+    "ABX40：8070 mAh/14.88 V/120 Wh；ABX41：9248 mAh/14.76 V/136.5 Wh"
+  ],
+  "communication_bands": [
+    "900 MHz（部分地区）；2.4 GHz；5.2 GHz；5.8 GHz"
+  ],
+  "communication_protocols": [
+    "Autel SkyLink（EVO Max系列链路；官方页列频段/距离）"
+  ],
+  "firmware": [
+    "PSDK V1.0.0支持列表：EVO Max 4T固件 V1.9.1.13"
+  ],
+  "sdk": [
+    "Autel Mobile SDK V2.5.x；Payload SDK V1.0.0；Cloud API V1.3"
+  ],
+  "evidence": [
+    {
+      "field": "标准重量",
+      "quote": "EVO Max 4T Weight: 1645 g (ABX40 battery, Fusion 4T gimbal, propellers included)",
+      "locator": "Appendix A, p.160",
+      "url": "https://www.autelrobotics.com/wp-content/uploads/2025/03/EN_EVO-Max-Series-Multi-rotor-Drone-User-Manual_V1.2.5.pdf",
+      "evidence_id": "E020",
+      "value": "1645",
+      "unit": "g"
+    },
+    {
+      "field": "最大起飞重量",
+      "quote": "Maximum take-off mass: 1999 g; EU C2: 1890 g",
+      "locator": "Appendix A, p.160",
+      "url": "https://www.autelrobotics.com/wp-content/uploads/2025/03/EN_EVO-Max-Series-Multi-rotor-Drone-User-Manual_V1.2.5.pdf",
+      "evidence_id": "E021",
+      "value": "1999",
+      "unit": "g"
+    },
+    {
+      "field": "最大飞行时间",
+      "quote": "42 min (windless)",
+      "locator": "Aircraft > Max Flight Time",
+      "url": "https://shop.autelrobotics.com/pages/evo-max-4t-aircraft",
+      "evidence_id": "E022",
+      "value": "42",
+      "unit": "min"
+    },
+    {
+      "field": "GNSS",
+      "quote": "GPS+Galileo+BeiDou+GLONASS",
+      "locator": "Aircraft > GNSS",
+      "url": "https://shop.autelrobotics.com/pages/evo-max-4t-aircraft",
+      "evidence_id": "E023",
+      "value": "GPS+Galileo+BeiDou+GLONASS",
+      "unit": "-"
+    },
+    {
+      "field": "热成像",
+      "quote": "Uncooled VOx microbolometer; 640×512",
+      "locator": "Thermal Camera",
+      "url": "https://shop.autelrobotics.com/pages/evo-max-4t-thermal-camera",
+      "evidence_id": "E024",
+      "value": "640×512 VOx",
+      "unit": "-"
+    },
+    {
+      "field": "通信频段",
+      "quote": "900M; 2.4G; 5.2G; 5.8G with regional limitations",
+      "locator": "Operating Frequency",
+      "url": "https://shop.autelrobotics.com/pages/evo-max-4t-image-transmission",
+      "evidence_id": "E025",
+      "value": "900M/2.4G/5.2G/5.8G",
+      "unit": "-"
+    },
+    {
+      "field": "SDK支持",
+      "quote": "Mobile SDK, Payload SDK and Cloud API list EVO Max support",
+      "locator": "Developer homepage",
+      "url": "https://developer.autelrobotics.com/",
+      "evidence_id": "E026",
+      "value": "MSDK V2.5.x; PSDK V1.0; Cloud API",
+      "unit": "-"
+    },
+    {
+      "field": "固件兼容记录",
+      "quote": "EVO Max 4T firmware V1.9.1.13 with PSDK V1.0.0",
+      "locator": "Supported Product List and Firmware Version",
+      "url": "https://developer.autelrobotics.com/doc/payload_sdk/v1/psdk_docs/en/9/1",
+      "evidence_id": "E027",
+      "value": "V1.9.1.13",
+      "unit": "-"
+    },
+    {
+      "field": "扩展接口",
+      "quote": "Max payload quantity 2: one P-Port, one P-Port Lite",
+      "locator": "Choosing a Drone",
+      "url": "https://developer.autelrobotics.com/doc/payload_sdk/v1/psdk_docs/en/50/3",
+      "evidence_id": "E028",
+      "value": "P-Port + P-Port Lite",
+      "unit": "-"
+    }
+  ],
+  "import_metadata": {
+    "source_file": "datasets/无人机型号与结构化资料调研.xlsx",
+    "source_status": "已核验（基础/规格/SDK）",
+    "verification_note": "机体参数、热成像、开发接口/固件均有Autel官方页面或手册证据；FCC/FAA待补",
+    "regulatory_note": "官方规格页含FCC区域参数；FCC ID/FAA具体记录待查",
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "dataset": "Anti-UAV300",
+  "filename": "Anti-UAV-RGBT.zip",
+  "official_source": "Google Drive official Anti-UAV300 package referenced by the Anti-UAV sources",
+  "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+  "download_endpoint_used": "https://drive.usercontent.google.com/download?id=1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr&export=download&confirm=t",
+  "remote_file_id": "1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr",
+  "remote_filename": "Anti-UAV-RGBT.zip",
+  "remote_mime_type": "application/zip",
+  "remote_modified_time": "2021-05-21T10:41:48.606Z",
+  "expected_size": 6037566331,
+  "actual_size": 6037566331,
+  "size_status": "SIZE_MATCH",
+  "sha256": "ed7d80bbd8ca8e01ea784c64eb0782eae8b3a1572177535c0fada9beb53fdca8",
+  "download_time": "2026-09-29T13:39:05.7684017+08:00",
+  "download_status": "PASS",
+  "download_method": "Windows BITS with official Google Drive usercontent endpoint",
+  "zip_open": "PASS",
+  "zip_integrity": "PASS",
+  "zip_integrity_method": "Python zipfile streamed all 1276 archive files and verified CRC without extracting to disk",
+  "archive_total_entries": 1598,
+  "archive_file_count": 1276,
+  "archive_directory_count": 322,
+  "estimated_extracted_size": 6720200225,
+  "detected_extensions": {
+    ".json": 639,
+    ".mp4": 636,
+    ".py": 1
+  },
+  "top_level_structure": {
+    "framecut.py": "file",
+    "label_new": [
+      "test.json",
+      "train.json",
+      "val.json"
+    ],
+    "test": "sequence directories containing infrared.json, infrared.mp4, visible.json, visible.mp4",
+    "train": "sequence directories containing infrared.json, infrared.mp4, visible.json, visible.mp4",
+    "val": "sequence directories containing infrared.json, infrared.mp4, visible.json, visible.mp4"
+  },
+  "sequence_count": 318,
+  "sequence_count_by_split": {
+    "test": 91,
+    "train": 160,
+    "val": 67
+  },
+  "rgb_structure_found": true,
+  "ir_structure_found": true,
+  "annotation_structure_found": true,
+  "structure_notes": [
+    "RGB/visible files are named visible.mp4.",
+    "Thermal IR files are named infrared.mp4.",
+    "Per-sequence annotations are visible.json and infrared.json.",
+    "Split-level annotation/index files are present under label_new/.",
+    "Sequence count is 318, matching the official RGB-T video-pair scale."
+  ],
+  "selected_validation_sequences": [
+    {
+      "split": "test",
+      "sequence": "20190925_111757_1_1",
+      "path": "test/20190925_111757_1_1/",
+      "files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "uncompressed_size": 16277308
+    },
+    {
+      "split": "test",
+      "sequence": "20190926_111509_1_7",
+      "path": "test/20190926_111509_1_7/",
+      "files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "uncompressed_size": 16762482
+    },
+    {
+      "split": "train",
+      "sequence": "20190925_205804_1_7",
+      "path": "train/20190925_205804_1_7/",
+      "files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "uncompressed_size": 24995054
+    },
+    {
+      "split": "train",
+      "sequence": "20190926_193515_1_6",
+      "path": "train/20190926_193515_1_6/",
+      "files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "uncompressed_size": 28396926
+    },
+    {
+      "split": "val",
+      "sequence": "20190926_200510_1_8",
+      "path": "val/20190926_200510_1_8/",
+      "files": [
+        "infrared.json",
+        "infrared.mp4",
+        "visible.json",
+        "visible.mp4"
+      ],
+      "uncompressed_size": 13570550
+    }
+  ],
+  "license_status": "RISK",
+  "redistribution_note": "Raw Anti-UAV300 data is retained for internal research/validation only and must not be redistributed unless redistribution rights are explicitly confirmed.",
+  "ready_for_rgb_ir_file_inspection": "YES",
+  "notes": [
+    "Only Anti-UAV-RGBT.zip was downloaded.",
+    "Anti-UAV410, Anti-UAV600, and other large packages were not downloaded.",
+    "No RGB frame, IR frame, or annotation content was parsed in this step.",
+    "No RGB-IR frame matching, tracking model, or downstream analysis was performed.",
+    "LICENSE_STATUS remains RISK."
+  ]
+}

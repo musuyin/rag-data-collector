@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Drone Model Record",
+  "type": "object",
+  "required": ["record_id", "record_type", "manufacturer", "model", "source_id", "license_status", "evidence", "record_status"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "record_type": {"const": "model"},
+    "manufacturer": {"type": "string", "minLength": 1},
+    "model": {"type": "string", "minLength": 1},
+    "product_category": {"type": "string"},
+    "performance": {"type": "object"},
+    "core_components": {"type": "array", "items": {"type": "string"}},
+    "communication_bands": {"type": "array", "items": {"type": "string"}},
+    "communication_protocols": {"type": "array", "items": {"type": "string"}},
+    "firmware": {"type": "array", "items": {"type": "string"}},
+    "sdk": {"type": "array", "items": {"type": "string"}},
+    "source_id": {"type": "string", "minLength": 1},
+    "license_status": {"enum": ["open", "research_only", "restricted", "unknown", "not_applicable"]},
+    "evidence": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["field", "quote", "locator"], "properties": {"field": {"type": "string"}, "quote": {"type": "string", "minLength": 1}, "locator": {"type": "string", "minLength": 1}, "url": {"type": "string"}}}},
+    "record_status": {"enum": ["draft", "reviewed", "approved"]}
+  }
+}

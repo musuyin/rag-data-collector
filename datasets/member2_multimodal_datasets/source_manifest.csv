@@ -1,0 +1,11 @@
+dataset,source_type,source_url,accessed_date,evidence_type,used_for,license_source
+MMAUD,official project page,https://ntu-aris.github.io/MMAUD/,2026-09-23,"dataset identity, downloads, modalities, license",source validation and sample decision,CC BY-NC-SA 4.0 dataset/work license
+MMAUD,official GitHub,https://github.com/ntu-aris/MMAUD,2026-09-23,repository/code/download context,source validation,"MIT for site/code, separate from dataset/work license"
+MMAUD,paper,https://arxiv.org/abs/2402.03706,2026-09-23,dataset description and modality scale,source validation,not primary license source
+Anti-UAV300,official project page,https://anti-uav.github.io/,2026-09-23,project/challenge identity,source validation,dataset license not confirmed
+Anti-UAV300,official GitHub,https://github.com/ZhaoJ9014/Anti-UAV,2026-09-23,dataset links and Anti-UAV series context,source validation and download routing,MIT for repository code only; dataset license remains RISK
+Anti-UAV300,official Google Drive metadata,https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view,2026-09-23,"filename, MIME, size, official package",download validation,dataset license not confirmed
+Anti-UAV300,paper,https://arxiv.org/abs/2101.08466,2026-09-23,"RGB-T tracking benchmark, scale, annotations",source validation,not primary license source
+DroneRF,official Mendeley Data v1,https://data.mendeley.com/datasets/f4c2b4n755/1,2026-09-29,"official data files, file metadata, license","source, download, and license validation",CC BY 4.0
+DroneRF,official/code GitHub,https://github.com/Al-Sad/DroneRF,2026-09-29,filename/BUI labeling and processing code,label and RF structure validation,"Apache-2.0 for code, separate from dataset license"
+DroneRF,paper/DOI,https://doi.org/10.1016/j.dib.2019.104313,2026-09-29,"dataset description, hardware context, task framing",source validation,not primary license source

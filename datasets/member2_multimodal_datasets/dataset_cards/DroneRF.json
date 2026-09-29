@@ -1,0 +1,459 @@
+﻿{
+    "dataset_id":  "DroneRF",
+    "dataset_name":  "DroneRF",
+    "basic_info":  {
+                       "full_name":  "DroneRF dataset: A dataset of drones for RF-based detection, classification, and identification",
+                       "version":  "Mendeley Data v1",
+                       "series":  "NOT_APPLICABLE",
+                       "authors":  [
+                                       "Mohammad Al-Sa\u0027d",
+                                       "Mhd Saria Allahham",
+                                       "Amr Mohamed",
+                                       "Abdulla Al-Ali",
+                                       "Tamer Khattab",
+                                       "Aiman Erbad"
+                                   ],
+                       "organization":  "Qatar University; Tampere University of Technology / Tampere University affiliation for Mohammad F. Al-Sa\u0027d in the data article",
+                       "publication_year":  "2019",
+                       "official_url":  "https://data.mendeley.com/datasets/f4c2b4n755/1",
+                       "dataset_repository":  "https://data.mendeley.com/datasets/f4c2b4n755/1",
+                       "repository_url":  "https://github.com/Al-Sad/DroneRF",
+                       "paper_url":  "https://doi.org/10.1016/j.dib.2019.104313",
+                       "related_research_paper_url":  "https://doi.org/10.1016/j.future.2019.05.007",
+                       "doi":  "10.17632/f4c2b4n755.1",
+                       "download_url":  "https://data.mendeley.com/datasets/f4c2b4n755/1",
+                       "citation":  "Al-Sa\u0027d, Mohammad; Allahham, Mhd Saria; Mohamed, Amr; Al-Ali, Abdulla; Khattab, Tamer; Erbad, Aiman (2019), DroneRF dataset: A dataset of drones for RF-based detection, classification, and identification, Mendeley Data, v1. http://dx.doi.org/10.17632/f4c2b4n755.1"
+                   },
+    "official_version_assessment":  {
+                                        "official_version":  "Mendeley Data v1",
+                                        "official_dataset_doi":  "10.17632/f4c2b4n755.1",
+                                        "other_versions_found":  "No other official Mendeley version confirmed in this audit.",
+                                        "preprocessing_versions":  "Official code generates derived MAT files and processed RF_Data.csv, but these are not the same as the raw Mendeley CSV dataset."
+                                    },
+    "modalities":  {
+                       "RGB Image":  "NO",
+                       "RGB Video":  "NO",
+                       "Thermal / IR":  "NO",
+                       "Audio":  "NO",
+                       "RF":  "YES",
+                       "Radar":  "NO",
+                       "LiDAR":  "NO",
+                       "Event Camera":  "NO",
+                       "Trajectory":  "NO",
+                       "Flight Log":  "NO",
+                       "Telemetry":  "NO",
+                       "GPS":  "NO",
+                       "IMU":  "NO",
+                       "Text Metadata":  "YES"
+                   },
+    "data_scale":  {
+                       "total_size":  "over 40GB according to the Data in Brief article; exact current Mendeley package byte size UNKNOWN",
+                       "number_of_records":  "454 record files",
+                       "number_of_files":  "454 CSV record files by article statement; Mendeley UI/API file listing NOT_CONFIRMED",
+                       "number_of_segments":  "227 recorded segments",
+                       "number_of_samples":  "4,540 x 10^6 raw samples by published table totals",
+                       "duration":  "10.25 seconds of RF background activities and approximately 5.25 seconds of RF drone communications for each flight mode; total summed duration UNKNOWN",
+                       "number_of_drone_types":  "3 plus no-drone/background condition",
+                       "number_of_operating_modes":  "5 conceptual states: off/background, on and connected, hovering, flying, video recording; 10 BUI classes in official code/table",
+                       "train_validation_test_split":  "No fixed official train/validation/test split confirmed; related work/code uses 10-fold cross-validation.",
+                       "raw_or_processed_scale":  "Raw RF CSV scale; official code can generate smaller processed/FFT MAT and RF_Data.csv derivatives, but those are not the raw Mendeley dataset."
+                   },
+    "drone_models":  {
+                         "models":  [
+                                        "Parrot Bebop",
+                                        "Parrot AR Drone",
+                                        "DJI Phantom / Phantom 3 reference in paper"
+                                    ],
+                         "background_condition":  "No Drone / RF background activities",
+                         "model_count":  3,
+                         "controllers_or_apps":  [
+                                                     "FreeFlight Pro for Bebop",
+                                                     "AR.FreeFlight for AR Drone",
+                                                     "DJI Go for Phantom"
+                                                 ]
+                     },
+    "operating_modes":  {
+                            "conceptual_modes":  [
+                                                     "OFF / no-drone RF background",
+                                                     "ON / connected to controller",
+                                                     "hovering",
+                                                     "flying without video recording",
+                                                     "flying with video recording"
+                                                 ],
+                            "bui_mapping_source_level":  {
+                                                             "00000":  "RF background activities / no drone",
+                                                             "10000":  "Bebop mode 1 / on and connected",
+                                                             "10001":  "Bebop mode 2 / hovering",
+                                                             "10010":  "Bebop mode 3 / flying without video recording",
+                                                             "10011":  "Bebop mode 4 / flying with video recording",
+                                                             "10100":  "AR mode 1 / on and connected",
+                                                             "10101":  "AR mode 2 / hovering",
+                                                             "10110":  "AR mode 3 / flying without video recording",
+                                                             "10111":  "AR mode 4 / flying with video recording",
+                                                             "11000":  "Phantom activity / mode 1 in official code and common published summaries"
+                                                         },
+                            "mode_label_source":  "Filename BUI and official labeling scripts",
+                            "notes":  "The data article example text and official code are not perfectly consistent for Phantom BUI examples; file-level validation is required before treating any filename map as verified."
+                        },
+    "rf_data_representation":  {
+                                   "PRIMARY_MODALITY":  "RF",
+                                   "SECONDARY_MODALITY":  "TEXT_METADATA",
+                                   "RAW_RF_AVAILABLE":  "YES",
+                                   "IQ_AVAILABLE":  "NO",
+                                   "SPECTRUM_AVAILABLE":  "NO",
+                                   "SPECTROGRAM_AVAILABLE":  "NO",
+                                   "raw_rf_description":  "CSV time-domain amplitude samples of acquired raw RF signals.",
+                                   "iq_note":  "Hardware has an I/Q sample-rate specification, but published dataset files are described as amplitude samples, not complex I/Q pairs.",
+                                   "spectrum_note":  "Frequency-domain spectra can be computed by DFT/FFT; official MATLAB aggregation code creates derived FFT/MAT data, but precomputed spectrum is not confirmed as the raw dataset.",
+                                   "spectrogram_note":  "No official stored spectrogram images/files confirmed."
+                               },
+    "file_formats":  {
+                         "raw_data":  [
+                                          "CSV"
+                                      ],
+                         "processed_by_official_code":  [
+                                                            "MAT",
+                                                            "processed RF_Data.csv"
+                                                        ],
+                         "code":  [
+                                      "MATLAB",
+                                      "Python",
+                                      "LabVIEW project files"
+                                  ],
+                         "containers":  [
+                                            "Official Mendeley RAR file objects for selected validation subset",
+                                            "Mendeley Data full file set / Download All"
+                                        ],
+                         "file_pattern":  "\u003cBUI\u003e\u003cL_or_H\u003e_\u003csegment_id\u003e.csv; validated examples include 00000L_21.csv, 00000H_21.csv, 10000L_0.csv, and 10000H_0.csv",
+                         "one_file_represents":  "one lower-band or higher-band part of one RF segment; a full segment requires the L and H pair"
+                     },
+    "labels":  {
+                   "label_source":  "FILENAME / BUI plus official labeling scripts",
+                   "drone_no_drone":  "YES",
+                   "drone_model":  "YES",
+                   "operating_mode":  "YES_SOURCE_LEVEL",
+                   "frequency_band":  "PARTIAL_SOURCE_LEVEL; L/H segment pairing confirmed, exact physical semantics and per-file frequency range UNKNOWN",
+                   "channel":  "PARTIAL; L/H denotes a two-part segment pair, exact physical path semantics UNKNOWN",
+                   "timestamp":  "NO_CONFIRMED",
+                   "recording_id":  "YES via segment number in filename",
+                   "session_id":  "UNKNOWN",
+                   "environment":  "WEAK via dataset-level lab/source location, not per-file metadata",
+                   "standalone_annotation_file":  "NO_CONFIRMED",
+                   "label_levels":  {
+                                        "level_1":  "drone vs no drone",
+                                        "level_2":  "Bebop / AR / Phantom / no drone",
+                                        "level_3":  "BUI/model/mode class"
+                                    }
+               },
+    "license":  {
+                    "license_name":  "CC BY 4.0",
+                    "research_use":  "YES",
+                    "commercial_use":  "YES under CC BY 4.0 terms unless additional platform terms apply",
+                    "redistribution":  "YES under CC BY 4.0 attribution terms",
+                    "modification":  "YES under CC BY 4.0 attribution terms",
+                    "citation_required":  "YES / attribution required",
+                    "registration_required":  "UNKNOWN",
+                    "download_terms":  "Mendeley Data Terms of Use may apply; no separate dataset restriction found in source audit",
+                    "license_status":  "PASS",
+                    "code_license":  "Apache-2.0 for official code repository; separate from dataset CC BY 4.0 license"
+                },
+    "collection_environment":  {
+                                   "environment":  "Laboratory setting",
+                                   "data_source_location":  "Department of Computer Science and Engineering, College of Engineering, Qatar University, Doha, Qatar",
+                                   "indoor_outdoor":  "Laboratory setting; exact indoor/outdoor field NOT separately labeled",
+                                   "line_of_sight":  "UNKNOWN",
+                                   "distance":  "UNKNOWN",
+                                   "interference":  "UNKNOWN",
+                                   "notes":  "RF receivers intercepted drone-controller communications; mobile apps/flight controllers were used to change modes."
+                               },
+    "sensor_information":  {
+                               "receiver_model":  "National Instruments USRP-2943 / NI-USRP2943R RF receivers",
+                               "antenna":  "UNKNOWN",
+                               "frequency_range":  "USRP receiver specification: 1.2GHz-6GHz; experiment assumes drones use WiFi at 2.4GHz and captures an 80MHz technology spectrum using two 40MHz receivers.",
+                               "center_frequency":  "2.4GHz assumption for the experiment; exact per-record center frequency UNKNOWN",
+                               "sample_rate":  "UNKNOWN for actual stored files; hardware maximum I/Q sample rate is 200 MS/s and must not be treated as the stored sample rate",
+                               "bandwidth":  "40MHz maximum instantaneous bandwidth per receiver; two receivers capture lower and upper halves of an 80MHz spectrum",
+                               "number_of_channels":  "2 channels in receiver specification; two receivers used for lower/upper spectrum halves",
+                               "bit_depth":  "14-bit ADC resolution in receiver specification",
+                               "recording_duration":  "10.25s background; approximately 5.25s per drone flight mode; per-file durations NOT_FILE_VALIDATED",
+                               "distance":  "UNKNOWN",
+                               "line_of_sight":  "UNKNOWN",
+                               "interference":  "UNKNOWN"
+                           },
+    "multimodal_association":  {
+                                   "association_strength":  "WEAK",
+                                   "primary_modality":  "RF",
+                                   "secondary_modality":  "TEXT_METADATA",
+                                   "rf_model_association":  "STRONG",
+                                   "rf_mode_association":  "STRONG",
+                                   "rf_recording_session_association":  "MEDIUM",
+                                   "reason":  "DroneRF is RF + text metadata/labels, not a synchronized RGB/audio/radar/LiDAR multimodal dataset. Its project value is knowledge-level association between drone entities, operating modes, and RF samples.",
+                                   "knowledge_level_association":  "STRONG for RF file/segment to drone model and operating mode through filename/BUI and official labeling scripts; not sensor-level synchronization"
+                               },
+    "download_structure":  {
+                               "download_performed":  "YES_SELECTED_SUBSET_ONLY",
+                               "large_download_performed":  "YES_MANUALLY_APPROVED_MEDIUM_SAMPLE",
+                               "official_download_url":  "https://data.mendeley.com/datasets/f4c2b4n755/1",
+                               "package_name":  "DroneRF Mendeley Data v1 file set",
+                               "package_size":  "official full dataset over 40GB; selected validation subset 714,741,588 bytes compressed and 7,816,289,911 bytes extracted",
+                               "file_count":  "454 CSV record files in official full dataset by article; selected validation subset contains 82 extracted CSV files",
+                               "modality":  "RF",
+                               "single_file_download":  "YES for official Mendeley RAR file objects used in this validation; individual CSV direct download remains NO_CONFIRMED",
+                               "per_drone_download":  "PARTIAL via official Mendeley RAR file objects; selected Bebop ON/Connected RAR pair validated",
+                               "per_operating_mode_download":  "PARTIAL via official Mendeley RAR file objects; selected Bebop ON/Connected RAR pair validated",
+                               "compressed_package_download":  "YES for selected official RAR file objects",
+                               "complete_dataset_download":  "YES via Mendeley Download All button",
+                               "partial_download_supported":  "YES_OFFICIAL_RAR_OBJECTS; NO_CONFIRMED_INDIVIDUAL_CSV",
+                               "notes":  "Four official Mendeley RAR files were downloaded and validated for the approved sample only; this is not a full \u003e40GB dataset validation.",
+                               "small_sample_available":  "YES_OFFICIAL_SELECTED_RAW_RF_SUBSET"
+                           },
+    "sample_validation_plan":  [
+                                   {
+                                       "candidate_name":  "Official selected raw RF validation subset",
+                                       "status":  "COMPLETED_VALIDATED",
+                                       "source":  "Official Mendeley Data v1 RAR file objects",
+                                       "files":  [
+                                                     "RF Data_00000_L2.rar",
+                                                     "FR Data_00000_H2.rar",
+                                                     "RF Data_10000_L.rar",
+                                                     "RF Data_10000_H.rar"
+                                                 ],
+                                       "compressed_size_bytes":  714741588,
+                                       "extracted_csv_count":  82,
+                                       "background":  "BUI 00000; 20 L + 20 H CSV; segments 21-40; No Drone / Background",
+                                       "drone":  "BUI 10000; 21 L + 21 H CSV; segments 0-20; Parrot Bebop ON / Connected",
+                                       "raw_or_processed":  "raw RF CSV inside official RAR archives",
+                                       "validated":  [
+                                                         "RF_FILE_READABILITY",
+                                                         "NUMERIC_PARSE",
+                                                         "SAMPLE_COUNT_ON_12_SAMPLED_CSVS",
+                                                         "SIGNAL_RANGE_ON_12_SAMPLED_CSVS",
+                                                         "NAN_INF_PARSE_ERRORS_ON_12_SAMPLED_CSVS",
+                                                         "RAR_INTEGRITY",
+                                                         "L_H_PAIRING",
+                                                         "FILENAME_LABEL_PARSE",
+                                                         "DRONE_MODEL_ASSOCIATION",
+                                                         "OPERATING_MODE_ASSOCIATION",
+                                                         "BACKGROUND_LABEL"
+                                                     ],
+                                       "not_validated":  [
+                                                             "full \u003e40GB dataset end-to-end",
+                                                             "stored sample rate",
+                                                             "exact L/H physical semantics",
+                                                             "FFT/STFT/spectrogram",
+                                                             "embedding",
+                                                             "model training"
+                                                         ]
+                                   }
+                               ],
+    "validation_summary":  {
+                               "source_validation":  "PASS",
+                               "technical_validation":  "PASS",
+                               "label_validation":  "PASS",
+                               "rf_structure_validation":  "PASS",
+                               "license_validation":  "PASS",
+                               "collection_environment_validation":  "PARTIAL",
+                               "sensor_parameter_validation":  "PARTIAL",
+                               "annotation_validation":  "PASS_FILENAME_BUI_LABELS",
+                               "cross_modal_validation":  "NOT_APPLICABLE_RF_SINGLE_MODALITY",
+                               "dataset_status":  "VERIFIED",
+                               "project_readiness":  "BASIC_USABLE",
+                               "primary_modality":  "RF",
+                               "secondary_modality":  "TEXT_METADATA_LABELS",
+                               "raw_rf":  "PASS",
+                               "csv_readability":  "PASS",
+                               "numeric_parse":  "PASS",
+                               "l_h_pairing":  "PASS",
+                               "segment_structure":  "PASS",
+                               "filename_parse":  "PASS",
+                               "background_label_validation":  "PASS",
+                               "drone_model_label_validation":  "PASS",
+                               "operating_mode_label_validation":  "PASS",
+                               "sample_rate":  "UNKNOWN",
+                               "l_h_physical_semantics":  "TWO_PART_SEGMENT_PAIR_CONFIRMED; EXACT_PHYSICAL_SEMANTICS_UNKNOWN",
+                               "rf_model_association":  "STRONG",
+                               "rf_mode_association":  "STRONG",
+                               "rf_knowledge_index_feasible":  "YES",
+                               "validated_sample":  "4 official RAR archives; 82 extracted CSV; Background segments 21-40; Parrot Bebop ON/Connected segments 0-20"
+                           },
+    "sources":  [
+                    {
+                        "source_url":  "https://data.mendeley.com/datasets/f4c2b4n755/1",
+                        "source_type":  "Level 1 official Mendeley Data page",
+                        "evidence":  "Official dataset page for DroneRF v1; lists DOI 10.17632/f4c2b4n755.1, contributors, CC BY 4.0 license, 227 recorded segments, 3 drones, background RF activities, RF receivers, and dataset description.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://pmc.ncbi.nlm.nih.gov/articles/PMC6727013/",
+                        "source_type":  "Level 2 original Data in Brief article / open access full text",
+                        "evidence":  "Describes over 40GB raw RF CSV data, 227 segments, 454 record files, drone model table, filename BUI metadata, USRP receiver parameters, and collection environment.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://tuhat.helsinki.fi/ws/portalfiles/portal/174931254/1_s2.0_S2352340919306675_main.pdf",
+                        "source_type":  "Level 2 original Data in Brief PDF mirror",
+                        "evidence":  "PDF of the DroneRF data article, including data scale, raw CSV format, acquisition setup, receiver parameters, and BUI labeling description.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://www.sciencedirect.com/science/article/pii/S0167739X18330760",
+                        "source_type":  "Level 2 related original research paper",
+                        "evidence":  "Related research article: RF-based drone detection and identification using deep learning approaches; confirms public RF database and detection/identification tasks.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://al-sad.github.io/DroneRF/",
+                        "source_type":  "Level 3 author/project page",
+                        "evidence":  "Author project page links Mendeley dataset, related paper, code repository, and dataset citation.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://github.com/Al-Sad/DroneRF",
+                        "source_type":  "Level 4 official code repository",
+                        "evidence":  "Official code repository with LabVIEW, MATLAB, and Python scripts; states the database is available on Mendeley and code is for RF signal detection/identification.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://raw.githubusercontent.com/Al-Sad/DroneRF/master/Matlab/Main_1_Data_aggregation.m",
+                        "source_type":  "Level 4 official MATLAB processing code",
+                        "evidence":  "Shows BUI groups for background, Bebop, AR, and Phantom; reads raw CSV L/H files; applies FFT and saves derived MAT files.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://raw.githubusercontent.com/Al-Sad/DroneRF/master/Matlab/Main_2_Data_labeling.m",
+                        "source_type":  "Level 4 official MATLAB labeling code",
+                        "evidence":  "Shows label construction for drone/no-drone, drone type, and BUI/mode class using derived MAT files.",
+                        "accessed_date":  "2026-09-27"
+                    },
+                    {
+                        "source_url":  "https://raw.githubusercontent.com/Al-Sad/DroneRF/master/Python/Classification.py",
+                        "source_type":  "Level 4 official Python classification code",
+                        "evidence":  "Loads processed RF_Data.csv and treats rows 2048-2050 as three label levels. This is processed workflow evidence, not raw dataset format evidence.",
+                        "accessed_date":  "2026-09-27"
+                    }
+                ],
+    "last_checked":  "2026-09-29",
+    "notes":  [
+                  "Source validation PASS and technical validation PASS on an official selected raw RF subset.",
+                  "Validation was performed on an official selected raw RF subset, not the full \u003e40GB dataset.",
+                  "DroneRF is RF + text metadata/labels, not a synchronized multimodal sensor dataset.",
+                  "RF_MODEL_ASSOCIATION and RF_MODE_ASSOCIATION are STRONG through filename/BUI and official mapping scripts, not through sensor-level synchronization.",
+                  "Stored-file sample rate and exact L/H physical semantics remain UNKNOWN."
+              ],
+    "validated_sample":  {
+                             "scope":  "Official selected raw RF subset, not full DroneRF dataset",
+                             "source":  "Mendeley Data v1 official RAR file objects",
+                             "compressed_files":  4,
+                             "compressed_size_bytes":  714741588,
+                             "extracted_csv_count":  82,
+                             "extracted_size_bytes":  7816289911,
+                             "background":  {
+                                                "l_files":  20,
+                                                "h_files":  20,
+                                                "segment_ids":  "21-40",
+                                                "bui":  "00000",
+                                                "label":  "No Drone / RF background"
+                                            },
+                             "drone":  {
+                                           "model":  "Parrot Bebop",
+                                           "operating_mode":  "ON / Connected",
+                                           "l_files":  21,
+                                           "h_files":  21,
+                                           "segment_ids":  "0-20",
+                                           "bui":  "10000"
+                                       },
+                             "reports":  [
+                                             "samples/DroneRF/download_manifest.json",
+                                             "validation/DroneRF_download_validation.json",
+                                             "validation/DroneRF_file_inspection.json"
+                                         ]
+                         },
+    "technical_validation":  {
+                                 "status":  "PASS",
+                                 "raw_rf":  "PASS",
+                                 "csv_readability":  "PASS",
+                                 "numeric_parse":  "PASS",
+                                 "l_h_pairing":  "PASS",
+                                 "segment_structure":  "PASS",
+                                 "filename_parse":  "PASS",
+                                 "rar_integrity":  "PASS",
+                                 "sampled_csv_count":  12,
+                                 "sampled_csv_numeric_values_per_file":  10000000,
+                                 "nan_inf_parse_errors":  "NONE_DETECTED_IN_SAMPLED_CSVS"
+                             },
+    "label_validation":  {
+                             "status":  "PASS",
+                             "background_label":  "PASS",
+                             "drone_model_label":  "PASS",
+                             "operating_mode_label":  "PASS",
+                             "segment_id":  "PASS",
+                             "label_source":  "Filename / BUI plus official mapping / labeling scripts"
+                         },
+    "rf_structure_validation":  {
+                                    "status":  "PASS",
+                                    "raw_rf":  "PASS",
+                                    "csv_readability":  "PASS",
+                                    "numeric_parse":  "PASS",
+                                    "l_h_pairing":  "PASS",
+                                    "segment_structure":  "PASS",
+                                    "filename_parse":  "PASS",
+                                    "sample_rate":  "UNKNOWN",
+                                    "l_h_physical_semantics":  "TWO_PART_SEGMENT_PAIR_CONFIRMED; EXACT_PHYSICAL_SEMANTICS_UNKNOWN"
+                                },
+    "knowledge_index_feasibility":  {
+                                        "status":  "YES",
+                                        "reason":  "A stable record can link dataset, segment_id, BUI, drone_model, operating_mode, and paired RF L/H files.",
+                                        "example_shape":  {
+                                                              "dataset":  "DroneRF",
+                                                              "segment_id":  0,
+                                                              "drone_model":  "Parrot Bebop",
+                                                              "operating_mode":  "ON/Connected",
+                                                              "rf":  {
+                                                                         "L_file":  "10000L_0.csv",
+                                                                         "H_file":  "10000H_0.csv"
+                                                                     }
+                                                          }
+                                    },
+    "limitations":  [
+                        "Stored sample rate UNKNOWN; 200 MS/s is a hardware maximum, not the validated stored-file sample rate.",
+                        "Exact L/H physical semantics and per-file frequency ranges remain UNKNOWN.",
+                        "Only a selected official raw RF subset was technically validated, not the full \u003e40GB / 454-CSV dataset.",
+                        "DroneRF is not synchronized with RGB, audio, radar, LiDAR, or other sensor modalities.",
+                        "Full dataset was not inspected end to end.",
+                        "No FFT, STFT, spectrogram, embedding, filtering, downsampling, model training, or classification accuracy validation was performed."
+                    ],
+    "project_readiness":  {
+                              "status":  "BASIC_USABLE",
+                              "notes":  "High-value RF modality source with strong entity/mode association. Use for RF storage, metadata indexing, and knowledge-level association, not synchronous sensor fusion."
+                          },
+    "recommended_uses":  {
+                             "validated_functions":  [
+                                                         "RF data storage",
+                                                         "RF metadata indexing",
+                                                         "Drone model to RF retrieval",
+                                                         "Operating mode to RF retrieval",
+                                                         "RF knowledge graph",
+                                                         "Multimodal knowledge system at knowledge layer"
+                                                     ],
+                             "future_use":  [
+                                                "RF feature extraction experiments",
+                                                "Spectrogram generation",
+                                                "RF embedding experiments",
+                                                "Classification experiments"
+                                            ]
+                         },
+    "final_dataset_evaluation":  {
+                                     "source_validation":  "PASS",
+                                     "technical_validation":  "PASS",
+                                     "label_validation":  "PASS",
+                                     "rf_structure_validation":  "PASS",
+                                     "license_validation":  "PASS",
+                                     "collection_environment_validation":  "PARTIAL",
+                                     "sensor_parameter_validation":  "PARTIAL",
+                                     "final_dataset_status":  "VERIFIED",
+                                     "scope_note":  "VERIFIED for the project-relevant RF structure, label association, and file readability based on an official selected raw RF subset; not a claim that every full-dataset file was inspected."
+                                 },
+    "conflicts":  [
+
+                  ]
+}

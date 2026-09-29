@@ -1,0 +1,13 @@
+{
+  "record_id": "CONFLICT-<ENTITY>-<FIELD>-001",
+  "record_type": "conflict",
+  "entity_id": "MODEL-",
+  "field": "performance.max_flight_time_min",
+  "conflicting_values": [
+    {"value": 0, "source_id": "SRC-"},
+    {"value": 0, "source_id": "SRC-"}
+  ],
+  "source_ids": ["SRC-", "SRC-"],
+  "status": "open",
+  "resolution": ""
+}

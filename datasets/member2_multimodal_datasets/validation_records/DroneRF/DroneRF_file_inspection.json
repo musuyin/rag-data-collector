@@ -1,0 +1,155 @@
+{
+  "dataset": "DroneRF",
+  "version": "Mendeley Data v1",
+  "stage": "RF_FILE_TECHNICAL_VALIDATION",
+  "validation_time": "2026-09-29T00:04:48.2864701+08:00",
+  "download_validation_dependency": "validation/DroneRF_download_validation.json",
+  "source_archives": [
+    "samples/DroneRF/raw/RF Data_00000_L2.rar",
+    "samples/DroneRF/raw/FR Data_00000_H2.rar",
+    "samples/DroneRF/raw/RF Data_10000_L.rar",
+    "samples/DroneRF/raw/RF Data_10000_H.rar"
+  ],
+  "extraction": {
+    "status": "PASS",
+    "destination": "samples/DroneRF/extracted/",
+    "extracted_file_count": 82,
+    "total_extracted_size": 7816289911,
+    "csv_count": 82,
+    "expected_csv_count": 82,
+    "csv_count_status": "MATCH",
+    "empty_file_count": 0,
+    "unreadable_file_count": 0,
+    "unexpected_extension_count": 0,
+    "raw_archives_modified": false
+  },
+  "file_groups": {
+    "BACKGROUND_L": {
+      "file_count": 20,
+      "bui": "00000",
+      "lh": "L",
+      "segment_ids": "21-40",
+      "min_segment_id": 21,
+      "max_segment_id": 40,
+      "total_size": 1888162734
+    },
+    "BACKGROUND_H": {
+      "file_count": 20,
+      "bui": "00000",
+      "lh": "H",
+      "segment_ids": "21-40",
+      "min_segment_id": 21,
+      "max_segment_id": 40,
+      "total_size": 1886399598
+    },
+    "DRONE_L": {
+      "file_count": 21,
+      "bui": "10000",
+      "lh": "L",
+      "segment_ids": "0-20",
+      "min_segment_id": 0,
+      "max_segment_id": 20,
+      "total_size": 2057039087
+    },
+    "DRONE_H": {
+      "file_count": 21,
+      "bui": "10000",
+      "lh": "H",
+      "segment_ids": "0-20",
+      "min_segment_id": 0,
+      "max_segment_id": 20,
+      "total_size": 1984688492
+    }
+  },
+  "pairing": {
+    "background_l_h_pairing": "PASS",
+    "background_pair_segments": "21-40",
+    "drone_l_h_pairing": "PASS",
+    "drone_pair_segments": "0-20",
+    "l_h_segment_pairing": "PASS"
+  },
+  "sampled_csvs": {
+    "policy": "first/middle/last equivalent requested samples",
+    "background_segments": [21, 30, 40],
+    "drone_segments": [0, 10, 20],
+    "sampled_csv_count": 12,
+    "all_sampled_csv_readable": true,
+    "all_sampled_csv_numeric_parse": true,
+    "nan_total": 0,
+    "inf_total": 0,
+    "parse_error_total": 0,
+    "delimiter": ",",
+    "has_header": false,
+    "data_layout": "single non-empty CSV row containing 10000000 comma-separated numeric values per inspected CSV",
+    "column_semantics": "COLUMN_SEMANTICS_UNKNOWN",
+    "samples": [
+      {"file_name": "00000L_21.csv", "role": "BACKGROUND_L", "file_size": 94403362, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -110.0, "max": 114.0, "mean": -0.0062254, "std": 3.80346246, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "00000H_21.csv", "role": "BACKGROUND_H", "file_size": 94244414, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -180.0, "max": 160.0, "mean": -0.0075958, "std": 2.84835544, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "00000L_30.csv", "role": "BACKGROUND_L", "file_size": 94334792, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -114.0, "max": 124.0, "mean": -0.0079303, "std": 3.6369932, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "00000H_30.csv", "role": "BACKGROUND_H", "file_size": 94321163, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -221.0, "max": 224.0, "mean": -0.0076009, "std": 5.25658784, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "00000L_40.csv", "role": "BACKGROUND_L", "file_size": 94332999, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -100.0, "max": 104.0, "mean": -0.0088865, "std": 3.49638147, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "00000H_40.csv", "role": "BACKGROUND_H", "file_size": 94275529, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -24.0, "max": 24.0, "mean": -0.0055144, "std": 2.74049246, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "10000L_0.csv", "role": "DRONE_L", "file_size": 96868077, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -9243.0, "max": 9336.0, "mean": -0.0073772, "std": 627.38691495, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "10000H_0.csv", "role": "DRONE_H", "file_size": 94303625, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -164.0, "max": 176.0, "mean": -0.0085365, "std": 4.0199459, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "10000L_10.csv", "role": "DRONE_L", "file_size": 96774847, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -9669.0, "max": 9691.0, "mean": -0.005529, "std": 612.13238919, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "10000H_10.csv", "role": "DRONE_H", "file_size": 94368900, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -187.0, "max": 209.0, "mean": -0.005896, "std": 5.68497547, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "10000L_20.csv", "role": "DRONE_L", "file_size": 101067658, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -11753.0, "max": 11092.0, "mean": 0.058746, "std": 1206.64706555, "nan_count": 0, "inf_count": 0, "parse_error_count": 0},
+      {"file_name": "10000H_20.csv", "role": "DRONE_H", "file_size": 94302932, "row_count": 1, "column_count": 10000000, "number_of_samples": 10000000, "dtype": "float64_parse", "min": -66.0, "max": 63.0, "mean": -0.0067971, "std": 2.86780144, "nan_count": 0, "inf_count": 0, "parse_error_count": 0}
+    ]
+  },
+  "filename_parsing": {
+    "pattern": "<BUI><L_or_H>_<segment_id>.csv",
+    "total_csv": 82,
+    "filename_parse_success": 82,
+    "filename_parse_failure": 0,
+    "status": "PASS"
+  },
+  "label_validation": {
+    "background_label_validation": "PASS",
+    "drone_model_label_validation": "PASS",
+    "operating_mode_label_validation": "PASS",
+    "segment_id_validation": "PASS",
+    "evidence": [
+      "Official MATLAB aggregation script groups BUI 00000 as RF background activities.",
+      "Official MATLAB aggregation and labeling scripts group BUI 10000, 10001, 10010, and 10011 as Bebop drone RF activities.",
+      "Official aggregation script loads paired BUI + L/H + '_' + segment_id + '.csv' files.",
+      "Project source audit records the official source-level mapping of 10000 to Parrot Bebop ON / Connected."
+    ]
+  },
+  "rf_numeric_data": {
+    "status": "PASS",
+    "basis": "12 sampled CSVs were stream-parsed as numeric values; all 82 CSVs were non-empty and file-stream readable.",
+    "all_zero_files_detected": false,
+    "constant_files_detected_in_sample": false,
+    "large_unparseable_text_detected": false,
+    "abnormal_nan_inf_detected": false
+  },
+  "sample_rate": "UNKNOWN",
+  "l_h_physical_semantics": "TWO_PART_SEGMENT_PAIR_CONFIRMED; EXACT_PHYSICAL_SEMANTICS_UNKNOWN",
+  "rf_model_association": "STRONG",
+  "rf_mode_association": "STRONG",
+  "rf_knowledge_index_feasible": "YES",
+  "technical_validation": "PASS",
+  "ready_for_final_dataset_evaluation": "YES",
+  "anomalies": [
+    {
+      "severity": "INFO",
+      "description": "CSV files are single very long comma-separated numeric rows. Line-oriented preview commands can emit a full 90MB-plus row; use streaming parsers."
+    }
+  ],
+  "strictly_not_performed": [
+    "FFT",
+    "STFT",
+    "spectrogram generation",
+    "filtering",
+    "downsampling",
+    "model training",
+    "classification accuracy testing",
+    "embedding",
+    "vector database generation",
+    "sample-rate inference",
+    "L/H physical-meaning inference",
+    "additional DroneRF downloads",
+    "final dataset evaluation"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "record_id": "DATASET-MMAUD",
+  "record_type": "dataset",
+  "dataset_name": "MMAUD",
+  "modalities": [
+    "image",
+    "video",
+    "audio",
+    "radar",
+    "trajectory"
+  ],
+  "sample_count": 50,
+  "formats": [
+    "Image",
+    "Video",
+    "Audio",
+    "RF",
+    "Radar",
+    "LiDAR",
+    "Trajectory",
+    "Container",
+    "Annotation",
+    "evidence"
+  ],
+  "label_schema": "{\"fields\": {\"drone_class\": \"YES\", \"drone_model\": \"YES\", \"drone_manufacturer\": \"YES\", \"drone_or_no_drone\": \"YES\", \"bounding_box\": \"YES\", \"segmentation_mask\": \"UNKNOWN\", \"track_id\": \"UNKNOWN\", \"flight_mode\": \"UNKNOWN\", \"distance\": \"UNKNOWN\", \"altitude\": \"YES\", \"position_xyz\": \"YES\", \"GPS\": \"NO\", \"timestamp\": \"YES\", \"sequence_id\": \"YES\", \"sensor_id\": \"YES\", \"SNR\": \"UNKNOWN\", \"frequency\": \"UNKNOWN\", \"bandwidth\": \"UNKNOWN\", \"environment_label\": \"YES\"}, \"label_levels\": {\"Dataset-level\": \"YES\", \"Sequence-level\": \"YES\", \"Frame-level\": \"YES\", \"Object-level\": \"YES\", \"Signal-segment-level\": \"UNKNOWN\"}, \"evidence\": [{\"source_url\": \"https://arxiv.org/html/2402.03706\", \"source_type\": \"Level 2 original paper\", \"evidence\": \"The paper lists drone groups, 2D object detection benchmarks, 3D position estimation, timestamps, ROS topics, and Leica ground truth alignment.\", \"accessed_date\": \"2026-09-20\"}, {\"source_url\": \"https://cvpr2024ug2challenge.github.io/dataset24_t5.html\", \"source_type\": \"official UG2 challenge page\", \"evidence\": \"The challenge page uses MMAUD data for UAV tracking and pose estimation and lists training/validation sequence counts and UAV types.\", \"accessed_date\": \"2026-09-20\"}]}",
+  "collection_environment": "{\"Indoor / Outdoor\": \"Outdoor\", \"Day / Night\": \"No night data included; exact day/evening breakdown UNKNOWN\", \"Urban / Rural\": \"Urban/campus context; exact categories UNKNOWN\", \"Ground / Rooftop / Airport / Lab / Parking Lot\": \"Rooftop for V1; carpark for V2/V3; UG2 variant sampled in a different scene with same equipment\", \"weather\": \"No rainy data included; other weather UNKNOWN\", \"distance_range\": \"V1 mostly below 30 m; V2/V3 up to 100 m; sensor detection ranges differ by modality\", \"altitude_range\": \"V1 mostly below 30 m; V2/V3 up to 100 m\", \"drone_speed\": \"UNKNOWN\", \"line_of_sight\": \"UNKNOWN\", \"background_complexity\": \"V1 rooftop simple; V2 carpark hard; V3 carpark moderate\", \"interference_environment\": \"ambient heavy machinery, powerful air-conditioning systems, and wind noise are mentioned as audio background factors\", \"evidence\": [{\"source_url\": \"https://ntu-aris.github.io/MMAUD/\", \"source_type\": \"Level 1 official dataset page\", \"evidence\": \"The official download table marks V1 as rooftop simple and V2/V3 as carpark hard/moderate; the page states V1 mostly below 30 m and V2/V3 up to 100 m.\", \"accessed_date\": \"2026-09-20\"}, {\"source_url\": \"https://arxiv.org/html/2402.03706\", \"source_type\": \"Level 2 original paper\", \"evidence\": \"The paper states outdoor testing, ambient machinery/air-conditioning/wind audio noise, and no night or rainy-condition data.\", \"accessed_date\": \"2026-09-20\"}]}",
+  "license_status": "restricted",
+  "source_id": "SRC-MMAUD-83702A3E25",
+  "download_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+  "sample_validation_status": "passed",
+  "record_status": "reviewed",
+  "import_metadata": {
+    "source_card": "datasets/member2_multimodal_datasets/dataset_cards/MMAUD.json",
+    "license_detail": {
+      "license_name": "CC BY-NC-SA 4.0 for dataset/work; repository LICENSE file is MIT for site/code",
+      "research_use": "YES",
+      "commercial_use": "NO",
+      "redistribution": "YES",
+      "modification": "YES",
+      "citation_required": "YES",
+      "registration_required": "UNKNOWN",
+      "license_source": [
+        {
+          "source_url": "https://ntu-aris.github.io/MMAUD/#licence",
+          "source_type": "Level 1 official dataset page",
+          "evidence": "The official Licence section states that the work is licensed under CC BY-NC-SA 4.0, is intended for non-commercial academic use, and requests contact for commercial purposes.",
+          "accessed_date": "2026-09-20"
+        },
+        {
+          "source_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "source_type": "license deed",
+          "evidence": "The deed lists Share and Adapt freedoms under Attribution, NonCommercial, and ShareAlike terms.",
+          "accessed_date": "2026-09-20"
+        },
+        {
+          "source_url": "https://raw.githubusercontent.com/ntu-aris/MMAUD/gh-pages/LICENSE",
+          "source_type": "official GitHub repository LICENSE file",
+          "evidence": "The repository LICENSE file is MIT. This is recorded separately from the dataset/work license because the official page License section states CC BY-NC-SA 4.0.",
+          "accessed_date": "2026-09-20"
+        }
+      ]
+    },
+    "data_scale": {
+      "total_size": "V1 visible rows total 72.5 GB; full V1/V2/V3 total UNKNOWN",
+      "number_of_files": "UNKNOWN",
+      "image_count": "UNKNOWN",
+      "video_count": "UNKNOWN",
+      "audio_count": "UNKNOWN",
+      "sequence_count": "50",
+      "duration": "paper: over 1700 seconds; V1 visible rows total 1525.5 seconds; V2/V3 durations UNKNOWN",
+      "number_of_drone_models": "5 named UAV models plus ambient-noise sequences in the paper; UG2 challenge variant also mentions M30",
+      "train_size": "60% of 50 sequences in paper split, approximately 30 sequences",
+      "validation_size": "20% of 50 sequences in paper split, approximately 10 sequences",
+      "test_size": "20% of 50 sequences in paper split, approximately 10 sequences",
+      "evidence": [
+        {
+          "source_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+          "source_type": "Level 1 official dataset page",
+          "evidence": "The V1 download table lists Mavic2 14.1 GB / 198 s, Mavic3 11.1 GB / 321.1 s, Phantom4 13.2 GB / 181.4 s, Avata 19.7 GB / 396.3 s, and M300 14.4 GB / 428.7 s. V2/V3 rows show unknown size/duration.",
+          "accessed_date": "2026-09-20"
+        },
+        {
+          "source_url": "https://arxiv.org/html/2402.03706",
+          "source_type": "Level 2 original paper",
+          "evidence": "The paper states that over 1700 seconds of multimodal rosbag data were divided into 50 sequences with a 60/20/20 train/test/validation allocation.",
+          "accessed_date": "2026-09-20"
+        }
+      ]
+    },
+    "multimodal_association": {
+      "common_sequence_id": "YES",
+      "common_drone_id": "YES",
+      "common_timestamp": "YES",
+      "frame_timestamp": "YES",
+      "sensor_timestamp": "YES",
+      "synchronization_method": "PARTIAL",
+      "calibration_file": "YES",
+      "extrinsic_calibration": "YES",
+      "intrinsic_calibration": "YES",
+      "ground_truth_alignment": "YES",
+      "association_strength": "STRONG",
+      "notes": [
+        "STRONG is assigned at source level because the official sources provide ROS timestamps, sequence organization, calibration assets, and Leica/image timestamp alignment.",
+        "The paper also reports sensor synchronization limitations and ground-truth gaps, so sample-level synchronization remains NOT_TESTED until data is inspected."
+      ],
+      "evidence": [
+        {
+          "source_url": "https://arxiv.org/html/2402.03706",
+          "source_type": "Level 2 original paper",
+          "evidence": "The paper states ROS messages carry header.stamp timestamps, Leica timestamps are used to align images with ground truth, and sensor calibration methods are provided. It also states synchronization remains challenging.",
+          "accessed_date": "2026-09-20"
+        },
+        {
+          "source_url": "https://ntu-aris.github.io/MMAUD/",
+          "source_type": "Level 1 official dataset page",
+          "evidence": "The official page provides calibration data links and ROSBag/folder data downloads.",
+          "accessed_date": "2026-09-20"
+        }
+      ]
+    },
+    "unmapped_modalities": [
+      "LiDAR",
+      "Text Metadata"
+    ],
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}

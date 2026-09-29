@@ -1,0 +1,139 @@
+{
+  "record_id": "MODEL-DJI-MAVIC-3-ENTERPRISE",
+  "record_type": "model",
+  "manufacturer": "DJI",
+  "model": "Mavic 3 Enterprise",
+  "product_category": "四旋翼",
+  "source_id": "SRC-DJI-87A19CA5EE",
+  "license_status": "unknown",
+  "record_status": "reviewed",
+  "performance": {
+    "dimensions": "折叠 221×96.3×90.3 mm；展开 347.5×283×107.7 mm（均不含桨）",
+    "empty_weight": "915 g（含桨，不含附件）",
+    "max_takeoff_weight": "1050 g",
+    "payload": "约135 g（由MTOW-标准重量推得，仅作载荷余量参考）",
+    "max_flight_time": "45 min（无风，标准电池/桨）",
+    "max_hover_time": "38 min（无风）",
+    "max_speed": "Normal 15 m/s；Sport前向21 m/s/侧向20 m/s/后向19 m/s",
+    "max_altitude": "6000 m（无载荷）",
+    "wind_resistance": "12 m/s",
+    "operating_temperature": "-10~40 °C"
+  },
+  "core_components": [
+    "广角：4/3 CMOS 20MP；长焦：1/2-inch CMOS 12MP",
+    "无（3E；3T/3TA带热成像）",
+    "底部红外传感器用于避障/定位辅助",
+    "DJI Mavic 3 Series Intelligent Flight Battery"
+  ],
+  "communication_bands": [
+    "2.400-2.4835 GHz；5.725-5.850 GHz"
+  ],
+  "communication_protocols": [
+    "DJI O3 Enterprise Transmission"
+  ],
+  "firmware": [
+    "MSDK 5.18.0支持列表中的机身固件：10.01.05.03（兼容性记录，并非宣称最新固件）"
+  ],
+  "sdk": [
+    "DJI Mobile SDK V5；Payload SDK（Mavic 3 Enterprise Series推荐PSDK 3.9.2）"
+  ],
+  "evidence": [
+    {
+      "field": "标准重量",
+      "quote": "DJI Mavic 3E: 915 g",
+      "locator": "Aircraft > Weight",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E001",
+      "value": "915",
+      "unit": "g"
+    },
+    {
+      "field": "最大起飞重量",
+      "quote": "DJI Mavic 3E/3T/3TA: 1050 g",
+      "locator": "Aircraft > Max Takeoff Weight",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E002",
+      "value": "1050",
+      "unit": "g"
+    },
+    {
+      "field": "最大飞行时间",
+      "quote": "45 minutes (no wind, standard battery/propellers)",
+      "locator": "Aircraft > Max Flight Time",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E003",
+      "value": "45",
+      "unit": "min"
+    },
+    {
+      "field": "最大飞行速度",
+      "quote": "Sport mode forward: 21 m/s",
+      "locator": "Aircraft > Max Flight Speed",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E004",
+      "value": "21",
+      "unit": "m/s"
+    },
+    {
+      "field": "GNSS",
+      "quote": "GPS+Galileo+BeiDou+GLONASS; GLONASS requires RTK module",
+      "locator": "Aircraft > GNSS",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E005",
+      "value": "GPS+Galileo+BeiDou+GLONASS",
+      "unit": "-"
+    },
+    {
+      "field": "相机",
+      "quote": "Wide: 4/3 CMOS 20 MP; Tele: 1/2-inch CMOS 12 MP",
+      "locator": "Wide Camera / Tele Camera",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E006",
+      "value": "4/3 CMOS 20MP + 1/2-inch CMOS 12MP tele",
+      "unit": "-"
+    },
+    {
+      "field": "工作频段",
+      "quote": "2.400-2.4835 GHz; 5.725-5.850 GHz",
+      "locator": "Video Transmission > Operating Frequency",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E007",
+      "value": "2.400-2.4835; 5.725-5.850",
+      "unit": "GHz"
+    },
+    {
+      "field": "图传协议",
+      "quote": "DJI O3 Enterprise Transmission",
+      "locator": "Video Transmission",
+      "url": "https://enterprise.dji.com/mavic-3-enterprise/specs",
+      "evidence_id": "E008",
+      "value": "DJI O3 Enterprise Transmission",
+      "unit": "-"
+    },
+    {
+      "field": "SDK支持",
+      "quote": "DJI Mavic 3 Enterprise Series is listed as a supported product",
+      "locator": "Supported Products",
+      "url": "https://developer.dji.com/mobile-sdk/",
+      "evidence_id": "E009",
+      "value": "Mobile SDK V5; Payload SDK",
+      "unit": "-"
+    },
+    {
+      "field": "Payload SDK推荐版本",
+      "quote": "Mavic 3 Enterprise Series: recommended PSDK 3.9.2",
+      "locator": "PSDK Version Support Information",
+      "url": "https://developer.dji.com/doc/payload-sdk-tutorial/en/",
+      "evidence_id": "E010",
+      "value": "PSDK 3.9.2",
+      "unit": "-"
+    }
+  ],
+  "import_metadata": {
+    "source_file": "datasets/无人机型号与结构化资料调研.xlsx",
+    "source_status": "已核验（基础/规格/SDK）",
+    "verification_note": "关键飞行参数、相机、链路、SDK已由DJI官方规格页/开发者文档核验；监管证书尚未补齐",
+    "regulatory_note": "FCC区域射频参数已在官方规格页核验；FCC ID/FAA具体记录待查",
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}

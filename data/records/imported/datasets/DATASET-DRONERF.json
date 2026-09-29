@@ -1,0 +1,65 @@
+{
+  "record_id": "DATASET-DRONERF",
+  "record_type": "dataset",
+  "dataset_name": "DroneRF",
+  "modalities": [
+    "rf"
+  ],
+  "sample_count": 454,
+  "formats": [
+    "raw_data",
+    "processed_by_official_code",
+    "code",
+    "containers",
+    "file_pattern",
+    "one_file_represents"
+  ],
+  "label_schema": "{\"label_source\": \"FILENAME / BUI plus official labeling scripts\", \"drone_no_drone\": \"YES\", \"drone_model\": \"YES\", \"operating_mode\": \"YES_SOURCE_LEVEL\", \"frequency_band\": \"PARTIAL_SOURCE_LEVEL; L/H segment pairing confirmed, exact physical semantics and per-file frequency range UNKNOWN\", \"channel\": \"PARTIAL; L/H denotes a two-part segment pair, exact physical path semantics UNKNOWN\", \"timestamp\": \"NO_CONFIRMED\", \"recording_id\": \"YES via segment number in filename\", \"session_id\": \"UNKNOWN\", \"environment\": \"WEAK via dataset-level lab/source location, not per-file metadata\", \"standalone_annotation_file\": \"NO_CONFIRMED\", \"label_levels\": {\"level_1\": \"drone vs no drone\", \"level_2\": \"Bebop / AR / Phantom / no drone\", \"level_3\": \"BUI/model/mode class\"}}",
+  "collection_environment": "{\"environment\": \"Laboratory setting\", \"data_source_location\": \"Department of Computer Science and Engineering, College of Engineering, Qatar University, Doha, Qatar\", \"indoor_outdoor\": \"Laboratory setting; exact indoor/outdoor field NOT separately labeled\", \"line_of_sight\": \"UNKNOWN\", \"distance\": \"UNKNOWN\", \"interference\": \"UNKNOWN\", \"notes\": \"RF receivers intercepted drone-controller communications; mobile apps/flight controllers were used to change modes.\"}",
+  "license_status": "open",
+  "source_id": "SRC-DRONERF-1C11757D5B",
+  "download_url": "https://data.mendeley.com/datasets/f4c2b4n755/1",
+  "sample_validation_status": "passed",
+  "record_status": "reviewed",
+  "import_metadata": {
+    "source_card": "datasets/member2_multimodal_datasets/dataset_cards/DroneRF.json",
+    "license_detail": {
+      "license_name": "CC BY 4.0",
+      "research_use": "YES",
+      "commercial_use": "YES under CC BY 4.0 terms unless additional platform terms apply",
+      "redistribution": "YES under CC BY 4.0 attribution terms",
+      "modification": "YES under CC BY 4.0 attribution terms",
+      "citation_required": "YES / attribution required",
+      "registration_required": "UNKNOWN",
+      "download_terms": "Mendeley Data Terms of Use may apply; no separate dataset restriction found in source audit",
+      "license_status": "PASS",
+      "code_license": "Apache-2.0 for official code repository; separate from dataset CC BY 4.0 license"
+    },
+    "data_scale": {
+      "total_size": "over 40GB according to the Data in Brief article; exact current Mendeley package byte size UNKNOWN",
+      "number_of_records": "454 record files",
+      "number_of_files": "454 CSV record files by article statement; Mendeley UI/API file listing NOT_CONFIRMED",
+      "number_of_segments": "227 recorded segments",
+      "number_of_samples": "4,540 x 10^6 raw samples by published table totals",
+      "duration": "10.25 seconds of RF background activities and approximately 5.25 seconds of RF drone communications for each flight mode; total summed duration UNKNOWN",
+      "number_of_drone_types": "3 plus no-drone/background condition",
+      "number_of_operating_modes": "5 conceptual states: off/background, on and connected, hovering, flying, video recording; 10 BUI classes in official code/table",
+      "train_validation_test_split": "No fixed official train/validation/test split confirmed; related work/code uses 10-fold cross-validation.",
+      "raw_or_processed_scale": "Raw RF CSV scale; official code can generate smaller processed/FFT MAT and RF_Data.csv derivatives, but those are not the raw Mendeley dataset."
+    },
+    "multimodal_association": {
+      "association_strength": "WEAK",
+      "primary_modality": "RF",
+      "secondary_modality": "TEXT_METADATA",
+      "rf_model_association": "STRONG",
+      "rf_mode_association": "STRONG",
+      "rf_recording_session_association": "MEDIUM",
+      "reason": "DroneRF is RF + text metadata/labels, not a synchronized RGB/audio/radar/LiDAR multimodal dataset. Its project value is knowledge-level association between drone entities, operating modes, and RF samples.",
+      "knowledge_level_association": "STRONG for RF file/segment to drone model and operating mode through filename/BUI and official labeling scripts; not sensor-level synchronization"
+    },
+    "unmapped_modalities": [
+      "Text Metadata"
+    ],
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}

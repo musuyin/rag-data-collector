@@ -1,0 +1,4 @@
+DEMONSTRATION ONLY — simulated small dataset sample
+sample_id,label
+001,drone
+002,background

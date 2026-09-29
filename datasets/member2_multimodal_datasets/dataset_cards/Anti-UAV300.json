@@ -1,0 +1,486 @@
+{
+  "dataset_id": "Anti-UAV300",
+  "dataset_name": "Anti-UAV300",
+  "basic_info": {
+    "full_name": "Anti-UAV: A Large Multi-Modal Benchmark for UAV Tracking",
+    "version": "Anti-UAV300",
+    "series": "Anti-UAV Benchmark series",
+    "organization": "UNKNOWN",
+    "organization_notes": "Official sources identify the Anti-UAV challenge/project and paper authors, but a single authoritative dataset-owning organization was not confirmed in this source audit.",
+    "authors": [
+      "Nan Jiang",
+      "Siyu Zhang",
+      "Keqiang Wang",
+      "Xiangyu Wang",
+      "Jingwei Gao",
+      "Zhixin Guo",
+      "Zhihao Chen",
+      "Zhongling Fu",
+      "Qianqian Li",
+      "Yonghong Tian"
+    ],
+    "publication_year": "2021",
+    "official_url": "https://anti-uav.github.io/",
+    "repository_url": "https://github.com/ZhaoJ9014/Anti-UAV",
+    "paper_url": "https://arxiv.org/abs/2101.08466",
+    "download_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+    "citation": "N. Jiang, K. Wang, X. Peng, X. Yu, Q. Wang, J. Xing, G. Li, J. Zhao, G. Guo, S. Han, Z. Liu, and W. Zheng, Anti-UAV: A Large Multi-Modal Benchmark for UAV Tracking, arXiv:2101.08466, 2021."
+  },
+  "series_versions": {
+    "Anti-UAV300": {
+      "relationship": "Main target for this dataset card; first Anti-UAV RGB-T benchmark release.",
+      "modalities": "RGB + thermal infrared",
+      "scale": "318 RGB-T video pairs; more than 580k frames/annotations reported by official sources.",
+      "source_url": "https://github.com/ZhaoJ9014/Anti-UAV"
+    },
+    "Anti-UAV410": {
+      "relationship": "Later Anti-UAV benchmark version in the same challenge/benchmark family, not the main card target.",
+      "modalities": "Thermal infrared",
+      "scale": "410 thermal infrared video sequences, with official train/validation/test splits reported as 240/70/100.",
+      "source_url": "https://github.com/HwangBo94/Anti-UAV410"
+    },
+    "Anti-UAV600": {
+      "relationship": "Later Anti-UAV benchmark version in the same challenge/benchmark family, not the main card target.",
+      "modalities": "Thermal infrared",
+      "scale": "600 thermal infrared video sequences and over 650,000 frames.",
+      "source_url": "https://arxiv.org/abs/2306.15767"
+    }
+  },
+  "modalities": {
+    "RGB Image": "YES",
+    "RGB Video": "YES",
+    "Thermal / IR": "YES",
+    "Audio": "NO",
+    "RF": "NO",
+    "Radar": "NO",
+    "LiDAR": "NO",
+    "Event Camera": "NO",
+    "Trajectory": "UNKNOWN",
+    "Flight Log": "UNKNOWN",
+    "Telemetry": "UNKNOWN",
+    "GPS": "UNKNOWN",
+    "IMU": "UNKNOWN",
+    "Text Metadata": "YES"
+  },
+  "modality_evidence": [
+    {
+      "source_url": "https://github.com/ZhaoJ9014/Anti-UAV",
+      "source_type": "Level 1 official GitHub",
+      "evidence": "The official repository describes Anti-UAV300 as containing RGB-T video pairs and lists Google Drive/Baidu dataset release links.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2101.08466",
+      "source_type": "Level 2 original paper",
+      "evidence": "The paper describes Anti-UAV as a large multi-modal benchmark using RGB and thermal infrared videos for UAV tracking.",
+      "accessed_date": "2026-09-23"
+    }
+  ],
+  "data_scale": {
+    "total_size": "Anti-UAV-RGBT.zip downloaded and validated: 6,037,566,331 bytes compressed; 6,720,200,225 bytes extracted estimate/file-inspection size.",
+    "package_size_bytes": 6037566331,
+    "package_size_gb_decimal": 6.04,
+    "package_size_gib": 5.62,
+    "sequence_count": "318 RGB-T video pairs; all 318 passed lightweight pairing scan.",
+    "video_count": "636 MP4 videos in archive: 318 visible.mp4 and 318 infrared.mp4.",
+    "image_count": "UNKNOWN",
+    "frame_count": "Metadata-derived local archive count: 296901 RGB frames and 296901 IR frames (593802 modality frames total); official sources report more than 580k frames/annotations.",
+    "annotation_count": "Metadata-derived local archive count: 296901 visible annotation records and 296901 infrared annotation records; sampled JSON parsing passed.",
+    "duration": "UNKNOWN",
+    "train_count": "160 RGB-T video pairs",
+    "validation_count": "67 RGB-T video pairs, derived from paper wording that the rest after 160 train and 91 test are validation.",
+    "test_count": "91 RGB-T video pairs",
+    "drone_type_count": "UNKNOWN",
+    "drone_model_count": "UNKNOWN",
+    "evidence": [
+      {
+        "source_url": "https://arxiv.org/html/2101.08466",
+        "source_type": "Level 2 original paper text",
+        "evidence": "The paper reports 318 RGB-T video pairs, 160 training pairs, 91 testing pairs, and a total of 585.9k boxes/frames in its dataset comparison table.",
+        "accessed_date": "2026-09-23"
+      },
+      {
+        "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+        "source_type": "official Google Drive metadata",
+        "evidence": "Metadata-only read returned filename Anti-UAV-RGBT.zip, MIME application/zip, size 6,037,566,331 bytes, modified 2021-05-21T10:41:48.606Z.",
+        "accessed_date": "2026-09-23"
+      }
+    ]
+  },
+  "file_formats": {
+    "RGB": [
+      "observed official archive format: per-sequence visible.mp4",
+      "codec mpeg4; selected sample resolution 1920x1080; selected/full metadata fps 20.0"
+    ],
+    "IR": [
+      "observed official archive format: per-sequence infrared.mp4",
+      "codec mpeg4; selected sample resolution 640x512; selected/full metadata fps 20.0"
+    ],
+    "Annotation": [
+      "per-sequence visible.json and infrared.json",
+      "top-level keys: exist, gt_rect",
+      "bbox format: [x, y, w, h]"
+    ],
+    "Container": [
+      "zip"
+    ],
+    "Conflicts": [
+      "CONFLICT: source-level paper evidence described 25 FPS, while actual validated archive videos report 20 FPS for RGB and IR in the inspected sample and full metadata scan.",
+      "CONFLICT: source-level repository folder-tree evidence suggested JPG image-sequence layout, while the actual official archive contains MP4 videos plus JSON annotations."
+    ]
+  },
+  "labels": {
+    "task": "UAV tracking / anti-UAV tracking",
+    "detection": "PARTIAL",
+    "tracking": "YES",
+    "classification": "NO",
+    "bounding_box": "YES",
+    "target_presence": "YES",
+    "visibility": "UNKNOWN",
+    "occlusion": "YES as a difficulty attribute; exact per-frame occlusion label UNKNOWN",
+    "frame_id": "UNKNOWN",
+    "sequence_id": "UNKNOWN",
+    "timestamp": "UNKNOWN",
+    "drone_class": "UNKNOWN",
+    "drone_model": "UNKNOWN",
+    "camera_modality": "YES",
+    "ir_modality": "YES",
+    "rgb_modality": "YES",
+    "lost_target_absent_target": "YES",
+    "frame_level_annotation": "YES",
+    "sequence_level_annotation": "YES",
+    "object_level_annotation": "YES",
+    "annotation_fields": [
+      "exist",
+      "gt_rect / get_rect"
+    ],
+    "evidence": [
+      {
+        "source_url": "https://arxiv.org/html/2101.08466",
+        "source_type": "Level 2 original paper text",
+        "evidence": "The paper explains that one bounding box is annotated for every visible drone, absent targets are recorded, and JSON labels contain an existence flag plus rectangle annotations.",
+        "accessed_date": "2026-09-23"
+      },
+      {
+        "source_url": "https://github.com/Anti-UAV/baseline/blob/master/test.py",
+        "source_type": "official/legacy baseline repository code",
+        "evidence": "The baseline evaluation code references gt_rect and exist fields in the ground-truth JSON.",
+        "accessed_date": "2026-09-23"
+      }
+    ]
+  },
+  "license": {
+    "license_name": "UNKNOWN",
+    "repository_license": "MIT for repository code, not confirmed as dataset license",
+    "research_use": "UNKNOWN",
+    "commercial_use": "UNKNOWN",
+    "redistribution": "UNKNOWN",
+    "modification": "UNKNOWN",
+    "citation_required": "YES for academic use/citation; license obligation UNKNOWN",
+    "registration_required": "UNKNOWN",
+    "download_terms": "UNKNOWN",
+    "license_status": "RISK",
+    "notes": [
+      "The repository contains an MIT license, but this source audit did not find explicit dataset license terms for Anti-UAV300.",
+      "Do not treat the repository code license as dataset redistribution or commercial-use permission."
+    ]
+  },
+  "collection_environment": {
+    "indoor_outdoor": "Outdoor",
+    "day_night": "Day and night",
+    "urban_rural": "UNKNOWN",
+    "sky_background": "YES",
+    "building_background": "YES",
+    "mountain_background": "UNKNOWN",
+    "cloud": "YES",
+    "occlusion": "YES",
+    "distance": "UNKNOWN",
+    "target_size": "Small target; average or exact source-specific pixel size not confirmed in this audit.",
+    "drone_altitude": "UNKNOWN",
+    "weather": "UNKNOWN",
+    "camera_motion": "UNKNOWN",
+    "thermal_conditions": "Thermal crossover and low illumination listed as difficulty attributes.",
+    "difficulty_attributes": [
+      "fast motion",
+      "out-of-view",
+      "occlusion",
+      "scale variation",
+      "background clutter",
+      "illumination variation",
+      "low resolution",
+      "low illumination",
+      "thermal crossover"
+    ]
+  },
+  "sensor_information": {
+    "rgb_camera_model": "UNKNOWN",
+    "rgb_resolution": "1920x1080 observed in selected validated visible.mp4 sample; camera model and FOV remain UNKNOWN.",
+    "rgb_fps": "20 FPS observed in validated archive metadata; source-level paper statement of 25 FPS conflicts with actual package metadata.",
+    "rgb_fov": "UNKNOWN",
+    "thermal_camera_model": "UNKNOWN",
+    "thermal_resolution": "640x512 observed in selected validated infrared.mp4 sample; thermal camera model and spectral band remain UNKNOWN.",
+    "thermal_fps": "20 FPS observed in validated archive metadata; source-level paper statement of 25 FPS conflicts with actual package metadata.",
+    "thermal_spectral_band": "UNKNOWN",
+    "thermal_fov": "UNKNOWN",
+    "capture_platform": "Videos include DJI and Parrot UAV targets; camera platform details UNKNOWN",
+    "notes": [
+      "Experimental resize/input resolution in tracking models must not be treated as collection resolution.",
+      "No calibration or synchronization metadata was confirmed in source audit."
+    ],
+    "calibration": "UNKNOWN"
+  },
+  "multimodal_association": {
+    "association_strength": "STRONG",
+    "rgb_ir_same_dataset": "YES",
+    "same_sequence": "YES; validated by archive structure across 318 sequences",
+    "frame_level_correspondence": "YES; sequence_id + frame_index validated as stable pairing key",
+    "timestamp_correspondence": "CONTAINER_TIMESTAMP_ONLY",
+    "hard_synchronization": "NOT_CONFIRMED",
+    "synchronization_status": "FRAME_PAIRED_ONLY",
+    "frame_pairing_coverage": "318 / 318",
+    "rgb_ir_index_feasible": "YES",
+    "target_presence_agreement": {
+      "status": "RECORDED",
+      "agreement_rate": 0.9862705379248256,
+      "both_present": 4368,
+      "both_absent": 14,
+      "visible_only": 0,
+      "infrared_only": 61,
+      "other": 0,
+      "total_compared": 4443
+    },
+    "reason": "Real files prove stable sequence-level and frame-index pairing across all 318 sequences. This is strong frame-level cross-modal association, not hardware-clock synchronization."
+  },
+  "download_structure": {
+    "download_performed": "YES",
+    "official_google_drive_file": {
+      "file_id": "1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr",
+      "filename": "Anti-UAV-RGBT.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 6037566331,
+      "modified_time": "2021-05-21T10:41:48.606Z",
+      "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view"
+    },
+    "package_name": "Anti-UAV-RGBT.zip",
+    "package_size": "6,037,566,331 bytes",
+    "modality": "RGB + Thermal / IR",
+    "split": "train/validation/test are described in the paper; package internal split layout NOT_TESTED",
+    "partial_download_supported": "NO_CONFIRMED",
+    "small_sample_available": "NO_SMALL_SAMPLE_CONFIRMED",
+    "notes": [
+      "Anti-UAV-RGBT.zip was downloaded after explicit >2GB approval.",
+      "Anti-UAV410, Anti-UAV600, and other large packages were not downloaded.",
+      "No independently downloadable small RGB-T sequence was confirmed; validation used the approved full package and then selected five sequences for deep inspection."
+    ],
+    "sample_access_status": "FULL_PACKAGE_DOWNLOADED",
+    "download_decision": "APPROVED_FULL_PACKAGE_DOWNLOADED",
+    "full_package_required": "YES",
+    "worth_downloading_full_package_now": "NO",
+    "blocking_reason": "Official small paired RGB-T sample is not confirmed. The smallest confirmed real package is 6.04GB.",
+    "actual_download": {
+      "filename": "Anti-UAV-RGBT.zip",
+      "path": "samples/Anti-UAV300/raw/Anti-UAV-RGBT.zip",
+      "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+      "expected_size_bytes": 6037566331,
+      "actual_size_bytes": 6037566331,
+      "sha256": "ed7d80bbd8ca8e01ea784c64eb0782eae8b3a1572177535c0fada9beb53fdca8",
+      "download_status": "PASS",
+      "zip_integrity": "PASS",
+      "archive_file_count": 1276,
+      "sequence_count": 318
+    }
+  },
+  "sample_validation_plan": [
+    {
+      "candidate_name": "One official Anti-UAV300 RGB-T paired sequence",
+      "file_size": "UNKNOWN",
+      "modalities": "RGB + Thermal / IR",
+      "annotation": "JSON bounding-box and target-presence labels",
+      "cross_modal_value": "MEDIUM",
+      "what_can_be_validated": [
+        "RGB file existence/readability",
+        "IR file existence/readability",
+        "JSON annotation parsing",
+        "annotation-to-frame correspondence inside each modality",
+        "sequence-level RGB-IR pairing"
+      ],
+      "source_url": "https://github.com/ZhaoJ9014/Anti-UAV",
+      "status": "BLOCKED_NO_SMALL_SAMPLE_CONFIRMED",
+      "blocking_reason": "Official small paired RGB-T sample is not confirmed. The smallest confirmed real package is 6.04GB."
+    },
+    {
+      "candidate_name": "Anti-UAV300 annotation-only check",
+      "file_size": "UNKNOWN",
+      "modalities": "Text metadata only",
+      "annotation": "JSON labels",
+      "cross_modal_value": "LOW",
+      "what_can_be_validated": [
+        "label schema",
+        "target presence field",
+        "bounding-box field"
+      ],
+      "source_url": "https://github.com/ZhaoJ9014/Anti-UAV",
+      "status": "NOT_RECOMMENDED_NOT_CROSS_MODAL"
+    }
+  ],
+  "validation_summary": {
+    "source_validation": "PASS",
+    "technical_validation": "PASS",
+    "annotation_validation": "PASS",
+    "cross_modal_validation": "PASS",
+    "license_validation": "RISK",
+    "collection_environment_validation": "PARTIAL",
+    "sensor_parameter_validation": "PARTIAL",
+    "final_dataset_status": "PARTIALLY_VERIFIED",
+    "project_readiness": "CROSS_MODAL_READY",
+    "dataset_type": "PAIRED RGB-IR TRACKING DATASET",
+    "not_dataset_type": "HARD-SYNCHRONIZED SENSOR DATASET",
+    "rgb_present": "YES",
+    "ir_present": "YES",
+    "rgb_readability": "PASS",
+    "ir_readability": "PASS",
+    "annotation_parse": "PASS",
+    "bbox_format": "[x, y, w, h]",
+    "target_presence_field": "exist",
+    "rgb_annotation_match": "PASS",
+    "ir_annotation_match": "PASS",
+    "annotation_frame_pairing": "PASS",
+    "sequence_level_pairing": "PASS",
+    "frame_index_pairing": "PASS",
+    "rgb_ir_frame_count_match": "PASS",
+    "rgb_ir_fps_match": "PASS",
+    "rgb_ir_association_strength": "STRONG",
+    "frame_pairing_coverage": "318 / 318",
+    "target_presence_agreement": {
+      "status": "RECORDED",
+      "agreement_rate": 0.9862705379248256,
+      "both_present": 4368,
+      "both_absent": 14,
+      "visible_only": 0,
+      "infrared_only": 61,
+      "other": 0,
+      "total_compared": 4443
+    },
+    "timestamp_available": "CONTAINER_TIMESTAMP_ONLY",
+    "source_sync_evidence": "NOT_FOUND_FOR_HARD_SYNC",
+    "synchronization_status": "FRAME_PAIRED_ONLY",
+    "rgb_ir_index_feasible": "YES",
+    "ready_for_project_dataset_delivery": "YES"
+  },
+  "sources": [
+    {
+      "source_url": "https://github.com/ZhaoJ9014/Anti-UAV",
+      "source_type": "Level 1 official GitHub",
+      "evidence": "Official repository for Anti-UAV; lists Anti-UAV300/410/600, dataset download links, release notes, and challenge context.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://anti-uav.github.io/",
+      "source_type": "Level 1 official project/challenge page",
+      "evidence": "Official Anti-UAV project/challenge page linking the benchmark series and challenge history.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2101.08466",
+      "source_type": "Level 2 original paper",
+      "evidence": "Original Anti-UAV paper identity, authors, title, and abstract.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://arxiv.org/html/2101.08466",
+      "source_type": "Level 2 original paper text",
+      "evidence": "Dataset scale, frame/box counts, split, annotation description, video format/FPS, and non-alignment statement.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view",
+      "source_type": "official Google Drive metadata",
+      "evidence": "Metadata-only read confirmed official download entry filename Anti-UAV-RGBT.zip, MIME application/zip, and size 6,037,566,331 bytes.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://github.com/HwangBo94/Anti-UAV410",
+      "source_type": "official Anti-UAV410 GitHub",
+      "evidence": "Anti-UAV410 is a later thermal infrared UAV tracking benchmark with 410 thermal infrared sequences and 240/70/100 train/validation/test split.",
+      "accessed_date": "2026-09-23"
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2306.15767",
+      "source_type": "official paper/challenge report for Anti-UAV600",
+      "evidence": "Anti-UAV600 is described as a thermal infrared UAV tracking benchmark with 600 sequences and over 650,000 frames.",
+      "accessed_date": "2026-09-23"
+    }
+  ],
+  "last_checked": "2026-09-29",
+  "notes": [
+    "Anti-UAV300 has progressed from source-only status to real-data technical and RGB-IR cross-modal validation.",
+    "Frame pairing is confirmed through sequence_id + frame_index; hard synchronization is not confirmed.",
+    "The dataset is CROSS_MODAL_READY for internal knowledge-management validation but remains PARTIALLY_VERIFIED due to license risk and unresolved hard synchronization/sensor metadata limits.",
+    "Raw data must not be redistributed in public deliverables without explicit dataset-level permission."
+  ],
+  "sample_access_status": "FULL_PACKAGE_DOWNLOADED",
+  "download_decision": "APPROVED_FULL_PACKAGE_DOWNLOADED",
+  "blocking_reason": "Official small paired RGB-T sample is not confirmed. The smallest confirmed real package is 6.04GB.",
+  "technical_validation": "PASS",
+  "cross_modal_validation": "PASS",
+  "dataset_status": "PARTIALLY_VERIFIED",
+  "source_status": "VERIFIED",
+  "technical_status": "PASS",
+  "project_readiness": "CROSS_MODAL_READY",
+  "next_action": "Use Anti-UAV300 as a CROSS_MODAL_READY frame-paired RGB-IR dataset for internal validation; do not claim hard synchronization or redistribute raw data without license confirmation.",
+  "validated_sample": {
+    "official_package": "Anti-UAV-RGBT.zip",
+    "archive_size_bytes": 6037566331,
+    "sha256": "ed7d80bbd8ca8e01ea784c64eb0782eae8b3a1572177535c0fada9beb53fdca8",
+    "sequence_count": 318,
+    "validated_deep_sample_count": 5,
+    "validated_deep_sample_sequences": [
+      "test/20190925_111757_1_1",
+      "test/20190926_111509_1_7",
+      "train/20190925_205804_1_7",
+      "train/20190926_193515_1_6",
+      "val/20190926_200510_1_8"
+    ],
+    "full_dataset_lightweight_pairing_scan": {
+      "total_sequences": 318,
+      "both_modalities_present": 318,
+      "same_frame_count_sequences": 318,
+      "same_fps_sequences": 318,
+      "same_annotation_count_sequences": 318,
+      "annotation_matches_video_sequences": 318,
+      "frame_pairing_candidate_sequences": 318,
+      "frame_pairing_coverage": "318 / 318"
+    }
+  },
+  "annotation_validation": "PASS",
+  "license_validation": "RISK",
+  "collection_environment_validation": "PARTIAL",
+  "sensor_parameter_validation": "PARTIAL",
+  "limitations": [
+    "No hard synchronization evidence: sensor-level trigger or unified hardware timestamp was not confirmed.",
+    "Only MP4/container timestamps are available; they are not treated as sensor timestamps.",
+    "Frame pairing is confirmed, but sensor-level synchronization is not.",
+    "RGB / IR target presence agreement is high but not perfect: infrared_only=61 was observed in the selected validation sample.",
+    "Dataset license remains RISK because explicit dataset-level license terms were not confirmed.",
+    "Five sequences were deeply inspected; all 318 sequences were checked through lightweight metadata and structural pairing validation.",
+    "Raw Anti-UAV300 data should not be redistributed in public delivery artifacts unless rights are explicitly confirmed."
+  ],
+  "recommended_uses": {
+    "RGB -> IR retrieval": "VALIDATED_STRUCTURE",
+    "IR -> RGB retrieval": "VALIDATED_STRUCTURE",
+    "RGB / IR tracking research": "VALIDATED_DATA_ACCESS",
+    "RGB-T multimodal storage": "VALIDATED_STRUCTURE",
+    "frame-level cross-modal indexing": "VALIDATED_STRUCTURE",
+    "visible -> infrared association": "VALIDATED_STRUCTURE",
+    "infrared -> visible association": "VALIDATED_STRUCTURE",
+    "multimodal knowledge base": "VALIDATED_STRUCTURE",
+    "later multimodal embedding experiments": "FUTURE_USE",
+    "model training": "FUTURE_USE",
+    "tracking accuracy evaluation": "FUTURE_USE"
+  },
+  "conflicts": [
+    "CONFLICT: earlier Dataset Card / Registry said full package download was deferred and technical validation was NOT_TESTED; later explicit approval downloaded Anti-UAV-RGBT.zip and completed PASS validation.",
+    "CONFLICT: source-level paper evidence described 25 FPS, while actual validated archive videos report 20 FPS for RGB and IR in the inspected sample and full metadata scan.",
+    "CONFLICT: source-level repository folder-tree evidence suggested JPG image-sequence layout, while the actual official archive contains MP4 videos plus JSON annotations."
+  ]
+}

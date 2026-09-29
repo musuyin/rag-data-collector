@@ -1,0 +1,15 @@
+{
+  "record_id": "DATASET-DEMO-MULTIMODAL-001",
+  "record_type": "dataset",
+  "dataset_name": "Demo Multimodal Drone Dataset",
+  "modalities": ["image", "audio"],
+  "sample_count": 2,
+  "formats": ["txt"],
+  "label_schema": "one text label per sample",
+  "collection_environment": "controlled demonstration environment",
+  "license_status": "research_only",
+  "source_id": "SRC-DEMO-DATASET",
+  "download_url": "https://example.invalid/demo-dataset/download",
+  "sample_validation_status": "passed",
+  "record_status": "reviewed"
+}

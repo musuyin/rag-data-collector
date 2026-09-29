@@ -1,0 +1,28 @@
+{
+  "record_id": "MODEL-<MANUFACTURER>-<MODEL>",
+  "record_type": "model",
+  "manufacturer": "",
+  "model": "",
+  "product_category": "",
+  "performance": {
+    "max_flight_time_min": null,
+    "max_speed_mps": null,
+    "weight_kg": null
+  },
+  "core_components": [],
+  "communication_bands": [],
+  "communication_protocols": [],
+  "firmware": [],
+  "sdk": [],
+  "source_id": "SRC-",
+  "license_status": "unknown",
+  "evidence": [
+    {
+      "field": "performance.max_flight_time_min",
+      "quote": "原文摘录",
+      "locator": "PDF 第 X 页 / 网页第 X 段",
+      "url": "https://"
+    }
+  ],
+  "record_status": "draft"
+}

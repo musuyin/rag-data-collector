@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-09-29T07:55:13Z",
+  "include_fixtures": false,
+  "input_roots": [
+    "datasets"
+  ],
+  "files_scanned": 39,
+  "exact_duplicate_groups": 0,
+  "records_validated": 7,
+  "issue_counts": {
+    "ERROR": 0,
+    "WARNING": 4,
+    "INFO": 0
+  },
+  "gate_status": "PASS_WITH_WARNINGS"
+}

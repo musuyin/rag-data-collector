@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-09-29T07:55:13Z",
+  "inputs": [
+    "datasets/无人机型号与结构化资料调研.xlsx",
+    "datasets/member2_multimodal_datasets"
+  ],
+  "models_imported": 4,
+  "model_evidence_imported": 36,
+  "datasets_imported": 3,
+  "sources_registered": 25,
+  "model_progress": [
+    {
+      "厂商": "DJI",
+      "型号": "Mavic 3 Enterprise",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "未开始",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "未开始",
+      "SDK": "已完成",
+      "固件": "已完成",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.7",
+      "待补内容": "待补：官方说明书PDF、本机FCC ID/认证记录、FAA/Remote ID监管原始记录",
+      "更新时间": "2026-09-29"
+    },
+    {
+      "厂商": "DJI",
+      "型号": "Matrice 350 RTK",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "未开始",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "未开始",
+      "SDK": "已完成",
+      "固件": "已完成",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.7",
+      "待补内容": "待补：官方说明书PDF、FCC ID/认证记录、FAA/Remote ID监管原始记录",
+      "更新时间": "2026-09-29"
+    },
+    {
+      "厂商": "Autel Robotics",
+      "型号": "EVO Max 4T",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "已完成",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "未开始",
+      "SDK": "已完成",
+      "固件": "已完成",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.8",
+      "待补内容": "待补：FCC ID/认证原始记录、FAA/Remote ID监管资料；可继续补相机完整规格",
+      "更新时间": "2026-09-29"
+    },
+    {
+      "厂商": "Skydio",
+      "型号": "X10",
+      "官网": "已完成",
+      "产品页": "已完成",
+      "说明书": "未开始",
+      "规格书": "已完成",
+      "FCC": "未开始",
+      "FAA": "进行中",
+      "SDK": "已完成",
+      "固件": "进行中",
+      "已结构化": "已完成",
+      "证据已核对": "已完成",
+      "完成度": "0.6",
+      "待补内容": "待补：说明书/用户手册、具体FCC ID文件、FAA Remote ID监管原始页面、当前固件发布记录",
+      "更新时间": "2026-09-29"
+    }
+  ],
+  "dataset_license_counts": {
+    "restricted": 2,
+    "open": 1
+  },
+  "progress_value_counts": {
+    "0.7": 2,
+    "0.8": 1,
+    "0.6": 1
+  },
+  "known_gaps": [
+    "待补：官方说明书PDF、本机FCC ID/认证记录、FAA/Remote ID监管原始记录",
+    "待补：官方说明书PDF、FCC ID/认证记录、FAA/Remote ID监管原始记录",
+    "待补：FCC ID/认证原始记录、FAA/Remote ID监管资料；可继续补相机完整规格",
+    "待补：说明书/用户手册、具体FCC ID文件、FAA Remote ID监管原始页面、当前固件发布记录"
+  ],
+  "warnings": [
+    "Model source license is unknown until source terms are reviewed.",
+    "Dataset detailed cards remain authoritative evidence; normalized records are an interoperability layer.",
+    "Imported delivery files are metadata and validation records, not local copies of full original datasets."
+  ]
+}

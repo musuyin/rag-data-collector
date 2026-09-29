@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Operating system / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Sensitive or non-reproducible local state
+.env
+.env.*
+*.pem
+*.key
+*.cookie
+secrets/
+
+# Never commit full raw or transient payloads; keep directory sentinels only.
+data/raw/**
+!data/raw/.gitkeep
+data/staging/**
+!data/staging/.gitkeep
+data/curated/**
+!data/curated/.gitkeep
+data/samples/**
+!data/samples/.gitkeep
+
+# Large local dataset packages and extraction products
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+*.h5
+*.hdf5
+*.bag
+*.pcap
+*.pcapng
+*.mp4
+*.avi
+*.mov
+*.mkv

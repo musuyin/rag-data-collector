@@ -1,0 +1,126 @@
+{
+  "dataset": "MMAUD",
+  "download_time": "2026-09-22T14:36:04+08:00",
+  "policy": {
+    "download_allowed_below_bytes": 500000000,
+    "report_first_between_bytes": [500000000, 2000000000],
+    "forbidden_above_bytes": 2000000000
+  },
+  "entries": [
+    {
+      "dataset": "MMAUD",
+      "source_url": "https://drive.google.com/drive/folders/1_LpPyIfETQS-k2vlSsbzI9pzyVzZScSx",
+      "original_filename": "MMAUD_2D.zip",
+      "download_time": "2026-09-22T13:48:19+08:00",
+      "file_size": 4690057225,
+      "SHA256": null,
+      "download_status": "NOT_DOWNLOADED_GT_2GB"
+    },
+    {
+      "dataset": "MMAUD",
+      "source_url": "https://drive.google.com/file/d/1x-1KtuzY5_Ug8iy5O6P_DgSwc9UU3h2a/view",
+      "original_filename": "validation_ref_new (for your ref).csv",
+      "download_time": "2026-09-22T13:48:19+08:00",
+      "file_size": 102063,
+      "SHA256": null,
+      "download_status": "CONNECTOR_METADATA_AND_TEXT_PREVIEW_PASS_LOCAL_RAW_DOWNLOAD_FAILED"
+    },
+    {
+      "dataset": "MMAUD",
+      "source_url": "https://drive.google.com/file/d/1Z7ail7Odhh61oAByFPIqwOg5eHk7diCw/view",
+      "original_filename": "test_timestamps.csv",
+      "download_time": "2026-09-22T13:48:19+08:00",
+      "file_size": 171144,
+      "SHA256": null,
+      "download_status": "CONNECTOR_METADATA_AND_TEXT_PREVIEW_PASS_LOCAL_RAW_DOWNLOAD_FAILED"
+    },
+    {
+      "dataset": "MMAUD",
+      "source_url": "https://drive.google.com/file/d/1Y94-RMHJf7Yj2pi4he2ygyO-FRlzPev2/view",
+      "original_filename": "README.md",
+      "download_time": "2026-09-22T13:48:19+08:00",
+      "file_size": 4336,
+      "SHA256": null,
+      "download_status": "CONNECTOR_READ_PASS_LOCAL_RAW_DOWNLOAD_FAILED"
+    },
+    {
+      "dataset": "MMAUD",
+      "subset": "UG2+ validation derived subset",
+      "original_or_derived": "DERIVED_SUBSET",
+      "source_url": "https://drive.google.com/file/d/1T7MLHfKsFYm8fjnJcn39ZrzFjHv-z-fh/view?usp=drivesdk",
+      "original_filename": "val.zip",
+      "remote_filename": "val.zip",
+      "remote_mime_type": "application/zip",
+      "expected_size": 5325448505,
+      "actual_size": 5325448505,
+      "download_time": "2026-09-22T22:10:18+08:00",
+      "file_size": 5325448505,
+      "file_size_gb": 5.325448505,
+      "sha256": "D2B4424284F3673FA9296B49582D87076DB058765DB26EEB73C1A2C48CC17C9B",
+      "download_status": "PASS",
+      "zip_open_status": "PASS",
+      "zip_integrity_status": "PASS",
+      "archive_entry_count_total": 5325,
+      "archive_file_count": 5244,
+      "estimated_extracted_size": 6419220734,
+      "sequence_count": 16,
+      "top_level_structure": ["val"],
+      "detected_directory_names": [
+        "val",
+        "val/seq0001",
+        "val/seq0001/Image",
+        "val/seq0001/lidar_360",
+        "val/seq0001/livox_avia",
+        "val/seq0001/radar_enhance_pcl",
+        "val/seq0002",
+        "val/seq0002/Image",
+        "val/seq0002/lidar_360",
+        "val/seq0002/livox_avia",
+        "val/seq0002/radar_enhance_pcl",
+        "...",
+        "val/seq0016",
+        "val/seq0016/Image",
+        "val/seq0016/lidar_360",
+        "val/seq0016/livox_avia",
+        "val/seq0016/radar_enhance_pcl"
+      ],
+      "detected_extensions": {
+        ".png": 2426,
+        ".npy": 2818
+      },
+      "notes": [
+        "Explicit user approval was given for this >2GB download.",
+        "Remote metadata matched before download: filename val.zip, size 5325448505 bytes.",
+        "Google Drive connector refused raw download because the file exceeds its 268435456-byte limit.",
+        "curl attempts against drive.usercontent.google.com and drive.google.com failed with connection timeout.",
+        "Browser download completed to C:/Users/水火/Downloads/val.zip and was copied unchanged to samples/MMAUD/raw/val.zip.",
+        "ZIP central directory opened successfully and python zipfile integrity test completed with Done testing.",
+        "No archive contents were extracted or parsed during this step."
+      ]
+    },
+    {
+      "dataset": "MMAUD",
+      "source_url": "https://drive.google.com/drive/folders/1wk-c5xVX6701WNI_In1ba3_D4LSjRYv5",
+      "original_filename": "fisheye_calibration.zip",
+      "download_time": "2026-09-22T13:48:19+08:00",
+      "file_size": 7239409071,
+      "SHA256": null,
+      "download_status": "NOT_DOWNLOADED_GT_2GB"
+    },
+    {
+      "dataset": "MMAUD",
+      "source_url": "https://drive.google.com/drive/folders/1wk-c5xVX6701WNI_In1ba3_D4LSjRYv5",
+      "original_filename": "train.zip",
+      "download_time": "2026-09-22T13:48:19+08:00",
+      "file_size": 139733346888,
+      "SHA256": null,
+      "download_status": "NOT_DOWNLOADED_GT_2GB"
+    }
+  ],
+  "notes": [
+    "No original raw data package was downloaded; the completed val.zip entry is a DERIVED_SUBSET.",
+    "2026-09-22: val.zip was explicitly approved for download and completed via local browser workflow.",
+    "Small CSV and README files were visible through the Google Drive connector, but local shell download from Drive failed due network timeouts and controlled file URLs returned 403 outside the connector.",
+    "The completed val.zip SHA256 and ZIP integrity status are recorded in the val.zip entry."
+  ]
+}

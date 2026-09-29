@@ -1,0 +1,2055 @@
+{
+  "dataset": "MMAUD",
+  "subset": "UG2+ val",
+  "original_or_derived": "DERIVED_SUBSET",
+  "validation_time": "2026-09-23T13:02:58+08:00",
+  "method_scope": "Path/filename/timestamp-only validation. No PNG or NPY payload content was read.",
+  "sequence_association": {
+    "total_sequences": 16,
+    "fully_multimodal_sequences": 16,
+    "incomplete_sequences": [],
+    "coverage": "16 / 16",
+    "coverage_ratio": 1.0,
+    "result": "PASS",
+    "per_sequence": [
+      {
+        "sequence_id": "seq0001",
+        "camera_count": 147,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 50,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 74,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0002",
+        "camera_count": 151,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 51,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 51,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 76,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0003",
+        "camera_count": 153,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 51,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 51,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 76,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0004",
+        "camera_count": 157,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 52,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 52,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 78,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0005",
+        "camera_count": 150,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 51,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 76,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0006",
+        "camera_count": 150,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 50,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 75,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0007",
+        "camera_count": 150,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 50,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 75,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0008",
+        "camera_count": 148,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 50,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 75,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0009",
+        "camera_count": 151,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 49,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 75,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0010",
+        "camera_count": 149,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 50,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 74,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0011",
+        "camera_count": 152,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 51,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 51,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 75,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0012",
+        "camera_count": 153,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 51,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 51,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 77,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0013",
+        "camera_count": 150,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 50,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 50,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 75,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0014",
+        "camera_count": 153,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 51,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 51,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 77,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0015",
+        "camera_count": 157,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 52,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 52,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 79,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      },
+      {
+        "sequence_id": "seq0016",
+        "camera_count": 155,
+        "camera_present": true,
+        "camera_parse_failure_count": 0,
+        "lidar360_count": 35,
+        "lidar360_present": true,
+        "lidar360_parse_failure_count": 0,
+        "livox_avia_count": 51,
+        "livox_avia_present": true,
+        "livox_parse_failure_count": 0,
+        "radar_count": 77,
+        "radar_present": true,
+        "radar_parse_failure_count": 0
+      }
+    ]
+  },
+  "timestamp_quality": {
+    "timestamp_unit": "seconds",
+    "timestamp_unit_rationale": "Filename timestamps are epoch-like numeric values around 1.706e9, and adjacent differences imply about 30 Hz camera, 10 Hz LiDAR/Livox, and 15 Hz radar.",
+    "per_modality": {
+      "camera": {
+        "modality": "camera",
+        "count": 2426,
+        "parsed_count": 2426,
+        "parse_failure_count": 0,
+        "min_timestamp": 1706255054.409385,
+        "max_timestamp": 1706258752.91232,
+        "duplicate_count": 0,
+        "monotonic_in_directory_order_all_sequences": true,
+        "monotonic_by_sequence": {
+          "seq0001": true,
+          "seq0002": true,
+          "seq0003": true,
+          "seq0004": true,
+          "seq0005": true,
+          "seq0006": true,
+          "seq0007": true,
+          "seq0008": true,
+          "seq0009": true,
+          "seq0010": true,
+          "seq0011": true,
+          "seq0012": true,
+          "seq0013": true,
+          "seq0014": true,
+          "seq0015": true,
+          "seq0016": true
+        },
+        "median_interval_seconds": 0.03214693069458008,
+        "mean_interval_seconds": 0.03333037740462054,
+        "min_interval_seconds": 0.02790093421936035,
+        "max_interval_seconds": 0.03898787498474121,
+        "estimated_frequency_hz": 31.10716881498732,
+        "gap_count": 0,
+        "gaps_sample": []
+      },
+      "lidar360": {
+        "modality": "lidar360",
+        "count": 794,
+        "parsed_count": 794,
+        "parse_failure_count": 0,
+        "min_timestamp": 1706255054.400078,
+        "max_timestamp": 1706258752.900885,
+        "duplicate_count": 0,
+        "monotonic_in_directory_order_all_sequences": true,
+        "monotonic_by_sequence": {
+          "seq0001": true,
+          "seq0002": true,
+          "seq0003": true,
+          "seq0004": true,
+          "seq0005": true,
+          "seq0006": true,
+          "seq0007": true,
+          "seq0008": true,
+          "seq0009": true,
+          "seq0010": true,
+          "seq0011": true,
+          "seq0012": true,
+          "seq0013": true,
+          "seq0014": true,
+          "seq0015": true,
+          "seq0016": true
+        },
+        "median_interval_seconds": 0.09996747970581055,
+        "mean_interval_seconds": 0.10192655475096715,
+        "min_interval_seconds": 0.09888005256652832,
+        "max_interval_seconds": 0.29998302459716797,
+        "estimated_frequency_hz": 10.003253087332515,
+        "gap_count": 0,
+        "gaps_sample": []
+      },
+      "livox": {
+        "modality": "livox",
+        "count": 810,
+        "parsed_count": 810,
+        "parse_failure_count": 0,
+        "min_timestamp": 1706255054.41748,
+        "max_timestamp": 1706258752.894309,
+        "duplicate_count": 0,
+        "monotonic_in_directory_order_all_sequences": true,
+        "monotonic_by_sequence": {
+          "seq0001": true,
+          "seq0002": true,
+          "seq0003": true,
+          "seq0004": true,
+          "seq0005": true,
+          "seq0006": true,
+          "seq0007": true,
+          "seq0008": true,
+          "seq0009": true,
+          "seq0010": true,
+          "seq0011": true,
+          "seq0012": true,
+          "seq0013": true,
+          "seq0014": true,
+          "seq0015": true,
+          "seq0016": true
+        },
+        "median_interval_seconds": 0.09996604919433594,
+        "mean_interval_seconds": 0.09999838283740603,
+        "min_interval_seconds": 0.0989530086517334,
+        "max_interval_seconds": 0.10110902786254883,
+        "estimated_frequency_hz": 10.003396233615081,
+        "gap_count": 0,
+        "gaps_sample": []
+      },
+      "radar": {
+        "modality": "radar",
+        "count": 1214,
+        "parsed_count": 1214,
+        "parse_failure_count": 0,
+        "min_timestamp": 1706255054.405226,
+        "max_timestamp": 1706258752.911294,
+        "duplicate_count": 0,
+        "monotonic_in_directory_order_all_sequences": true,
+        "monotonic_by_sequence": {
+          "seq0001": true,
+          "seq0002": true,
+          "seq0003": true,
+          "seq0004": true,
+          "seq0005": true,
+          "seq0006": true,
+          "seq0007": true,
+          "seq0008": true,
+          "seq0009": true,
+          "seq0010": true,
+          "seq0011": true,
+          "seq0012": true,
+          "seq0013": true,
+          "seq0014": true,
+          "seq0015": true,
+          "seq0016": true
+        },
+        "median_interval_seconds": 0.06690859794616699,
+        "mean_interval_seconds": 0.06666920638840665,
+        "min_interval_seconds": 0.06540417671203613,
+        "max_interval_seconds": 0.06768012046813965,
+        "estimated_frequency_hz": 14.945762289094375,
+        "gap_count": 0,
+        "gaps_sample": []
+      }
+    }
+  },
+  "pilot_sequences": {
+    "selected_sequences": [
+      "seq0001",
+      "seq0009",
+      "seq0016"
+    ],
+    "camera_to_lidar360": {
+      "matched_frames": 453,
+      "mean_delta_ms": 32.016204682407,
+      "median_delta_ms": 30.225038528442383,
+      "p95_delta_ms": 73.5814094543453,
+      "max_delta_ms": 151.0300636291504,
+      "percentage_within_10ms": 18.543046357615893,
+      "percentage_within_20ms": 40.1766004415011,
+      "percentage_within_50ms": 88.0794701986755,
+      "percentage_within_100ms": 98.45474613686534
+    },
+    "camera_to_livox": {
+      "matched_frames": 453,
+      "mean_delta_ms": 25.800603904471494,
+      "median_delta_ms": 23.849010467529297,
+      "p95_delta_ms": 45.91498374938964,
+      "max_delta_ms": 90.88993072509766,
+      "percentage_within_10ms": 22.075055187637968,
+      "percentage_within_20ms": 43.92935982339956,
+      "percentage_within_50ms": 99.33774834437087,
+      "percentage_within_100ms": 100.0
+    },
+    "camera_to_radar": {
+      "matched_frames": 453,
+      "mean_delta_ms": 16.847873102487053,
+      "median_delta_ms": 17.327070236206055,
+      "p95_delta_ms": 27.97064781188965,
+      "max_delta_ms": 53.30514907836914,
+      "percentage_within_10ms": 16.335540838852097,
+      "percentage_within_20ms": 65.34216335540839,
+      "percentage_within_50ms": 99.77924944812362,
+      "percentage_within_100ms": 100.0,
+      "unique_radar_matches": 225,
+      "camera_frames_per_radar_sample": {
+        "mean": 2.013333333333333,
+        "median": 2.0,
+        "max": 3
+      }
+    },
+    "result": "PASS"
+  },
+  "associations": {
+    "camera_to_lidar360": {
+      "matched_frames": 2426,
+      "mean_delta_ms": 27.162037108029008,
+      "median_delta_ms": 20.182013511657715,
+      "p95_delta_ms": 47.99699783325195,
+      "max_delta_ms": 151.0300636291504,
+      "percentage_within_10ms": 6.677658697444353,
+      "percentage_within_20ms": 49.71145919208574,
+      "percentage_within_50ms": 97.44435284418796,
+      "percentage_within_100ms": 99.71145919208574
+    },
+    "camera_to_livox": {
+      "matched_frames": 2426,
+      "mean_delta_ms": 26.602945933141495,
+      "median_delta_ms": 18.994927406311035,
+      "p95_delta_ms": 49.83353614807129,
+      "max_delta_ms": 90.88993072509766,
+      "percentage_within_10ms": 6.347897774113767,
+      "percentage_within_20ms": 53.297609233305856,
+      "percentage_within_50ms": 98.84583676834295,
+      "percentage_within_100ms": 100.0
+    },
+    "camera_to_radar": {
+      "matched_frames": 2426,
+      "mean_delta_ms": 16.764484155502384,
+      "median_delta_ms": 17.367124557495117,
+      "p95_delta_ms": 32.43052959442139,
+      "max_delta_ms": 55.94801902770996,
+      "percentage_within_10ms": 31.61582852431987,
+      "percentage_within_20ms": 53.091508656224235,
+      "percentage_within_50ms": 99.87633965375103,
+      "percentage_within_100ms": 100.0,
+      "unique_radar_matches": 1213,
+      "camera_frames_per_radar_sample": {
+        "mean": 2.0,
+        "median": 2.0,
+        "max": 3
+      }
+    }
+  },
+  "associations_by_sequence": {
+    "camera_to_lidar360": {
+      "seq0001": {
+        "matched_frames": 147,
+        "mean_delta_ms": 24.666536422002885,
+        "median_delta_ms": 30.033111572265625,
+        "p95_delta_ms": 38.24043273925781,
+        "max_delta_ms": 40.59600830078125,
+        "percentage_within_10ms": 33.333333333333336,
+        "percentage_within_20ms": 33.333333333333336,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0002": {
+        "matched_frames": 151,
+        "mean_delta_ms": 24.40839729561711,
+        "median_delta_ms": 22.603988647460938,
+        "p95_delta_ms": 41.77391529083252,
+        "max_delta_ms": 43.42508316040039,
+        "percentage_within_10ms": 33.77483443708609,
+        "percentage_within_20ms": 33.77483443708609,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0003": {
+        "matched_frames": 153,
+        "mean_delta_ms": 26.420510672276315,
+        "median_delta_ms": 23.538827896118164,
+        "p95_delta_ms": 44.58284378051758,
+        "max_delta_ms": 76.36094093322754,
+        "percentage_within_10ms": 16.99346405228758,
+        "percentage_within_20ms": 33.333333333333336,
+        "percentage_within_50ms": 99.34640522875817,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0004": {
+        "matched_frames": 157,
+        "mean_delta_ms": 26.97804627145172,
+        "median_delta_ms": 23.468971252441406,
+        "p95_delta_ms": 44.626522064208984,
+        "max_delta_ms": 55.436134338378906,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 33.12101910828026,
+        "percentage_within_50ms": 99.36305732484077,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0005": {
+        "matched_frames": 150,
+        "mean_delta_ms": 26.79535706837972,
+        "median_delta_ms": 23.49388599395752,
+        "p95_delta_ms": 44.59819793701172,
+        "max_delta_ms": 44.695138931274414,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 33.333333333333336,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0006": {
+        "matched_frames": 150,
+        "mean_delta_ms": 25.737544695536297,
+        "median_delta_ms": 19.130945205688477,
+        "p95_delta_ms": 45.15657424926758,
+        "max_delta_ms": 54.86607551574707,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.0,
+        "percentage_within_50ms": 99.33333333333333,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0007": {
+        "matched_frames": 150,
+        "mean_delta_ms": 26.09179973602295,
+        "median_delta_ms": 19.348502159118652,
+        "p95_delta_ms": 44.99659538269043,
+        "max_delta_ms": 80.80005645751953,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 62.666666666666664,
+        "percentage_within_50ms": 99.33333333333333,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0008": {
+        "matched_frames": 148,
+        "mean_delta_ms": 25.519810818337106,
+        "median_delta_ms": 19.33598518371582,
+        "p95_delta_ms": 44.947636127471924,
+        "max_delta_ms": 45.181989669799805,
+        "percentage_within_10ms": 0.6756756756756757,
+        "percentage_within_20ms": 64.86486486486487,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0009": {
+        "matched_frames": 151,
+        "mean_delta_ms": 28.96597527510283,
+        "median_delta_ms": 16.909122467041016,
+        "p95_delta_ms": 49.239397048950195,
+        "max_delta_ms": 151.0300636291504,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 64.90066225165563,
+        "percentage_within_50ms": 97.35099337748345,
+        "percentage_within_100ms": 98.67549668874172
+      },
+      "seq0010": {
+        "matched_frames": 149,
+        "mean_delta_ms": 26.483818988672038,
+        "median_delta_ms": 16.386985778808594,
+        "p95_delta_ms": 47.977542877197266,
+        "max_delta_ms": 49.28302764892578,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 65.1006711409396,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0011": {
+        "matched_frames": 152,
+        "mean_delta_ms": 26.49715542793274,
+        "median_delta_ms": 16.373515129089355,
+        "p95_delta_ms": 47.94539213180542,
+        "max_delta_ms": 48.40898513793945,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 67.10526315789474,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0012": {
+        "matched_frames": 153,
+        "mean_delta_ms": 26.583099676892648,
+        "median_delta_ms": 16.453027725219727,
+        "p95_delta_ms": 47.86367416381836,
+        "max_delta_ms": 48.345088958740234,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.66666666666667,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0013": {
+        "matched_frames": 150,
+        "mean_delta_ms": 25.971075693766277,
+        "median_delta_ms": 19.750595092773438,
+        "p95_delta_ms": 44.51329708099365,
+        "max_delta_ms": 88.47999572753906,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 54.666666666666664,
+        "percentage_within_50ms": 98.66666666666667,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0014": {
+        "matched_frames": 153,
+        "mean_delta_ms": 25.369245242449193,
+        "median_delta_ms": 20.13707160949707,
+        "p95_delta_ms": 44.55685615539551,
+        "max_delta_ms": 45.15409469604492,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 49.673202614379086,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0015": {
+        "matched_frames": 157,
+        "mean_delta_ms": 25.72954080666706,
+        "median_delta_ms": 20.35689353942871,
+        "p95_delta_ms": 44.4239616394043,
+        "max_delta_ms": 88.59395980834961,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 45.859872611464965,
+        "percentage_within_50ms": 98.72611464968153,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0016": {
+        "matched_frames": 155,
+        "mean_delta_ms": 41.95804903584142,
+        "median_delta_ms": 34.10792350769043,
+        "p95_delta_ms": 98.50375652313232,
+        "max_delta_ms": 134.4139575958252,
+        "percentage_within_10ms": 22.580645161290324,
+        "percentage_within_20ms": 22.580645161290324,
+        "percentage_within_50ms": 67.74193548387096,
+        "percentage_within_100ms": 96.7741935483871
+      }
+    },
+    "camera_to_livox": {
+      "seq0001": {
+        "matched_frames": 147,
+        "mean_delta_ms": 25.2012249563827,
+        "median_delta_ms": 24.144887924194336,
+        "p95_delta_ms": 44.12832260131836,
+        "max_delta_ms": 44.30389404296875,
+        "percentage_within_10ms": 33.333333333333336,
+        "percentage_within_20ms": 33.333333333333336,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0002": {
+        "matched_frames": 151,
+        "mean_delta_ms": 23.926450716738668,
+        "median_delta_ms": 24.084091186523438,
+        "p95_delta_ms": 40.17961025238037,
+        "max_delta_ms": 40.88091850280762,
+        "percentage_within_10ms": 33.77483443708609,
+        "percentage_within_20ms": 33.77483443708609,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0003": {
+        "matched_frames": 153,
+        "mean_delta_ms": 27.30569184995165,
+        "median_delta_ms": 21.52419090270996,
+        "p95_delta_ms": 47.316837310791016,
+        "max_delta_ms": 85.40201187133789,
+        "percentage_within_10ms": 0.6535947712418301,
+        "percentage_within_20ms": 32.6797385620915,
+        "percentage_within_50ms": 98.69281045751634,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0004": {
+        "matched_frames": 157,
+        "mean_delta_ms": 27.65562428030998,
+        "median_delta_ms": 21.522998809814453,
+        "p95_delta_ms": 47.12119102478027,
+        "max_delta_ms": 53.60722541809082,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 33.12101910828026,
+        "percentage_within_50ms": 99.36305732484077,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0005": {
+        "matched_frames": 150,
+        "mean_delta_ms": 27.999374071757,
+        "median_delta_ms": 21.569013595581055,
+        "p95_delta_ms": 47.35485315322876,
+        "max_delta_ms": 85.68215370178223,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 32.666666666666664,
+        "percentage_within_50ms": 98.66666666666667,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0006": {
+        "matched_frames": 150,
+        "mean_delta_ms": 25.839184125264484,
+        "median_delta_ms": 18.803000450134277,
+        "p95_delta_ms": 45.489585399627686,
+        "max_delta_ms": 54.57806587219238,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.0,
+        "percentage_within_50ms": 99.33333333333333,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0007": {
+        "matched_frames": 150,
+        "mean_delta_ms": 26.21094544728597,
+        "median_delta_ms": 19.060373306274414,
+        "p95_delta_ms": 45.33064365386963,
+        "max_delta_ms": 81.21109008789062,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 63.333333333333336,
+        "percentage_within_50ms": 99.33333333333333,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0008": {
+        "matched_frames": 148,
+        "mean_delta_ms": 25.648500468279863,
+        "median_delta_ms": 19.047975540161133,
+        "p95_delta_ms": 45.31775712966919,
+        "max_delta_ms": 46.2031364440918,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.21621621621621,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0009": {
+        "matched_frames": 151,
+        "mean_delta_ms": 26.215387495937726,
+        "median_delta_ms": 18.449068069458008,
+        "p95_delta_ms": 46.55790328979492,
+        "max_delta_ms": 54.36110496520996,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 65.56291390728477,
+        "percentage_within_50ms": 99.33774834437087,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0010": {
+        "matched_frames": 149,
+        "mean_delta_ms": 26.84212371006908,
+        "median_delta_ms": 18.724918365478516,
+        "p95_delta_ms": 49.33433532714844,
+        "max_delta_ms": 49.41415786743164,
+        "percentage_within_10ms": 1.342281879194631,
+        "percentage_within_20ms": 65.1006711409396,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0011": {
+        "matched_frames": 152,
+        "mean_delta_ms": 26.93322771473935,
+        "median_delta_ms": 18.769025802612305,
+        "p95_delta_ms": 49.26110506057739,
+        "max_delta_ms": 49.30710792541504,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.44736842105263,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0012": {
+        "matched_frames": 153,
+        "mean_delta_ms": 27.13618558995864,
+        "median_delta_ms": 18.656015396118164,
+        "p95_delta_ms": 49.48601722717285,
+        "max_delta_ms": 50.691843032836914,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 65.359477124183,
+        "percentage_within_50ms": 99.34640522875817,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0013": {
+        "matched_frames": 150,
+        "mean_delta_ms": 27.707438468933105,
+        "median_delta_ms": 17.872929573059082,
+        "p95_delta_ms": 50.00232458114624,
+        "max_delta_ms": 81.90393447875977,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.0,
+        "percentage_within_50ms": 94.66666666666667,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0014": {
+        "matched_frames": 153,
+        "mean_delta_ms": 27.317989885417465,
+        "median_delta_ms": 17.954111099243164,
+        "p95_delta_ms": 49.96366500854492,
+        "max_delta_ms": 50.050973892211914,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 64.70588235294117,
+        "percentage_within_50ms": 98.03921568627452,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0015": {
+        "matched_frames": 157,
+        "mean_delta_ms": 27.605987658166583,
+        "median_delta_ms": 18.010854721069336,
+        "p95_delta_ms": 49.98917579650879,
+        "max_delta_ms": 81.98690414428711,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 66.24203821656052,
+        "percentage_within_50ms": 96.17834394904459,
+        "percentage_within_100ms": 100.0
+      },
+      "seq0016": {
+        "matched_frames": 155,
+        "mean_delta_ms": 25.964967666133756,
+        "median_delta_ms": 23.98204803466797,
+        "p95_delta_ms": 44.99983787536621,
+        "max_delta_ms": 90.88993072509766,
+        "percentage_within_10ms": 32.903225806451616,
+        "percentage_within_20ms": 32.903225806451616,
+        "percentage_within_50ms": 98.70967741935483,
+        "percentage_within_100ms": 100.0
+      }
+    },
+    "camera_to_radar": {
+      "seq0001": {
+        "matched_frames": 147,
+        "mean_delta_ms": 16.834967801360047,
+        "median_delta_ms": 24.935007095336914,
+        "p95_delta_ms": 28.484129905700684,
+        "max_delta_ms": 40.743112564086914,
+        "percentage_within_10ms": 49.65986394557823,
+        "percentage_within_20ms": 49.65986394557823,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 73,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.0136986301369864,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0002": {
+        "matched_frames": 151,
+        "mean_delta_ms": 16.560933447831513,
+        "median_delta_ms": 6.300926208496094,
+        "p95_delta_ms": 30.310511589050293,
+        "max_delta_ms": 30.831098556518555,
+        "percentage_within_10ms": 50.33112582781457,
+        "percentage_within_20ms": 50.33112582781457,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 76,
+        "camera_frames_per_radar_sample": {
+          "mean": 1.986842105263158,
+          "median": 2.0,
+          "max": 2
+        }
+      },
+      "seq0003": {
+        "matched_frames": 153,
+        "mean_delta_ms": 16.747058606615255,
+        "median_delta_ms": 23.979902267456055,
+        "p95_delta_ms": 28.037214279174805,
+        "max_delta_ms": 39.65401649475098,
+        "percentage_within_10ms": 49.673202614379086,
+        "percentage_within_20ms": 49.673202614379086,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 76,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.013157894736842,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0004": {
+        "matched_frames": 157,
+        "mean_delta_ms": 16.843858038543896,
+        "median_delta_ms": 23.49090576171875,
+        "p95_delta_ms": 26.863908767700195,
+        "max_delta_ms": 40.4360294342041,
+        "percentage_within_10ms": 47.13375796178344,
+        "percentage_within_20ms": 49.681528662420384,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 78,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.0128205128205128,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0005": {
+        "matched_frames": 150,
+        "mean_delta_ms": 16.701221466064453,
+        "median_delta_ms": 16.558051109313965,
+        "p95_delta_ms": 26.679551601409912,
+        "max_delta_ms": 28.61785888671875,
+        "percentage_within_10ms": 50.0,
+        "percentage_within_20ms": 50.0,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 76,
+        "camera_frames_per_radar_sample": {
+          "mean": 1.9736842105263157,
+          "median": 2.0,
+          "max": 2
+        }
+      },
+      "seq0006": {
+        "matched_frames": 150,
+        "mean_delta_ms": 16.681547164916992,
+        "median_delta_ms": 17.068028450012207,
+        "p95_delta_ms": 23.61292839050293,
+        "max_delta_ms": 24.97100830078125,
+        "percentage_within_10ms": 0.6666666666666666,
+        "percentage_within_20ms": 50.0,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 75,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 2
+        }
+      },
+      "seq0007": {
+        "matched_frames": 150,
+        "mean_delta_ms": 16.80294195810954,
+        "median_delta_ms": 16.49641990661621,
+        "p95_delta_ms": 23.541855812072754,
+        "max_delta_ms": 46.617984771728516,
+        "percentage_within_10ms": 6.666666666666667,
+        "percentage_within_20ms": 50.0,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 75,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0008": {
+        "matched_frames": 148,
+        "mean_delta_ms": 16.645333251437627,
+        "median_delta_ms": 16.49296283721924,
+        "p95_delta_ms": 23.241639137268066,
+        "max_delta_ms": 24.52993392944336,
+        "percentage_within_10ms": 12.837837837837839,
+        "percentage_within_20ms": 52.027027027027025,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 75,
+        "camera_frames_per_radar_sample": {
+          "mean": 1.9733333333333334,
+          "median": 2.0,
+          "max": 2
+        }
+      },
+      "seq0009": {
+        "matched_frames": 151,
+        "mean_delta_ms": 16.83728742283701,
+        "median_delta_ms": 18.75591278076172,
+        "p95_delta_ms": 21.723628044128418,
+        "max_delta_ms": 46.90098762512207,
+        "percentage_within_10ms": 0.0,
+        "percentage_within_20ms": 63.57615894039735,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 75,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.013333333333333,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0010": {
+        "matched_frames": 149,
+        "mean_delta_ms": 16.9265126221932,
+        "median_delta_ms": 17.70806312561035,
+        "p95_delta_ms": 24.965620040893555,
+        "max_delta_ms": 55.2828311920166,
+        "percentage_within_10ms": 30.201342281879196,
+        "percentage_within_20ms": 52.348993288590606,
+        "percentage_within_50ms": 99.32885906040268,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 74,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.0135135135135136,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0011": {
+        "matched_frames": 152,
+        "mean_delta_ms": 17.071814913498727,
+        "median_delta_ms": 21.608591079711914,
+        "p95_delta_ms": 24.92743730545044,
+        "max_delta_ms": 55.94801902770996,
+        "percentage_within_10ms": 25.0,
+        "percentage_within_20ms": 49.3421052631579,
+        "percentage_within_50ms": 99.34210526315789,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 75,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.026666666666667,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0012": {
+        "matched_frames": 153,
+        "mean_delta_ms": 16.7029870101829,
+        "median_delta_ms": 21.780967712402344,
+        "p95_delta_ms": 25.33736228942871,
+        "max_delta_ms": 25.690078735351562,
+        "percentage_within_10ms": 31.372549019607842,
+        "percentage_within_20ms": 49.673202614379086,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 77,
+        "camera_frames_per_radar_sample": {
+          "mean": 1.9870129870129871,
+          "median": 2.0,
+          "max": 2
+        }
+      },
+      "seq0013": {
+        "matched_frames": 150,
+        "mean_delta_ms": 16.673943201700848,
+        "median_delta_ms": 16.986966133117676,
+        "p95_delta_ms": 33.048415184020996,
+        "max_delta_ms": 35.80212593078613,
+        "percentage_within_10ms": 50.0,
+        "percentage_within_20ms": 50.0,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 75,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.0,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0014": {
+        "matched_frames": 153,
+        "mean_delta_ms": 16.602257497949537,
+        "median_delta_ms": 4.699945449829102,
+        "p95_delta_ms": 32.89141654968262,
+        "max_delta_ms": 33.48588943481445,
+        "percentage_within_10ms": 50.326797385620914,
+        "percentage_within_20ms": 50.326797385620914,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 77,
+        "camera_frames_per_radar_sample": {
+          "mean": 1.9870129870129871,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0015": {
+        "matched_frames": 157,
+        "mean_delta_ms": 16.725728466252612,
+        "median_delta_ms": 5.3539276123046875,
+        "p95_delta_ms": 33.274030685424805,
+        "max_delta_ms": 33.56194496154785,
+        "percentage_within_10ms": 50.318471337579616,
+        "percentage_within_20ms": 50.318471337579616,
+        "percentage_within_50ms": 100.0,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 79,
+        "camera_frames_per_radar_sample": {
+          "mean": 1.9873417721518987,
+          "median": 2.0,
+          "max": 3
+        }
+      },
+      "seq0016": {
+        "matched_frames": 155,
+        "mean_delta_ms": 16.87042482437626,
+        "median_delta_ms": 16.963958740234375,
+        "p95_delta_ms": 20.844268798828125,
+        "max_delta_ms": 53.30514907836914,
+        "percentage_within_10ms": 0.6451612903225806,
+        "percentage_within_20ms": 81.93548387096774,
+        "percentage_within_50ms": 99.35483870967742,
+        "percentage_within_100ms": 100.0,
+        "unique_radar_matches": 77,
+        "camera_frames_per_radar_sample": {
+          "mean": 2.012987012987013,
+          "median": 2.0,
+          "max": 3
+        }
+      }
+    }
+  },
+  "other_associations": {
+    "lidar360_to_radar": {
+      "matched_frames": 794,
+      "median_delta_ms": 18.61703395843506,
+      "p95_delta_ms": 31.91399574279785,
+      "max_delta_ms": 55.31811714172363,
+      "per_sequence": {
+        "seq0001": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.506853103637695,
+          "median_delta_ms": 16.525983810424805,
+          "p95_delta_ms": 22.47241735458374,
+          "max_delta_ms": 22.578001022338867,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0002": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.652789770388136,
+          "median_delta_ms": 5.604028701782227,
+          "p95_delta_ms": 28.71108055114746,
+          "max_delta_ms": 28.855085372924805,
+          "percentage_within_10ms": 50.98039215686274,
+          "percentage_within_20ms": 50.98039215686274,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0003": {
+          "matched_frames": 51,
+          "mean_delta_ms": 17.043511072794598,
+          "median_delta_ms": 30.086040496826172,
+          "p95_delta_ms": 30.67302703857422,
+          "max_delta_ms": 36.572933197021484,
+          "percentage_within_10ms": 49.01960784313726,
+          "percentage_within_20ms": 49.01960784313726,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0004": {
+          "matched_frames": 52,
+          "mean_delta_ms": 16.763856777778038,
+          "median_delta_ms": 16.56198501586914,
+          "p95_delta_ms": 30.70734739303589,
+          "max_delta_ms": 31.063079833984375,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0005": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.478697458902996,
+          "median_delta_ms": 3.351926803588867,
+          "p95_delta_ms": 31.090974807739258,
+          "max_delta_ms": 31.250953674316406,
+          "percentage_within_10ms": 50.98039215686274,
+          "percentage_within_20ms": 50.98039215686274,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0006": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.68062686920166,
+          "median_delta_ms": 16.54052734375,
+          "p95_delta_ms": 32.54058361053467,
+          "max_delta_ms": 32.740116119384766,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0007": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.528682708740234,
+          "median_delta_ms": 16.56508445739746,
+          "p95_delta_ms": 32.05322027206421,
+          "max_delta_ms": 32.179832458496094,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0008": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.5324068069458,
+          "median_delta_ms": 16.86394214630127,
+          "p95_delta_ms": 32.322120666503906,
+          "max_delta_ms": 32.47809410095215,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0009": {
+          "matched_frames": 49,
+          "mean_delta_ms": 16.791820526123047,
+          "median_delta_ms": 27.6029109954834,
+          "p95_delta_ms": 29.96082305908203,
+          "max_delta_ms": 30.185937881469727,
+          "percentage_within_10ms": 48.97959183673469,
+          "percentage_within_20ms": 48.97959183673469,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0010": {
+          "matched_frames": 50,
+          "mean_delta_ms": 17.055344581604004,
+          "median_delta_ms": 16.61992073059082,
+          "p95_delta_ms": 27.94628143310547,
+          "max_delta_ms": 38.87295722961426,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0011": {
+          "matched_frames": 51,
+          "mean_delta_ms": 17.097982705808153,
+          "median_delta_ms": 27.029037475585938,
+          "p95_delta_ms": 27.53901481628418,
+          "max_delta_ms": 39.443016052246094,
+          "percentage_within_10ms": 49.01960784313726,
+          "percentage_within_20ms": 49.01960784313726,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0012": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.33730589174757,
+          "median_delta_ms": 6.759166717529297,
+          "p95_delta_ms": 27.388334274291992,
+          "max_delta_ms": 27.499914169311523,
+          "percentage_within_10ms": 50.98039215686274,
+          "percentage_within_20ms": 50.98039215686274,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0013": {
+          "matched_frames": 50,
+          "mean_delta_ms": 17.58528709411621,
+          "median_delta_ms": 21.243929862976074,
+          "p95_delta_ms": 23.470818996429443,
+          "max_delta_ms": 55.31811714172363,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 48.0,
+          "percentage_within_50ms": 98.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0014": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.91914072223738,
+          "median_delta_ms": 21.210908889770508,
+          "p95_delta_ms": 23.23150634765625,
+          "max_delta_ms": 23.42391014099121,
+          "percentage_within_10ms": 1.9607843137254901,
+          "percentage_within_20ms": 49.01960784313726,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0015": {
+          "matched_frames": 52,
+          "mean_delta_ms": 16.818674711080696,
+          "median_delta_ms": 16.92795753479004,
+          "p95_delta_ms": 23.11939001083374,
+          "max_delta_ms": 23.321151733398438,
+          "percentage_within_10ms": 1.9230769230769231,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0016": {
+          "matched_frames": 35,
+          "mean_delta_ms": 16.872596740722656,
+          "median_delta_ms": 16.14999771118164,
+          "p95_delta_ms": 19.08726692199707,
+          "max_delta_ms": 19.176959991455078,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 100.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        }
+      }
+    },
+    "livox_to_radar": {
+      "matched_frames": 810,
+      "median_delta_ms": 16.72947406768799,
+      "p95_delta_ms": 31.646859645843506,
+      "max_delta_ms": 61.280012130737305,
+      "per_sequence": {
+        "seq0001": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.711244583129883,
+          "median_delta_ms": 16.595005989074707,
+          "p95_delta_ms": 31.517398357391357,
+          "max_delta_ms": 36.04412078857422,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0002": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.446866241155885,
+          "median_delta_ms": 12.933015823364258,
+          "p95_delta_ms": 21.195054054260254,
+          "max_delta_ms": 21.259069442749023,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 50.98039215686274,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0003": {
+          "matched_frames": 51,
+          "mean_delta_ms": 17.50628620970483,
+          "median_delta_ms": 27.187108993530273,
+          "p95_delta_ms": 28.5494327545166,
+          "max_delta_ms": 61.280012130737305,
+          "percentage_within_10ms": 49.01960784313726,
+          "percentage_within_20ms": 49.01960784313726,
+          "percentage_within_50ms": 98.03921568627452,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0004": {
+          "matched_frames": 52,
+          "mean_delta_ms": 16.751211423140305,
+          "median_delta_ms": 16.748428344726562,
+          "p95_delta_ms": 28.802812099456787,
+          "max_delta_ms": 28.866052627563477,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0005": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.74687385559082,
+          "median_delta_ms": 16.548991203308105,
+          "p95_delta_ms": 29.178225994110107,
+          "max_delta_ms": 29.289960861206055,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0006": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.682262420654297,
+          "median_delta_ms": 16.542673110961914,
+          "p95_delta_ms": 32.2018027305603,
+          "max_delta_ms": 32.45091438293457,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0007": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.52517318725586,
+          "median_delta_ms": 16.366004943847656,
+          "p95_delta_ms": 31.704139709472656,
+          "max_delta_ms": 31.80694580078125,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0008": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.532888412475586,
+          "median_delta_ms": 16.876935958862305,
+          "p95_delta_ms": 32.05668926239014,
+          "max_delta_ms": 32.15503692626953,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0009": {
+          "matched_frames": 50,
+          "mean_delta_ms": 16.57723903656006,
+          "median_delta_ms": 16.275525093078613,
+          "p95_delta_ms": 26.90190076828003,
+          "max_delta_ms": 27.616024017333984,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0010": {
+          "matched_frames": 50,
+          "mean_delta_ms": 17.183866500854492,
+          "median_delta_ms": 16.629457473754883,
+          "p95_delta_ms": 24.919402599334717,
+          "max_delta_ms": 41.964054107666016,
+          "percentage_within_10ms": 50.0,
+          "percentage_within_20ms": 50.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0011": {
+          "matched_frames": 51,
+          "mean_delta_ms": 17.163524440690583,
+          "median_delta_ms": 23.977041244506836,
+          "p95_delta_ms": 24.4903564453125,
+          "max_delta_ms": 42.58894920349121,
+          "percentage_within_10ms": 49.01960784313726,
+          "percentage_within_20ms": 49.01960784313726,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0012": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.395924138087853,
+          "median_delta_ms": 9.797096252441406,
+          "p95_delta_ms": 24.234533309936523,
+          "max_delta_ms": 24.313926696777344,
+          "percentage_within_10ms": 50.98039215686274,
+          "percentage_within_20ms": 50.98039215686274,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0013": {
+          "matched_frames": 50,
+          "mean_delta_ms": 17.30030059814453,
+          "median_delta_ms": 16.835570335388184,
+          "p95_delta_ms": 17.29351282119751,
+          "max_delta_ms": 49.688100814819336,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 98.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0014": {
+          "matched_frames": 51,
+          "mean_delta_ms": 16.73774625740799,
+          "median_delta_ms": 16.67308807373047,
+          "p95_delta_ms": 17.58897304534912,
+          "max_delta_ms": 17.927169799804688,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 100.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0015": {
+          "matched_frames": 52,
+          "mean_delta_ms": 16.714994723980244,
+          "median_delta_ms": 16.615986824035645,
+          "p95_delta_ms": 17.72695779800415,
+          "max_delta_ms": 18.072128295898438,
+          "percentage_within_10ms": 0.0,
+          "percentage_within_20ms": 100.0,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        },
+        "seq0016": {
+          "matched_frames": 51,
+          "mean_delta_ms": 17.110436570410634,
+          "median_delta_ms": 28.090953826904297,
+          "p95_delta_ms": 29.684066772460938,
+          "max_delta_ms": 29.864788055419922,
+          "percentage_within_10ms": 49.01960784313726,
+          "percentage_within_20ms": 49.01960784313726,
+          "percentage_within_50ms": 100.0,
+          "percentage_within_100ms": 100.0
+        }
+      }
+    }
+  },
+  "time_coverage_by_sequence": [
+    {
+      "sequence_id": "seq0001",
+      "camera": {
+        "start_timestamp": 1706255621.570108,
+        "end_timestamp": 1706255626.437804,
+        "duration_seconds": 4.867696046829224,
+        "count": 147
+      },
+      "lidar360": {
+        "start_timestamp": 1706255621.600227,
+        "end_timestamp": 1706255626.500272,
+        "duration_seconds": 4.900044918060303,
+        "count": 50
+      },
+      "livox": {
+        "start_timestamp": 1706255621.614239,
+        "end_timestamp": 1706255626.514209,
+        "duration_seconds": 4.899970054626465,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706255621.610851,
+        "end_timestamp": 1706255626.478165,
+        "duration_seconds": 4.867313861846924,
+        "count": 74
+      },
+      "common_time_window_seconds": 4.8235650062561035,
+      "union_time_window_seconds": 4.944101095199585,
+      "start_spread_ms": 44.13104057312012,
+      "end_spread_ms": 76.40504837036133
+    },
+    {
+      "sequence_id": "seq0002",
+      "camera": {
+        "start_timestamp": 1706255054.409385,
+        "end_timestamp": 1706255059.409475,
+        "duration_seconds": 5.0000901222229,
+        "count": 151
+      },
+      "lidar360": {
+        "start_timestamp": 1706255054.400078,
+        "end_timestamp": 1706255059.400164,
+        "duration_seconds": 5.000085830688477,
+        "count": 51
+      },
+      "livox": {
+        "start_timestamp": 1706255054.41748,
+        "end_timestamp": 1706255059.417461,
+        "duration_seconds": 4.999980926513672,
+        "count": 51
+      },
+      "radar": {
+        "start_timestamp": 1706255054.405226,
+        "end_timestamp": 1706255059.405689,
+        "duration_seconds": 5.000463008880615,
+        "count": 76
+      },
+      "common_time_window_seconds": 4.982683897018433,
+      "union_time_window_seconds": 5.017382860183716,
+      "start_spread_ms": 17.401933670043945,
+      "end_spread_ms": 17.297029495239258
+    },
+    {
+      "sequence_id": "seq0003",
+      "camera": {
+        "start_timestamp": 1706257431.72356,
+        "end_timestamp": 1706257436.787292,
+        "duration_seconds": 5.063731908798218,
+        "count": 153
+      },
+      "lidar360": {
+        "start_timestamp": 1706257431.799921,
+        "end_timestamp": 1706257436.799877,
+        "duration_seconds": 4.999955892562866,
+        "count": 51
+      },
+      "livox": {
+        "start_timestamp": 1706257431.701934,
+        "end_timestamp": 1706257436.70189,
+        "duration_seconds": 4.999955892562866,
+        "count": 51
+      },
+      "radar": {
+        "start_timestamp": 1706257431.763214,
+        "end_timestamp": 1706257436.763304,
+        "duration_seconds": 5.000089883804321,
+        "count": 76
+      },
+      "common_time_window_seconds": 4.901968955993652,
+      "union_time_window_seconds": 5.09794282913208,
+      "start_spread_ms": 97.98693656921387,
+      "end_spread_ms": 97.98693656921387
+    },
+    {
+      "sequence_id": "seq0004",
+      "camera": {
+        "start_timestamp": 1706257436.855814,
+        "end_timestamp": 1706257442.055385,
+        "duration_seconds": 5.199571132659912,
+        "count": 157
+      },
+      "lidar360": {
+        "start_timestamp": 1706257436.899762,
+        "end_timestamp": 1706257441.999949,
+        "duration_seconds": 5.100187063217163,
+        "count": 52
+      },
+      "livox": {
+        "start_timestamp": 1706257436.90285,
+        "end_timestamp": 1706257442.001778,
+        "duration_seconds": 5.098927974700928,
+        "count": 52
+      },
+      "radar": {
+        "start_timestamp": 1706257436.89625,
+        "end_timestamp": 1706257442.029561,
+        "duration_seconds": 5.133311033248901,
+        "count": 78
+      },
+      "common_time_window_seconds": 5.09709906578064,
+      "union_time_window_seconds": 5.199571132659912,
+      "start_spread_ms": 47.035932540893555,
+      "end_spread_ms": 55.436134338378906
+    },
+    {
+      "sequence_id": "seq0005",
+      "camera": {
+        "start_timestamp": 1706257442.123424,
+        "end_timestamp": 1706257447.087398,
+        "duration_seconds": 4.9639739990234375,
+        "count": 150
+      },
+      "lidar360": {
+        "start_timestamp": 1706257442.099887,
+        "end_timestamp": 1706257447.099734,
+        "duration_seconds": 4.999847173690796,
+        "count": 51
+      },
+      "livox": {
+        "start_timestamp": 1706257442.102802,
+        "end_timestamp": 1706257447.001716,
+        "duration_seconds": 4.898913860321045,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706257442.096637,
+        "end_timestamp": 1706257447.096975,
+        "duration_seconds": 5.000338077545166,
+        "count": 76
+      },
+      "common_time_window_seconds": 4.878291845321655,
+      "union_time_window_seconds": 5.003097057342529,
+      "start_spread_ms": 26.78704261779785,
+      "end_spread_ms": 98.01816940307617
+    },
+    {
+      "sequence_id": "seq0006",
+      "camera": {
+        "start_timestamp": 1706257647.687303,
+        "end_timestamp": 1706257652.655149,
+        "duration_seconds": 4.967845916748047,
+        "count": 150
+      },
+      "lidar360": {
+        "start_timestamp": 1706257647.700211,
+        "end_timestamp": 1706257652.600283,
+        "duration_seconds": 4.900071859359741,
+        "count": 50
+      },
+      "livox": {
+        "start_timestamp": 1706257647.700555,
+        "end_timestamp": 1706257652.600571,
+        "duration_seconds": 4.900015830993652,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706257647.698778,
+        "end_timestamp": 1706257652.631926,
+        "duration_seconds": 4.933148145675659,
+        "count": 75
+      },
+      "common_time_window_seconds": 4.899727821350098,
+      "union_time_window_seconds": 4.967845916748047,
+      "start_spread_ms": 13.252019882202148,
+      "end_spread_ms": 54.86607551574707
+    },
+    {
+      "sequence_id": "seq0007",
+      "camera": {
+        "start_timestamp": 1706257652.719373,
+        "end_timestamp": 1706257657.687438,
+        "duration_seconds": 4.968065023422241,
+        "count": 150
+      },
+      "lidar360": {
+        "start_timestamp": 1706257652.800173,
+        "end_timestamp": 1706257657.700234,
+        "duration_seconds": 4.9000608921051025,
+        "count": 50
+      },
+      "livox": {
+        "start_timestamp": 1706257652.800584,
+        "end_timestamp": 1706257657.70057,
+        "duration_seconds": 4.899986028671265,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706257652.765991,
+        "end_timestamp": 1706257657.69922,
+        "duration_seconds": 4.933228969573975,
+        "count": 75
+      },
+      "common_time_window_seconds": 4.886853933334351,
+      "union_time_window_seconds": 4.981197118759155,
+      "start_spread_ms": 81.21109008789062,
+      "end_spread_ms": 13.132095336914062
+    },
+    {
+      "sequence_id": "seq0008",
+      "camera": {
+        "start_timestamp": 1706257657.787543,
+        "end_timestamp": 1706257662.687286,
+        "duration_seconds": 4.899742841720581,
+        "count": 148
+      },
+      "lidar360": {
+        "start_timestamp": 1706257657.800179,
+        "end_timestamp": 1706257662.700234,
+        "duration_seconds": 4.900054931640625,
+        "count": 50
+      },
+      "livox": {
+        "start_timestamp": 1706257657.800576,
+        "end_timestamp": 1706257662.700435,
+        "duration_seconds": 4.8998589515686035,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706257657.765123,
+        "end_timestamp": 1706257662.699361,
+        "duration_seconds": 4.9342381954193115,
+        "count": 75
+      },
+      "common_time_window_seconds": 4.886709928512573,
+      "union_time_window_seconds": 4.935312032699585,
+      "start_spread_ms": 35.453081130981445,
+      "end_spread_ms": 13.149023056030273
+    },
+    {
+      "sequence_id": "seq0009",
+      "camera": {
+        "start_timestamp": 1706258170.551417,
+        "end_timestamp": 1706258175.551618,
+        "duration_seconds": 5.000200986862183,
+        "count": 151
+      },
+      "lidar360": {
+        "start_timestamp": 1706258170.600684,
+        "end_timestamp": 1706258175.400588,
+        "duration_seconds": 4.799904108047485,
+        "count": 49
+      },
+      "livox": {
+        "start_timestamp": 1706258170.597203,
+        "end_timestamp": 1706258175.497257,
+        "duration_seconds": 4.900053977966309,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706258170.571512,
+        "end_timestamp": 1706258175.504717,
+        "duration_seconds": 4.9332051277160645,
+        "count": 75
+      },
+      "common_time_window_seconds": 4.799904108047485,
+      "union_time_window_seconds": 5.000200986862183,
+      "start_spread_ms": 49.266815185546875,
+      "end_spread_ms": 151.0300636291504
+    },
+    {
+      "sequence_id": "seq0010",
+      "camera": {
+        "start_timestamp": 1706258272.383865,
+        "end_timestamp": 1706258277.316052,
+        "duration_seconds": 4.932186841964722,
+        "count": 149
+      },
+      "lidar360": {
+        "start_timestamp": 1706258272.400275,
+        "end_timestamp": 1706258277.300198,
+        "duration_seconds": 4.899923086166382,
+        "count": 50
+      },
+      "livox": {
+        "start_timestamp": 1706258272.397184,
+        "end_timestamp": 1706258277.297228,
+        "duration_seconds": 4.900044202804565,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706258272.439148,
+        "end_timestamp": 1706258277.306781,
+        "duration_seconds": 4.867633104324341,
+        "count": 74
+      },
+      "common_time_window_seconds": 4.858080148696899,
+      "union_time_window_seconds": 4.932186841964722,
+      "start_spread_ms": 55.2828311920166,
+      "end_spread_ms": 18.823862075805664
+    },
+    {
+      "sequence_id": "seq0011",
+      "camera": {
+        "start_timestamp": 1706258277.383817,
+        "end_timestamp": 1706258282.415869,
+        "duration_seconds": 5.032052040100098,
+        "count": 152
+      },
+      "lidar360": {
+        "start_timestamp": 1706258277.400322,
+        "end_timestamp": 1706258282.400136,
+        "duration_seconds": 4.999814033508301,
+        "count": 51
+      },
+      "livox": {
+        "start_timestamp": 1706258277.397176,
+        "end_timestamp": 1706258282.397119,
+        "duration_seconds": 4.999943017959595,
+        "count": 51
+      },
+      "radar": {
+        "start_timestamp": 1706258277.439765,
+        "end_timestamp": 1706258282.372887,
+        "duration_seconds": 4.933121919631958,
+        "count": 75
+      },
+      "common_time_window_seconds": 4.933121919631958,
+      "union_time_window_seconds": 5.032052040100098,
+      "start_spread_ms": 55.94801902770996,
+      "end_spread_ms": 42.98210144042969
+    },
+    {
+      "sequence_id": "seq0012",
+      "camera": {
+        "start_timestamp": 1706258282.483768,
+        "end_timestamp": 1706258287.547721,
+        "duration_seconds": 5.063952922821045,
+        "count": 153
+      },
+      "lidar360": {
+        "start_timestamp": 1706258282.500262,
+        "end_timestamp": 1706258287.500135,
+        "duration_seconds": 4.999872922897339,
+        "count": 51
+      },
+      "livox": {
+        "start_timestamp": 1706258282.497122,
+        "end_timestamp": 1706258287.497029,
+        "duration_seconds": 4.99990701675415,
+        "count": 51
+      },
+      "radar": {
+        "start_timestamp": 1706258282.50594,
+        "end_timestamp": 1706258287.573237,
+        "duration_seconds": 5.067296981811523,
+        "count": 77
+      },
+      "common_time_window_seconds": 4.991089105606079,
+      "union_time_window_seconds": 5.089468955993652,
+      "start_spread_ms": 22.171974182128906,
+      "end_spread_ms": 76.20787620544434
+    },
+    {
+      "sequence_id": "seq0013",
+      "camera": {
+        "start_timestamp": 1706258737.512474,
+        "end_timestamp": 1706258742.480498,
+        "duration_seconds": 4.968024015426636,
+        "count": 150
+      },
+      "lidar360": {
+        "start_timestamp": 1706258737.600954,
+        "end_timestamp": 1706258742.500014,
+        "duration_seconds": 4.899060010910034,
+        "count": 50
+      },
+      "livox": {
+        "start_timestamp": 1706258737.594378,
+        "end_timestamp": 1706258742.494384,
+        "duration_seconds": 4.900006055831909,
+        "count": 50
+      },
+      "radar": {
+        "start_timestamp": 1706258737.511365,
+        "end_timestamp": 1706258742.444696,
+        "duration_seconds": 4.93333101272583,
+        "count": 75
+      },
+      "common_time_window_seconds": 4.8437418937683105,
+      "union_time_window_seconds": 4.988649129867554,
+      "start_spread_ms": 89.58911895751953,
+      "end_spread_ms": 55.31811714172363
+    },
+    {
+      "sequence_id": "seq0014",
+      "camera": {
+        "start_timestamp": 1706258742.580789,
+        "end_timestamp": 1706258747.644275,
+        "duration_seconds": 5.063485860824585,
+        "count": 153
+      },
+      "lidar360": {
+        "start_timestamp": 1706258742.601012,
+        "end_timestamp": 1706258747.601009,
+        "duration_seconds": 4.999996900558472,
+        "count": 51
+      },
+      "livox": {
+        "start_timestamp": 1706258742.5943,
+        "end_timestamp": 1706258747.594386,
+        "duration_seconds": 5.000086069107056,
+        "count": 51
+      },
+      "radar": {
+        "start_timestamp": 1706258742.578631,
+        "end_timestamp": 1706258747.644963,
+        "duration_seconds": 5.066332101821899,
+        "count": 77
+      },
+      "common_time_window_seconds": 4.9933741092681885,
+      "union_time_window_seconds": 5.066332101821899,
+      "start_spread_ms": 22.381067276000977,
+      "end_spread_ms": 50.57692527770996
+    },
+    {
+      "sequence_id": "seq0015",
+      "camera": {
+        "start_timestamp": 1706258747.712275,
+        "end_timestamp": 1706258752.91232,
+        "duration_seconds": 5.200044870376587,
+        "count": 157
+      },
+      "lidar360": {
+        "start_timestamp": 1706258747.800869,
+        "end_timestamp": 1706258752.900885,
+        "duration_seconds": 5.100016117095947,
+        "count": 52
+      },
+      "livox": {
+        "start_timestamp": 1706258747.794262,
+        "end_timestamp": 1706258752.894309,
+        "duration_seconds": 5.1000471115112305,
+        "count": 52
+      },
+      "radar": {
+        "start_timestamp": 1706258747.711803,
+        "end_timestamp": 1706258752.911294,
+        "duration_seconds": 5.199491024017334,
+        "count": 79
+      },
+      "common_time_window_seconds": 5.093440055847168,
+      "union_time_window_seconds": 5.200516939163208,
+      "start_spread_ms": 89.0660285949707,
+      "end_spread_ms": 18.010854721069336
+    },
+    {
+      "sequence_id": "seq0016",
+      "camera": {
+        "start_timestamp": 1706256059.066766,
+        "end_timestamp": 1706256064.202311,
+        "duration_seconds": 5.135545015335083,
+        "count": 155
+      },
+      "lidar360": {
+        "start_timestamp": 1706256059.200818,
+        "end_timestamp": 1706256064.100782,
+        "duration_seconds": 4.899963855743408,
+        "count": 35
+      },
+      "livox": {
+        "start_timestamp": 1706256059.110402,
+        "end_timestamp": 1706256064.111421,
+        "duration_seconds": 5.00101900100708,
+        "count": 51
+      },
+      "radar": {
+        "start_timestamp": 1706256059.081839,
+        "end_timestamp": 1706256064.149006,
+        "duration_seconds": 5.067166805267334,
+        "count": 77
+      },
+      "common_time_window_seconds": 4.899963855743408,
+      "union_time_window_seconds": 5.135545015335083,
+      "start_spread_ms": 134.05203819274902,
+      "end_spread_ms": 101.52912139892578
+    }
+  ],
+  "calibration": {
+    "status": "PARTIAL",
+    "evidence": [
+      "No calibration file was found inside current val.zip extraction or local samples; source audit documents official calibration/reference resources.",
+      "| MMAUD official page | Level 1 official dataset page | https://ntu-aris.github.io/MMAUD/ | overview, sensor summary, V1/V2/V3 downloads, V1 sizes/durations, V2/V3 unknown sizes, calibration link, 2D baseline link, citation, licence | 2026-09-20 |",
+      "| calibration assets | fisheye calibration Google Drive link; CAD/calibration references | official page |",
+      "| cross-modal synchronization | PARTIAL | timestamps and calibration exist, but the paper explicitly reports synchronization challenges. |",
+      "- complete transform/coordinate metadata files before sample inspection",
+      "- calibration/fisheye calibration resources are linked.",
+      "- the paper describes camera-to-LiDAR calibration and CAD-based references for audio/radar alignment.",
+      "| modalities | fisheye camera images, mmWave radar, LiDAR, Leica ground truth |"
+    ],
+    "local_calibration_files": []
+  },
+  "reference_ground_truth": {
+    "status": "NOT_FOUND",
+    "REFERENCE_MATCH_STATUS": "NOT_TESTED",
+    "evidence": [
+      "No local UG2+ reference/pose/ground-truth CSV was found for this extracted val subset.",
+      "| MMAUD arXiv paper | Level 2 original paper | https://arxiv.org/abs/2402.03706 | paper title, authors, ICRA 2024 status, DOI, abstract, dataset purpose | 2026-09-20 |",
+      "| MMAUD paper HTML | Level 2 original paper text | https://arxiv.org/html/2402.03706 | sensor setup, dataset format, ROS topics, timestamps, sequence count, split, ground truth rate, synchronization limitations | 2026-09-20 |",
+      "| tasks | detection; classification; tracking; trajectory/3D position estimation | official heading and paper |",
+      "| confirmed modalities | RGB image/image stream, audio, radar, LiDAR, trajectory/ground truth, text metadata | official page and paper |",
+      "| calibration assets | fisheye calibration Google Drive link; CAD/calibration references | official page |",
+      "| Leica ground truth rate | 5 Hz | paper |"
+    ],
+    "local_reference_files": []
+  },
+  "synchronization": {
+    "status": "LIKELY_SYNCHRONIZED",
+    "explanation": "All modalities share sequence IDs and parsable filename timestamps; nearest-match medians are within one expected camera/radar/LiDAR frame interval. The source audit still notes sensor synchronization limitations, so strict synchronization is not confirmed."
+  },
+  "cross_modal_association": {
+    "association_strength": "MEDIUM",
+    "timestamp_association": "PASS",
+    "sequence_level_association": "PASS"
+  },
+  "knowledge_system_readiness": {
+    "CROSS_MODAL_INDEX_FEASIBLE": "YES",
+    "explanation": "A sequence_id + timestamp nearest-neighbor index is technically feasible from filenames. Local calibration/reference support is not complete, so geometric or pose-level assertions should wait."
+  },
+  "problems": [
+    {
+      "type": "missing_calibration",
+      "detail": "No local calibration matrices/transforms were found in val.zip extraction or current samples."
+    },
+    {
+      "type": "missing_reference_csv",
+      "detail": "No local UG2+ reference/pose/ground-truth CSV was available for matching."
+    }
+  ],
+  "final_result": {
+    "SEQUENCE_LEVEL_ASSOCIATION": "PASS",
+    "TIMESTAMP_ASSOCIATION": "PASS",
+    "CAMERA_LIDAR360_MEDIAN_DELTA_MS": 20.182013511657715,
+    "CAMERA_LIVOX_MEDIAN_DELTA_MS": 18.994927406311035,
+    "CAMERA_RADAR_MEDIAN_DELTA_MS": 17.367124557495117,
+    "CALIBRATION_STATUS": "PARTIAL",
+    "SYNCHRONIZATION_STATUS": "LIKELY_SYNCHRONIZED",
+    "ASSOCIATION_STRENGTH": "MEDIUM",
+    "CROSS_MODAL_INDEX_FEASIBLE": "YES",
+    "CROSS_MODAL_VALIDATION": "PARTIAL",
+    "READY_FOR_FINAL_DATASET_EVALUATION": "YES"
+  }
+}

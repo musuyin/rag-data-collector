@@ -1,0 +1,3 @@
+DEMONSTRATION ONLY — NOT A REAL DRONE SPECIFICATION
+Demo Aviation AV-01 product manual
+Maximum flight time: 30 minutes.

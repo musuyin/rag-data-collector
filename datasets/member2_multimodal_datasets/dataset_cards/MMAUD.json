@@ -1,0 +1,682 @@
+{
+  "dataset_id": "MMAUD",
+  "dataset_name": "MMAUD",
+  "basic_info": {
+    "full_name": "CONFLICT",
+    "full_name_conflict": [
+      {
+        "value": "MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Detection, Classification, Tracking and Trajectory Estimation of Compact Commercially Available Drones Threats",
+        "source_url": "https://ntu-aris.github.io/MMAUD/",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The official website heading uses this longer task-oriented wording.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "value": "MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Modern Miniature Drone Threats",
+        "source_url": "https://arxiv.org/abs/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "The arXiv/ICRA title uses this paper title.",
+        "accessed_date": "2026-09-20"
+      }
+    ],
+    "version": "V1; V2; V3",
+    "organization": "Nanyang Technological University (NTU), School of Electrical and Electronic Engineering / ARIS",
+    "publication_year": "2024",
+    "official_url": "https://ntu-aris.github.io/MMAUD/",
+    "repository_url": "https://github.com/ntu-aris/MMAUD",
+    "paper_url": "https://arxiv.org/abs/2402.03706",
+    "doi_url": "https://doi.org/10.1109/ICRA57147.2024.10610957",
+    "download_url": "https://ntu-aris.github.io/MMAUD/#downloads"
+  },
+  "modalities": {
+    "RGB Image": "YES",
+    "RGB Video": "YES",
+    "Thermal / IR": "NO",
+    "Audio": "YES",
+    "RF": "NO",
+    "IQ Signal": "NO",
+    "Radar": "YES",
+    "LiDAR": "YES",
+    "Event Camera": "NO",
+    "Trajectory": "YES",
+    "Flight Log": "UNKNOWN",
+    "Telemetry": "UNKNOWN",
+    "GPS": "NO",
+    "IMU": "NO",
+    "Text Metadata": "YES"
+  },
+  "modality_evidence": [
+    {
+      "source_url": "https://ntu-aris.github.io/MMAUD/",
+      "source_type": "Level 1 official dataset page",
+      "evidence": "The official page lists two 3D lidars, two time-synchronized cameras, one mmWave radar, and four audio array nodes.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://arxiv.org/html/2402.03706",
+      "source_type": "Level 2 original paper",
+      "evidence": "The paper states that each sequence contains visual, 4x audio, 2x LIDAR, and RADAR data; its comparison table marks RF as not included.",
+      "accessed_date": "2026-09-20"
+    }
+  ],
+  "data_scale": {
+    "total_size": "V1 visible rows total 72.5 GB; full V1/V2/V3 total UNKNOWN",
+    "number_of_files": "UNKNOWN",
+    "image_count": "UNKNOWN",
+    "video_count": "UNKNOWN",
+    "audio_count": "UNKNOWN",
+    "sequence_count": "50",
+    "duration": "paper: over 1700 seconds; V1 visible rows total 1525.5 seconds; V2/V3 durations UNKNOWN",
+    "number_of_drone_models": "5 named UAV models plus ambient-noise sequences in the paper; UG2 challenge variant also mentions M30",
+    "train_size": "60% of 50 sequences in paper split, approximately 30 sequences",
+    "validation_size": "20% of 50 sequences in paper split, approximately 10 sequences",
+    "test_size": "20% of 50 sequences in paper split, approximately 10 sequences",
+    "evidence": [
+      {
+        "source_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The V1 download table lists Mavic2 14.1 GB / 198 s, Mavic3 11.1 GB / 321.1 s, Phantom4 13.2 GB / 181.4 s, Avata 19.7 GB / 396.3 s, and M300 14.4 GB / 428.7 s. V2/V3 rows show unknown size/duration.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://arxiv.org/html/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "The paper states that over 1700 seconds of multimodal rosbag data were divided into 50 sequences with a 60/20/20 train/test/validation allocation.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "file_formats": {
+    "Image": [
+      "png"
+    ],
+    "Video": [
+      "rosbag image stream",
+      "image sequence; no mp4/avi/mov confirmed"
+    ],
+    "Audio": [
+      "npy",
+      "rosbag audio_common_msgs/AudioData"
+    ],
+    "RF": [],
+    "Radar": [
+      "rosbag sensor_msgs/PointCloud",
+      "pcd for extracted point clouds not separately confirmed as radar-only"
+    ],
+    "LiDAR": [
+      "rosbag livox custom messages",
+      "pcd"
+    ],
+    "Trajectory": [
+      "bag",
+      "npy"
+    ],
+    "Container": [
+      "zip",
+      "bag"
+    ],
+    "Annotation": [
+      "bag",
+      "npy",
+      "2D detection label schema UNKNOWN"
+    ],
+    "evidence": [
+      {
+        "source_url": "https://arxiv.org/html/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "The paper describes rosbag format and filesystem format. Filesystem extraction saves images as PNG, audio as 1-second numpy segments, point clouds as PCD, and 3D position data in python-numpy files.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The download table provides ROSBag Data, Folder Data .zip, and Ground truth .bag entries.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "labels": {
+    "fields": {
+      "drone_class": "YES",
+      "drone_model": "YES",
+      "drone_manufacturer": "YES",
+      "drone_or_no_drone": "YES",
+      "bounding_box": "YES",
+      "segmentation_mask": "UNKNOWN",
+      "track_id": "UNKNOWN",
+      "flight_mode": "UNKNOWN",
+      "distance": "UNKNOWN",
+      "altitude": "YES",
+      "position_xyz": "YES",
+      "GPS": "NO",
+      "timestamp": "YES",
+      "sequence_id": "YES",
+      "sensor_id": "YES",
+      "SNR": "UNKNOWN",
+      "frequency": "UNKNOWN",
+      "bandwidth": "UNKNOWN",
+      "environment_label": "YES"
+    },
+    "label_levels": {
+      "Dataset-level": "YES",
+      "Sequence-level": "YES",
+      "Frame-level": "YES",
+      "Object-level": "YES",
+      "Signal-segment-level": "UNKNOWN"
+    },
+    "evidence": [
+      {
+        "source_url": "https://arxiv.org/html/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "The paper lists drone groups, 2D object detection benchmarks, 3D position estimation, timestamps, ROS topics, and Leica ground truth alignment.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://cvpr2024ug2challenge.github.io/dataset24_t5.html",
+        "source_type": "official UG2 challenge page",
+        "evidence": "The challenge page uses MMAUD data for UAV tracking and pose estimation and lists training/validation sequence counts and UAV types.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "license": {
+    "license_name": "CC BY-NC-SA 4.0 for dataset/work; repository LICENSE file is MIT for site/code",
+    "research_use": "YES",
+    "commercial_use": "NO",
+    "redistribution": "YES",
+    "modification": "YES",
+    "citation_required": "YES",
+    "registration_required": "UNKNOWN",
+    "license_source": [
+      {
+        "source_url": "https://ntu-aris.github.io/MMAUD/#licence",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The official Licence section states that the work is licensed under CC BY-NC-SA 4.0, is intended for non-commercial academic use, and requests contact for commercial purposes.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "source_type": "license deed",
+        "evidence": "The deed lists Share and Adapt freedoms under Attribution, NonCommercial, and ShareAlike terms.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://raw.githubusercontent.com/ntu-aris/MMAUD/gh-pages/LICENSE",
+        "source_type": "official GitHub repository LICENSE file",
+        "evidence": "The repository LICENSE file is MIT. This is recorded separately from the dataset/work license because the official page License section states CC BY-NC-SA 4.0.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "collection_environment": {
+    "Indoor / Outdoor": "Outdoor",
+    "Day / Night": "No night data included; exact day/evening breakdown UNKNOWN",
+    "Urban / Rural": "Urban/campus context; exact categories UNKNOWN",
+    "Ground / Rooftop / Airport / Lab / Parking Lot": "Rooftop for V1; carpark for V2/V3; UG2 variant sampled in a different scene with same equipment",
+    "weather": "No rainy data included; other weather UNKNOWN",
+    "distance_range": "V1 mostly below 30 m; V2/V3 up to 100 m; sensor detection ranges differ by modality",
+    "altitude_range": "V1 mostly below 30 m; V2/V3 up to 100 m",
+    "drone_speed": "UNKNOWN",
+    "line_of_sight": "UNKNOWN",
+    "background_complexity": "V1 rooftop simple; V2 carpark hard; V3 carpark moderate",
+    "interference_environment": "ambient heavy machinery, powerful air-conditioning systems, and wind noise are mentioned as audio background factors",
+    "evidence": [
+      {
+        "source_url": "https://ntu-aris.github.io/MMAUD/",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The official download table marks V1 as rooftop simple and V2/V3 as carpark hard/moderate; the page states V1 mostly below 30 m and V2/V3 up to 100 m.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://arxiv.org/html/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "The paper states outdoor testing, ambient machinery/air-conditioning/wind audio noise, and no night or rainy-condition data.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "sensor_information": {
+    "Camera": {
+      "sensor_model": "Pixel-XYZ AR135-130T400",
+      "resolution": "2560x960 concatenated stereo image stream reported in paper; exact stored PNG dimensions NOT_TESTED",
+      "fps": "30",
+      "FOV": "180 deg per paper camera description"
+    },
+    "Audio": {
+      "microphone_model": "Hikvision DS-VM1",
+      "microphone_array": "four audio array nodes / four arrays in cross-shaped configuration",
+      "sample_rate": "UNKNOWN",
+      "channels": "4-channel variant mentioned; exact exported NPY channel layout UNKNOWN",
+      "bit_depth": "UNKNOWN",
+      "frequency_range": "0-44.1 kHz listed in paper sensor table",
+      "message_rate": "41.8 Hz listed in paper sensor table"
+    },
+    "RF": {
+      "receiver_model": "NO",
+      "center_frequency": "NO",
+      "frequency_range": "NO",
+      "sample_rate": "NO",
+      "bandwidth": "NO",
+      "IQ_format": "NO"
+    },
+    "Radar": {
+      "radar_type": "mmWave / 4D imaging radar point cloud",
+      "radar_model": "Oculii Eagle ETH04",
+      "frequency_band": "77 GHz",
+      "range": "up to 350 m in paper",
+      "range_resolution": "UNKNOWN",
+      "velocity_resolution": "UNKNOWN",
+      "FOV": "120 deg horizontal, 30 deg vertical in paper",
+      "message_rate": "15 Hz listed in paper sensor table"
+    },
+    "LiDAR": {
+      "lidar_model": "Livox Avia and Livox Mid360",
+      "number_of_channels": "UNKNOWN",
+      "scan_rate": "10 Hz listed in paper sensor table",
+      "range": "Livox Avia up to 300 m; Livox Mid360 up to 70 m",
+      "FOV": "Livox Avia 70 deg conic FOV; Livox Mid360 360 deg horizontal and 59 deg vertical"
+    },
+    "Trajectory": {
+      "coordinate_system": "Leica frame z-axis points opposite gravity at startup; full transform details UNKNOWN",
+      "sampling_rate": "5 Hz",
+      "ground_truth_sensor": "Leica Nova MS60 MultiStation"
+    },
+    "evidence": [
+      {
+        "source_url": "https://arxiv.org/html/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "Sensor setup and Table II list the camera, LiDAR, audio, radar, ROS topics/message types, and rates. The ground-truth section states Leica locations are recorded at 5 Hz.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://ntu-aris.github.io/MMAUD/",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The official page summarizes the sensor suite and provides CAD/calibration resources.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "multimodal_association": {
+    "common_sequence_id": "YES",
+    "common_drone_id": "YES",
+    "common_timestamp": "YES",
+    "frame_timestamp": "YES",
+    "sensor_timestamp": "YES",
+    "synchronization_method": "PARTIAL",
+    "calibration_file": "YES",
+    "extrinsic_calibration": "YES",
+    "intrinsic_calibration": "YES",
+    "ground_truth_alignment": "YES",
+    "association_strength": "STRONG",
+    "notes": [
+      "STRONG is assigned at source level because the official sources provide ROS timestamps, sequence organization, calibration assets, and Leica/image timestamp alignment.",
+      "The paper also reports sensor synchronization limitations and ground-truth gaps, so sample-level synchronization remains NOT_TESTED until data is inspected."
+    ],
+    "evidence": [
+      {
+        "source_url": "https://arxiv.org/html/2402.03706",
+        "source_type": "Level 2 original paper",
+        "evidence": "The paper states ROS messages carry header.stamp timestamps, Leica timestamps are used to align images with ground truth, and sensor calibration methods are provided. It also states synchronization remains challenging.",
+        "accessed_date": "2026-09-20"
+      },
+      {
+        "source_url": "https://ntu-aris.github.io/MMAUD/",
+        "source_type": "Level 1 official dataset page",
+        "evidence": "The official page provides calibration data links and ROSBag/folder data downloads.",
+        "accessed_date": "2026-09-20"
+      }
+    ]
+  },
+  "validation_summary": {
+    "source_validation": "PASS",
+    "technical_validation": "PASS",
+    "annotation_validation": "PARTIAL",
+    "cross_modal_validation": "PARTIAL",
+    "license_validation": "PASS",
+    "collection_environment_validation": "PARTIAL",
+    "sensor_parameter_validation": "PARTIAL",
+    "dataset_status": "PARTIALLY_VERIFIED",
+    "project_readiness": "CROSS_MODAL_READY",
+    "reason": "Source validation is complete and a real UG2+ derived validation subset was downloaded, inspected, and cross-modal timestamp-matched. The final status remains partial because Audio, local calibration files, ground truth/reference CSV, 2D annotations, and complete MMAUD V1/V2/V3 packages were not fully validated."
+  },
+  "sample_validation_plan": [
+    {
+      "candidate_sample_name": "MMAUD official 2D detection baseline data",
+      "file_size": "UNKNOWN",
+      "modalities": [
+        "RGB image or image sequences",
+        "2D detection annotations; exact label schema UNKNOWN"
+      ],
+      "can_validate": [
+        "download access",
+        "image readability",
+        "2D annotation parsing if labels are present",
+        "annotation-file correspondence",
+        "sequence/frame naming"
+      ],
+      "download_url": "https://drive.google.com/drive/folders/1_LpPyIfETQS-k2vlSsbzI9pzyVzZScSx?usp=sharing",
+      "exceeds_2gb": "UNKNOWN",
+      "recommendation": "Recommended as the first candidate only after checking Google Drive metadata and confirming a file/subfolder below the project threshold.",
+      "reason": "It is the most plausible official minimal access-and-annotation check. It cannot prove full cross-modal readiness because radar/LiDAR/audio are not confirmed in this baseline link."
+    },
+    {
+      "candidate_sample_name": "CVPR UG2+ Track 5 Training and Validation Data",
+      "file_size": "UNKNOWN",
+      "modalities": [
+        "fisheye camera images",
+        "mmWave radar",
+        "LiDAR",
+        "Leica ground truth"
+      ],
+      "can_validate": [
+        "multimodal challenge structure",
+        "camera/radar/LiDAR/ground-truth availability",
+        "sequence-level organization",
+        "pose-estimation labels"
+      ],
+      "download_url": "https://drive.google.com/drive/folders/1wk-c5xVX6701WNI_In1ba3_D4LSjRYv5?usp=sharing",
+      "exceeds_2gb": "UNKNOWN",
+      "recommendation": "Do not download until file sizes are visible. Use if it exposes a small single sequence or validation shard.",
+      "reason": "It is an official MMAUD-related multimodal challenge subset, but public page text does not expose file sizes."
+    },
+    {
+      "candidate_sample_name": "MMAUD V1 DJI Mavic3 folder data",
+      "file_size": "11.1 GB",
+      "modalities": [
+        "RGB image stream / PNG extraction",
+        "audio",
+        "mmWave radar",
+        "LiDAR",
+        "3D ground truth / trajectory"
+      ],
+      "can_validate": [
+        "complete MMAUD full-multimodal folder structure",
+        "PNG image readability",
+        "NPY audio segments",
+        "PCD point clouds",
+        "3D position files",
+        "timestamp-based association across modalities"
+      ],
+      "download_url": "https://ntu-aris.github.io/MMAUD/#downloads",
+      "exceeds_2gb": "YES",
+      "recommendation": "Do not download automatically. It is the recommended full-multimodal sample only after explicit user confirmation.",
+      "reason": "It is the smallest confirmed full-multimodal V1 package in the official download table."
+    }
+  ],
+  "sources": [
+    {
+      "source_url": "https://ntu-aris.github.io/MMAUD/",
+      "source_type": "Level 1 official dataset page",
+      "evidence": "Official MMAUD project page with dataset overview, sensor summary, downloads, calibration link, 2D baseline link, citation, and licence.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://github.com/ntu-aris/MMAUD",
+      "source_type": "Level 1 official GitHub repository",
+      "evidence": "Official repository backing the GitHub Pages dataset site.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://arxiv.org/abs/2402.03706",
+      "source_type": "Level 2 original paper",
+      "evidence": "Original MMAUD paper accepted by ICRA 2024.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://arxiv.org/html/2402.03706",
+      "source_type": "Level 2 original paper HTML",
+      "evidence": "Paper text used for sensor setup, dataset format, sequence count, split, and synchronization limitations.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://cvpr2024ug2challenge.github.io/dataset24_t5.html",
+      "source_type": "official UG2 challenge page",
+      "evidence": "Official challenge page describing an MMAUD-based track with fisheye images, radar, LiDAR, Leica ground truth, and training/validation sequence counts.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "source_type": "license deed",
+      "evidence": "Used to verify explicit Share/Adapt permissions and NonCommercial/ShareAlike terms.",
+      "accessed_date": "2026-09-20"
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/ntu-aris/MMAUD/gh-pages/LICENSE",
+      "source_type": "official GitHub repository LICENSE file",
+      "evidence": "MIT license file for repository/site code, recorded separately from dataset/work license.",
+      "accessed_date": "2026-09-20"
+    }
+  ],
+  "last_checked": "2026-09-23",
+  "notes": [
+    "All unconfirmed fields are marked UNKNOWN.",
+    "Full name is marked CONFLICT because the official page heading and ICRA/arXiv paper title differ.",
+    "V2/V3 rows on the official download table expose links but not sizes/durations in page text.",
+    "Validation was performed on UG2+ derived validation subset, not the full MMAUD dataset.",
+    "The subset supports cross-modal indexing by sequence_id plus timestamp, but final status is PARTIALLY_VERIFIED because Audio, calibration files, ground truth/reference CSV, and complete V1/V2/V3 coverage remain incomplete."
+  ],
+  "validated_subset": {
+    "official_dataset": "MMAUD",
+    "validated_subset": "UG2+ / V2-V3 validation subset",
+    "subset_type": "DERIVED_SUBSET",
+    "downloaded_archive": "val.zip",
+    "archive_size_bytes": 5325448505,
+    "extracted_size_bytes": 6419220734,
+    "file_count": 5244,
+    "sequence_count": 16,
+    "local_archive_path": "samples/MMAUD/raw/val.zip",
+    "extraction_root": "samples/MMAUD/extracted/val",
+    "data_root": "samples/MMAUD/extracted/val/val",
+    "note": "This validates an official-related UG2+ derived validation subset, not the full MMAUD V1/V2/V3 dataset."
+  },
+  "technical_validation": {
+    "result": "PASS",
+    "file_structure": "PASS",
+    "file_readability": "PASS",
+    "extraction_status": "PASS",
+    "file_count": 5244,
+    "directory_count": 81,
+    "extension_distribution": {
+      ".npy": 2818,
+      ".png": 2426
+    },
+    "camera_readability": "PASS",
+    "lidar360_readability": "PASS",
+    "livox_avia_readability": "PASS",
+    "radar_readability": "PASS",
+    "timestamp_parse_status": "PASS"
+  },
+  "cross_modal_validation": {
+    "sequence_level_association": "PASS",
+    "timestamp_association": "PASS",
+    "camera_lidar360_median_delta_ms": 20.182013511657715,
+    "camera_livox_median_delta_ms": 18.994927406311035,
+    "camera_radar_median_delta_ms": 17.367124557495117,
+    "calibration_status": "PARTIAL",
+    "synchronization_status": "LIKELY_SYNCHRONIZED",
+    "association_strength": "MEDIUM",
+    "cross_modal_index_feasible": "YES",
+    "cross_modal_validation": "PARTIAL",
+    "ready_for_final_dataset_evaluation": "YES",
+    "notes": [
+      "Timestamp association supports a sequence_id + timestamp cross-modal index.",
+      "LIKELY_SYNCHRONIZED is not the same as SYNCHRONIZED_CONFIRMED.",
+      "Do not assume each camera frame has a unique perfectly simultaneous Radar/LiDAR frame."
+    ]
+  },
+  "modality_validation": [
+    {
+      "modality": "RGB / Camera",
+      "official_mmaud": "YES",
+      "present_in_validated_sample": "YES",
+      "technical_validation": "PASS",
+      "cross_modal_validation": "PASS",
+      "notes": "PNG camera files are present in all 16 validated sequences; sampled PNG readability passed; filename timestamps support nearest-neighbor matching."
+    },
+    {
+      "modality": "Audio",
+      "official_mmaud": "YES",
+      "present_in_validated_sample": "NO",
+      "technical_validation": "NOT_TESTED",
+      "cross_modal_validation": "NOT_TESTED",
+      "notes": "Audio is documented in official MMAUD but is not present in the current val.zip derived validation subset."
+    },
+    {
+      "modality": "Radar",
+      "official_mmaud": "YES",
+      "present_in_validated_sample": "YES",
+      "technical_validation": "PASS",
+      "cross_modal_validation": "PASS",
+      "notes": "radar_enhance_pcl NPY files are present; sampled readability passed; Camera-to-Radar median nearest-timestamp delta is 17.367 ms."
+    },
+    {
+      "modality": "LiDAR360",
+      "official_mmaud": "YES",
+      "present_in_validated_sample": "YES",
+      "technical_validation": "PASS",
+      "cross_modal_validation": "PASS",
+      "notes": "lidar_360 NPY files are present; sampled readability passed; Camera-to-LiDAR360 median nearest-timestamp delta is 20.182 ms."
+    },
+    {
+      "modality": "Livox Avia",
+      "official_mmaud": "YES",
+      "present_in_validated_sample": "YES",
+      "technical_validation": "PASS",
+      "cross_modal_validation": "PASS",
+      "notes": "livox_avia NPY files are present; sampled readability passed; Camera-to-Livox median nearest-timestamp delta is 18.995 ms."
+    },
+    {
+      "modality": "Trajectory / Ground Truth",
+      "official_mmaud": "YES",
+      "present_in_validated_sample": "NO",
+      "technical_validation": "NOT_TESTED",
+      "cross_modal_validation": "NOT_TESTED",
+      "notes": "Official MMAUD and UG2+ references mention Leica/pose/ground truth, but the downloaded val.zip input subset did not include ground_truth or pose/reference CSV files."
+    },
+    {
+      "modality": "RF",
+      "official_mmaud": "NO",
+      "present_in_validated_sample": "NO",
+      "technical_validation": "NOT_TESTED",
+      "cross_modal_validation": "NOT_TESTED",
+      "notes": "Official paper comparison/source audit indicates RF/IQ is not included."
+    },
+    {
+      "modality": "IR",
+      "official_mmaud": "NO",
+      "present_in_validated_sample": "NO",
+      "technical_validation": "NOT_TESTED",
+      "cross_modal_validation": "NOT_TESTED",
+      "notes": "Thermal/IR is not listed in official sensors and was not found in the validated subset."
+    }
+  ],
+  "format_validation": [
+    {
+      "format_or_structure": "PNG",
+      "official_documented": "YES",
+      "confirmed_by_sample": "YES",
+      "notes": "2,426 .png camera files; sampled images read as 2560x960 RGB PNG."
+    },
+    {
+      "format_or_structure": "NPY",
+      "official_documented": "YES",
+      "confirmed_by_sample": "YES",
+      "notes": "2,818 .npy files across lidar_360, livox_avia, and radar_enhance_pcl; sampled NPY arrays were readable."
+    },
+    {
+      "format_or_structure": "Directory structure",
+      "official_documented": "YES",
+      "confirmed_by_sample": "YES",
+      "notes": "val/seq0001..seq0016 with Image, lidar_360, livox_avia, radar_enhance_pcl."
+    },
+    {
+      "format_or_structure": "Timestamp-style filenames",
+      "official_documented": "YES",
+      "confirmed_by_sample": "YES",
+      "notes": "All inspected modality filenames parse as numeric timestamp stems."
+    },
+    {
+      "format_or_structure": "ROSBag",
+      "official_documented": "YES",
+      "confirmed_by_sample": "NO",
+      "notes": "Documented for official full MMAUD, but no ROSBag was read in this val.zip subset."
+    },
+    {
+      "format_or_structure": "PCD",
+      "official_documented": "YES",
+      "confirmed_by_sample": "NO",
+      "notes": "Documented for full filesystem exports, but current val.zip confirmed NPY point-cloud-like arrays, not PCD files."
+    }
+  ],
+  "label_ground_truth_validation": [
+    {
+      "item": "2D annotation",
+      "status": "NOT_TESTED",
+      "notes": "MMAUD_2D.zip was not downloaded; current val.zip contains sensor inputs, not 2D labels."
+    },
+    {
+      "item": "Ground Truth",
+      "status": "NOT_TESTED",
+      "notes": "No ground_truth directory or Leica/pose file was found in the validated val.zip subset."
+    },
+    {
+      "item": "Pose / Reference CSV",
+      "status": "NOT_TESTED",
+      "notes": "No local UG2+ reference/pose CSV matching this val subset was available during final validation."
+    },
+    {
+      "item": "Timestamp",
+      "status": "PASS",
+      "notes": "All camera, lidar_360, livox_avia, and radar filenames parsed as numeric timestamps."
+    },
+    {
+      "item": "Sequence ID",
+      "status": "PASS",
+      "notes": "16 sequence directories were confirmed: seq0001 through seq0016."
+    },
+    {
+      "item": "Drone Model",
+      "status": "NOT_TESTED",
+      "notes": "Official sources document drone models, but the current subset did not expose per-file drone model labels."
+    },
+    {
+      "item": "Environment Label",
+      "status": "NOT_TESTED",
+      "notes": "Official sources document environment categories, but the current subset did not expose per-sequence environment labels."
+    }
+  ],
+  "limitations": [
+    "The validated data is a UG2+ derived validation subset, not the complete MMAUD V1/V2/V3 dataset.",
+    "Audio is documented by official MMAUD sources but was not present in the downloaded val.zip subset and remains NOT_TESTED.",
+    "Calibration/reference support is PARTIAL: official/source-level calibration resources are documented, but no local calibration matrices or transforms were validated inside val.zip.",
+    "Cross-modal validation is based on sequence_id plus nearest-neighbor timestamp matching, not strict hardware-level synchronization.",
+    "Sensor rates differ across modalities, so one-to-one frame correspondence must not be assumed.",
+    "Ground truth, pose/reference CSV, and 2D annotations were not validated in the downloaded val.zip subset.",
+    "Complete V1/V2/V3 packages were not exhaustively downloaded or validated.",
+    "Dataset/work license is CC BY-NC-SA 4.0, so commercial use is not allowed by default."
+  ],
+  "advantages": [
+    "Official page, paper, repository, challenge page, and license evidence are available.",
+    "Validated real subset contains Camera, Radar, LiDAR360, and Livox Avia data in a clear sequence structure.",
+    "PNG and NPY files were actually read in samples, not only documented.",
+    "Timestamp-style filenames are parseable across all validated modalities.",
+    "Nearest-timestamp matching produced practical median deltas: 20.182 ms Camera-LiDAR360, 18.995 ms Camera-Livox, and 17.367 ms Camera-Radar.",
+    "A sequence_id + timestamp cross-modal index is technically feasible for knowledge-management and retrieval experiments."
+  ],
+  "recommended_uses": [
+    "Multimodal data storage research",
+    "Cross-modal indexing using sequence_id plus timestamp metadata",
+    "Camera-to-LiDAR and Camera-to-Radar lookup experiments",
+    "Multi-sensor temporal association studies",
+    "UAV knowledge-base prototyping",
+    "Multimodal retrieval system preparation",
+    "Future embedding experiments after an explicit downstream embedding stage"
+  ],
+  "not_proven_uses": [
+    "Image-to-Audio retrieval, because Audio was not present in the validated subset.",
+    "Ground-truth pose evaluation, because local pose/reference CSV or ground_truth files were not validated.",
+    "Strict hardware synchronization claims, because current validation supports likely timestamp association rather than confirmed hardware sync."
+  ],
+  "project_readiness": "CROSS_MODAL_READY",
+  "dataset_status": "PARTIALLY_VERIFIED"
+}

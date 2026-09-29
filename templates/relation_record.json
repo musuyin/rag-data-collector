@@ -1,0 +1,11 @@
+{
+  "record_id": "REL-<SUBJECT>-<PREDICATE>-<OBJECT>",
+  "record_type": "relation",
+  "subject_id": "ORG-",
+  "predicate": "manufactures",
+  "object_id": "MODEL-",
+  "source_id": "SRC-",
+  "evidence_quote": "原文摘录",
+  "evidence_locator": "PDF 第 X 页 / 网页第 X 段",
+  "record_status": "draft"
+}

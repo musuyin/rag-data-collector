@@ -1,0 +1,4 @@
+Dataset,Source Validated,Real Sample Downloaded,Archive Integrity,File Readability,Annotation Validated,Sequence Association,Frame Association,Timestamp Association,Label Association,Cross-Modal Association,License Checked,Knowledge Index Feasible
+MMAUD,PASS,PASS,PASS,PASS,PARTIAL,PASS,NOT_APPLICABLE,PASS,PARTIAL,PARTIAL,PASS,PASS
+Anti-UAV300,PASS,PASS,PASS,PASS,PASS,PASS,PASS,PARTIAL,PASS,PASS,RISK,PASS
+DroneRF,PASS,PASS,PASS,PASS,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,NOT_APPLICABLE,PASS,PASS,PASS,PASS

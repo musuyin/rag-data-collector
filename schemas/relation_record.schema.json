@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Entity Relation Record",
+  "type": "object",
+  "required": ["record_id", "record_type", "subject_id", "predicate", "object_id", "source_id", "evidence_quote", "evidence_locator", "record_status"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "record_type": {"const": "relation"},
+    "subject_id": {"type": "string", "minLength": 1},
+    "predicate": {"enum": ["manufactures", "has_model", "contains_component", "uses_protocol", "has_firmware", "supports_sdk", "has_vulnerability", "documented_by", "other"]},
+    "object_id": {"type": "string", "minLength": 1},
+    "source_id": {"type": "string", "minLength": 1},
+    "evidence_quote": {"type": "string", "minLength": 1},
+    "evidence_locator": {"type": "string", "minLength": 1},
+    "record_status": {"enum": ["draft", "reviewed", "approved"]}
+  }
+}

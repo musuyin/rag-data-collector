@@ -1,0 +1,131 @@
+{
+  "dataset": "MMAUD",
+  "sample": "No complete raw sample downloaded; UG2+ Track 5 metadata/reference CSVs inspected through Drive connector preview",
+  "sample_source": [
+    "https://drive.google.com/drive/folders/1_LpPyIfETQS-k2vlSsbzI9pzyVzZScSx",
+    "https://drive.google.com/drive/folders/1wk-c5xVX6701WNI_In1ba3_D4LSjRYv5",
+    "https://ntu-aris.github.io/MMAUD/#downloads"
+  ],
+  "sample_size": {
+    "local_raw_bytes": 0,
+    "smallest_true_raw_package_bytes": 4690057225,
+    "smallest_true_raw_package_name": "MMAUD_2D.zip",
+    "small_metadata_files": [
+      {
+        "name": "README.md",
+        "bytes": 4336
+      },
+      {
+        "name": "validation_ref_new (for your ref).csv",
+        "bytes": 102063
+      },
+      {
+        "name": "test_timestamps.csv",
+        "bytes": 171144
+      }
+    ]
+  },
+  "access": {
+    "download": "FAIL",
+    "download_notes": [
+      "Google Drive connector metadata/listing succeeded.",
+      "Direct local shell download from drive.google.com and drive.usercontent.google.com timed out.",
+      "Connector-generated controlled file URLs returned 403 from curl.",
+      "Packages above 2 GB were not downloaded by policy."
+    ],
+    "decompression": "NOT_REQUIRED"
+  },
+  "files": {
+    "local_file_count": 0,
+    "local_dir_count": 1,
+    "local_total_size_bytes": 0,
+    "formats": {},
+    "readable_files": "PARTIAL",
+    "readable_notes": [
+      "README.md was readable through the Drive connector.",
+      "validation_ref_new CSV preview was readable through the Drive connector and showed columns Sequence, Timestamp, Position, Classification.",
+      "test_timestamps CSV preview was readable through the Drive connector and showed columns Sequence, Timestamp, Position, Classification with empty Position and Classification fields."
+    ]
+  },
+  "annotation": {
+    "annotation_exists": "PASS",
+    "annotation_parse": "NOT_TESTED",
+    "annotation_correspondence": "NOT_TESTED",
+    "checked_annotations": 0,
+    "valid_references": 0,
+    "missing_references": 0,
+    "reference_success_rate": null,
+    "notes": [
+      "validation_ref_new (for your ref).csv exposes annotation/reference fields in preview.",
+      "Full CSV parse and random 10-record correspondence check were not possible without a complete local raw file.",
+      "No image/sensor files were downloaded, so referenced data existence cannot be tested."
+    ]
+  },
+  "timestamp": {
+    "timestamp_exists": "PASS",
+    "timestamp_parse": "PARTIAL",
+    "format": "Unix epoch seconds as decimal float in CSV preview",
+    "parseability": "Preview values parse as floats",
+    "duplicates": "NOT_TESTED",
+    "monotonicity": "NOT_TESTED",
+    "missing_values": "NOT_TESTED",
+    "synchronization": "NOT_TESTED",
+    "notes": [
+      "test_timestamps.csv preview shows target timestamps.",
+      "README states file names use ros_timestamp for sensor and ground-truth files.",
+      "No actual modality files were available for timestamp-difference checks."
+    ]
+  },
+  "multimodal": {
+    "modalities_found": [
+      "README-documented fisheye Image",
+      "README-documented lidar_360",
+      "README-documented livox_avia",
+      "README-documented radar_enhance_pcl",
+      "README-documented ground_truth",
+      "README-documented class"
+    ],
+    "common_sequence_id": "SOURCE_DOCUMENTED_NOT_SAMPLE_VERIFIED",
+    "common_timestamp": "SOURCE_DOCUMENTED_NOT_SAMPLE_VERIFIED",
+    "calibration": "SOURCE_DOCUMENTED_NOT_SAMPLE_VERIFIED",
+    "association_strength": "WEAK",
+    "notes": [
+      "Multimodal structure is documented in README only.",
+      "No actual image, LiDAR, radar, or ground-truth files were downloaded."
+    ]
+  },
+  "source_audit_comparison": {
+    "PNG": "SOURCE_DOCUMENTED_NOT_FOUND_IN_LOCAL_SAMPLE",
+    "NPY": "SOURCE_DOCUMENTED_NOT_FOUND_IN_LOCAL_SAMPLE",
+    "PCD": "NOT_TESTED",
+    "BAG": "NOT_TESTED",
+    "CSV": "CONFIRMED_BY_CONNECTOR_PREVIEW",
+    "JSON": "NOT_FOUND_IN_SAMPLE",
+    "notes": [
+      "NOT_FOUND_IN_LOCAL_SAMPLE does not mean the official source is wrong; no raw package was downloaded.",
+      "README confirms PNG and NPY filesystem structure for the UG2+ challenge variant."
+    ]
+  },
+  "problems": {
+    "corrupted_files": [],
+    "missing_annotation_reference": "NOT_TESTED",
+    "unreadable_files": [],
+    "unexpected_extensions": [],
+    "empty_files": [],
+    "duplicate_names": "NOT_TESTED",
+    "timestamp_problem": "NOT_TESTED",
+    "format_mismatch": [],
+    "download_blockers": [
+      "Smallest discovered raw data package exceeds 2 GB.",
+      "Local shell cannot reach Google Drive download hosts.",
+      "Connector file references could not be materialized with curl."
+    ]
+  },
+  "final_result": {
+    "source_validation": "PASS",
+    "technical_validation": "PARTIAL",
+    "cross_modal_validation": "NOT_TESTED",
+    "final_dataset_status": "UNVERIFIED",
+    "project_readiness": "NOT_READY"
+  }
+}

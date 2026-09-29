@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "generated_at": "2026-09-29T07:55:13Z",
+    "include_fixtures": false,
+    "input_roots": [
+      "datasets"
+    ],
+    "files_scanned": 39,
+    "exact_duplicate_groups": 0,
+    "records_validated": 7,
+    "issue_counts": {
+      "ERROR": 0,
+      "WARNING": 4,
+      "INFO": 0
+    },
+    "gate_status": "PASS_WITH_WARNINGS"
+  },
+  "issues": [
+    {
+      "level": "WARNING",
+      "record": "data/records/imported/models/MODEL-AUTEL-ROBOTICS-EVO-MAX-4T.json",
+      "record_id": "MODEL-AUTEL-ROBOTICS-EVO-MAX-4T",
+      "field": "license_status",
+      "message": "license must be reviewed before redistribution or curated publication"
+    },
+    {
+      "level": "WARNING",
+      "record": "data/records/imported/models/MODEL-DJI-MATRICE-350-RTK.json",
+      "record_id": "MODEL-DJI-MATRICE-350-RTK",
+      "field": "license_status",
+      "message": "license must be reviewed before redistribution or curated publication"
+    },
+    {
+      "level": "WARNING",
+      "record": "data/records/imported/models/MODEL-DJI-MAVIC-3-ENTERPRISE.json",
+      "record_id": "MODEL-DJI-MAVIC-3-ENTERPRISE",
+      "field": "license_status",
+      "message": "license must be reviewed before redistribution or curated publication"
+    },
+    {
+      "level": "WARNING",
+      "record": "data/records/imported/models/MODEL-SKYDIO-X10.json",
+      "record_id": "MODEL-SKYDIO-X10",
+      "field": "license_status",
+      "message": "license must be reviewed before redistribution or curated publication"
+    }
+  ]
+}

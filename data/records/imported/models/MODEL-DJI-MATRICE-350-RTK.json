@@ -1,0 +1,130 @@
+{
+  "record_id": "MODEL-DJI-MATRICE-350-RTK",
+  "record_type": "model",
+  "manufacturer": "DJI",
+  "model": "Matrice 350 RTK",
+  "product_category": "四旋翼",
+  "source_id": "SRC-DJI-795BD17B94",
+  "license_status": "unknown",
+  "record_status": "reviewed",
+  "performance": {
+    "dimensions": "展开 810×670×430 mm（不含桨）；折叠 430×420×430 mm（含桨）",
+    "empty_weight": "3.77 kg（无电池，带单下云台）；6.47 kg（含2×TB65）",
+    "max_takeoff_weight": "9.2 kg",
+    "payload": "约2.73 kg（以6.47 kg起飞配置计算的MTOW余量）",
+    "max_flight_time": "55 min（约8 m/s、无载荷、无风）",
+    "max_hover_time": "",
+    "max_speed": "23 m/s",
+    "max_altitude": "5000 m（2110s桨/≤7.4kg）；7000 m（高原低噪桨/≤7.2kg）",
+    "wind_resistance": "12 m/s",
+    "operating_temperature": "-20~50 °C"
+  },
+  "core_components": [
+    "机身FPV相机1080p；支持Zenmuse H30/H30T/H20/H20T/H20N/L2/L1/P1/S1/V1等负载",
+    "取决于挂载负载（如H30T/H20T/H20N）",
+    "可挂载Zenmuse L1/L2等LiDAR负载",
+    "TB65，5880 mAh，44.76 V，263.2 Wh，Li-ion；单块约1.35 kg"
+  ],
+  "communication_bands": [
+    "2.4000-2.4835 GHz；5.150-5.250 GHz；5.725-5.850 GHz（地区限制）"
+  ],
+  "communication_protocols": [
+    "DJI O3 Enterprise Transmission"
+  ],
+  "firmware": [
+    "MSDK 5.18.0支持列表中的机身固件：14.01.00.17；PSDK 3.16发布记录列出14.01.00.06兼容组合"
+  ],
+  "sdk": [
+    "DJI Mobile SDK V5；Payload SDK（M350 RTK推荐PSDK 3.9.2）"
+  ],
+  "evidence": [
+    {
+      "field": "标准重量",
+      "quote": "With two TB65 batteries: approx. 6.47 kg",
+      "locator": "Aircraft > Weight",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E011",
+      "value": "6.47",
+      "unit": "kg"
+    },
+    {
+      "field": "最大起飞重量",
+      "quote": "9.2 kg",
+      "locator": "Aircraft > Max Takeoff Weight",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E012",
+      "value": "9.2",
+      "unit": "kg"
+    },
+    {
+      "field": "最大飞行时间",
+      "quote": "55 minutes",
+      "locator": "Aircraft > Max Flight Time",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E013",
+      "value": "55",
+      "unit": "min"
+    },
+    {
+      "field": "最大水平速度",
+      "quote": "23 m/s",
+      "locator": "Aircraft > Max Horizontal Speed",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E014",
+      "value": "23",
+      "unit": "m/s"
+    },
+    {
+      "field": "GNSS",
+      "quote": "GPS + GLONASS + BeiDou + Galileo",
+      "locator": "Aircraft > Global Navigation Satellite System",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E015",
+      "value": "GPS+GLONASS+BeiDou+Galileo",
+      "unit": "-"
+    },
+    {
+      "field": "图传协议",
+      "quote": "DJI O3 Enterprise Transmission",
+      "locator": "Video Transmission",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E016",
+      "value": "DJI O3 Enterprise Transmission",
+      "unit": "-"
+    },
+    {
+      "field": "电池",
+      "quote": "TB65; 5880 mAh; 44.76 V; 263.2 Wh",
+      "locator": "Intelligent Flight Battery",
+      "url": "https://enterprise.dji.com/matrice-350-rtk/specs",
+      "evidence_id": "E017",
+      "value": "TB65 5880mAh 44.76V 263.2Wh",
+      "unit": "-"
+    },
+    {
+      "field": "Payload SDK推荐版本",
+      "quote": "Matrice 350 RTK: recommended PSDK 3.9.2",
+      "locator": "PSDK Version Support Information",
+      "url": "https://developer.dji.com/doc/payload-sdk-tutorial/en/",
+      "evidence_id": "E018",
+      "value": "PSDK 3.9.2",
+      "unit": "-"
+    },
+    {
+      "field": "扩展接口",
+      "quote": "E-Port, X-Port and SkyPort V2 connection methods are documented",
+      "locator": "Device Connection",
+      "url": "https://developer.dji.com/doc/payload-sdk-tutorial/en/payload-quick-start/device-connect.html",
+      "evidence_id": "E019",
+      "value": "E-Port / gimbal connector / X-Port / SkyPort V2",
+      "unit": "-"
+    }
+  ],
+  "import_metadata": {
+    "source_file": "datasets/无人机型号与结构化资料调研.xlsx",
+    "source_status": "已核验（基础/规格/SDK）",
+    "verification_note": "飞行参数、频段、图传、GNSS、电池、负载/SDK已核验；监管证书仍待专项检索",
+    "regulatory_note": "官方规格页含FCC区域发射功率/距离；FCC ID/FAA具体记录待查",
+    "imported_at": "2026-09-29T07:55:13Z"
+  }
+}
