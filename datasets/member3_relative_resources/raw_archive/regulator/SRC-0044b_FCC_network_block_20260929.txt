@@ -1,0 +1,20 @@
+# FCC 官库网络阻断处置记录
+accessed_attempts: 2026-09-29
+operator: Person3
+
+## Tried URLs (all failed from this network)
+- https://www.fcc.gov/oet/ea/fccid → Access Denied (Akamai/EdgeSuite)
+- https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm → Access Denied
+- https://apps.fcc.gov/eas/GetApplicationAttachment.html?id=5493475 → Access Denied
+- https://fccid.io/SS3-L2P2104 → 403 / bot challenge (mirror; not official grant)
+
+## Decision
+- Do NOT invent or substitute fccid.io PDFs as official Grant evidence.
+- Keep SRC-0049 / SRC-0050 / SRC-0051 as needs_archive + network_blocked.
+- Interim binding evidence remains:
+  - SRC-0030 + SRC-0030b (candidate table + pull SOP)
+  - SRC-0039 (Skydio official FCC/IC support table — vendor primary for Skydio IDs)
+- Escalate Grant PDF pull to Person1 (manual/specs path) or Person4 (campus VPN / alternate egress) when network allows.
+
+## GAP
+GAP-0004 status → blocked_network (see 数据缺口表.csv)

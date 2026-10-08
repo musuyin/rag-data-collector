@@ -1,0 +1,10 @@
+# Evidence snapshot — SRC-0016 DroneRF
+accessed_date: 2026-09-29
+primary_url: https://data.mendeley.com/datasets/f4c2b4n755/1
+doi: 10.17632/f4c2b4n755.1
+code_page: https://al-sad.github.io/DroneRF/
+license: CC BY 4.0 (Mendeley Data licence field)
+paper_data_in_brief_DOI: 10.1016/j.dib.2019.104313
+related_method_paper_DOI: 10.1016/j.future.2019.05.007
+summary: RF recordings of 3 drones + background; 227 segments; 2.4GHz dual receivers (NI-USRP2943R).
+notes: Prefer small-sample first; Person2 validates format before full download.

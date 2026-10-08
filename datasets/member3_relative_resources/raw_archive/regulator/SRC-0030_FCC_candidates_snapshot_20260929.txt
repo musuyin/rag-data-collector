@@ -1,0 +1,19 @@
+# Evidence snapshot — FCC dig 2026-09-29 (Person3 solo)
+official_search: https://www.fcc.gov/oet/ea/fccid
+generic_search: https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm
+
+## Candidates linked this round
+1. SS3-L2P2104 — DJI Mavic 3 Classic (mirror: https://fccid.io/SS3-L2P2104)
+2. SS3-L2ES2212 — DJI Mavic 3 Pro / Pro Cine (mirror: https://fccid.io/SS3-L2ES2212)
+3. SS3-M3E2206 — DJI Mavic 3T Advanced / Enterprise-line aircraft (mirror: https://fccid.io/SS3-M3E2206)
+4. 2AG6IANAFIM3 — Parrot ANAFI USA (printed in Parrot flight safety guide)
+5. 2AG6IMPP4 — Parrot Skycontroller 4
+
+## Method
+- Web search for model + FCC ID
+- Cross-check mirror pages / safety guides
+- Record as candidates only; Person1 should confirm against manuals
+- Next: open official FCC search for each ID and save grant PDF when available
+
+## Governance
+Do not treat fccid.io as sole legal evidence; always keep official FCC URL + access date.

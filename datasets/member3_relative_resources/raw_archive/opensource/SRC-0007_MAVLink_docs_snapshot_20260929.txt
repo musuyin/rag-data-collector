@@ -1,0 +1,5 @@
+# Evidence snapshot — SRC-0007 MAVLink docs home
+accessed_date: 2026-09-29
+url: https://mavlink.io/en/
+related: OSS-MAVLINK, PRT-MAVLINK, SRC-0029 COPYING archived under opensource/
+note: Homepage snapshot replaced by this evidence note + COPYING text archive.

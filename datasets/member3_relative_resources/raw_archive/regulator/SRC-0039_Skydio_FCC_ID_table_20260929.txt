@@ -1,0 +1,16 @@
+# Snapshot — Skydio official FCC ID / IC ID table
+accessed: 2026-09-29
+url: https://support.skydio.com/hc/en-us/articles/40739840785947-Skydio-Product-FCC-ID-IC-ID-Information
+publisher: Skydio Support
+license_note: vendor support page; cite URL + date; do not wholesale republish as own dataset
+
+Extracted rows (as of access date):
+- Skydio X10: FCCID 2ATQRSMODBV3S (and variant with RI7FN990A40 for 5G combo)
+- Skydio X10 Controller SC18V1: 2ATQRSMODBV3S
+- Skydio Dock for X10: 2ATQRSMODBV3S
+- Skydio Connect External Radio SC93V1: 2ATQRSMODBV3
+- Fusion+ Attachment: 2ATQRA40
+
+Related product page: https://www.skydio.com/x10
+Skydio 2/2+ support: https://support.skydio.com/hc/en-us/articles/360000597753-Skydio-2-2-Frequently-Asked-Questions
+Model names for FAA registration (support docs): Skydio 2 = SDRC2V1; Skydio 2+ = SDR35V1/SDR35V2

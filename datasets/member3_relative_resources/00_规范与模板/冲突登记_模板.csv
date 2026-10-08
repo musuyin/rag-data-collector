@@ -1,0 +1,2 @@
+conflict_id,entity_id,field_name,value_a,source_a,value_b,source_b,severity_status,resolution,recorded_at,notes
+CNF-0001,MDL-XXX,max_flight_time_min,46,SRC-0001,45,SRC-0002,open,,2026-03-29,模板行：两来源参数不一致

@@ -1,0 +1,5 @@
+supply_id,component_or_software,supplier_or_upstream,relation,linked_entity_ids,evidence_source_id,confidence,notes
+SUP-0001,STM32 class MCU on open flight controllers,STMicroelectronics / board vendors e.g. Holybro,chip_on_board,CMP-FC-STM32;VND-HOLYWONE,SRC-0008,medium,类型级供应链，非单一 BOM
+SUP-0002,GNSS module class,u-blox (typical),module_supplier,CMP-GPS-UBLOX;VND-UBLOX,SRC-0052,medium,图谱边 EDG-0067；消费机 BOM 级仍待人员一
+SUP-0003,MAVLink message definitions,mavlink org / Dronecode ecosystem,protocol_upstream,PRT-MAVLINK;OSS-MAVLINK,SRC-0007,high,开源协议供应链
+SUP-0004,DJI SDK / firmware,DJI,proprietary_stack,SFW-DJI-SDK;SFW-DJI-FW-GENERIC;VND-DJI,SRC-0002,high,闭源主栈

@@ -1,0 +1,39 @@
+# Official FCC evidence workflow + grant metadata archive
+accessed: 2026-09-29
+official_search: https://www.fcc.gov/oet/ea/fccid
+generic_search: https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm
+note: Direct grant PDF download from third-party mirrors blocked (403). Metadata below is for candidate binding; Person3/Person4 should pull Grant PDF from FCC.gov by FCC ID when interactive access available.
+
+## How to pull official Grant (checklist)
+1. Open https://www.fcc.gov/oet/ea/fccid
+2. Enter Grantee Code + Product Code (e.g. SS3 + L2P2104)
+3. Open Application → Exhibits → download Grant / Test Report if public
+4. Save as: raw_archive/regulator/SRC-XXXX_{FCCID}_Grant_YYYYMMDD.pdf
+5. Hash with compute_hashes.ps1
+
+## DJI candidates (metadata previously verified via public filings indexes)
+| FCC ID | Device note | Linked entity | Official query |
+|--------|-------------|---------------|----------------|
+| SS3-L2P2104 | Mavic 3 Classic | MDL-DJI-MAVIC3CLASSIC | search SS3-L2P2104 |
+| SS3-L2ES2212 | Mavic 3 Pro / Pro Cine | MDL-DJI-MAVIC3PRO | search SS3-L2ES2212 |
+| SS3-MT3PD22 | DJI Mini 3 (index listing) | MDL-DJI-MINI3 | search SS3-MT3PD22 |
+| SS3-M3E2206 | Mavic 3T Advanced / Ent. line | MDL-DJI-MAVIC3 | search SS3-M3E2206 |
+
+## Skydio (from Skydio official support table — higher confidence than mirrors)
+Source: https://support.skydio.com/hc/en-us/articles/40739840785947-Skydio-Product-FCC-ID-IC-ID-Information
+| FCC ID | Product | Linked entity |
+|--------|---------|---------------|
+| 2ATQRSMODBV3S | Skydio X10 (Connect SL) | MDL-SKYDIO-X10 |
+| 2ATQRSMODBV3 | Skydio Connect External Radio | CMP-SKYDIO-RADIO |
+| 2ATQRA40 | Fusion+ / 5G related module | CMP-SKYDIO-RADIO |
+| 2ATQRSDRC2V1 | Quadrocopter WiFi (grantee index; aligns Skydio 2 family) | MDL-SKYDIO-2 |
+
+## Parrot (from vendor safety guide print)
+| FCC ID | Product | Linked entity |
+|--------|---------|---------------|
+| 2AG6IANAFIM3 | ANAFI USA aircraft | MDL-PARROT-ANAFI |
+| 2AG6IMPP4 | Skycontroller 4 | MDL-PARROT-ANAFI |
+
+## Status
+official_grant_pdf_local: pending_interactive_fcc_download
+mirror_dependency: reduced for Skydio (official page archived as SRC-0039)

@@ -1,0 +1,10 @@
+# Evidence snapshot — SRC-0015 Anti-UAV
+accessed_date: 2026-09-29
+primary_url: https://github.com/ZhaoJ9014/Anti-UAV
+challenge_url: https://anti-uav.github.io/
+zenodo_4th: https://zenodo.org/records/15103888 (Restricted)
+project_license_declared: MIT (project README)
+datasets_listed: Anti-UAV300 (RGB+IR), Anti-UAV410 (IR), Anti-UAV600 (IR / modelscope)
+download_channels: Google Drive / Baidu / ModelScope (see GitHub README table)
+paper_Anti-UAV410_DOI: 10.1109/TPAMI.2023.3335338
+notes: Full video dumps not archived here; metadata+LICENSE only. Person2 to verify small sample.

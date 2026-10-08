@@ -1,0 +1,2 @@
+source_id,file_path,sha256,size_bytes,recorded_at,recorder,notes
+SRC-0001,raw_archive/vendor/SRC-0001_example.pdf,,0,2026-03-29,人员三,落盘后由脚本或手工填入 sha256

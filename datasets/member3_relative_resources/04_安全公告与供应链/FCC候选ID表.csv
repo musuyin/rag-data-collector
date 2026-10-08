@@ -1,0 +1,15 @@
+# FCC candidate evidence — Person3 solo dig 2026-09-29
+# Status: candidate (待人员一用说明书核对)；查询入口优先官方 https://www.fcc.gov/oet/ea/fccid
+# Mirror used for readable notes: fccid.io (非官方镜像，正式证据以 FCC 库为准)
+
+fcc_id,grantee,device_note,linked_entity_id,evidence_url_official_hint,evidence_mirror,confidence,notes
+SS3-L2P2104,SZ DJI TECHNOLOGY CO. LTD,DJI Mavic 3 Classic (also associated with Mavic 3 family filings in mirrors),MDL-DJI-MAVIC3,https://www.fcc.gov/oet/ea/fccid (search SS3-L2P2104),https://fccid.io/SS3-L2P2104,medium,2.4G DTS ranges seen in mirror; Classic 明确
+SS3-L2ES2212,SZ DJI TECHNOLOGY CO. LTD,DJI Mavic 3 Pro / Pro Cine,MDL-DJI-MAVIC3,https://www.fcc.gov/oet/ea/fccid (search SS3-L2ES2212),https://fccid.io/SS3-L2ES2212,medium,Pro 与 Classic 应拆型号实体时再升 confidence
+SS3-M3E2206,SZ DJI TECHNOLOGY CO. LTD,DJI Mavic 3T Advanced / Enterprise family aircraft,MDL-DJI-MAVIC3,https://www.fcc.gov/oet/ea/fccid (search SS3-M3E2206),https://fccid.io/SS3-M3E2206,low,Enterprise 线；若单列 M3E 实体请改链
+SS3-M3M22,SZ DJI TECHNOLOGY CO. LTD,DJI Mavic 3 Enterprise (reported),MDL-DJI-MAVIC3,https://www.fcc.gov/oet/ea/fccid (search SS3-M3M22),https://signaldocket.com/fcc-id/SS3-M3M22/,low,二手汇总站；需回 FCC 库核对
+2AG6IANAFIM3,Parrot,ANAFI USA aircraft,MDL-PARROT-ANAFI,https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm,Parrot ANAFI USA Flight Safety Guide (FCC ID printed),medium,来自 Parrot 安全指南声明
+2AG6IMPP4,Parrot,Skycontroller 4 remote,MDL-PARROT-ANAFI,https://apps.fcc.gov/oetcf/eas/reports/GenericSearch.cfm,Parrot ANAFI USA Flight Safety Guide,medium,遥控器；可另建 CMP/配件实体
+SS3-MT3PD22,SZ DJI TECHNOLOGY CO. LTD,DJI Mini 3 (index listing),MDL-DJI-MINI3,https://www.fcc.gov/oet/ea/fccid (search SS3-MT3PD22),filing index / prior mirror listings,medium,待官库 PDF
+2ATQRSMODBV3S,Skydio Inc.,Skydio X10 Connect SL radio labeling,MDL-SKYDIO-X10,https://www.fcc.gov/oet/ea/fccid (search 2ATQRSMODBV3S),https://support.skydio.com/hc/en-us/articles/40739840785947-Skydio-Product-FCC-ID-IC-ID-Information,high,官方支持表 SRC-0039
+2ATQRSMODBV3,Skydio Inc.,Skydio Connect External Radio,CMP-SKYDIO-RADIO,https://www.fcc.gov/oet/ea/fccid (search 2ATQRSMODBV3),Skydio official FCC table,high,SRC-0039
+2ATQRSDRC2V1,Skydio Inc.,Quadrocopter 2.4/5GHz WiFi (Skydio 2 family index),MDL-SKYDIO-2,https://www.fcc.gov/oet/ea/fccid (search 2ATQRSDRC2V1),grantee 2ATQR index,medium,与型号名 SDRC2V1 对齐待官库确认

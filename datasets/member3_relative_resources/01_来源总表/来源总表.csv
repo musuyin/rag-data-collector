@@ -1,0 +1,54 @@
+source_id,title,source_type,url_or_path,publisher,accessed_date,license_or_terms,related_entities,status,notes,owner
+SRC-0001,DJI 官方网站,vendor_page,https://www.dji.com/,DJI,2026-03-29,官网使用条款,VND-DJI;MDL-DJI-MAVIC3;MDL-DJI-MINI3,registered,型号页需人员一细化到具体产品 URL,人员三
+SRC-0002,DJI 开发者文档/SDK 入口,vendor_docs,https://developer.dji.com/,DJI,2026-03-29,开发者协议,VND-DJI;SFW-DJI-SDK,registered,SDK 版本与机型支持矩阵待抽,人员三
+SRC-0003,Autel Robotics 官网,vendor_page,https://www.autelrobotics.com/,Autel,2026-03-29,官网条款,VND-AUTEL;MDL-AUTEL-EVO2,registered,,人员三
+SRC-0004,Parrot 官网,vendor_page,https://www.parrot.com/,Parrot,2026-03-29,官网条款,VND-PARROT;MDL-PARROT-ANAFI,registered,,人员三
+SRC-0005,FCC Equipment Authorization Search,regulator,https://www.fcc.gov/oet/ea/fccid,FCC,2026-03-29,政府公开查询,MDL-DJI-MAVIC3;MDL-DJI-MINI3,registered,需按具体 FCC ID 检索后归档 PDF,人员三
+SRC-0006,FAA DroneZone / UAS 相关入口,regulator,https://faadronezone-access.faa.gov/,FAA,2026-03-29,政府站点,VND-DJI,registered,偏合规背景；型号认证细目另查,人员三
+SRC-0007,MAVLink 官方文档,protocol_docs,https://mavlink.io/en/,MAVLink,2026-03-29,文档条款/开源协议见仓库,PRT-MAVLINK;OSS-MAVLINK,registered,,人员三
+SRC-0008,PX4 用户指南,opensource_docs,https://docs.px4.io/,PX4,2026-03-29,CC/项目许可见站点,SFW-PX4;OSS-PX4;PRT-MAVLINK,registered,,人员三
+SRC-0009,ArduPilot 文档,opensource_docs,https://ardupilot.org/,ArduPilot,2026-03-29,GPLv3 等见项目,SFW-ARDUPILOT;OSS-ARDUPILOT,registered,,人员三
+SRC-0010,ArduPilot GitHub,opensource_repo,https://github.com/ArduPilot/ardupilot,GitHub/ArduPilot,2026-03-29,GPLv3,OSS-ARDUPILOT;SFW-ARDUPILOT,registered,,人员三
+SRC-0011,PX4-Autopilot GitHub,opensource_repo,https://github.com/PX4/PX4-Autopilot,GitHub/PX4,2026-03-29,BSD-3-Clause,OSS-PX4;SFW-PX4,registered,,人员三
+SRC-0012,mavlink GitHub,opensource_repo,https://github.com/mavlink/mavlink,GitHub/mavlink,2026-03-29,见仓库 LICENSE,OSS-MAVLINK;PRT-MAVLINK,registered,,人员三
+SRC-0013,NVD CVE 检索（无人机关键词）,advisory_portal,https://nvd.nist.gov/vuln/search,NIST NVD,2026-09-29,公开,VUL-CVE-2023-6951;SFW-DJI-FW-GENERIC,registered,已落 3 条 CVE 样例见 SRC-0021~0023,人员三
+SRC-0014,CISA Known Exploited / 安全公告检索入口,advisory_portal,https://www.cisa.gov/,CISA,2026-09-29,公开,VUL-CVE-2023-6951,registered,按需订阅关键词 drone/UAV/DJI,人员三
+SRC-0015,Anti-UAV 项目与数据集入口（ZhaoJ9014/Anti-UAV）,dataset_page,https://github.com/ZhaoJ9014/Anti-UAV,Anti-UAV Project,2026-09-29,项目 MIT；数据集分发条款需另核,DST-ANTIUAV;PAP-ANTIUAV410,registered,含 Anti-UAV300/410/600 下载表；挑战站 https://anti-uav.github.io/,人员三
+SRC-0016,DroneRF 数据集（Mendeley Data）,dataset_page,https://data.mendeley.com/datasets/f4c2b4n755/1,Mendeley Data / Qatar University,2026-09-29,CC BY 4.0,DST-DRONERF;PAP-DRONERF-DIB,registered,DOI 10.17632/f4c2b4n755.1；代码页 https://al-sad.github.io/DroneRF/,人员三
+SRC-0017,MMAUD 数据集项目页与仓库,dataset_page,https://ntu-aris.github.io/MMAUD/,NTU ARIS,2026-09-29,CC BY-NC-SA 4.0,DST-MMAUD;PAP-MMAUD,registered,GitHub https://github.com/ntu-aris/MMAUD；商业用途需联系 aris.eee.ntu@gmail.com,人员三
+SRC-0018,Zenodo：4th Anti-UAV Challenge 官方数据集记录,repository,https://zenodo.org/records/15103888,Zenodo / China Telecom,2026-09-29,Restricted（需申请访问）,DST-ANTIUAV,registered,v1.0.0；文件受限，不全量镜像,人员三
+SRC-0019,Papers With Code / 学术检索辅助,paper_index,https://paperswithcode.com/,PapersWithCode,2026-09-29,站点条款,PAP-ANTIUAV410;PAP-DRONERF-DIB;PAP-MMAUD,registered,用于定位论文与代码仓,人员三
+SRC-0020,Nozomi：DJI Mavic 3 QuickTransfer 漏洞分析博文,vendor_advisory,https://www.nozominetworks.com/blog/dji-mavic-3-drone-research-part-2-vulnerability-analysis,Nozomi Networks,2026-09-29,站点版权,VUL-CVE-2023-6951;MDL-DJI-MAVIC3,registered,CVE 背景材料；非厂商原文,人员三
+SRC-0021,NVD CVE-2023-6951,advisory,https://nvd.nist.gov/vuln/detail/CVE-2023-6951,NIST NVD,2026-09-29,公开,VUL-CVE-2023-6951;MDL-DJI-MAVIC3;MDL-DJI-MINI3PRO,registered,Weak Wi-Fi credentials / QuickTransfer,人员三
+SRC-0022,NVD CVE-2023-51456,advisory,https://nvd.nist.gov/vuln/detail/CVE-2023-51456,NIST NVD,2026-09-29,公开,VUL-CVE-2023-51456;SFW-DJI-FW-GENERIC,registered,v2_sdk_service improper input validation OOB,人员三
+SRC-0023,NVD CVE-2023-51452,advisory,https://nvd.nist.gov/vuln/detail/CVE-2023-51452,NIST NVD,2026-09-29,公开,VUL-CVE-2023-51452;SFW-DJI-FW-GENERIC,registered,v2_sdk_service DoS via missing size check,人员三
+SRC-0024,Anti-UAV410 论文（IEEE TPAMI）,paper,https://doi.org/10.1109/TPAMI.2023.3335338,IEEE,2026-09-29,IEEE 版权（论文）,PAP-ANTIUAV410;DST-ANTIUAV,registered,Huang et al. 2024; 配套 https://github.com/HwangBo94/Anti-UAV410,人员三
+SRC-0025,DroneRF Data in Brief 论文,paper,https://doi.org/10.1016/j.dib.2019.104313,Elsevier,2026-09-29,CC BY 4.0（论文声明）,PAP-DRONERF-DIB;DST-DRONERF,registered,Data in Brief 2019,人员三
+SRC-0026,MMAUD 预印本 arXiv,paper,https://arxiv.org/abs/2402.03706,arXiv,2026-09-29,arXiv 非独占许可,PAP-MMAUD;DST-MMAUD,registered,ICRA 相关表述见项目页,人员三
+SRC-0027,ArduPilot COPYING.txt（GPLv3）,license_text,https://raw.githubusercontent.com/ArduPilot/ardupilot/master/COPYING.txt,ArduPilot,2026-09-29,GPLv3,OSS-ARDUPILOT,archived,已落盘 raw_archive/opensource/,人员三
+SRC-0028,PX4-Autopilot LICENSE（BSD-3-Clause）,license_text,https://raw.githubusercontent.com/PX4/PX4-Autopilot/main/LICENSE,PX4,2026-09-29,BSD-3-Clause,OSS-PX4,archived,已落盘 raw_archive/opensource/,人员三
+SRC-0029,mavlink COPYING（LGPL+生成代码 MIT 例外）,license_text,https://raw.githubusercontent.com/mavlink/mavlink/master/COPYING,mavlink,2026-09-29,LGPL-3.0 + MIT exception for generated code,OSS-MAVLINK;PRT-MAVLINK,archived,已落盘 raw_archive/opensource/,人员三
+SRC-0030,FCC 候选 ID 汇总（人员三单干检索）,regulator,raw_archive/regulator/SRC-0030_FCC_candidates_snapshot_20260929.txt,Person3,2026-09-29,政府公开信息（镜像需回官库核对）,MDL-DJI-MAVIC3;MDL-PARROT-ANAFI,registered,见 04_安全公告与供应链/FCC候选ID表.csv,人员三
+SRC-0031,fccid.io mirror SS3-L2P2104,regulator,https://fccid.io/SS3-L2P2104,fccid.io,2026-09-29,第三方镜像,MDL-DJI-MAVIC3,registered,非正式；正式以 FCC 库为准,人员三
+SRC-0032,fccid.io mirror SS3-L2ES2212,regulator,https://fccid.io/SS3-L2ES2212,fccid.io,2026-09-29,第三方镜像,MDL-DJI-MAVIC3,registered,Mavic 3 Pro,人员三
+SRC-0033,Autel EVO II 产品页,vendor_page,https://www.autelrobotics.com/productdetail/evo-ii-drones/,Autel,2026-09-29,官网条款,VND-AUTEL;MDL-AUTEL-EVO2,registered,具体产品页,人员三
+SRC-0034,Parrot 无人机产品入口,vendor_page,https://www.parrot.com/en/drones,Parrot,2026-09-29,官网条款,VND-PARROT;MDL-PARROT-ANAFI,registered,系列入口；具体 Anafi 子页随产品线变更,人员三
+SRC-0035,NVD CVE-2026-32709 (PX4 MAVLink FTP path traversal),advisory,https://nvd.nist.gov/vuln/detail/CVE-2026-32709,NIST NVD,2026-09-29,公开,VUL-CVE-2026-32709;SFW-PX4,registered,fixed in 1.17.0-rc2,人员三
+SRC-0036,NVD CVE-2026-32743 (PX4 MavlinkLogHandler overflow),advisory,https://nvd.nist.gov/vuln/detail/CVE-2026-32743,NIST NVD,2026-09-29,公开,VUL-CVE-2026-32743;SFW-PX4,registered,DoS via log request,人员三
+SRC-0037,NVD CVE-2024-38952 (PX4 logger buffer overflow),advisory,https://nvd.nist.gov/vuln/detail/CVE-2024-38952,NIST NVD,2026-09-29,公开,VUL-CVE-2024-38952;SFW-PX4,registered,v1.14.3 reported,人员三
+SRC-0038,Skydio 官网,vendor_page,https://www.skydio.com/,Skydio,2026-09-29,官网条款,VND-SKYDIO,registered,待补具体型号页,人员三
+SRC-0039,Skydio 官方 FCC ID / IC ID 信息表,vendor_docs,https://support.skydio.com/hc/en-us/articles/40739840785947-Skydio-Product-FCC-ID-IC-ID-Information,Skydio,2026-09-29,厂商支持页条款,VND-SKYDIO;MDL-SKYDIO-X10;MDL-SKYDIO-2,archived,已落盘 raw_archive/regulator/,人员三
+SRC-0040,DUT Anti-UAV GitHub 与论文入口,dataset_page,https://github.com/wangdongdut/DUT-Anti-UAV,DUT / wangdongdut,2026-09-29,许可未在 README 明示-学术用途为主,DST-DUTANTIUAV;PAP-DUTANTIUAV,registered,IEEE TITS DOI 10.1109/TITS.2022.3177627,人员三
+SRC-0041,Skydio X10 产品页,vendor_page,https://www.skydio.com/x10,Skydio,2026-09-29,官网条款,VND-SKYDIO;MDL-SKYDIO-X10,registered,,人员三
+SRC-0042,Skydio 2/2+ 支持 FAQ,vendor_docs,https://support.skydio.com/hc/en-us/articles/360000597753-Skydio-2-2-Frequently-Asked-Questions,Skydio,2026-09-29,厂商支持页,VND-SKYDIO;MDL-SKYDIO-2,registered,消费版停售说明,人员三
+SRC-0043,DUT Anti-UAV 论文 IEEE TITS,paper,https://doi.org/10.1109/TITS.2022.3177627,IEEE,2026-09-29,IEEE 版权,PAP-DUTANTIUAV;DST-DUTANTIUAV,registered,arXiv 2205.10851,人员三
+SRC-0044,FCC 官库拉取指引与候选绑定,regulator,raw_archive/regulator/SRC-0030b_FCC_official_pull_guide_20260929.txt,Person3,2026-09-29,政府公开信息,MDL-DJI-MAVIC3CLASSIC;MDL-DJI-MINI3;MDL-SKYDIO-X10,registered,grant PDF 待交互下载；阻断见 SRC-0044b,人员三
+SRC-0044b,FCC 官库网络阻断处置记录,regulator,raw_archive/regulator/SRC-0044b_FCC_network_block_20260929.txt,Person3,2026-09-29,内部过程记录,GAP-0004;SRC-0049;SRC-0050;SRC-0051,archived,fcc.gov/apps.fcc.gov Access Denied,人员三
+SRC-0045,NVD CVE-2023-47335 (Autel EVO Nano NFZ permissions),advisory,https://nvd.nist.gov/vuln/detail/CVE-2023-47335,NIST NVD,2026-09-29,公开,VUL-CVE-2023-47335;MDL-AUTEL-EVONANO,registered,仅关联登记,人员三
+SRC-0046,NVD CVE-2023-50121 (Autel EVO Nano DoS),advisory,https://nvd.nist.gov/vuln/detail/CVE-2023-50121,NIST NVD,2026-09-29,公开,VUL-CVE-2023-50121;MDL-AUTEL-EVONANO,registered,仅关联登记,人员三
+SRC-0047,NVD CVE-2024-33844 (Parrot ANAFI USA MAVLink mission type),advisory,https://nvd.nist.gov/vuln/detail/CVE-2024-33844,NIST NVD,2026-09-29,公开,VUL-CVE-2024-33844;MDL-PARROT-ANAFI;PRT-MAVLINK,registered,仅关联登记,人员三
+SRC-0048,Tenable TRA-2019-22 Parrot ANAFI historical advisory,advisory,https://www.tenable.com/security/research/tra-2019-22,Tenable,2026-09-29,站点版权,MDL-PARROT-ANAFI,registered,CVE-2019-3944/3945 背景; FW>=1.5.0,人员三
+SRC-0049,FCC Grant SS3-L2P2104 (Mavic 3 Classic),regulator,raw_archive/regulator/SRC-0049_SS3-L2P2104_Grant_20260929.pdf,FCC,2026-09-29,政府公开信息,MDL-DJI-MAVIC3,needs_archive,network_blocked_20260929；见 SRC-0044b,人员三
+SRC-0050,FCC Grant SS3-MT3PD22 (Mini 3),regulator,raw_archive/regulator/SRC-0050_SS3-MT3PD22_Grant_20260929.pdf,FCC,2026-09-29,政府公开信息,MDL-DJI-MINI3,needs_archive,network_blocked_20260929；见 SRC-0044b,人员三
+SRC-0051,FCC Grant 2ATQRSMODBV3S (Skydio X10 Connect SL),regulator,raw_archive/regulator/SRC-0051_2ATQRSMODBV3S_Grant_20260929.pdf,FCC,2026-09-29,政府公开信息,MDL-SKYDIO-X10,needs_archive,network_blocked_20260929；暂靠 SRC-0039 厂商表,人员三
+SRC-0052,PX4 GNSS/RC + ArduPilot S.Bus 文档快照,opensource_docs,raw_archive/opensource/SRC-0052_PX4_GNSS_RC_and_ArduPilot_SBUS_20260929.txt,PX4/ArduPilot,2026-09-29,文档站点条款,CMP-GPS-UBLOX;PRT-SBUS;VND-UBLOX;SFW-PX4;SFW-ARDUPILOT,archived,用于补悬空实体边,人员三

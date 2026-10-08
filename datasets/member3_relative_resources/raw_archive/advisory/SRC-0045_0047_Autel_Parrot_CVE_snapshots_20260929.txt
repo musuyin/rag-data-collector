@@ -1,0 +1,26 @@
+# Advisory snapshots — Autel / Parrot (Person3) 2026-09-29
+# Registry only — no exploit steps
+
+## CVE-2023-47335 (Autel EVO Nano)
+url: https://nvd.nist.gov/vuln/detail/CVE-2023-47335
+summary: Insecure permissions in setNFZEnable; geo-fence / NFZ related integrity issue on firmware v1.6.5
+cvss: ~6.5 MEDIUM
+linked: MDL-AUTEL-EVONANO, SFW-AUTEL-FW-GENERIC, VND-AUTEL
+mitigation: update firmware / app per vendor guidance
+
+## CVE-2023-50121 (Autel EVO Nano)
+url: https://nvd.nist.gov/vuln/detail/CVE-2023-50121
+summary: Flight control firmware DoS on v1.6.5
+cvss: ~5.7 MEDIUM
+linked: MDL-AUTEL-EVONANO, SFW-AUTEL-FW-GENERIC
+mitigation: update firmware
+
+## CVE-2024-33844 (Parrot ANAFI USA)
+url: https://nvd.nist.gov/vuln/detail/CVE-2024-33844
+summary: Improper MAV_MISSION_TYPE check in control path; can disrupt controller-drone link (firmware 1.10.4)
+cvss: ~7.5 HIGH (reports)
+linked: MDL-PARROT-ANAFI, SFW-PARROT-FW-GENERIC, PRT-MAVLINK
+mitigation: follow Parrot firmware/update guidance; see developer forum thread
+
+## Historical note (not newly expanded as primary ADV rows)
+CVE-2019-3944 / CVE-2019-3945 — older ANAFI issues (Wi-Fi deauth / webserver); fixed in FW >=1.5.0 per Tenable TRA-2019-22. Optional follow-up registration.

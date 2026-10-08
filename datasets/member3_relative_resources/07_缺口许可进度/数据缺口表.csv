@@ -1,0 +1,13 @@
+gap_id,gap_type,related_entity_or_topic,description,priority,owner,status,opened_date,target_date,notes
+GAP-0001,missing_url,DST-ANTIUAV;SRC-0015,入口已回填；待人员二小样本,medium,人员二,partially_closed,2026-03-29,2026-10-06,有人员三数据卡草稿
+GAP-0002,missing_url,DST-DRONERF;SRC-0016,URL/许可已确认；待小样本哈希,medium,人员二,partially_closed,2026-03-29,2026-10-02,
+GAP-0003,missing_url,DST-MMAUD;SRC-0017,URL/许可已确认；待小样本,medium,人员二,partially_closed,2026-03-29,2026-10-06,
+GAP-0004,missing_evidence,MDL-*;SRC-0049;SRC-0050;SRC-0051,fcc.gov/apps.fcc.gov 本网 Access Denied；缺官库 Grant PDF,medium,人员一;人员四,blocked_network,2026-03-29,2026-10-09,人员三已备候选表+SOP+SRC-0044b；勿用 fccid.io PDF 充数；需校园网/VPN或人员一说明书旁证
+GAP-0005,missing_entity,VUL-*,DJI+PX4 CVE 已登记,low,人员三,closed,2026-03-29,2026-09-29,
+GAP-0006,missing_field_link,人员一字段表,仍未交接,high,人员一,open,2026-03-29,2026-10-02,
+GAP-0007,missing_datacard,人员二数据卡,人员三已出草稿待核对,medium,人员二,partially_closed,2026-03-29,2026-10-06,draft_by_person3
+GAP-0008,missing_paper_meta,PAP-*,已核对,low,人员三,closed,2026-03-29,2026-09-29,
+GAP-0009,missing_archive,raw_archive,持续更新中,low,人员三,closed,2026-03-29,2026-09-29,
+GAP-0010,process,人员四对接,尚未联调,low,人员四,open,2026-03-29,2026-10-09,
+GAP-0011,license_nuance,DST-ANTIUAV,MIT vs Restricted 待数据卡写清,medium,人员二,open,2026-09-29,2026-10-06,
+GAP-0012,orphan_entity,VND-SKYDIO;DST-DUTANTIUAV;CMP-GPS-UBLOX;PRT-SBUS,悬空实体已补边；orphan_count=0,low,人员三,closed,2026-09-29,2026-09-29,EDG-0050+ / EDG-0067+；见 graph_selfcheck_report

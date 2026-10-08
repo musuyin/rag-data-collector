@@ -1,0 +1,2 @@
+edge_id,subject_id,subject_name,predicate,object_id,object_name,evidence_source_id,evidence_location,confidence,notes
+EDG-0001,VND-DJI,DJI,manufactures,MDL-DJI-MAVIC3,Mavic 3,SRC-0001,产品页标题,high,模板行

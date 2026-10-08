@@ -1,0 +1,26 @@
+# Snapshot — PX4 GNSS/RC + ArduPilot S.Bus (Person3 edge evidence)
+accessed: 2026-09-29
+purpose: support edges for CMP-GPS-UBLOX, PRT-SBUS, VND-UBLOX (type-level / stack-level)
+
+## SRC-0052a PX4 GNSS
+url: https://docs.px4.io/main/en/gps_compass/index.html
+key quotes / facts:
+- PX4 supports GNSS receivers that communicate via the u-blox, MTK Ashtech or Emlid protocols, or via UAVCAN.
+- Supported modules table lists multiple Holybro GPS units based on u-blox M8N/M9N/M10 (e.g. Holybro M8N GPS, Holybro M9N GPS, Holybro Nano Ublox M8).
+- Default GPS1 protocol configuration uses u-blox (GPS_1_PROTOCOL).
+
+## SRC-0052b PX4 Radio Control
+url: https://docs.px4.io/main/en/getting_started/rc_transmitter_receiver.html
+key quotes / facts:
+- PX4 and Pixhawk validated with S.BUS and S.BUS2 receivers (Futaba, FrSky, TBS Crossfire SBUS output, etc.).
+- PPM-Sum and S.BUS receivers connect to RC IN / RCIN.
+
+## SRC-0052c ArduPilot RC Systems
+url: https://ardupilot.org/copter/docs/common-rc-systems.html
+key quotes / facts:
+- Compatible RC protocols include: SBus receivers; Fast SBus (from DJI HDL systems).
+- PPM-Sum/SBus/i-BUS typically connect to RCin or SBUS input pin.
+
+## Notes
+- Edges derived here are stack/protocol support (not a specific DJI/Autel BOM line).
+- Do not claim a consumer DJI airframe uses CMP-GPS-UBLOX without Person1 teardown/spec evidence.

@@ -1,0 +1,6 @@
+paper_id,title,year,doi_or_url,venue,linked_dataset_ids,linked_entity_ids,status,notes
+PAP-ANTIUAV410,Anti-UAV410: A Thermal Infrared Benchmark and Customized Scheme for Tracking Drones in the Wild,2024,10.1109/TPAMI.2023.3335338,IEEE TPAMI,DST-ANTIUAV,DST-ANTIUAV;PAP-ANTIUAV410,verified,Huang et al.; 配套评测仓 https://github.com/HwangBo94/Anti-UAV410
+PAP-DRONERF-DIB,DroneRF dataset: A dataset of drones for RF-based detection classification and identification,2019,10.1016/j.dib.2019.104313,Data in Brief,DST-DRONERF,DST-DRONERF;PAP-DRONERF-DIB,verified,配套方法文 FGCS 2019 doi:10.1016/j.future.2019.05.007
+PAP-MMAUD,MMAUD: A Comprehensive Multi-Modal Anti-UAV Dataset for Modern Miniature Drone Threats,2024,10.48550/arXiv.2402.03706,arXiv / ICRA-related,DST-MMAUD,DST-MMAUD;PAP-MMAUD;MDL-DJI-MAVIC3,verified,项目页列出 Mavic2/3 Phantom4 Avata M300 等
+PAP-ANTIUAV-REF,Anti-UAV challenge / workshop series entry,2020+,https://anti-uav.github.io/,CVPR/ICCV Workshops,DST-ANTIUAV,DST-ANTIUAV,draft,系列挑战入口；具体年份论文可继续拆分
+PAP-DUTANTIUAV,Vision-based Anti-UAV Detection and Tracking,2022,10.1109/TITS.2022.3177627,IEEE TITS,DST-DUTANTIUAV,DST-DUTANTIUAV;PAP-DUTANTIUAV,verified,GitHub wangdongdut/DUT-Anti-UAV

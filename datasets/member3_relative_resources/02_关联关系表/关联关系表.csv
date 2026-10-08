@@ -1,0 +1,77 @@
+edge_id,subject_id,subject_name,predicate,object_id,object_name,evidence_source_id,evidence_location,confidence,notes
+EDG-0001,VND-DJI,DJI,manufactures,MDL-DJI-MAVIC3,DJI Mavic 3,SRC-0001,官网产品线,high,
+EDG-0002,VND-DJI,DJI,manufactures,MDL-DJI-MINI3,DJI Mini 3,SRC-0001,官网产品线,high,
+EDG-0003,VND-DJI,DJI,manufactures,MDL-DJI-AIR2S,DJI Air 2S,SRC-0001,官网产品线,high,
+EDG-0004,VND-AUTEL,Autel Robotics,manufactures,MDL-AUTEL-EVO2,Autel EVO II,SRC-0003,官网产品线,medium,supporting; canonical=EDG-0034
+EDG-0005,VND-PARROT,Parrot,manufactures,MDL-PARROT-ANAFI,Parrot Anafi,SRC-0004,官网产品线,high,canonical; 待更具体 Anafi 子页时再评估
+EDG-0006,MDL-DJI-MAVIC3,DJI Mavic 3,runs_software,SFW-DJI-FW-GENERIC,DJI Aircraft Firmware,SRC-0001,产品支持/固件说明,medium,版本号待人员一/公告补
+EDG-0007,MDL-DJI-MAVIC3,DJI Mavic 3,implements_protocol,PRT-OCUC,DJI OcuSync,SRC-0001,产品图传描述,medium,具体 OcuSync 代数待核对
+EDG-0008,VND-DJI,DJI,documented_in,SFW-DJI-SDK,DJI SDK,SRC-0002,开发者文档,high,边语义：厂商文档覆盖 SDK；图谱展示时可改为 owns
+EDG-0009,SFW-PX4,PX4 Autopilot Firmware,implements_protocol,PRT-MAVLINK,MAVLink,SRC-0008,PX4 通信文档,high,
+EDG-0010,SFW-ARDUPILOT,ArduPilot Firmware,implements_protocol,PRT-MAVLINK,MAVLink,SRC-0009,ArduPilot 通信文档,high,
+EDG-0011,OSS-PX4,PX4-Autopilot,depends_on,OSS-MAVLINK,mavlink,SRC-0011,仓库依赖/文档,high,
+EDG-0012,OSS-ARDUPILOT,ArduPilot,depends_on,OSS-MAVLINK,mavlink,SRC-0010,仓库依赖/文档,high,
+EDG-0013,SFW-MAVSDK,MAVSDK,implements_protocol,PRT-MAVLINK,MAVLink,SRC-0007,MAVLink 生态,high,
+EDG-0014,DST-ANTIUAV,Anti-UAV,dataset_covers,MDL-DJI-MAVIC3,DJI Mavic 3,SRC-0015,挑战/数据说明待人员二数据卡确认机型清单,medium,Anti-UAV 系列偏红外跟踪；机型级覆盖待数据卡升 high
+EDG-0015,DST-DRONERF,DroneRF,dataset_covers,CMP-RF-2G4,2.4GHz radio link module,SRC-0016,Data in Brief：2.4GHz 双接收机采集,high,类型级关联
+EDG-0016,DST-MMAUD,MMAUD,dataset_covers,MDL-DJI-MAVIC3,DJI Mavic 3,SRC-0017,项目下载表明确列出 DJI Mavic3,high,
+EDG-0017,PAP-ANTIUAV410,Anti-UAV410 TPAMI,documented_in,DST-ANTIUAV,Anti-UAV,SRC-0024,论文定义 Anti-UAV410 基准,high,
+EDG-0018,PAP-DRONERF-DIB,DroneRF Data in Brief,documented_in,DST-DRONERF,DroneRF,SRC-0025,数据论文,high,
+EDG-0019,MDL-DJI-MAVIC3,DJI Mavic 3,documented_in,SRC-0005,FCC Equipment Authorization Search,SRC-0005,需绑定具体 FCC ID 记录,low,证据位置待归档页码/截图
+EDG-0020,MDL-DJI-MAVIC3,DJI Mavic 3,affected_by,VUL-CVE-2023-6951,CVE-2023-6951,SRC-0021,NVD affected products 含 Mavic 3 系列,high,固件版本上界见 ADV-0001
+EDG-0021,CMP-FC-STM32,STM32 flight controller MCU,supplied_by,VND-HOLYWONE,Holybro,SRC-0009,开源硬件生态常见组合,medium,供应链类型关联，非唯一供应商
+EDG-0022,SFW-PX4,PX4 Autopilot Firmware,runs_software,CMP-FC-STM32,STM32 flight controller MCU,SRC-0008,支持硬件列表,medium,谓词语义接近 runs_on；展示层可映射
+EDG-0023,OSS-QGC,qgroundcontrol,implements_protocol,PRT-MAVLINK,MAVLink,SRC-0007,GCS 文档,high,
+EDG-0024,MDL-PARROT-ANAFI,Parrot Anafi,implements_protocol,PRT-WIFI,Wi-Fi control/video,SRC-0004,产品通信描述（待精读）,medium,
+EDG-0025,VND-PX4,PX4 Autopilot,documented_in,OSS-PX4,PX4-Autopilot,SRC-0011,组织-仓库,high,
+EDG-0026,MDL-DJI-MINI3PRO,DJI Mini 3 Pro,affected_by,VUL-CVE-2023-6951,CVE-2023-6951,SRC-0021,NVD 影响列表含 Mini 3 Pro,high,
+EDG-0027,SFW-DJI-FW-GENERIC,DJI Aircraft Firmware,affected_by,VUL-CVE-2023-51456,CVE-2023-51456,SRC-0022,v2_sdk_service,high,
+EDG-0028,SFW-DJI-FW-GENERIC,DJI Aircraft Firmware,affected_by,VUL-CVE-2023-51452,CVE-2023-51452,SRC-0023,v2_sdk_service DoS,high,
+EDG-0029,DST-MMAUD,MMAUD,dataset_covers,MDL-DJI-PHANTOM4,DJI Phantom 4,SRC-0017,项目下载表,high,
+EDG-0030,DST-MMAUD,MMAUD,dataset_covers,MDL-DJI-AVATA,DJI Avata,SRC-0017,项目下载表,high,
+EDG-0031,DST-MMAUD,MMAUD,dataset_covers,MDL-DJI-M300,DJI Matrice 300,SRC-0017,项目下载表,high,
+EDG-0032,PAP-MMAUD,MMAUD paper,documented_in,DST-MMAUD,MMAUD,SRC-0026,arXiv 2402.03706,high,
+EDG-0033,MDL-DJI-M300,DJI Matrice 300,affected_by,VUL-CVE-2023-6951,CVE-2023-6951,SRC-0021,NVD 影响列表含 Matrice 300,high,
+EDG-0034,VND-AUTEL,Autel Robotics,manufactures,MDL-AUTEL-EVO2,Autel EVO II,SRC-0033,产品页,high,canonical
+EDG-0035,VND-PARROT,Parrot,manufactures,MDL-PARROT-ANAFI,Parrot Anafi,SRC-0034,产品入口,medium,supporting; canonical=EDG-0005
+EDG-0036,VND-DJI,DJI,manufactures,MDL-DJI-MAVIC2,DJI Mavic 2,SRC-0001,官网产品线,high,MMAUD 覆盖
+EDG-0037,VND-DJI,DJI,manufactures,MDL-DJI-PHANTOM4,DJI Phantom 4,SRC-0001,官网产品线,medium,
+EDG-0038,VND-DJI,DJI,manufactures,MDL-DJI-AVATA,DJI Avata,SRC-0001,官网产品线,high,
+EDG-0039,VND-DJI,DJI,manufactures,MDL-DJI-M300,DJI Matrice 300,SRC-0001,官网产品线,high,
+EDG-0040,VND-DJI,DJI,manufactures,MDL-DJI-MAVIC3PRO,DJI Mavic 3 Pro,SRC-0032,FCC/产品线,high,
+EDG-0041,VND-DJI,DJI,manufactures,MDL-DJI-MAVIC3CLASSIC,DJI Mavic 3 Classic,SRC-0031,FCC/产品线,high,
+EDG-0042,VND-DJI,DJI,manufactures,MDL-DJI-MINI3PRO,DJI Mini 3 Pro,SRC-0001,官网产品线,high,
+EDG-0043,SFW-PX4,PX4 Autopilot Firmware,affected_by,VUL-CVE-2026-32709,CVE-2026-32709,SRC-0035,NVD,high,
+EDG-0044,SFW-PX4,PX4 Autopilot Firmware,affected_by,VUL-CVE-2026-32743,CVE-2026-32743,SRC-0036,NVD,high,
+EDG-0045,SFW-PX4,PX4 Autopilot Firmware,affected_by,VUL-CVE-2024-38952,CVE-2024-38952,SRC-0037,NVD,high,
+EDG-0046,MDL-DJI-MAVIC3CLASSIC,DJI Mavic 3 Classic,documented_in,SRC-0031,fccid.io SS3-L2P2104,SRC-0031,FCC 候选证据,medium,待官库 PDF
+EDG-0047,MDL-DJI-MAVIC3PRO,DJI Mavic 3 Pro,documented_in,SRC-0032,fccid.io SS3-L2ES2212,SRC-0032,FCC 候选证据,medium,待官库 PDF
+EDG-0048,MDL-PARROT-ANAFI,Parrot Anafi,documented_in,SRC-0030,FCC 2AG6IANAFIM3 候选,SRC-0030,安全指南印刷 FCC ID,medium,
+EDG-0049,DST-MMAUD,MMAUD,dataset_covers,MDL-DJI-MAVIC2,DJI Mavic 2,SRC-0017,项目下载表,high,
+EDG-0050,VND-SKYDIO,Skydio,manufactures,MDL-SKYDIO-X10,Skydio X10,SRC-0041,产品页,high,canonical
+EDG-0051,VND-SKYDIO,Skydio,manufactures,MDL-SKYDIO-2,Skydio 2 / 2+,SRC-0042,支持文档型号表,high,canonical
+EDG-0052,MDL-SKYDIO-X10,Skydio X10,uses_component,CMP-SKYDIO-RADIO,Skydio Connect radio module,SRC-0039,官方 FCC 表,high,
+EDG-0053,MDL-SKYDIO-X10,Skydio X10,documented_in,SRC-0039,Skydio FCC ID table,SRC-0039,FCCID 2ATQRSMODBV3S,high,
+EDG-0054,DST-DUTANTIUAV,DUT Anti-UAV,documented_in,PAP-DUTANTIUAV,Vision-based Anti-UAV paper,SRC-0043,IEEE TITS 2022,high,
+EDG-0055,PAP-DUTANTIUAV,DUT Anti-UAV paper,documented_in,DST-DUTANTIUAV,DUT Anti-UAV,SRC-0040,GitHub 公开,high,
+EDG-0056,DST-DUTANTIUAV,DUT Anti-UAV,dataset_covers,DST-ANTIUAV,Anti-UAV,SRC-0040,同属视觉反无基准族-文献互引,low,related_benchmark; 非型号覆盖，展示层可隐藏
+EDG-0057,VND-DJI,DJI,manufactures,MDL-DJI-MINI3,DJI Mini 3,SRC-0044,FCC SS3-MT3PD22 候选,medium,supporting; FCC 候选
+EDG-0058,MDL-DJI-MINI3,DJI Mini 3,documented_in,SRC-0044,FCC SS3-MT3PD22,SRC-0044,待官库 PDF,medium,
+EDG-0059,CMP-SKYDIO-RADIO,Skydio Connect radio module,supplied_by,VND-SKYDIO,Skydio,SRC-0039,官方模块表,high,
+EDG-0060,VND-AUTEL,Autel Robotics,manufactures,MDL-AUTEL-EVONANO,Autel EVO Nano,SRC-0003,产品线/CVE CPE,high,canonical
+EDG-0061,MDL-AUTEL-EVONANO,Autel EVO Nano,runs_software,SFW-AUTEL-FW-GENERIC,Autel Aircraft Firmware,SRC-0045,NVD CPE firmware,high,
+EDG-0062,MDL-AUTEL-EVONANO,Autel EVO Nano,affected_by,VUL-CVE-2023-47335,CVE-2023-47335,SRC-0045,NVD,high,
+EDG-0063,MDL-AUTEL-EVONANO,Autel EVO Nano,affected_by,VUL-CVE-2023-50121,CVE-2023-50121,SRC-0046,NVD,high,
+EDG-0064,MDL-PARROT-ANAFI,Parrot Anafi,runs_software,SFW-PARROT-FW-GENERIC,Parrot ANAFI Firmware,SRC-0047,NVD CPE anafi_firmware,high,
+EDG-0065,MDL-PARROT-ANAFI,Parrot Anafi,affected_by,VUL-CVE-2024-33844,CVE-2024-33844,SRC-0047,NVD ANAFI USA 1.10.4,high,
+EDG-0066,SFW-PARROT-FW-GENERIC,Parrot ANAFI Firmware,implements_protocol,PRT-MAVLINK,MAVLink,SRC-0047,CVE 描述涉及 MAVLink 命令,medium,supporting; 协议关联证据来自 CVE 叙述
+EDG-0067,CMP-GPS-UBLOX,u-blox GNSS module,supplied_by,VND-UBLOX,u-blox,SRC-0052,PX4 GNSS 文档 u-blox 协议与模块表,high,类型级供应商
+EDG-0068,SFW-PX4,PX4 Autopilot Firmware,implements_protocol,PRT-SBUS,S.Bus,SRC-0052,PX4 RC 文档 validated S.BUS/S.BUS2,high,接收端协议支持
+EDG-0069,SFW-ARDUPILOT,ArduPilot Firmware,implements_protocol,PRT-SBUS,S.Bus,SRC-0052,ArduPilot RC 文档 Compatible SBus,high,接收端协议支持
+EDG-0070,SFW-MAVSDK,MAVSDK,depends_on,OSS-MAVLINK,mavlink,SRC-0012,MAVSDK 基于 MAVLink 消息,high,
+EDG-0071,OSS-QGC,qgroundcontrol,depends_on,OSS-MAVLINK,mavlink,SRC-0007,GCS 依赖 MAVLink,high,
+EDG-0072,SFW-MAVSDK,MAVSDK,documented_in,OSS-MAVSDK,MAVSDK,SRC-0012,开源项目登记 OSS-MAVSDK,high,软件实体对齐仓库
+EDG-0073,VND-ARDUPILOT,ArduPilot,documented_in,OSS-ARDUPILOT,ArduPilot,SRC-0010,组织-仓库,high,对称 EDG-0025
+EDG-0074,PAP-ANTIUAV-REF,Anti-UAV challenge series,documented_in,DST-ANTIUAV,Anti-UAV,SRC-0015,挑战站/系列入口,high,系列门户指向数据集族
+EDG-0076,OSS-MAVSDK,MAVSDK,depends_on,OSS-MAVLINK,mavlink,SRC-0012,仓库依赖 mavlink,high,
+EDG-0075,CMP-GPS-UBLOX,u-blox GNSS module,documented_in,SRC-0052,PX4 GNSS/RC snapshot,SRC-0052,PX4 GNSS 支持表,high,证据锚定；供应商边见 EDG-0067

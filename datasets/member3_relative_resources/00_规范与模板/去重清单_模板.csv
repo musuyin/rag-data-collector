@@ -1,0 +1,2 @@
+record_id,check_type,file_a,sha256_a,file_b,sha256_b,decision,action,recorded_at,notes
+DEDUP-0001,exact_hash,path/a.pdf,abc,path/b.pdf,abc,duplicate,keep_a_drop_b,2026-03-29,模板行

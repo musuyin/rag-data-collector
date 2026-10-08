@@ -1,0 +1,10 @@
+# Evidence snapshot — SRC-0017 MMAUD
+accessed_date: 2026-09-29
+project_page: https://ntu-aris.github.io/MMAUD/
+github: https://github.com/ntu-aris/MMAUD
+arxiv: https://arxiv.org/abs/2402.03706
+license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0)
+commercial_contact: aris.eee.ntu@gmail.com
+modalities: stereo vision, Lidars, Radars, audio arrays (per paper/project)
+example_models_listed_on_download_table: DJI Mavic2, Mavic3, Phantom4, Avata, M300
+notes: Non-commercial academic use by default; do not redistribute commercially without permission.

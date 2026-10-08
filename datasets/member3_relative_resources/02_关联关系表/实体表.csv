@@ -1,0 +1,62 @@
+entity_id,entity_type,name,aliases,category,status,notes
+VND-DJI,vendor,DJI,大疆;SZ DJI Technology Co. Ltd.,manufacturer,active,消费级与行业无人机主要厂商
+VND-AUTEL,vendor,Autel Robotics,道通;Autel,manufacturer,active,消费/行业无人机
+VND-PARROT,vendor,Parrot,Parrot SA,manufacturer,active,开源友好历史型号较多
+VND-SKYDIO,vendor,Skydio,Skydio Inc.,manufacturer,active,自主飞行侧重
+VND-HOLYWONE,vendor,Holybro,Holybro,hardware,active,飞控/机架开源生态常见供应商
+VND-PX4,vendor,PX4 Autopilot,Dronecode;PX4,opensource_org,active,开源飞控生态
+VND-ARDUPILOT,vendor,ArduPilot,APM,opensource_org,active,开源飞控生态
+MDL-DJI-MAVIC3,model,DJI Mavic 3,Mavic 3 Classic;Mavic 3 Pro,consumer_uav,active,待人员一补全规格字段
+MDL-DJI-MINI3,model,DJI Mini 3,Mini 3,consumer_uav,active,待人员一补全
+MDL-DJI-MINI3PRO,model,DJI Mini 3 Pro,Mini 3 Pro,consumer_uav,active,CVE-2023-6951 等影响列表含此型号
+MDL-DJI-AIR2S,model,DJI Air 2S,Air 2S,consumer_uav,active,待人员一补全
+MDL-DJI-MAVIC2,model,DJI Mavic 2,Mavic 2,consumer_uav,active,MMAUD 覆盖机型之一
+MDL-DJI-PHANTOM4,model,DJI Phantom 4,Phantom 4,consumer_uav,active,MMAUD 覆盖机型之一
+MDL-DJI-AVATA,model,DJI Avata,Avata,consumer_uav,active,MMAUD 覆盖机型之一
+MDL-DJI-M300,model,DJI Matrice 300,M300;Matrice 300,enterprise_uav,active,MMAUD 覆盖；CVE 影响列表含 Matrice 300
+MDL-AUTEL-EVO2,model,Autel EVO II,EVO 2,consumer_uav,active,待人员一补全
+MDL-PARROT-ANAFI,model,Parrot Anafi,ANAFI,consumer_uav,active,待人员一补全
+CMP-GPS-UBLOX,component,u-blox GNSS module,UBX,gnss,active,多机型常见 GNSS 供应商类型
+CMP-FC-STM32,component,STM32 flight controller MCU,STM32F4;STM32H7,mcu,active,开源飞控常见 MCU
+CMP-RF-2G4,component,2.4GHz radio link module,2.4G ISM,rf_module,active,控制链路常见频段部件类
+SFW-DJI-SDK,software,DJI Mobile/Onboard SDK,DJI SDK;MSDK;OSDK,sdk,active,版本需与型号对应登记
+SFW-DJI-FW-GENERIC,software,DJI Aircraft Firmware,DJI FW,firmware,active,具体版本号待从公告/说明书补
+SFW-PX4,software,PX4 Autopilot Firmware,PX4,firmware,active,开源
+SFW-ARDUPILOT,software,ArduPilot Firmware,ArduPilot,firmware,active,开源
+SFW-MAVSDK,software,MAVSDK,mavsdk,sdk,active,MAVLink 客户端 SDK
+PRT-MAVLINK,protocol,MAVLink,MAVLink 2,comm_protocol,active,开源无人系统消息协议
+PRT-OCUC,protocol,DJI OcuSync,OcuSync 2.0;OcuSync 3.0;O3,comm_protocol,active,DJI 图传/控链路专有系列
+PRT-WIFI,protocol,Wi-Fi control/video,802.11,comm_protocol,active,部分机型/配件使用
+PRT-SBUS,protocol,S.Bus,SBUS,rc_protocol,active,遥控信号常见
+VUL-CVE-2023-6951,vulnerability,CVE-2023-6951,Weak Wi-Fi credentials QuickTransfer,cve,active,NVD verified SRC-0021
+VUL-CVE-2023-51456,vulnerability,CVE-2023-51456,v2_sdk_service OOB,cve,active,NVD verified SRC-0022
+VUL-CVE-2023-51452,vulnerability,CVE-2023-51452,v2_sdk_service DoS,cve,active,NVD verified SRC-0023
+DST-ANTIUAV,dataset,Anti-UAV,Anti-UAV300;Anti-UAV410;Anti-UAV600,multimodal_dataset,active,权威入口 SRC-0015；410 论文 SRC-0024
+DST-DRONERF,dataset,DroneRF,DroneRF Dataset,rf_dataset,active,Mendeley DOI 10.17632/f4c2b4n755.1 CC BY 4.0
+DST-MMAUD,dataset,MMAUD,Multi-Modal Anti-UAV Dataset,multimodal_dataset,active,CC BY-NC-SA 4.0；项目页列多 DJI 机型
+DST-DUTANTIUAV,dataset,DUT Anti-UAV,DUT-Anti-UAV,vision_dataset,active,视觉反无常见公开集之一
+OSS-ARDUPILOT,opensource,ArduPilot,https://github.com/ArduPilot/ardupilot,flight_stack,active,
+OSS-PX4,opensource,PX4-Autopilot,https://github.com/PX4/PX4-Autopilot,flight_stack,active,
+OSS-MAVLINK,opensource,mavlink,https://github.com/mavlink/mavlink,protocol_repo,active,
+OSS-QGC,opensource,qgroundcontrol,https://github.com/mavlink/qgroundcontrol,gcs,active,
+PAP-DRONERF-DIB,paper,DroneRF Data in Brief,10.1016/j.dib.2019.104313,academic,active,已核实
+PAP-ANTIUAV410,paper,Anti-UAV410 TPAMI,10.1109/TPAMI.2023.3335338,academic,active,已核实
+PAP-MMAUD,paper,MMAUD arXiv 2402.03706,2402.03706,academic,active,已核实
+PAP-ANTIUAV-REF,paper,Anti-UAV challenge series,https://anti-uav.github.io/,academic,active,系列入口
+VUL-CVE-2026-32709,vulnerability,CVE-2026-32709,PX4 MAVLink FTP path traversal,cve,active,NVD SRC-0035
+VUL-CVE-2026-32743,vulnerability,CVE-2026-32743,PX4 MavlinkLogHandler overflow,cve,active,NVD SRC-0036
+VUL-CVE-2024-38952,vulnerability,CVE-2024-38952,PX4 logger buffer overflow,cve,active,NVD SRC-0037
+MDL-DJI-MAVIC3PRO,model,DJI Mavic 3 Pro,Mavic 3 Pro Cine,consumer_uav,active,FCC SS3-L2ES2212 候选
+MDL-DJI-MAVIC3CLASSIC,model,DJI Mavic 3 Classic,Mavic 3 Classic,consumer_uav,active,FCC SS3-L2P2104 候选
+MDL-SKYDIO-X10,model,Skydio X10,X10,enterprise_uav,active,FCC 2ATQRSMODBV3S (官方表)
+MDL-SKYDIO-2,model,Skydio 2 / 2+,Skydio 2+;SDRC2V1;SDR35V1,consumer_uav,active,消费版停售；企业套件仍有
+CMP-SKYDIO-RADIO,component,Skydio Connect radio module,SMODBV3;SMO5GV1,rf_module,active,SkydioLink 系列模块
+PAP-DUTANTIUAV,paper,Vision-based Anti-UAV Detection and Tracking,10.1109/TITS.2022.3177627,academic,active,DUT Anti-UAV 数据论文
+MDL-AUTEL-EVONANO,model,Autel EVO Nano,EVO Nano,consumer_uav,active,CVE-2023-47335/50121 影响固件 1.6.5
+SFW-AUTEL-FW-GENERIC,software,Autel Aircraft Firmware,Autel FW,firmware,active,版本待人员一细化
+SFW-PARROT-FW-GENERIC,software,Parrot ANAFI Firmware,ANAFI FW,firmware,active,含 USA 变体版本号
+VUL-CVE-2023-47335,vulnerability,CVE-2023-47335,Autel EVO Nano NFZ permissions,cve,active,NVD SRC-0045
+VUL-CVE-2023-50121,vulnerability,CVE-2023-50121,Autel EVO Nano DoS,cve,active,NVD SRC-0046
+VUL-CVE-2024-33844,vulnerability,CVE-2024-33844,Parrot ANAFI MAV_MISSION_TYPE,cve,active,NVD SRC-0047
+VND-UBLOX,vendor,u-blox,u-blox AG;UBX,component_vendor,active,GNSS 芯片/模块厂商；开源飞控常用
+OSS-MAVSDK,opensource,MAVSDK,https://github.com/mavlink/MAVSDK,sdk_repo,active,MAVLink 客户端库仓库

@@ -1,0 +1,2 @@
+record_id,check_type,file_a,sha256_a,file_b,sha256_b,decision,action,recorded_at,notes
+,,,,,,,,暂无重复；首次归档扫描后更新

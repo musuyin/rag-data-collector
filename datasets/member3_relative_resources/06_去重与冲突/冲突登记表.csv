@@ -1,0 +1,4 @@
+conflict_id,entity_id,field_name,value_a,source_a,value_b,source_b,severity_status,resolution,recorded_at,notes
+CNF-0001,MDL-DJI-MAVIC3,ocusync_generation,待定(产品页表述不一风险),SRC-0001,待人员一字段表,SRC-0001,open,等人员一结构化字段与说明书页码对齐后关闭,2026-09-29,预防性冲突单：图传代数/名称易混
+CNF-0002,DST-ANTIUAV,official_download_url,https://github.com/ZhaoJ9014/Anti-UAV,SRC-0015,https://zenodo.org/records/15103888 (Restricted),SRC-0018,open,以人员二数据卡“权威入口+许可”为准；GitHub为项目入口 Zenodo为第4届受限数据,2026-09-29,多入口并存属正常需分层登记
+CNF-0003,DST-ANTIUAV,license_scope,MIT(项目代码),SRC-0015,Restricted(Zenodo全量),SRC-0018,open,数据卡须分开写代码许可与数据许可,2026-09-29,对应 GAP-0011

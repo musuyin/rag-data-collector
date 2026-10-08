@@ -1,0 +1,20 @@
+# Advisory snapshots — PX4 CVEs (Person3 solo) 2026-09-29
+# Registry only — no exploit steps
+
+## CVE-2026-32709
+url: https://nvd.nist.gov/vuln/detail/CVE-2026-32709
+summary: Unauthenticated path traversal in PX4 MAVLink FTP prior to 1.17.0-rc2
+linked: SFW-PX4, OSS-PX4, PRT-MAVLINK
+mitigation: upgrade to fixed release
+
+## CVE-2026-32743
+url: https://nvd.nist.gov/vuln/detail/CVE-2026-32743
+summary: Stack buffer overflow in MavlinkLogHandler via MAVLink log request; DoS
+linked: SFW-PX4
+mitigation: apply upstream fix / upgrade
+
+## CVE-2024-38952
+url: https://nvd.nist.gov/vuln/detail/CVE-2024-38952
+summary: Buffer overflow in logger topic_name path; PX4 v1.14.3 reported
+linked: SFW-PX4
+mitigation: upgrade / patch per vendor guidance

@@ -1,0 +1,6 @@
+oss_id,project_name,repo_url,primary_license,linked_entity_ids,stars_note,last_checked,status,notes
+OSS-ARDUPILOT,ArduPilot,https://github.com/ArduPilot/ardupilot,GPLv3,SFW-ARDUPILOT;PRT-MAVLINK,major,2026-03-29,registered,飞控固件
+OSS-PX4,PX4-Autopilot,https://github.com/PX4/PX4-Autopilot,BSD-3-Clause,SFW-PX4;PRT-MAVLINK,major,2026-03-29,registered,飞控固件
+OSS-MAVLINK,mavlink,https://github.com/mavlink/mavlink,见仓库 LICENSE,PRT-MAVLINK,major,2026-03-29,registered,消息定义
+OSS-QGC,qgroundcontrol,https://github.com/mavlink/qgroundcontrol,见仓库 LICENSE,PRT-MAVLINK;SFW-MAVSDK,major,2026-03-29,registered,地面站
+OSS-MAVSDK,MAVSDK,https://github.com/mavlink/MAVSDK,见仓库 LICENSE,SFW-MAVSDK;PRT-MAVLINK,major,2026-03-29,registered,客户端 SDK

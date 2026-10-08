@@ -1,0 +1,12 @@
+# Snapshot — DUT Anti-UAV
+accessed: 2026-09-29
+github: https://github.com/wangdongdut/DUT-Anti-UAV
+paper_ieee: 10.1109/TITS.2022.3177627
+arxiv: https://arxiv.org/abs/2205.10851
+title: Vision-based Anti-UAV Detection and Tracking
+authors: Jie Zhao, Jingshu Zhang, Dongdong Li, Dong Wang (DUT)
+modalities: visible-light detection images + tracking videos
+scale_public: detection ~10000 images (train 5200 / val 2600 / test 2200); tracking 20 sequences
+license: not explicitly stated on README at access time — treat as academic research release; confirm before redistribution
+download: Google Drive / Baidu links on README (Person2 small-sample first)
+related: Anti-UAV challenge https://anti-uav.github.io/

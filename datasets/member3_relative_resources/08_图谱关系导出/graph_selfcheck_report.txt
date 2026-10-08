@@ -1,0 +1,11 @@
+graph self-check 2026-09-29
+entities=61 relation_edges=76 sources=53
+graph_nodes=61 graph_edges=76
+public_edges=59
+orphan_entities_count=0
+VALIDATION PASSED
+
+Cleanup note:
+- Removed duplicate mojibake folder (wrong encoding copy of 08_图谱关系导出)
+- Removed duplicate mojibake hash CSV; kept 哈希清单.csv synced with hash_manifest.csv (19 archive files)
+- Docs updated: public edges 59/76 (not stale 49/66)

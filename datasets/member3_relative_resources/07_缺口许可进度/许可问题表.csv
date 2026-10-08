@@ -1,0 +1,14 @@
+item_id,resource_name,license_name,commercial_use,redistribution,attribution_required,risk_level,status,mitigation,notes
+LIC-0001,DJI 官网文本/图片,厂商版权条款,unknown,no,yes,high,watch,仅作证据摘录与链接引用；不整站镜像传播,来源 SRC-0001
+LIC-0002,DJI SDK 文档与软件,开发者协议,unknown,no,yes,high,watch,遵守 SDK 协议；代码/二进制不擅自再分发,来源 SRC-0002
+LIC-0003,FCC/FAA 政府公开页,政府公开信息（使用时核对免责声明）,yes,yes,recommended,low,cleared,保留查询截图与 URL、访问日期,来源 SRC-0005/0006
+LIC-0004,ArduPilot,GPLv3,yes_with_obligations,yes_with_obligations,yes,medium,cleared,衍生作品注意 copyleft；LICENSE 已归档 SRC-0027,OSS-ARDUPILOT
+LIC-0005,PX4-Autopilot,BSD-3-Clause,yes,yes,yes,low,cleared,保留版权声明；LICENSE 已归档 SRC-0028,OSS-PX4
+LIC-0006,MAVLink generator/repo,LGPL-3.0（生成代码 MIT 例外）,yes_with_obligations,yes_with_obligations,yes,medium,cleared,已归档 COPYING SRC-0029；生成代码可按 MIT,OSS-MAVLINK
+LIC-0007,Anti-UAV 项目代码（ZhaoJ9014/Anti-UAV）,MIT（项目声明）,yes,yes,yes,medium,cleared,注意：MIT 明确指向项目；全量视频数据分发另见网盘/Zenodo 条款,SRC-0015；代码可引用，全量数据先小样本
+LIC-0008,DroneRF 数据集,CC BY 4.0,yes,yes,yes,low,cleared,须署名 DOI 10.17632/f4c2b4n755.1；可小样本后全量,SRC-0016
+LIC-0009,MMAUD 数据集,CC BY-NC-SA 4.0,no,yes_with_SA,yes,high,watch,禁止默认商业使用；商业需邮件授权；ShareAlike,SRC-0017；课程项目一般属非商业学术
+LIC-0010,Zenodo 4th Anti-UAV Challenge 数据,Restricted,unknown,no,yes,high,blocked,需登录申请；未授权前不镜像全量,SRC-0018
+LIC-0011,Anti-UAV410 论文 PDF,IEEE 版权,no,no,yes,medium,watch,仅存 DOI/题录；不擅自再分发 IEEE PDF,SRC-0024
+LIC-0012,NVD/CVE 条目文本,美国政府公开信息,yes,yes,recommended,low,cleared,保留 CVE ID 与 NVD URL,SRC-0021~0023
+LIC-0013,DUT Anti-UAV 数据集,未在 README 明示,unknown,unknown,unknown,medium,watch,仅元数据与学术引用；小样本前不镜像全量,SRC-0040
