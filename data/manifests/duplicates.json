@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "sha256": "c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a",
+    "kind": "exact_content_duplicate",
+    "files": [
+      {
+        "file_id": "FILE-C21EB475781C3755",
+        "relative_path": "datasets/member3_relative_resources/05_归档与哈希/hash_manifest.csv",
+        "sha256": "c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a",
+        "size_bytes": 3383,
+        "mime_type": "text/csv",
+        "extension": ".csv",
+        "source_id": "",
+        "archived_at": "2026-10-08T05:23:55Z"
+      },
+      {
+        "file_id": "FILE-C21EB475781C3755",
+        "relative_path": "datasets/member3_relative_resources/05_归档与哈希/哈希清单.csv",
+        "sha256": "c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a",
+        "size_bytes": 3383,
+        "mime_type": "text/csv",
+        "extension": ".csv",
+        "source_id": "",
+        "archived_at": "2026-10-08T05:23:55Z"
+      }
+    ],
+    "recommended_action": "retain all raw originals; review provenance and reference one canonical copy downstream"
+  }
+]

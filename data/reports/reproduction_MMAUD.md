@@ -1,6 +1,6 @@
 # Controlled sample reproduction — MMAUD
 
-- Checked at: `2026-09-29T09:37:44Z`
+- Checked at: `2026-10-08T05:23:52Z`
 - Result: **PASS_WITH_WARNING**
 - Package: `datasets/member2_controlled_samples/packages/MMAUD_UG2_val_seq0001_camera_lidar_radar_sample.zip`
 - Package SHA-256: `a1c87e498a55eb650d6a24f251a11663a3bc09b03db99029bd3bec8271c3eaad`

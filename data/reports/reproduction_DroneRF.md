@@ -1,6 +1,6 @@
 # Controlled sample reproduction — DroneRF
 
-- Checked at: `2026-09-29T09:37:44Z`
+- Checked at: `2026-10-08T05:23:52Z`
 - Result: **PASS_WITH_WARNING**
 - Package: `datasets/member2_controlled_samples/packages/DroneRF_parrot_bebop_on_lh_pair_segment0.zip`
 - Package SHA-256: `e45ce74c5bda4bcef51dbf9a7ae523bc016411048c237c95b183234c5657405e`

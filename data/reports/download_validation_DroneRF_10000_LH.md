@@ -1,7 +1,7 @@
 # Downloaded artifact validation — DroneRF 10000 L/H
 
 - Status: **PASS**
-- Checked: `2026-09-29T09:37:45Z`
+- Checked: `2026-10-08T05:23:53Z`
 
 ## Results
 - `data/raw/downloaded/SRC-DRONERF-1C11757D5B/3fd15c79fa4a605f/RF_Data_10000_L.rar`: members=22; selected segment extracted=True; SHA-256 matches controlled segment 0=True.

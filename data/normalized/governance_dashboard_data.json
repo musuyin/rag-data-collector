@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-29T09:42:50Z",
+  "generated_at": "2026-10-08T05:23:54Z",
   "models_imported": 4,
   "datasets_imported": 3,
   "evidence_count": 36,
   "source_count": 25,
   "relation_count": 29,
   "conflict_count": 2,
-  "delivery_file_count": 47,
-  "delivery_total_bytes": 32187514,
+  "delivery_file_count": 130,
+  "delivery_total_bytes": 32366623,
   "model_progress": [
     {
       "厂商": "DJI",
@@ -177,7 +177,7 @@
         "unmapped_modalities": [
           "Text Metadata"
         ],
-        "imported_at": "2026-09-29T09:42:50Z"
+        "imported_at": "2026-10-08T05:23:54Z"
       }
     },
     {
@@ -242,7 +242,7 @@
         "unmapped_modalities": [
           "Text Metadata"
         ],
-        "imported_at": "2026-09-29T09:42:50Z"
+        "imported_at": "2026-10-08T05:23:54Z"
       }
     },
     {
@@ -369,7 +369,7 @@
           "LiDAR",
           "Text Metadata"
         ],
-        "imported_at": "2026-09-29T09:42:50Z"
+        "imported_at": "2026-10-08T05:23:54Z"
       }
     }
   ],

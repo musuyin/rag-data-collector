@@ -1,7 +1,7 @@
 {
   "record_type": "controlled_sample_reproduction",
   "dataset": "Anti-UAV300",
-  "checked_at": "2026-09-29T09:37:41Z",
+  "checked_at": "2026-10-08T05:23:49Z",
   "status": "PASS_WITH_WARNING",
   "scope": "independent local validation of supplied controlled sample package",
   "package": {

@@ -1,6 +1,6 @@
 # Controlled sample reproduction — Anti-UAV300
 
-- Checked at: `2026-09-29T09:37:41Z`
+- Checked at: `2026-10-08T05:23:49Z`
 - Result: **PASS_WITH_WARNING**
 - Package: `datasets/member2_controlled_samples/packages/Anti-UAV300_rgb_ir_sequence_val_20190926_200510_1_8.zip`
 - Package SHA-256: `f4c581bd626ade47b8a52fc56cd417a7186258cfbf00c64ab211a0da0b8f8f4a`

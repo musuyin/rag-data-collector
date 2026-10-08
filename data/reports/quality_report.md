@@ -1,8 +1,8 @@
 # 数据质量门禁报告
 
-- 生成时间（UTC）：2026-09-29T09:42:51Z
-- 扫描文件：50
-- 完全重复组：0
+- 生成时间（UTC）：2026-10-08T05:23:55Z
+- 扫描文件：126
+- 完全重复组：1
 - 校验记录：38
 
 ## 质量结果
@@ -24,4 +24,4 @@
 
 ## 重复文件
 
-未发现完全重复文件。
+- `c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a`：`datasets/member3_relative_resources/05_归档与哈希/hash_manifest.csv`，`datasets/member3_relative_resources/05_归档与哈希/哈希清单.csv`

@@ -1,7 +1,7 @@
 {
   "record_type": "controlled_sample_reproduction",
   "dataset": "DroneRF",
-  "checked_at": "2026-09-29T09:37:44Z",
+  "checked_at": "2026-10-08T05:23:52Z",
   "status": "PASS_WITH_WARNING",
   "scope": "independent local validation of supplied controlled sample package",
   "package": {

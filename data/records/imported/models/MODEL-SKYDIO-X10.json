@@ -117,6 +117,6 @@
     "source_status": "已核验（基础/规格/开发接口）",
     "verification_note": "机体、传感器、处理器、频段、开发接口均由Skydio官方页面核验；监管证据可继续深化",
     "regulatory_note": "官方规格页称GNSS具FAA & EASA Remote ID合规；具体FCC ID/FAA Declaration文件待补",
-    "imported_at": "2026-09-29T09:42:50Z"
+    "imported_at": "2026-10-08T05:23:54Z"
   }
 }
