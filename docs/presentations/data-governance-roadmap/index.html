@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>data-collector：当前实现与下一步计划</title>
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/base.css">
+  <link rel="stylesheet" href="assets/animations/animations.css">
+  <link rel="stylesheet" id="theme-link" href="assets/themes/engineering-whiteprint.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="tpl-tech-sharing" data-themes="engineering-whiteprint,minimal-white,blueprint,tokyo-night" data-theme-base="assets/themes/">
+<div class="deck">
+
+  <section class="slide cover" data-title="当前实现与下一步计划">
+    <p class="kicker">data-collector / stage review / 2026-10-21</p>
+    <h1 class="h1 anim-fade-up" data-anim="fade-up">从证据治理<br>走向<span class="gradient-text">大规模数据导入</span></h1>
+    <p class="lede mt-m">当前实现、事实边界与 Schema 驱动的 LanceDB 中间层路线图</p>
+    <div class="cover-meta mt-l">
+      <span class="tag">TRACEABLE</span>
+      <span class="tag">REPRODUCIBLE</span>
+      <span class="tag">LICENSE-AWARE</span>
+      <span class="tag">FAIL-FAST</span>
+    </div>
+    <div class="deck-footer"><span class="mono">无人机资料与多模态数据工程</span><span class="slide-number" data-current="1" data-total="12"></span></div>
+    <div class="notes">这次展示分成两部分。前半部分只讲仓库里已经落地并有报告支撑的能力，后半部分讲暂未实现的 LanceDB 导入路线图。需要特别强调，当前系统已经具备治理和验收闭环，但还不是通用的大规模向量数据库导入器。</div>
+  </section>
+
+  <section class="slide" data-title="汇报路线">
+    <p class="kicker">agenda.yaml</p>
+    <h2 class="h2">一条主线，两段能力。</h2>
+    <div class="stack mt-l">
+      <div class="agenda-row"><span class="num">01</span><span class="t">项目解决什么问题</span><span class="d">定位</span></div>
+      <div class="agenda-row"><span class="num">02</span><span class="t">当前已经实现什么</span><span class="d">事实</span></div>
+      <div class="agenda-row"><span class="num">03</span><span class="t">结果如何被证明</span><span class="d">证据</span></div>
+      <div class="agenda-row"><span class="num">04</span><span class="t">下一阶段如何存与导</span><span class="d">架构</span></div>
+      <div class="agenda-row"><span class="num">05</span><span class="t">按什么顺序开发和验收</span><span class="d">路线图</span></div>
+    </div>
+    <div class="deck-footer"><span class="mono">current → evidence → evolution</span><span class="slide-number" data-current="2" data-total="12"></span></div>
+    <div class="notes">汇报不按脚本逐个介绍，而是从问题、实现、证据、架构和计划依次展开。这样可以清楚区分已经实现的能力和仍处于规划阶段的能力，避免把路线图当成当前成果。</div>
+  </section>
+
+  <section class="slide" data-title="项目定位">
+    <p class="kicker">01 / positioning</p>
+    <h2 class="h2">重点不是“下载更多”，<br>而是让数据可以被信任。</h2>
+    <div class="grid g3 mt-l">
+      <div class="card card-accent"><h4>可追溯</h4><p class="dim">每个来源、字段、文件和结论都有 source、quote、locator 或哈希定位。</p></div>
+      <div class="card card-accent"><h4>可复现</h4><p class="dim">成员交付保持只读，机器生成物能够通过统一入口重新构建。</p></div>
+      <div class="card card-accent"><h4>许可可见</h4><p class="dim">未知、非商业、研究限定和不可再分发均保留为风险状态。</p></div>
+    </div>
+    <div class="callout mt-l"><strong>项目边界</strong><span>不是通用爬虫，不绕过访问控制，也不把小样本通过解释成全量数据已经验证。</span></div>
+    <div class="deck-footer"><span class="mono">governance before scale</span><span class="slide-number" data-current="3" data-total="12"></span></div>
+    <div class="notes">这一页要先把项目的评价标准讲清楚。成功不等于下载量最大，而是任意数据都能回答从哪里来、是否允许使用、有没有被改变、验证做到哪一步。</div>
+  </section>
+
+  <section class="slide" data-title="当前数据链路">
+    <p class="kicker">02 / current architecture</p>
+    <h2 class="h2">当前链路已经覆盖治理与验收。</h2>
+    <div class="pipeline mt-l">
+      <div class="pipe-node"><span class="pipe-id">A</span><h4>成员交付</h4><p>datasets / 只读</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node"><span class="pipe-id">B</span><h4>标准化</h4><p>records / evidence</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node"><span class="pipe-id">C</span><h4>治理门禁</h4><p>hash / duplicate / quality</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node"><span class="pipe-id">D</span><h4>受控采集</h4><p>metadata / raw</p></div>
+      <div class="pipe-arrow">→</div>
+      <div class="pipe-node hero"><span class="pipe-id">E</span><h4>复现验收</h4><p>staging / reports</p></div>
+    </div>
+    <div class="grid g2 mt-l">
+      <div class="card"><h4>离线重建</h4><p class="dim"><span class="mono">run_all.py</span> 负责导入、治理、门禁和测试，不访问网络。</p></div>
+      <div class="card"><h4>独立数据验收</h4><p class="dim"><span class="mono">run_data_pipeline.py</span> 负责样本复现、原件抽检和治理重建。</p></div>
+    </div>
+    <div class="deck-footer"><span class="mono">immutable input → reproducible outputs</span><span class="slide-number" data-current="4" data-total="12"></span></div>
+    <div class="notes">这里重点解释两个入口的边界。run_all 是离线治理重建，不负责下载；run_data_pipeline 是受控样本和已接收原件的验收，也不会把受限原始载荷复制到 curated。</div>
+  </section>
+
+  <section class="slide" data-title="已实现能力">
+    <p class="kicker">03 / shipped capabilities</p>
+    <h2 class="h2">六类能力已经落地。</h2>
+    <div class="cap-grid mt-l">
+      <div class="card"><span class="cap-num">01</span><h4>标准化导入</h4><p class="dim">型号、数据集、证据与来源</p></div>
+      <div class="card"><span class="cap-num">02</span><h4>治理建模</h4><p class="dim">关系、冲突、缺口、许可</p></div>
+      <div class="card"><span class="cap-num">03</span><h4>元数据采集</h4><p class="dim">GitHub、Mendeley、Zenodo、HTTP</p></div>
+      <div class="card"><span class="cap-num">04</span><h4>受控下载</h4><p class="dim">HTTPS、大小上限、预期哈希、收据</p></div>
+      <div class="card"><span class="cap-num">05</span><h4>质量门禁</h4><p class="dim">SHA-256、完全重复、Schema 校验</p></div>
+      <div class="card"><span class="cap-num">06</span><h4>复现与看板</h4><p class="dim">小样本验收、报告和静态展示</p></div>
+    </div>
+    <div class="deck-footer"><span class="mono">implemented / tested / reported</span><span class="slide-number" data-current="5" data-total="12"></span></div>
+    <div class="notes">六类能力都可以在仓库脚本、生成物和测试中找到对应证据。GitHub 当前只采集仓库元数据和 release 列表，不下载完整仓库或附件；受控下载目前主要用于已批准的 Mendeley 工件。</div>
+  </section>
+
+  <section class="slide" data-title="阶段结果">
+    <p class="kicker">04 / evidence snapshot · 2026-10-08</p>
+    <h2 class="h2">当前阶段有数字，也有边界。</h2>
+    <div class="kpi-grid mt-l">
+      <div class="kpi"><strong>4</strong><span>标准化型号</span></div>
+      <div class="kpi"><strong>36</strong><span>字段证据</span></div>
+      <div class="kpi"><strong>3</strong><span>数据集卡</span></div>
+      <div class="kpi"><strong>25</strong><span>工程层来源</span></div>
+      <div class="kpi"><strong>29</strong><span>标准化关系</span></div>
+      <div class="kpi"><strong>126</strong><span>扫描文件</span></div>
+      <div class="kpi good"><strong>0</strong><span>ERROR</span></div>
+      <div class="kpi warn"><strong>4</strong><span>WARNING</span></div>
+    </div>
+    <div class="status-line mt-l"><span class="status good">PASS</span><span>DroneRF 官方 RAR 指定 segment 与受控样本哈希一致</span></div>
+    <div class="deck-footer"><span class="mono">reports generated at 2026-10-08</span><span class="slide-number" data-current="6" data-total="12"></span></div>
+    <div class="notes">这些数字来自 2026 年 10 月 8 日的现有报告，正式汇报前应重新运行流水线刷新。四个 Warning 是型号来源许可待审阅，不是文件损坏；三个受控样本的 Warning 是交付摘要与实际包清单冲突。</div>
+  </section>
+
+  <section class="slide" data-title="证据案例与边界">
+    <p class="kicker">05 / proof chain</p>
+    <h2 class="h2">DroneRF 已形成一条真实证据链。</h2>
+    <div class="proof-chain mt-l">
+      <div><b>官方 API</b><span>文件清单 / SHA-256</span></div><i>→</i>
+      <div><b>受控下载</b><span>L/H 两个 RAR</span></div><i>→</i>
+      <div><b>原件保全</b><span>raw / receipt</span></div><i>→</i>
+      <div><b>指定抽取</b><span>segment 0</span></div><i>→</i>
+      <div><b>交叉验证</b><span>哈希完全一致</span></div>
+    </div>
+    <div class="grid g2 mt-l">
+      <div class="card boundary-ok"><h4>已经证明</h4><p class="dim">来源、下载文件、指定 segment 和受控样本之间能够建立哈希一致性。</p></div>
+      <div class="card boundary-no"><h4>尚未证明</h4><p class="dim">全量 CSV 语义、全部标签、硬件同步、标定和模型效果均未完成逐项验证。</p></div>
+    </div>
+    <div class="deck-footer"><span class="mono">proof ≠ inference</span><span class="slide-number" data-current="7" data-total="12"></span></div>
+    <div class="notes">这一页是当前实现最有说服力的案例，同时也要把边界讲完整。验证 segment 0 一致只能证明抽检范围内的文件身份，不能推导整个数据集的语义和标签都已经验证。</div>
+  </section>
+
+  <section class="slide" data-title="下一阶段定位">
+    <p class="kicker">06 / target capability</p>
+    <h2 class="h2">下一阶段：Schema 驱动的<br>数据治理与导入中间层。</h2>
+    <div class="grid g2 mt-l">
+      <div class="card card-accent">
+        <h4>可复用引擎</h4>
+        <p class="dim">扫描、计划、分块、批量写入、收据和独立验收形成稳定框架。</p>
+        <div class="tag mt-m">ENGINE</div>
+      </div>
+      <div class="card card-accent">
+        <h4>一次性任务</h4>
+        <p class="dim">每个数据集显式选择 Schema、reader、chunker、transform 和目标表。</p>
+        <div class="tag mt-m">JOB + SCHEMA</div>
+      </div>
+    </div>
+    <div class="callout mt-l"><strong>关键原则</strong><span>不自动猜格式，不自动切模型，不跳过坏文件；未注册能力直接报错。</span></div>
+    <div class="deck-footer"><span class="mono">reusable engine / explicit job contract</span><span class="slide-number" data-current="8" data-total="12"></span></div>
+    <div class="notes">目标不是做一个包含大量分支的万能脚本，而是做一个稳定引擎。数据集差异由显式 Schema 和注册处理器表达，任何未声明的情况都应失败并留下证据。</div>
+  </section>
+
+  <section class="slide" data-title="下一阶段存储架构">
+    <p class="kicker">07 / storage architecture</p>
+    <h2 class="h2">Raw 保存事实，LanceDB 提供消费能力。</h2>
+    <div class="storage-flow mt-l">
+      <div class="storage-card raw"><span>01</span><h4>RAW</h4><p>原始文件、URL、哈希、许可、收据</p><small>只增不改</small></div>
+      <div class="pipe-arrow">→</div>
+      <div class="storage-card"><span>02</span><h4>STAGING</h4><p>解压、解析、标准化、分块、特征</p><small>可重建</small></div>
+      <div class="pipe-arrow">→</div>
+      <div class="storage-card target"><span>03</span><h4>LanceDB</h4><p>chunk、metadata、vector、原件定位</p><small>可查询</small></div>
+      <div class="pipe-arrow">→</div>
+      <div class="storage-card"><span>04</span><h4>REPORTS</h4><p>manifest、receipt、quality report</p><small>可审计</small></div>
+    </div>
+    <p class="lede mt-l">大型视频、音频、压缩包默认不重复塞入数据库；数据库保存标准化分块、向量与原始对象 URI。</p>
+    <div class="deck-footer"><span class="mono">archive separately / index deliberately</span><span class="slide-number" data-current="9" data-total="12"></span></div>
+    <div class="notes">需要明确回答“是不是下载后全部存数据库”。答案是否定的：Raw 原件保持独立，LanceDB 保存可消费的数据与定位。小型文本或固定数组是否内联，由 Schema 的 payload_mode 明确决定。</div>
+  </section>
+
+  <section class="slide" data-title="LanceDB 数据模型">
+    <p class="kicker">08 / data model</p>
+    <h2 class="h2">两张核心表建立追溯关系。</h2>
+    <div class="grid g2 mt-l model-grid">
+      <div class="terminal">
+        <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>assets</span></div>
+        <div class="schema-list">
+          <b>asset_id</b><span>确定性 ID</span>
+          <b>source_uri</b><span>原始对象位置</span>
+          <b>source_sha256</b><span>身份校验</span>
+          <b>license_status</b><span>使用边界</span>
+          <b>schema_version</b><span>导入契约</span>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>chunks</span></div>
+        <div class="schema-list">
+          <b>chunk_id</b><span>确定性 ID</span>
+          <b>asset_id</b><span>原件引用</span>
+          <b>locator</b><span>时间 / 帧 / 行 / 偏移</span>
+          <b>payload_uri</b><span>载荷位置</span>
+          <b>transform_version</b><span>处理版本</span>
+        </div>
+      </div>
+    </div>
+    <div class="formula mt-l"><span>chunk_id</span><strong>= SHA256(asset_id + locator + transform + version)</strong></div>
+    <div class="deck-footer"><span class="mono">same input + same contract = same identity</span><span class="slide-number" data-current="10" data-total="12"></span></div>
+    <div class="notes">首期用 assets 和 chunks 两张表即可表达原件与分块。LanceDB 没有关系数据库式外键约束，因此独立验收程序必须检查所有 chunk 都能找到存在且哈希一致的 asset。</div>
+  </section>
+
+  <section class="slide" data-title="开发路线图">
+    <p class="kicker">09 / roadmap</p>
+    <h2 class="h2">先证明契约，再扩大规模。</h2>
+    <div class="roadmap mt-l">
+      <div class="road-step active"><b>M0</b><span>需求契约</span><small>查询目标 / 存储边界</small></div>
+      <div class="road-step"><b>M1</b><span>只读规划器</span><small>Schema / 空间估算</small></div>
+      <div class="road-step"><b>M2</b><span>小样本导入</span><small>DroneRF / LanceDB</small></div>
+      <div class="road-step"><b>M3</b><span>独立验收</span><small>引用 / 边界 / 回读</small></div>
+      <div class="road-step"><b>M4</b><span>规模验证</span><small>1 GB → 20 GB → 全量</small></div>
+      <div class="road-step"><b>M5</b><span>向量检索</span><small>模型 / 维度 / 索引</small></div>
+      <div class="road-step"><b>M6</b><span>多模态扩展</span><small>MMAUD / Anti-UAV300</small></div>
+    </div>
+    <div class="callout mt-l"><strong>首个 MVP</strong><span>已经验收的 DroneRF L/H CSV → 显式固定窗口 → assets/chunks → 独立回读验证。</span></div>
+    <div class="deck-footer"><span class="mono">controlled sample before hundreds of GB</span><span class="slide-number" data-current="11" data-total="12"></span></div>
+    <div class="notes">开发顺序刻意把 embedding 放在后面。先证明存储、身份、分块、重复运行和追溯都可靠，再决定 RF 特征模型；否则几百 GB 数据可能按照错误语义被批量写入。</div>
+  </section>
+
+  <section class="slide closing" data-title="结论">
+    <p class="kicker">10 / decision</p>
+    <h2 class="h2">当前闭环已经成立，<br>下一步从<span class="gradient-text">契约</span>开始。</h2>
+    <div class="grid g2 mt-l">
+      <div class="card"><h4>现在</h4><p class="dim">采集、下载、哈希、去重、质量门禁、样本复现、治理报告。</p><span class="status good mt-m">IMPLEMENTED</span></div>
+      <div class="card"><h4>下一步</h4><p class="dim">Schema、导入计划、确定性 ID、LanceDB writer、独立验收、阶梯压测。</p><span class="status mt-m">PLANNED</span></div>
+    </div>
+    <div class="next-decision mt-l"><span>实施前先确认</span><strong>第一条真实查询目标 + DroneRF 分块契约 + 存储位置</strong></div>
+    <div class="deck-footer"><span class="mono">docs/plans/lancedb_ingestion_roadmap.md</span><span class="slide-number" data-current="12" data-total="12"></span></div>
+    <div class="notes">最后把决策收口到三个问题：第一条真实查询是什么、DroneRF 窗口如何定义、首期数据存在哪里。只有这三个问题达成一致后，才进入依赖和代码实现。</div>
+  </section>
+
+</div>
+<script src="assets/runtime.js"></script>
+</body>
+</html>
