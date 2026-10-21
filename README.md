@@ -13,6 +13,8 @@
 | 人员四 | 数据工程与质量核验 | 已实现采集、下载、归档、门禁、看板和样本复现流水线 | [人员四总结](docs/reports/member4_engineering_quality_summary.md) |
 
 - **完整技术说明**：[项目技术报告](docs/reports/project_technical_report.md)
+- **下一步开发计划**：[Schema 驱动的数据治理与 LanceDB 导入路线图](docs/plans/lancedb_ingestion_roadmap.md)
+- **阶段展示**：[当前实现与下一步计划（HTML）](docs/presentations/data-governance-roadmap/index.html)
 - **治理看板原型**：[`data/reports/governance_dashboard.html`](data/reports/governance_dashboard.html)
 - **看板查询数据**：[`data/normalized/governance_dashboard_data.json`](data/normalized/governance_dashboard_data.json)
 
