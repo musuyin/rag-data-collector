@@ -81,12 +81,17 @@
     "audit_scope": "local member-two validation records only",
     "status": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
     "parsed_json_records": [
+      "datasets/member2_multimodal_datasets/validation_records/DroneRF/download_manifest.json",
       "datasets/member2_multimodal_datasets/validation_records/DroneRF/DroneRF_download_validation.json",
-      "datasets/member2_multimodal_datasets/validation_records/DroneRF/DroneRF_file_inspection.json",
-      "datasets/member2_multimodal_datasets/validation_records/DroneRF/download_manifest.json"
+      "datasets/member2_multimodal_datasets/validation_records/DroneRF/DroneRF_file_inspection.json"
     ],
     "declared_hashes": [],
     "declared_validation_status": [
+      {
+        "file": "download_manifest.json",
+        "key": "download_status",
+        "value": "PASS"
+      },
       {
         "file": "DroneRF_download_validation.json",
         "key": "download_status",
@@ -95,11 +100,6 @@
       {
         "file": "DroneRF_download_validation.json",
         "key": "rar_integrity",
-        "value": "PASS"
-      },
-      {
-        "file": "download_manifest.json",
-        "key": "download_status",
         "value": "PASS"
       }
     ],
@@ -112,10 +112,10 @@
     "audit_scope": "local member-two validation records only",
     "status": "AUDITABLE_NOT_INDEPENDENTLY_REPRODUCED",
     "parsed_json_records": [
+      "datasets/member2_multimodal_datasets/validation_records/MMAUD/download_manifest.json",
       "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_cross_modal_validation.json",
       "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_file_inspection.json",
-      "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_sample_validation.json",
-      "datasets/member2_multimodal_datasets/validation_records/MMAUD/download_manifest.json"
+      "datasets/member2_multimodal_datasets/validation_records/MMAUD/MMAUD_sample_validation.json"
     ],
     "declared_hashes": [],
     "declared_validation_status": [

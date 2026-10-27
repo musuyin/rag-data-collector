@@ -1,27 +1,27 @@
 [
   {
-    "sha256": "c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a",
+    "sha256": "19f2bdcf2b8677f6fb08ae8ab4b0bdec8d5b08da430e09bfc33036149905dbc2",
     "kind": "exact_content_duplicate",
     "files": [
       {
-        "file_id": "FILE-C21EB475781C3755",
+        "file_id": "FILE-19F2BDCF2B8677F6",
         "relative_path": "datasets/member3_relative_resources/05_归档与哈希/hash_manifest.csv",
-        "sha256": "c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a",
-        "size_bytes": 3383,
-        "mime_type": "text/csv",
+        "sha256": "19f2bdcf2b8677f6fb08ae8ab4b0bdec8d5b08da430e09bfc33036149905dbc2",
+        "size_bytes": 3403,
+        "mime_type": "application/vnd.ms-excel",
         "extension": ".csv",
         "source_id": "",
-        "archived_at": "2026-10-08T05:23:55Z"
+        "archived_at": "2026-10-27T13:39:44Z"
       },
       {
-        "file_id": "FILE-C21EB475781C3755",
+        "file_id": "FILE-19F2BDCF2B8677F6",
         "relative_path": "datasets/member3_relative_resources/05_归档与哈希/哈希清单.csv",
-        "sha256": "c21eb475781c3755ab2f1c9db1e921e7faaf63ab9b950c1611d15b31382afb4a",
-        "size_bytes": 3383,
-        "mime_type": "text/csv",
+        "sha256": "19f2bdcf2b8677f6fb08ae8ab4b0bdec8d5b08da430e09bfc33036149905dbc2",
+        "size_bytes": 3403,
+        "mime_type": "application/vnd.ms-excel",
         "extension": ".csv",
         "source_id": "",
-        "archived_at": "2026-10-08T05:23:55Z"
+        "archived_at": "2026-10-27T13:39:44Z"
       }
     ],
     "recommended_action": "retain all raw originals; review provenance and reference one canonical copy downstream"

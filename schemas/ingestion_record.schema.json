@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Local LanceDB record (metadata only; not a curated publication)",
+  "type": "object",
+  "required": ["record_id", "record_type", "source_id", "license_status", "record_status"],
+  "properties": {
+    "record_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]{0,159}$"},
+    "record_type": {"type": "string", "pattern": "^[a-z][a-z0-9_]{0,63}$"},
+    "source_id": {"type": "string", "minLength": 1},
+    "license_status": {"enum": ["open", "research_only", "restricted", "unknown", "not_applicable"]},
+    "record_status": {"enum": ["draft", "reviewed", "approved"]},
+    "title": {"type": "string"},
+    "text": {"type": "string"},
+    "dataset_id": {"type": "string"},
+    "asset_uri": {"type": "string"}
+  },
+  "additionalProperties": true
+}

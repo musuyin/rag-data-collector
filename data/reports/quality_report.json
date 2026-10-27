@@ -1,11 +1,11 @@
 {
   "summary": {
-    "generated_at": "2026-10-08T05:23:55Z",
+    "generated_at": "2026-10-27T13:39:44Z",
     "include_fixtures": false,
     "input_roots": [
       "datasets"
     ],
-    "files_scanned": 126,
+    "files_scanned": 120,
     "exact_duplicate_groups": 1,
     "records_validated": 38,
     "issue_counts": {

@@ -13,7 +13,8 @@
 | 人员四 | 数据工程与质量核验 | 已实现采集、下载、归档、门禁、看板和样本复现流水线 | [人员四总结](docs/reports/member4_engineering_quality_summary.md) |
 
 - **完整技术说明**：[项目技术报告](docs/reports/project_technical_report.md)
-- **下一步开发计划**：[Schema 驱动的数据治理与 LanceDB 导入路线图](docs/plans/lancedb_ingestion_roadmap.md)
+- **本地入库与 CRUD（已实现）**：[运行说明与 API](docs/local_lancedb.md)
+- **后续扩展计划**：[Schema 驱动的大规模、多模态 LanceDB 导入路线图](docs/plans/lancedb_ingestion_roadmap.md)
 - **阶段展示**：[当前实现与下一步计划（HTML）](docs/presentations/data-governance-roadmap/index.html)
 - **治理看板原型**：[`data/reports/governance_dashboard.html`](data/reports/governance_dashboard.html)
 - **看板查询数据**：[`data/normalized/governance_dashboard_data.json`](data/normalized/governance_dashboard_data.json)
@@ -139,14 +140,31 @@ uv sync --all-groups
 ```
 
 - Python：`>=3.12`
-- 运行依赖：`certifi`（HTTPS CA 证书验证）
-- 开发依赖：`ruff`
+- 运行依赖：`certifi`（HTTPS）、`lancedb`、`pyarrow`（显式表结构）、`fastapi`、`uvicorn`（本地 Web）、`jsonschema`（入库校验）
+- 开发依赖：`ruff`、`httpx`（API 集成测试）
 
 依赖变更：修改 `pyproject.toml` 后执行 `uv lock && uv sync --all-groups`；提交 `uv.lock`，不提交 `.venv/`。
 
 ---
 
 ## 五、运行入口
+
+### 0. 本地 LanceDB 入库与管理
+
+```bash
+# 只读预览现有 4 个型号和 3 张数据集卡
+uv run python scripts/import_lancedb.py --dry-run
+
+# 写入本地数据库；重复执行跳过相同记录
+uv run python scripts/import_lancedb.py
+
+# 浏览器打开 http://127.0.0.1:8000，Ctrl+C 停止
+uv run python scripts/serve_lancedb.py
+```
+
+也可通过 `--input` 导入标准化 JSON、JSONL、CSV。服务支持分页、筛选、新增、编辑、撤回/恢复和历史记录。
+本版不要求向量、不执行业务清洗和向量化；数据库及审计保存在 Git 忽略的 `data/local/`，不改变原件或现有治理产物。
+重新导入前停止 Web 服务。完整字段、API、冲突与恢复规则见 [本地 LanceDB 说明](docs/local_lancedb.md)。
 
 ### 1. 成员交付治理重建（离线，不修改 `datasets/`）
 

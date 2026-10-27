@@ -5,6 +5,12 @@
 - **适用范围**：大规模、多模态数据集的受控接收、治理、标准化、分块与导入
 - **首个候选数据集**：DroneRF 受控样本
 
+## 2026-10-25 实施补充
+
+用户将首期实现明确为“命令行/程序导入 + Python 本地 Web CRUD”。现已新增 `scripts/import_lancedb.py`、`scripts/serve_lancedb.py` 及共享 `scripts/lancedb_app/`，支持标准化 JSON/JSONL/CSV 元数据入库、来源/Schema 校验、收据、重复与冲突处理、分页/筛选、编辑、撤回/恢复和修改历史。数据放在 Git 忽略的本地目录，不写入 curated。
+
+该实现先使用统一的 `records_v1` 元数据表，接入现有型号和数据集记录；不是下述 DroneRF `assets/chunks` 流式信号导入方案。本文后续章节仍是大规模/多模态扩展规划，不代表分块、embedding、图文检索或全量规模验收已实现。运行与验证见 [本地 LanceDB 入库与管理](../local_lancedb.md)。
+
 ## 1. 当前基础
 
 项目已经形成一套离线、可重建的数据治理与验收能力：

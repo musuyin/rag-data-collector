@@ -5,6 +5,10 @@ __pycache__/
 .venv/
 # uv's resolution lock is intentionally committed; only its local cache is ignored.
 .uv-cache/
+.uv-tools/
+
+# Local LanceDB, receipts, audit journal, and process locks (may contain restricted records).
+data/local/**
 
 # Operating system / editors
 .DS_Store

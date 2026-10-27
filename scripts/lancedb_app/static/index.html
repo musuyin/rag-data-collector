@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LanceDB · 本地数据管理</title><link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header><div><p class="eyebrow">DATA COLLECTOR / LOCAL WORKSPACE</p><h1>数据管理</h1>
+    <p class="muted">命令行负责批量导入，这里浏览和维护已经入库的记录。</p></div>
+    <span class="badge">本地 LanceDB</span></header>
+  <main>
+    <section class="stats" aria-label="数据库概况">
+      <div><span>全部记录</span><strong id="total">—</strong></div>
+      <div><span>使用中</span><strong id="active">—</strong></div>
+      <div><span>已撤回</span><strong id="withdrawn">—</strong></div>
+      <div><span>当前能力</span><strong class="small">元数据 CRUD</strong></div>
+    </section>
+    <p class="notice">保留来源和许可状态。入库不代表可以公开发布；本版不执行业务清洗、向量化或图文检索。</p>
+    <div id="message" role="status" aria-live="polite"></div>
+    <section class="workspace">
+      <div class="records-panel">
+        <div class="section-title"><h2>记录列表</h2><button id="new-record" type="button">＋ 新建记录</button></div>
+        <form id="filters">
+          <label class="search">搜索<input id="q" placeholder="ID、标题或正文（支持 % / _ 通配符）"></label>
+          <label>类型<input id="record-type" placeholder="例如 model"></label>
+          <label>许可<select id="license-filter"><option value="">全部许可</option><option>open</option>
+            <option>unknown</option><option>research_only</option><option>restricted</option><option>not_applicable</option>
+          </select></label>
+          <label class="check"><input type="checkbox" id="include-deleted">包含撤回</label>
+          <button type="submit" class="secondary">查询</button>
+        </form>
+        <div class="table-scroll"><table><thead><tr><th>记录</th><th>类型 / 状态</th><th>许可</th></tr></thead>
+          <tbody id="records"></tbody></table></div>
+        <div id="empty" hidden>还没有记录。先运行 <code>uv run python scripts/import_lancedb.py</code>，或新建一条记录。</div>
+        <div class="pagination"><span id="page-label">—</span><div><button id="prev" class="secondary">上一页</button>
+          <button id="next" class="secondary">下一页</button></div></div>
+      </div>
+      <aside class="editor-panel">
+        <div class="section-title"><h2 id="editor-title">记录详情</h2><span id="revision" class="muted"></span></div>
+        <p id="editor-help" class="muted">选择左侧记录查看原始字段、来源和历史，或新建记录。</p>
+        <form id="editor-form" hidden>
+          <label for="editor">记录 JSON</label>
+          <textarea id="editor" spellcheck="false" rows="21" required></textarea>
+          <p class="hint">必须包含 record_id、record_type、source_id、license_status、record_status。型号和数据集还需满足各自 Schema。</p>
+          <div class="actions"><button id="save" type="submit">保存</button>
+            <button id="withdraw" type="button" class="danger">撤回记录</button>
+            <button id="restore" type="button" class="secondary" hidden>恢复记录</button></div>
+        </form>
+        <details><summary>已登记来源</summary><ul id="sources"></ul></details>
+        <details id="provenance" hidden><summary>来源与处理信息</summary><pre id="origin"></pre></details>
+        <details id="history-panel" hidden><summary>修改历史</summary><div id="history"></div></details>
+      </aside>
+    </section>
+    <footer>删除仅撤回数据库记录，不删除原始文件。原件位置以文本显示，页面不会自动读取本地文件或外部链接。</footer>
+  </main>
+</body></html>

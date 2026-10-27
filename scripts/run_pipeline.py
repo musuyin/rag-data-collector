@@ -208,7 +208,7 @@ def main() -> int:
     with (manifests / "file_manifest.jsonl").open("w", encoding="utf-8") as handle:
         for row in manifest: handle.write(json.dumps(row, ensure_ascii=False) + "\n")
     with (manifests / "file_manifest.csv").open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["file_id", "relative_path", "sha256", "size_bytes", "mime_type", "extension", "source_id", "archived_at"])
+        writer = csv.DictWriter(handle, fieldnames=["file_id", "relative_path", "sha256", "size_bytes", "mime_type", "extension", "source_id", "archived_at"], lineterminator="\n")
         writer.writeheader(); writer.writerows(manifest)
     output_json(manifests / "duplicates.json", duplicate_groups)
     output_json(reports / "quality_report.json", {"summary": summary, "issues": issues})
