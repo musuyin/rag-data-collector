@@ -13,7 +13,7 @@
     "target_id": "COLLECT-DRONERF-MENDELEY",
     "source_id": "SRC-DRONERF-1C11757D5B",
     "adapter": "mendeley_dataset",
-    "checked_at": "2026-09-29T09:03:13Z",
+    "checked_at": "2026-10-27T13:57:28Z",
     "etag": null,
     "last_modified": null,
     "metadata_sha256": "197a365405e2f927f52bd5dc2baa5058dcd600de39cab01ac51aea3678ac2e21",
@@ -27,6 +27,16 @@
     "etag": "W/\"074f1b62e94763d84c81ca6695199c05b9580589b7653b5e13795c2dd56143e2\"",
     "last_modified": "Mon, 28 Sep 2026 09:00:47 GMT",
     "metadata_sha256": "cd1759bf0cbd83b76e373df8797236a968db116fd7a0cf257dd93cfc75e43fe7",
+    "artifacts": []
+  },
+  "COLLECT-MMAUD-HF-INVENTORY": {
+    "target_id": "COLLECT-MMAUD-HF-INVENTORY",
+    "source_id": "SRC-MMAUD-C5C8EDF753",
+    "adapter": "public_inventory",
+    "checked_at": "2026-10-27T14:07:01Z",
+    "etag": "W/\"12dae2c-SlTOmGH7aaygv6m+3ua2l8dMNsM\"",
+    "last_modified": null,
+    "metadata_sha256": "996643b2d5d100d28a6f8e7e877ed360a617ab77cb33563db31995763a5d3ff3",
     "artifacts": []
   }
 }

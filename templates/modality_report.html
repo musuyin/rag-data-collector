@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>无人机数据集 · 模态构成报告</title>
+<style>
+:root{color-scheme:light;--bg:#f4f6f9;--ink:#142534;--muted:#5d6b78;--line:#dce3e9;--paper:#fff;--blue:#2975bf}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:1480px;margin:auto;padding:42px 32px}h1{font-size:32px;letter-spacing:-1px;margin:6px 0 12px}h2{font-size:23px;margin:0}h3{font-size:18px;margin:0 0 10px}p{margin:8px 0}.eyebrow{font-size:12px;letter-spacing:2px;color:var(--muted)}.intro{max-width:1000px;color:var(--muted)}
+.topline,.tools,.cardhead{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.stamp{font-size:13px;color:var(--muted)}
+.notice{margin:24px 0;padding:17px 20px;background:#e8f1fa;border-left:4px solid var(--blue);font-size:14px}.notice strong{color:#245b87}
+.tools{margin:28px 0 20px}button,select{font:inherit;border:1px solid var(--line);border-radius:7px;background:var(--paper);color:var(--ink);padding:8px 13px;cursor:pointer}button.active{color:white;background:#213e56;border-color:#213e56}button:focus-visible,select:focus-visible{outline:3px solid #7cadd8;outline-offset:3px}.controls{display:flex;gap:6px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start}.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:24px;min-width:0}.badge{font-size:12px;padding:3px 9px;border-radius:20px;background:#e8f5ef;color:#246548;white-space:nowrap}.badge.historical{background:#fff1d9;color:#875b16}.scope{min-height:72px;font-size:13px;color:var(--muted)}select{width:100%;font-size:13px;padding:8px}.chart{height:270px;display:grid;place-items:center;position:relative}.chart svg{width:250px;height:250px;max-width:100%;overflow:visible}.chart .center{position:absolute;display:flex;flex-direction:column;text-align:center;pointer-events:none}.center strong{font-size:26px;line-height:1.25}.center span{font-size:12px;color:var(--muted)}.chart-empty{color:#875b16;text-align:center;background:#fff7e9;border-radius:10px;padding:20px;max-width:100%}
+.legend{display:grid;gap:7px;margin:0 0 20px}.legend-row{display:flex;gap:8px;align-items:center;font-size:13px}.legend-row .value{margin-left:auto;font-variant-numeric:tabular-nums}.dot{width:10px;height:10px;border-radius:50%;flex:none}.muted{color:var(--muted)}.note{font-size:13px;color:var(--muted);margin-top:16px}.note.warn{color:#875b16}.totals{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:12px;font-size:13px;gap:10px}
+.detail{margin-top:24px;padding:24px;background:var(--paper);border:1px solid var(--line);border-radius:12px}.detail ul{padding-left:22px;margin:12px 0}.detail li{margin-bottom:5px}.table-wrap{overflow:auto;margin-top:15px}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:9px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}th:first-child,td:first-child{text-align:left}th{color:var(--muted);font-weight:500}td{font-variant-numeric:tabular-nums}a{color:#24679d;text-underline-offset:3px}.source-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0;font-size:13px}details{font-size:12px;color:var(--muted);margin-top:14px}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:var(--bg)}footer{margin-top:30px;color:var(--muted);font-size:13px}.methods{padding:24px 0;border-top:1px solid var(--line);margin-top:28px}.methods p{max-width:1150px}.statline{font-size:13px;color:var(--muted);margin-top:5px}.tiny{font-size:12px}.hidden{display:none}
+@media(max-width:1120px){main{padding:28px 20px}.grid{grid-template-columns:1fr}.card{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}.cardhead,.scope,.view,.totals,.note{grid-column:1/-1}.chart{grid-column:1}.legend{grid-column:2;grid-row:4;align-content:center}.scope{min-height:auto}.chart{height:260px}}@media(max-width:600px){main{padding:24px 14px}h1{font-size:26px}.card{display:block;padding:20px}.chart{height:265px}.detail{padding:18px}.tools{align-items:start}.controls button{font-size:14px}.stamp{font-size:12px}}
+@media print{main{max-width:none;padding:10px}.grid{display:block}.card,.detail{break-inside:avoid;margin-bottom:14px}.tools{display:none}body{background:white}select{border:0}details{display:none}}
+</style>
+</head>
+<body><main>
+<div class="topline"><span class="eyebrow">DRONE DATA / INVENTORY REPORT</span><span class="stamp" id="stamp"></span></div>
+<h1>三个数据集，分别由什么构成？</h1>
+<p class="intro">从官方网页和公开文件元数据查看图片、视频、音频、点云、射频及文档的占比。只读取清单，不下载数百 GB 原始数据。每个图都标明分母、来源和统计边界。</p>
+<div class="notice"><strong>口径提醒：</strong>文件数比例 ≠ 存储大小比例 ≠ 有效样本比例。MMAUD 与 DroneRF 已核对在线 API；Anti-UAV300 暂用已有成员验收清单，清晰标为历史证据。三个图的文件单位不同，不能据此横向比较数据价值。</div>
+<div class="tools"><div><strong>模态比例</strong><div class="tiny muted">悬停查看数值 · 切换口径后，饼图与明细同步更新</div></div><div class="controls" aria-label="统计口径"><button type="button" data-metric="count" class="active" aria-pressed="true">按文件数</button><button type="button" data-metric="bytes" aria-pressed="false">按存储大小</button></div></div>
+<section class="grid" id="cards" aria-label="三个数据集比例饼图"></section>
+<section id="details" aria-label="统计明细与证据"></section>
+<section class="methods"><h3>如何理解这些数字</h3><p>比例 = 该类别数量 ÷ 当前视图的全部文件数量；大小比例则用字节数计算，采用十进制 GB。没有分类型大小时显示“未知”，不会把未知补成 0。未出现的类别仅表示当前清单中未发现独立文件，不能推断容器内部不存在该模态。</p><p>JSON 标注、校准参数和哈希清单属于结构化元数据；RF 的数值 CSV 属于射频信号。ROS bag 属于混合传感器容器，不强行分配到图像或音频。ZIP/RAR 不展开时单列归档；DroneRF 的 RAR 根据官方说明归入 RF，但不推断包内样本数。</p></section>
+<footer>本报告不构成内容质量、时间同步或可再分发许可的验收结论。未登录实验室服务器；未下载原始数据包。</footer>
+<noscript>请启用 JavaScript 查看本地饼图和数据表；机器可读结果见同目录对应 JSON 报告。</noscript>
+</main>
+<script type="application/json" id="report-data">__REPORT_JSON__</script>
+<script>
+"use strict";
+const report=JSON.parse(document.getElementById('report-data').textContent);
+const labels={image:'图片',video:'视频',audio:'音频',lidar:'激光雷达点云',radar:'毫米波雷达点云',rf:'射频信号',trajectory:'轨迹 / 真值',text:'文本 / 文档',annotation:'标注 / 结构化元数据',code:'代码',mixed:'混合传感器容器',archive:'未展开归档',unknown:'其他 / 未知'};
+const colors={image:'#3c83c3',video:'#8b63bd',audio:'#dc9c36',lidar:'#2a9a8f',radar:'#d77358',rf:'#4874a0',trajectory:'#8d9e43',text:'#b77f9d',annotation:'#8e9dae',code:'#635f74',mixed:'#536b7f',archive:'#c2a16b',unknown:'#b5b9bf'};
+let metric='count';const selected={};report.datasets.forEach(d=>selected[d.id]=0);
+const el=(tag,cls,text)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n};
+const fmt=n=>n.toLocaleString('zh-CN');
+const size=n=>n>=1e9?(n/1e9).toFixed(3)+' GB':n>=1e6?(n/1e6).toFixed(2)+' MB':n>=1e3?(n/1e3).toFixed(2)+' KB':fmt(n)+' B';
+const pct=(n,t)=>t?(n/t*100<0.01&&n>0?'<0.01%':(n/t*100).toFixed(2)+'%'):'—';
+document.getElementById('stamp').textContent='生成于 '+new Date(report.generated_at).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',hour12:false})+' UTC+8';
+function donut(inv){const wrapper=el('div','chart');if(metric==='bytes'&&inv.unknown_sizes){wrapper.append(el('div','chart-empty','缺少分类字节数\n无法计算大小占比'));return wrapper;}
+ const total=metric==='count'?inv.file_count:inv.known_bytes;if(!total){wrapper.append(el('div','chart-empty','该视图没有可统计记录'));return wrapper;}
+ const ns='http://www.w3.org/2000/svg',svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 250 250');svg.setAttribute('role','img');svg.setAttribute('aria-label',inv.categories.map(c=>c.label+' '+pct(c[metric],total)).join('；'));
+ let offset=0;const circumference=2*Math.PI*91;inv.categories.filter(c=>c[metric]>0).sort((a,b)=>b[metric]-a[metric]).forEach(c=>{const circle=document.createElementNS(ns,'circle');circle.setAttribute('cx','125');circle.setAttribute('cy','125');circle.setAttribute('r','91');circle.setAttribute('fill','none');circle.setAttribute('stroke',colors[c.category]);circle.setAttribute('stroke-width','35');circle.setAttribute('stroke-dasharray',c[metric]/total*circumference+' '+circumference);circle.setAttribute('stroke-dashoffset',-offset);circle.setAttribute('transform','rotate(-90 125 125)');const title=document.createElementNS(ns,'title');title.textContent=c.label+'：'+(metric==='count'?fmt(c.count)+' 个':size(c.bytes))+' / '+pct(c[metric],total);circle.append(title);svg.append(circle);offset+=c[metric]/total*circumference;});wrapper.append(svg);
+ const center=el('div','center');center.append(el('strong','',metric==='count'?fmt(total):(total/1e9).toFixed(2)),el('span','',metric==='count'?'个逻辑文件 / 发布包':'GB · 当前视图'));wrapper.append(center);return wrapper;}
+function render(){const cards=document.getElementById('cards'),details=document.getElementById('details');cards.replaceChildren();details.replaceChildren();
+ for(const d of report.datasets){const view=d.views[selected[d.id]],inv=view.inventory,total=metric==='count'?inv.file_count:inv.known_bytes,valid=metric!=='bytes'||!inv.unknown_sizes;
+ const card=el('article','card'),head=el('div','cardhead');head.append(el('h2','',d.name),el('span','badge '+d.status_kind,d.status));card.append(head,el('p','scope',d.scope));
+ const select=el('select','view');select.setAttribute('aria-label',d.name+'统计范围');d.views.forEach((v,i)=>{const o=el('option','',v.label);o.value=i;o.selected=i===selected[d.id];select.append(o)});select.addEventListener('change',()=>{selected[d.id]=Number(select.value);render()});card.append(select,donut(inv));
+ const legend=el('div','legend');for(const c of inv.categories){const row=el('div','legend-row'),dot=el('span','dot');dot.style.background=colors[c.category];row.append(dot,el('span','',c.label),el('span','value',valid?pct(c[metric],total):'未知'));legend.append(row)}card.append(legend);
+ const totals=el('div','totals');totals.append(el('span','',fmt(inv.file_count)+' 个文件'),el('span','',inv.unknown_sizes?'分类大小未知':size(inv.known_bytes)));card.append(totals,el('p','note'+(d.status_kind==='historical'?' warn':''),d.status_kind==='historical'?'历史记录时间：'+d.checked_at+'；本次在线目录未取得。':'在线核对时间：'+d.checked_at));cards.append(card);
+ const detail=el('article','detail');detail.append(el('h3','',d.name+' · 分类明细'),el('p','statline',view.label+' · 许可：'+d.license));
+ const table=el('table'),thead=el('thead'),tr=el('tr');['类型','文件数','文件数占比','大小','大小占比'].forEach(t=>tr.append(el('th','',t)));thead.append(tr);table.append(thead);const tbody=el('tbody');for(const [key,label] of Object.entries(labels)){const c=inv.categories.find(c=>c.category===key)||{count:0,bytes:0,unknown_sizes:0};const r=el('tr');[label,fmt(c.count),pct(c.count,inv.file_count),inv.unknown_sizes?'未知':size(c.bytes),inv.unknown_sizes?'未知':pct(c.bytes,inv.known_bytes)].forEach(t=>r.append(el('td','',t)));tbody.append(r)}table.append(tbody);const wrap=el('div','table-wrap');wrap.append(table);detail.append(wrap);
+ const notes=el('ul');d.notes.forEach(n=>notes.append(el('li','',n)));detail.append(notes);const links=el('div','source-links');d.links.forEach(link=>{const a=el('a','',link.label);a.href=link.url;a.target='_blank';a.rel='noopener noreferrer';links.append(a)});detail.append(links);
+ const evidence=el('details');evidence.append(el('summary','','查看证据与复现信息'),el('pre','',JSON.stringify({checked_at:d.checked_at,revision:d.revision,evidence:d.evidence,metadata_response_bytes:d.metadata_response_bytes,latest_metadata_attempt:d.latest_metadata_attempt,extensions:inv.extensions},null,2)));detail.append(evidence);details.append(detail);
+ }}
+document.querySelectorAll('[data-metric]').forEach(button=>button.addEventListener('click',()=>{metric=button.dataset.metric;document.querySelectorAll('[data-metric]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button))});render()}));render();
+</script></body></html>

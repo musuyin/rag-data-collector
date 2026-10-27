@@ -91,5 +91,24 @@
     "enabled": false,
     "allow_download": false,
     "notes": "仅接受人工确认的官方公开结果 URL；不自动填写表单、不绕过验证码或访问控制。"
+  },
+  {
+    "target_id": "COLLECT-MMAUD-HF-INVENTORY",
+    "source_id": "SRC-MMAUD-C5C8EDF753",
+    "adapter": "public_inventory",
+    "url": "https://huggingface.co/api/datasets/Yuan-Shenghai/MMAUD?blobs=true",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "Official MMAUD page links this public mirror. Read API file names/sizes only; never resolve payloads. Reviewed 2026-10-27; public CC BY-NC-SA 4.0 research data. Keep mixed ROS bags separate from extracted modalities."
+  },
+  {
+    "target_id": "COLLECT-ANTI-UAV300-ZIP-DIRECTORY",
+    "source_id": "SRC-ANTI-UAV300-A78901B85F",
+    "adapter": "remote_zip_inventory",
+    "dataset": "Anti-UAV300",
+    "url": "https://drive.usercontent.google.com/download?id=1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr&export=download",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "Official GitHub routes to this public Drive file. HTTP 206 metadata ranges only, capped at 2 MiB; refuse full payloads, login/confirmation pages or access restrictions. Dataset redistribution permission remains unknown."
   }
 ]

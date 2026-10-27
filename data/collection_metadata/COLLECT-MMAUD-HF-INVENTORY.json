@@ -1,0 +1,730 @@
+{
+  "collected_at": "2026-10-27T14:07:01Z",
+  "target": {
+    "target_id": "COLLECT-MMAUD-HF-INVENTORY",
+    "source_id": "SRC-MMAUD-C5C8EDF753",
+    "adapter": "public_inventory",
+    "url": "https://huggingface.co/api/datasets/Yuan-Shenghai/MMAUD?blobs=true",
+    "enabled": false,
+    "allow_download": false,
+    "notes": "Official MMAUD page links this public mirror. Read API file names/sizes only; never resolve payloads. Reviewed 2026-10-27; public CC BY-NC-SA 4.0 research data. Keep mixed ROS bags separate from extracted modalities."
+  },
+  "metadata": {
+    "repository": "Yuan-Shenghai/MMAUD",
+    "revision": "b22b3f7650ddaad813e9ce04f7750a8054c2d3cd",
+    "last_modified": "2026-10-25T20:18:22.000Z",
+    "license": "cc-by-nc-sa-4.0",
+    "physical_inventory": {
+      "file_count": 76897,
+      "known_bytes": 367860160950,
+      "unknown_sizes": 0,
+      "categories": [
+        {
+          "category": "image",
+          "label": "图片",
+          "count": 33204,
+          "bytes": 73546417375,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "lidar",
+          "label": "激光雷达点云",
+          "count": 21756,
+          "bytes": 11701685760,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "radar",
+          "label": "毫米波雷达点云",
+          "count": 16618,
+          "bytes": 136377632,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "trajectory",
+          "label": "轨迹 / 真值",
+          "count": 5228,
+          "bytes": 93440798,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "audio",
+          "label": "音频",
+          "count": 28,
+          "bytes": 2303022640,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "annotation",
+          "label": "标注 / 结构化元数据",
+          "count": 14,
+          "bytes": 42985949,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "mixed",
+          "label": "混合传感器容器",
+          "count": 14,
+          "bytes": 271490473264,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "text",
+          "label": "文本 / 文档",
+          "count": 14,
+          "bytes": 770520,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "code",
+          "label": "代码",
+          "count": 11,
+          "bytes": 13524,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "unknown",
+          "label": "其他 / 未知",
+          "count": 7,
+          "bytes": 1080471341,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "archive",
+          "label": "未展开归档",
+          "count": 3,
+          "bytes": 7464502147,
+          "unknown_sizes": 0
+        }
+      ],
+      "extensions": {
+        "(无扩展名)": 1,
+        ".bag": 24,
+        ".bib": 2,
+        ".bin": 1,
+        ".csv": 3,
+        ".json": 7,
+        ".jsonl": 1,
+        ".md": 8,
+        ".npy": 43586,
+        ".part001": 1,
+        ".part002": 1,
+        ".part003": 1,
+        ".pdf": 2,
+        ".png": 33204,
+        ".py": 11,
+        ".rar": 1,
+        ".stl": 5,
+        ".txt": 5,
+        ".wav": 28,
+        ".yaml": 3,
+        ".zip": 2
+      }
+    },
+    "logical_inventory": {
+      "file_count": 76895,
+      "known_bytes": 367860160950,
+      "unknown_sizes": 0,
+      "categories": [
+        {
+          "category": "image",
+          "label": "图片",
+          "count": 33204,
+          "bytes": 73546417375,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "lidar",
+          "label": "激光雷达点云",
+          "count": 21756,
+          "bytes": 11701685760,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "radar",
+          "label": "毫米波雷达点云",
+          "count": 16618,
+          "bytes": 136377632,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "trajectory",
+          "label": "轨迹 / 真值",
+          "count": 5228,
+          "bytes": 93440798,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "audio",
+          "label": "音频",
+          "count": 28,
+          "bytes": 2303022640,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "annotation",
+          "label": "标注 / 结构化元数据",
+          "count": 14,
+          "bytes": 42985949,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "text",
+          "label": "文本 / 文档",
+          "count": 14,
+          "bytes": 770520,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "mixed",
+          "label": "混合传感器容器",
+          "count": 12,
+          "bytes": 271490473264,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "code",
+          "label": "代码",
+          "count": 11,
+          "bytes": 13524,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "unknown",
+          "label": "其他 / 未知",
+          "count": 7,
+          "bytes": 1080471341,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "archive",
+          "label": "未展开归档",
+          "count": 3,
+          "bytes": 7464502147,
+          "unknown_sizes": 0
+        }
+      ],
+      "extensions": {
+        "(无扩展名)": 1,
+        ".bag": 25,
+        ".bib": 2,
+        ".bin": 1,
+        ".csv": 3,
+        ".json": 7,
+        ".jsonl": 1,
+        ".md": 8,
+        ".npy": 43586,
+        ".pdf": 2,
+        ".png": 33204,
+        ".py": 11,
+        ".rar": 1,
+        ".stl": 5,
+        ".txt": 5,
+        ".wav": 28,
+        ".yaml": 3,
+        ".zip": 2
+      }
+    },
+    "extracted_inventory": {
+      "file_count": 76814,
+      "known_bytes": 87687238162,
+      "unknown_sizes": 0,
+      "categories": [
+        {
+          "category": "image",
+          "label": "图片",
+          "count": 33200,
+          "bytes": 73545359906,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "lidar",
+          "label": "激光雷达点云",
+          "count": 21756,
+          "bytes": 11701685760,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "radar",
+          "label": "毫米波雷达点云",
+          "count": 16618,
+          "bytes": 136377632,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "trajectory",
+          "label": "轨迹 / 真值",
+          "count": 5212,
+          "bytes": 792224,
+          "unknown_sizes": 0
+        },
+        {
+          "category": "audio",
+          "label": "音频",
+          "count": 28,
+          "bytes": 2303022640,
+          "unknown_sizes": 0
+        }
+      ],
+      "extensions": {
+        ".npy": 43586,
+        ".png": 33200,
+        ".wav": 28
+      }
+    },
+    "top_level": {
+      ".gitattributes": {
+        "file_count": 1,
+        "known_bytes": 4957,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "unknown",
+            "label": "其他 / 未知",
+            "count": 1,
+            "bytes": 4957,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          "(无扩展名)": 1
+        }
+      },
+      "ASSET_LAYOUT.md": {
+        "file_count": 1,
+        "known_bytes": 3974,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 3974,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".md": 1
+        }
+      },
+      "BASELINES.md": {
+        "file_count": 1,
+        "known_bytes": 20232,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 20232,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".md": 1
+        }
+      },
+      "COMMON_ISSUES.md": {
+        "file_count": 1,
+        "known_bytes": 20220,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 20220,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".md": 1
+        }
+      },
+      "ISSUE_INDEX.md": {
+        "file_count": 1,
+        "known_bytes": 13712,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 13712,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".md": 1
+        }
+      },
+      "MMAUD_BASELINES.bib": {
+        "file_count": 1,
+        "known_bytes": 10328,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 10328,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".bib": 1
+        }
+      },
+      "MMAUD_ICRA2024.bib": {
+        "file_count": 1,
+        "known_bytes": 497,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 497,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".bib": 1
+        }
+      },
+      "README.md": {
+        "file_count": 1,
+        "known_bytes": 37377,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 37377,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".md": 1
+        }
+      },
+      "REASSEMBLE_BAGS.md": {
+        "file_count": 1,
+        "known_bytes": 1669,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 1,
+            "bytes": 1669,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".md": 1
+        }
+      },
+      "RELEASE_VERIFICATION.json": {
+        "file_count": 1,
+        "known_bytes": 10571,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "annotation",
+            "label": "标注 / 结构化元数据",
+            "count": 1,
+            "bytes": 10571,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".json": 1
+        }
+      },
+      "SHA256SUMS.txt": {
+        "file_count": 1,
+        "known_bytes": 9726190,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "annotation",
+            "label": "标注 / 结构化元数据",
+            "count": 1,
+            "bytes": 9726190,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".txt": 1
+        }
+      },
+      "V1": {
+        "file_count": 76801,
+        "known_bytes": 163270222130,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "image",
+            "label": "图片",
+            "count": 33200,
+            "bytes": 73545359906,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "lidar",
+            "label": "激光雷达点云",
+            "count": 21756,
+            "bytes": 11701685760,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "radar",
+            "label": "毫米波雷达点云",
+            "count": 16618,
+            "bytes": 136377632,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "trajectory",
+            "label": "轨迹 / 真值",
+            "count": 5217,
+            "bytes": 3871789,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "code",
+            "label": "代码",
+            "count": 5,
+            "bytes": 5589,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "mixed",
+            "label": "混合传感器容器",
+            "count": 5,
+            "bytes": 77882921454,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".bag": 10,
+          ".npy": 43586,
+          ".png": 33200,
+          ".py": 5
+        }
+      },
+      "V2_V3": {
+        "file_count": 49,
+        "known_bytes": 195943716728,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "audio",
+            "label": "音频",
+            "count": 28,
+            "bytes": 2303022640,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "trajectory",
+            "label": "轨迹 / 真值",
+            "count": 8,
+            "bytes": 33135504,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "mixed",
+            "label": "混合传感器容器",
+            "count": 7,
+            "bytes": 193607551810,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "code",
+            "label": "代码",
+            "count": 5,
+            "bytes": 5831,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "annotation",
+            "label": "标注 / 结构化元数据",
+            "count": 1,
+            "bytes": 943,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".bag": 15,
+          ".json": 1,
+          ".py": 5,
+          ".wav": 28
+        }
+      },
+      "calibration": {
+        "file_count": 20,
+        "known_bytes": 7242520854,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "text",
+            "label": "文本 / 文档",
+            "count": 6,
+            "bytes": 662511,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "annotation",
+            "label": "标注 / 结构化元数据",
+            "count": 5,
+            "bytes": 12691,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "unknown",
+            "label": "其他 / 未知",
+            "count": 5,
+            "bytes": 1923270,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "archive",
+            "label": "未展开归档",
+            "count": 2,
+            "bytes": 7239833498,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "image",
+            "label": "图片",
+            "count": 2,
+            "bytes": 88884,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".json": 1,
+          ".md": 2,
+          ".pdf": 2,
+          ".png": 2,
+          ".rar": 1,
+          ".stl": 5,
+          ".txt": 3,
+          ".yaml": 3,
+          ".zip": 1
+        }
+      },
+      "images": {
+        "file_count": 3,
+        "known_bytes": 969631,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "image",
+            "label": "图片",
+            "count": 2,
+            "bytes": 968585,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "annotation",
+            "label": "标注 / 结构化元数据",
+            "count": 1,
+            "bytes": 1046,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".json": 1,
+          ".png": 2
+        }
+      },
+      "metadata": {
+        "file_count": 5,
+        "known_bytes": 33234508,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "annotation",
+            "label": "标注 / 结构化元数据",
+            "count": 5,
+            "bytes": 33234508,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".json": 3,
+          ".jsonl": 1,
+          ".txt": 1
+        }
+      },
+      "reassemble_bag.py": {
+        "file_count": 1,
+        "known_bytes": 2104,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "code",
+            "label": "代码",
+            "count": 1,
+            "bytes": 2104,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".py": 1
+        }
+      },
+      "supplementary": {
+        "file_count": 5,
+        "known_bytes": 1359645268,
+        "unknown_sizes": 0,
+        "categories": [
+          {
+            "category": "trajectory",
+            "label": "轨迹 / 真值",
+            "count": 3,
+            "bytes": 56433505,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "archive",
+            "label": "未展开归档",
+            "count": 1,
+            "bytes": 224668649,
+            "unknown_sizes": 0
+          },
+          {
+            "category": "unknown",
+            "label": "其他 / 未知",
+            "count": 1,
+            "bytes": 1078543114,
+            "unknown_sizes": 0
+          }
+        ],
+        "extensions": {
+          ".bin": 1,
+          ".csv": 3,
+          ".zip": 1
+        }
+      }
+    },
+    "bag_part_groups": [
+      {
+        "logical_path": "V2_V3/rosbag/m3e.bag",
+        "parts": 3
+      }
+    ],
+    "limitations": [
+      "API metadata only; no raw payload was downloaded or decoded.",
+      "ROS bag topic-level modality proportions are UNKNOWN.",
+      "Extracted V1 and V2/V3 audio are a view of the release, not every decoded recording.",
+      "Stored extracted files and bags can represent the same observations."
+    ],
+    "api_url": "https://huggingface.co/api/datasets/Yuan-Shenghai/MMAUD?blobs=true",
+    "response_sha256": "0a55c2e1be84cc5d52baa1b5920f3ff446f17163f56934b3d0c650b2ddd1344d",
+    "response_bytes": 19770924
+  }
+}

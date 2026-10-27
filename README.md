@@ -13,7 +13,9 @@
 | 人员四 | 数据工程与质量核验 | 已实现采集、下载、归档、门禁、看板和样本复现流水线 | [人员四总结](docs/reports/member4_engineering_quality_summary.md) |
 
 - **完整技术说明**：[项目技术报告](docs/reports/project_technical_report.md)
+- **检索平台架构评估**：[Markdown](docs/reports/retrieval_platform_architecture_assessment.md) · [HTML](docs/reports/retrieval_platform_architecture_assessment.html)（Schema、Data-Juicer 交付、建边时机与实施边界）
 - **本地入库与 CRUD（已实现）**：[运行说明与 API](docs/local_lancedb.md)
+- **数据集模态比例（仅元数据）**：[HTML 饼图报表](data/reports/dataset_modality_report.html) · [统计口径与重建](docs/dataset_modality_report.md)
 - **后续扩展计划**：[Schema 驱动的大规模、多模态 LanceDB 导入路线图](docs/plans/lancedb_ingestion_roadmap.md)
 - **阶段展示**：[当前实现与下一步计划（HTML）](docs/presentations/data-governance-roadmap/index.html)
 - **治理看板原型**：[`data/reports/governance_dashboard.html`](data/reports/governance_dashboard.html)

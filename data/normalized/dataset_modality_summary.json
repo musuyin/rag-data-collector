@@ -1,0 +1,343 @@
+{
+  "generated_at": "2026-10-27T15:06:58.863870+00:00",
+  "raw_payload_downloaded": false,
+  "basis": "public file inventories; not decoded samples, frames, tokens or information content",
+  "datasets": [
+    {
+      "id": "MMAUD",
+      "name": "MMAUD",
+      "status": "在线元数据",
+      "status_kind": "live",
+      "scope": "官方页面链接的 Hugging Face 发布清单；全目录视图含文档、校准、容器和已展开文件。",
+      "checked_at": "2026-10-27T14:07:01Z",
+      "license": "cc-by-nc-sa-4.0",
+      "views": [
+        {
+          "id": "all",
+          "label": "全部发布文件（存储视图）",
+          "inventory": {
+            "file_count": 76895,
+            "known_bytes": 367860160950,
+            "unknown_sizes": 0,
+            "categories": [
+              {
+                "category": "image",
+                "label": "图片",
+                "count": 33204,
+                "bytes": 73546417375,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "lidar",
+                "label": "激光雷达点云",
+                "count": 21756,
+                "bytes": 11701685760,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "radar",
+                "label": "毫米波雷达点云",
+                "count": 16618,
+                "bytes": 136377632,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "trajectory",
+                "label": "轨迹 / 真值",
+                "count": 5228,
+                "bytes": 93440798,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "audio",
+                "label": "音频",
+                "count": 28,
+                "bytes": 2303022640,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "annotation",
+                "label": "标注 / 结构化元数据",
+                "count": 14,
+                "bytes": 42985949,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "text",
+                "label": "文本 / 文档",
+                "count": 14,
+                "bytes": 770520,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "mixed",
+                "label": "混合传感器容器",
+                "count": 12,
+                "bytes": 271490473264,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "code",
+                "label": "代码",
+                "count": 11,
+                "bytes": 13524,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "unknown",
+                "label": "其他 / 未知",
+                "count": 7,
+                "bytes": 1080471341,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "archive",
+                "label": "未展开归档",
+                "count": 3,
+                "bytes": 7464502147,
+                "unknown_sizes": 0
+              }
+            ],
+            "extensions": {
+              "(无扩展名)": 1,
+              ".bag": 25,
+              ".bib": 2,
+              ".bin": 1,
+              ".csv": 3,
+              ".json": 7,
+              ".jsonl": 1,
+              ".md": 8,
+              ".npy": 43586,
+              ".pdf": 2,
+              ".png": 33204,
+              ".py": 11,
+              ".rar": 1,
+              ".stl": 5,
+              ".txt": 5,
+              ".wav": 28,
+              ".yaml": 3,
+              ".zip": 2
+            }
+          }
+        },
+        {
+          "id": "extracted",
+          "label": "已展开传感器文件（局部视图）",
+          "inventory": {
+            "file_count": 76814,
+            "known_bytes": 87687238162,
+            "unknown_sizes": 0,
+            "categories": [
+              {
+                "category": "image",
+                "label": "图片",
+                "count": 33200,
+                "bytes": 73545359906,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "lidar",
+                "label": "激光雷达点云",
+                "count": 21756,
+                "bytes": 11701685760,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "radar",
+                "label": "毫米波雷达点云",
+                "count": 16618,
+                "bytes": 136377632,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "trajectory",
+                "label": "轨迹 / 真值",
+                "count": 5212,
+                "bytes": 792224,
+                "unknown_sizes": 0
+              },
+              {
+                "category": "audio",
+                "label": "音频",
+                "count": 28,
+                "bytes": 2303022640,
+                "unknown_sizes": 0
+              }
+            ],
+            "extensions": {
+              ".npy": 43586,
+              ".png": 33200,
+              ".wav": 28
+            }
+          }
+        }
+      ],
+      "notes": [
+        "ROS bag 内部各模态比例未知，单列为混合传感器容器；不能把 bag 当视频。",
+        "大文件的 3 个字节分片合计为 1 个逻辑 bag；物理文件数为 76897。",
+        "已展开视图仅含 V1/filesystem_format 与 V2_V3/audio，不能代表所有版本的解码内容。",
+        "全目录包含同一内容的 bag 和已展开表示；存储占比没有做语义去重。",
+        "图片包含独立 PNG；视频 0 表示该清单没有独立视频文件，不表示 bag 内没有图像流。",
+        "按路径识别 LiDAR、Radar 和 ground_truth；未对 NPY 内容进行语义复验。"
+      ],
+      "links": [
+        {
+          "label": "官方项目页",
+          "url": "https://ntu-aris.github.io/MMAUD/"
+        },
+        {
+          "label": "发布目录",
+          "url": "https://huggingface.co/datasets/Yuan-Shenghai/MMAUD/tree/b22b3f7650ddaad813e9ce04f7750a8054c2d3cd"
+        },
+        {
+          "label": "文件布局说明",
+          "url": "https://huggingface.co/datasets/Yuan-Shenghai/MMAUD/blob/b22b3f7650ddaad813e9ce04f7750a8054c2d3cd/ASSET_LAYOUT.md"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/collection_metadata/COLLECT-MMAUD-HF-INVENTORY.json",
+          "sha256": "e2760a8e8f64166fad862489981e778d395c400c6264e58b0a63635645b14976",
+          "locator": "metadata.logical_inventory / extracted_inventory"
+        }
+      ],
+      "revision": "b22b3f7650ddaad813e9ce04f7750a8054c2d3cd",
+      "metadata_response_bytes": 19770924
+    },
+    {
+      "id": "Anti-UAV300",
+      "name": "Anti-UAV300",
+      "status": "历史清单 · 在线目录未取得",
+      "status_kind": "historical",
+      "scope": "已有成员验收记录中的 Anti-UAV-RGBT.zip 全包目录，非本次在线实测。",
+      "checked_at": "2026-09-29T13:39:05.7684017+08:00",
+      "license": "数据集级许可未确认",
+      "views": [
+        {
+          "id": "all",
+          "label": "历史全包目录（文件数）",
+          "inventory": {
+            "file_count": 1276,
+            "known_bytes": 0,
+            "unknown_sizes": 1276,
+            "categories": [
+              {
+                "category": "annotation",
+                "label": "标注 / 结构化元数据",
+                "count": 639,
+                "bytes": 0,
+                "unknown_sizes": 639
+              },
+              {
+                "category": "video",
+                "label": "视频",
+                "count": 636,
+                "bytes": 0,
+                "unknown_sizes": 636
+              },
+              {
+                "category": "code",
+                "label": "代码",
+                "count": 1,
+                "bytes": 0,
+                "unknown_sizes": 1
+              }
+            ],
+            "extensions": {
+              ".json": 639,
+              ".mp4": 636,
+              ".py": 1
+            }
+          }
+        }
+      ],
+      "notes": [
+        "本次核对官方页：300 版包含 RGB 和红外视频；网页未提供逐文件大小。",
+        "本次远程目录请求返回 HTTP 200，已拒绝读取正文，没有下载完整 ZIP 或绕过确认页。",
+        "图中数量来自 2026-09-29 的上游验收记录，可能已过期；本次未独立复验。",
+        "639 个 JSON 是标注 / 元数据，不能当作 639 篇自然语言文本。",
+        "历史目录记录 318 组序列与 636 个视频；产品名 300 不用于推算实际文件数。",
+        "包压缩大小 6.038 GB；历史解包大小 6.720 GB。缺少分类字节数，不绘制大小比例。"
+      ],
+      "links": [
+        {
+          "label": "官方说明",
+          "url": "https://github.com/ZhaoJ9014/Anti-UAV#data-preparation"
+        },
+        {
+          "label": "官方链接的数据包",
+          "url": "https://drive.google.com/file/d/1NPYaop35ocVTYWHOYQQHn8YHsM9jmLGr/view"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "datasets/member2_multimodal_datasets/validation_records/Anti-UAV300/Anti-UAV300_download_validation.json",
+          "sha256": "c8f8a3447bc06b1ea37afc831cc28a167964369bdcbb1ffa3e99ffb870ce409b",
+          "locator": "detected_extensions / archive_file_count"
+        }
+      ],
+      "latest_metadata_attempt": {
+        "checked_at": "2026-10-27T14:03:37Z",
+        "target_id": "COLLECT-ANTI-UAV300-ZIP-DIRECTORY",
+        "status": "failed",
+        "error": "Range request returned HTTP 200; refused full body"
+      }
+    },
+    {
+      "id": "DroneRF",
+      "name": "DroneRF",
+      "status": "在线 API 已核对",
+      "status_kind": "live",
+      "scope": "Mendeley v1 全部发布包；以压缩包为文件单位，以压缩存储大小为字节单位。",
+      "checked_at": "2026-10-27T13:57:28Z",
+      "license": "CC BY 4.0",
+      "views": [
+        {
+          "id": "all",
+          "label": "官方 v1 发布包（压缩视图）",
+          "inventory": {
+            "file_count": 23,
+            "known_bytes": 4027462446,
+            "unknown_sizes": 0,
+            "categories": [
+              {
+                "category": "rf",
+                "label": "射频信号",
+                "count": 23,
+                "bytes": 4027462446,
+                "unknown_sizes": 0
+              }
+            ],
+            "extensions": {
+              ".rar": 23
+            }
+          }
+        }
+      ],
+      "notes": [
+        "发布清单均为 RF 数据 RAR 包，按官方数据说明分类为射频信号；不是文本语料或视频。",
+        "100% 表示已发布数据包的类型分布；不宣称本次列举或解码了每一个包内 CSV。",
+        "CSV 中的数值属于 RF 采样信号；视频录制是设备运行状态，不代表包含视频文件。",
+        "API 元数据本次核对未变化，沿用已归档的 v1 文件清单；未下载 RAR 载荷。"
+      ],
+      "links": [
+        {
+          "label": "官方数据页",
+          "url": "https://data.mendeley.com/datasets/f4c2b4n755/1"
+        },
+        {
+          "label": "公开文件 API",
+          "url": "https://data.mendeley.com/public-api/datasets/f4c2b4n755"
+        }
+      ],
+      "evidence": [
+        {
+          "path": "data/collection_metadata/COLLECT-DRONERF-MENDELEY.json",
+          "sha256": "947745865493fddae833b4e2193ad804928d50fe4a84c92606bca9f57e09ee75",
+          "locator": "metadata.files"
+        }
+      ],
+      "version": 1
+    }
+  ]
+}

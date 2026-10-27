@@ -114,11 +114,37 @@ def http_snapshot(target: dict[str, Any], prior: dict[str, Any] | None) -> tuple
     return "updated", {"url": target["url"], "http_status": status, "content_type": headers.get("Content-Type", ""), "content_length": headers.get("Content-Length", ""), "body_sha256": hashlib.sha256(body).hexdigest()}, [{"url": target["url"], "headers": headers, "body": body}]
 
 
+def public_inventory(target: dict[str, Any], prior: dict[str, Any] | None):
+    """Read an explicitly reviewed public metadata API, never resolve dataset payloads."""
+    from modality_inventory import summarize_huggingface
+
+    url = target["url"]
+    if not url.startswith("https://huggingface.co/api/datasets/"):
+        raise ValueError("public_inventory only accepts the reviewed Hugging Face dataset API")
+    status, headers, body = request(url, prior)
+    if status == 304: return "unchanged", {}, []
+    record = json.loads(body)
+    metadata = summarize_huggingface(record)
+    metadata.update(api_url=url, response_sha256=hashlib.sha256(body).hexdigest(),
+                    response_bytes=len(body))
+    return "updated", metadata, [{"url": url, "headers": headers}]
+
+
+def remote_zip_inventory(target: dict[str, Any], prior: dict[str, Any] | None):
+    """Fetch only ZIP directory ranges; fail if the host would send a full payload."""
+    from remote_zip_directory import inspect_directory
+
+    metadata = inspect_directory(target["url"], target.get("dataset", ""))
+    return "updated", metadata, []
+
+
 def choose_adapter(target: dict[str, Any], prior: dict[str, Any] | None):
     adapter = target["adapter"]
     if adapter == "github_repo": return github(target, prior)
     if adapter == "zenodo_record": return zenodo(target, prior)
     if adapter == "mendeley_dataset": return mendeley(target, prior)
+    if adapter == "public_inventory": return public_inventory(target, prior)
+    if adapter == "remote_zip_inventory": return remote_zip_inventory(target, prior)
     if adapter in {"http", "regulatory_snapshot"}: return http_snapshot(target, prior)
     raise ValueError(f"unsupported adapter: {adapter}")
 
@@ -146,6 +172,7 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="Show selected targets without network access or state changes.")
     parser.add_argument("--allow-download", action="store_true", help="Permit artifact download only for targets with allow_download=true.")
     parser.add_argument("--pause", type=float, default=1.0, help="Seconds to wait between targets (default: 1).")
+    parser.add_argument("--refresh", action="store_true", help="Re-read metadata without conditional headers (e.g. after classifier changes).")
     args = parser.parse_args()
     targets = json_load(TARGETS, [])
     selected = [item for item in targets if (not args.target and item.get("enabled")) or (args.target and item["target_id"] in args.target)]
@@ -164,7 +191,7 @@ def main() -> int:
             results.append({"target_id": target["target_id"], "status": "skipped", "reason": "official result URL requires human approval"}); continue
         try:
             prior = state.get(target["target_id"])
-            status, metadata, responses = choose_adapter(target, prior)
+            status, metadata, responses = choose_adapter(target, None if args.refresh else prior)
             metadata_sha256 = hashlib.sha256(json.dumps(metadata, sort_keys=True).encode()).hexdigest() if metadata else (prior or {}).get("metadata_sha256", "")
             # Some public APIs do not emit validators. In that case the normalized
             # metadata digest provides a deterministic fallback for incrementality.
@@ -181,6 +208,9 @@ def main() -> int:
             results.append({"target_id": target["target_id"], "status": "failed", "error": str(exc)})
         if index < len(selected) - 1: time.sleep(max(args.pause, 0))
     json_write(STATE_FILE, state)
+    for result in results:
+        json_write(ROOT / "data/collection_attempts" / f"{safe_name(result['target_id'])}.json",
+                   {"checked_at": utc_now(), **result})
     print(json.dumps(results, ensure_ascii=False, indent=2))
     return 1 if any(item["status"] == "failed" for item in results) else 0
 
